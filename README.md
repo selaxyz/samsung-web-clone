@@ -1,3 +1,5 @@
+
+
 In order to collaborate with team members effectively and give each member a separated 
 space to work on their part our team have chosen git-flow as branch management strategy.
 
@@ -21,13 +23,14 @@ to handle during the program development as below:
 
 **Scenario:**
 
-_We're developing a measurement conversion program allowing users to 
-convert Pound to Kilogram, Fahrenheit to Celsius, and Mile to Kilometre using python._
+> _We're developing a measurement conversion program allowing users to 
+> convert Pound to Kilogram, Fahrenheit to Celsius, and Mile to Kilometre using python._
 
 
 **Implementation**
 
 **1. Preparing source project for development**
+
 As a team leader of the project. I will start by preparing this step before collaboration:
 - Create a project inside my computer
 - Initialise local git repository
@@ -56,6 +59,7 @@ For example:
 we want team members to add features to the source project, so we will use the ‘feature’ label.
 
 **4. Feature Branches:**
+
 The team members that have task assigned will start implement the feature describe below:
 
     - Feature 1: Create a feature branch to implement Pound to Kg conversion.
