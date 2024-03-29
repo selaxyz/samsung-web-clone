@@ -1,4 +1,4 @@
-
+![GIT_FLOW_STRATEGY__1_](/uploads/a4fcd00c78f4c12a8d6911def530373e/GIT_FLOW_STRATEGY__1_.png)
 
 In order to collaborate with team members effectively and give each member a separated 
 space to work on their part our team have chosen git-flow as branch management strategy.
