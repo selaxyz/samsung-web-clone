@@ -1,4 +1,6 @@
-During development when create a page section please use the boilerplate below with predefined style:
+
+During development when create a page section please use 
+the boilerplate below with predefined style:
  ********************** ********************** ********************** ********************** **********************       
         <section class="max-w-screen-2xl w-full border border-sky-500">
             <h1 class="text-center text-4xl font-bold p-4">Write Section Title Here(38px)</h1>
