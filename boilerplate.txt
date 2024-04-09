@@ -2,7 +2,7 @@
 During development when create a page section please use 
 the boilerplate below with predefined style:
  ********************** ********************** ********************** ********************** **********************       
-        <section class="max-w-screen-2xl w-full border border-sky-500">
+        <section class="max-w-screen-2xl w-screen border border-sky-500">
             <h1 class="text-center text-4xl font-bold p-4">Write Section Title Here(38px)</h1>
             <div class="border border-pink-500">
                 <ul class="flex justify-center p-2.5 gap-12 bg-green-100 text-base font-bold">
