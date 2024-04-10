@@ -1,0 +1,35 @@
+
+During development when create a page section please use 
+the boilerplate below with predefined style:
+ ********************** ********************** ********************** ********************** **********************       
+        <section class="max-w-screen-2xl w-screen border border-sky-500">
+            <h1 class="text-center text-4xl font-bold p-4">Write Section Title Here(38px)</h1>
+            <div class="border border-pink-500">
+                <ul class="flex justify-center p-2.5 gap-12 bg-green-100 text-base font-bold">
+                    <li><a href="#">Tab 1</a></li>
+                    <li><a href="#">Tab 2</a></li>
+                    <li><a href="#">Tab N</a></li>
+                </ul>
+                <div class="px-6 bg-blue-100">
+                    <div class="bg-red-100 w-full h-full">
+                        <p>Write Your Content here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   ********************** ********************** ********************** ********************** ********************** 
+Style Explaination
+-------------------
+   + Spacing:
+   gap-12 = 47px
+   
+   + Padding:
+   p-2.5 = 10px
+   p-4 = 16px     
+   p-6 = 24px
+
+   + Font Size:
+   text-4xl = 38px
+
+-------------------
