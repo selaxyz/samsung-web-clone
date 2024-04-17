@@ -8,19 +8,189 @@
 </head>
 
 <body class="flex flex-col items-center">
-    <h1>This is Checkout</h1>
-    <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-   
-    <p>******</p>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Guest checkout</section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Choose your payment method</section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Choose your delivery options</section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Payment Summary</section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Terms</section>
-    <p>******</p>
+    <section class="flex max-w-screen-2xl w-screen justify-center py-6">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 120 32"
+            role="presentation" aria-hidden="true" tabindex="-1">
+            <rect id="Clear_space" width="120" height="32" fill="none"></rect>
+            <path id="Logo_ratio"
+                d="M0,11.651V10.511H3.994v1.45a1.334,1.334,0,0,0,1.494,1.346A1.3,1.3,0,0,0,6.932,12.3a1.833,1.833,0,0,0-.026-1.113C6.133,9.243.851,8.363.18,5.333a5.347,5.347,0,0,1-.025-2.02C.567.88,2.705,0,5.359,0c2.113,0,5.025.492,5.025,3.754V4.816H6.674V3.884A1.275,1.275,0,0,0,5.282,2.537a1.25,1.25,0,0,0-1.365,1.01,2.021,2.021,0,0,0,.026.777c.437,1.734,6.081,2.667,6.7,5.8a6.943,6.943,0,0,1,.025,2.46C10.307,15.068,8.091,16,5.412,16,2.6,16,0,14.99,0,11.651ZM48.392,11.6V10.46h3.943v1.424A1.312,1.312,0,0,0,53.8,13.23a1.286,1.286,0,0,0,1.443-.984,1.759,1.759,0,0,0-.025-1.088c-.748-1.915-5.979-2.8-6.648-5.825a5.215,5.215,0,0,1-.026-1.994C48.959.932,51.1.052,53.7.052c2.088,0,4.973.518,4.973,3.728V4.816H54.989V3.91a1.268,1.268,0,0,0-1.365-1.346,1.2,1.2,0,0,0-1.34.984,2.017,2.017,0,0,0,.025.777c.412,1.734,6,2.641,6.623,5.747a6.806,6.806,0,0,1,.025,2.434c-.361,2.486-2.551,3.392-5.2,3.392C50.97,15.9,48.392,14.887,48.392,11.6Zm14.121.545a5.876,5.876,0,0,1-.025-.985V.44H66.25V11.495a4.111,4.111,0,0,0,.025.57,1.468,1.468,0,0,0,2.835,0,3.97,3.97,0,0,0,.026-.57V.44H72.9V11.158c0,.285-.026.829-.026.985-.257,2.8-2.448,3.7-5.179,3.7S62.771,14.938,62.513,12.143Zm30.974-.156A7.808,7.808,0,0,1,93.435,11V4.712c0-.259.025-.725.051-.985C93.821.932,96.063.052,98.717.052c2.629,0,4.947.88,5.206,3.676a7.185,7.185,0,0,1,.025.985V5.2h-3.762V4.376a3.1,3.1,0,0,0-.051-.57,1.553,1.553,0,0,0-2.964,0,3.088,3.088,0,0,0-.051.7V11.34a4.17,4.17,0,0,0,.026.57A1.472,1.472,0,0,0,98.717,13a1.406,1.406,0,0,0,1.52-1.087,2.09,2.09,0,0,0,.026-.57V9.165h-1.52V6.99H104V11a7.674,7.674,0,0,1-.052.984c-.257,2.718-2.6,3.676-5.231,3.676S93.744,14.705,93.487,11.987ZM41.049,15.378l-.1-13.825L38.369,15.378H34.607L32.055,1.553l-.1,13.825H28.242L28.551.466h6.056l1.881,11.651L38.369.466h6.055l.335,14.912Zm-19.79,0L19.249,1.553,17.187,15.378H13.168L15.9.466h6.623l2.732,14.912Zm62.977-.155L80.5,2.822l.206,12.4H77.046V.466h5.514l3.5,12.013L85.859.466h3.685V15.224Z"
+                transform="translate(8 8)"></path>
+        </svg>
+    </section>
+    <section class="grid grid-cols-12 max-w-screen-2xl w-5/6 gap-6 items-center">
+        <section class="col-span-8 p-6">
+            <section class="flex flex-col py-6 gap-6">
+                <h1 class="font-bold text-xl">Guest Checkout</h1>
+                <div class="flex w-fit rounded-md items-center p-6 gap-6 bg-gray-50">
+                    <a class="font-medium text-blue-600" href="#">Sign In</a>
+                    <div class="flex flex-col">
+                        <p>Sign in or create an account for a quick checkout.</p>
+                        <p>Earn up to 570 Samsung Rewards points* on this order.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="flex flex-col w-full py-6 gap-4">
+                <h1 class="text-3xl font-bold">Choose your payment method</h1>
+                <h3 class="text-xl font-medium">Express checkout</h3>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex w-1/2 p-6 justify-center items-center bg-yellow-500 rounded-md"><img
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAxcHgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDEgMzIiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHhtbG5zPSJodHRwOiYjeDJGOyYjeDJGO3d3dy53My5vcmcmI3gyRjsyMDAwJiN4MkY7c3ZnIj48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDEyLjIzNyAyLjggTCA0LjQzNyAyLjggQyAzLjkzNyAyLjggMy40MzcgMy4yIDMuMzM3IDMuNyBMIDAuMjM3IDIzLjcgQyAwLjEzNyAyNC4xIDAuNDM3IDI0LjQgMC44MzcgMjQuNCBMIDQuNTM3IDI0LjQgQyA1LjAzNyAyNC40IDUuNTM3IDI0IDUuNjM3IDIzLjUgTCA2LjQzNyAxOC4xIEMgNi41MzcgMTcuNiA2LjkzNyAxNy4yIDcuNTM3IDE3LjIgTCAxMC4wMzcgMTcuMiBDIDE1LjEzNyAxNy4yIDE4LjEzNyAxNC43IDE4LjkzNyA5LjggQyAxOS4yMzcgNy43IDE4LjkzNyA2IDE3LjkzNyA0LjggQyAxNi44MzcgMy41IDE0LjgzNyAyLjggMTIuMjM3IDIuOCBaIE0gMTMuMTM3IDEwLjEgQyAxMi43MzcgMTIuOSAxMC41MzcgMTIuOSA4LjUzNyAxMi45IEwgNy4zMzcgMTIuOSBMIDguMTM3IDcuNyBDIDguMTM3IDcuNCA4LjQzNyA3LjIgOC43MzcgNy4yIEwgOS4yMzcgNy4yIEMgMTAuNjM3IDcuMiAxMS45MzcgNy4yIDEyLjYzNyA4IEMgMTMuMTM3IDguNCAxMy4zMzcgOS4xIDEzLjEzNyAxMC4xIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDM1LjQzNyAxMCBMIDMxLjczNyAxMCBDIDMxLjQzNyAxMCAzMS4xMzcgMTAuMiAzMS4xMzcgMTAuNSBMIDMwLjkzNyAxMS41IEwgMzAuNjM3IDExLjEgQyAyOS44MzcgOS45IDI4LjAzNyA5LjUgMjYuMjM3IDkuNSBDIDIyLjEzNyA5LjUgMTguNjM3IDEyLjYgMTcuOTM3IDE3IEMgMTcuNTM3IDE5LjIgMTguMDM3IDIxLjMgMTkuMzM3IDIyLjcgQyAyMC40MzcgMjQgMjIuMTM3IDI0LjYgMjQuMDM3IDI0LjYgQyAyNy4zMzcgMjQuNiAyOS4yMzcgMjIuNSAyOS4yMzcgMjIuNSBMIDI5LjAzNyAyMy41IEMgMjguOTM3IDIzLjkgMjkuMjM3IDI0LjMgMjkuNjM3IDI0LjMgTCAzMy4wMzcgMjQuMyBDIDMzLjUzNyAyNC4zIDM0LjAzNyAyMy45IDM0LjEzNyAyMy40IEwgMzYuMTM3IDEwLjYgQyAzNi4yMzcgMTAuNCAzNS44MzcgMTAgMzUuNDM3IDEwIFogTSAzMC4zMzcgMTcuMiBDIDI5LjkzNyAxOS4zIDI4LjMzNyAyMC44IDI2LjEzNyAyMC44IEMgMjUuMDM3IDIwLjggMjQuMjM3IDIwLjUgMjMuNjM3IDE5LjggQyAyMy4wMzcgMTkuMSAyMi44MzcgMTguMiAyMy4wMzcgMTcuMiBDIDIzLjMzNyAxNS4xIDI1LjEzNyAxMy42IDI3LjIzNyAxMy42IEMgMjguMzM3IDEzLjYgMjkuMTM3IDE0IDI5LjczNyAxNC42IEMgMzAuMjM3IDE1LjMgMzAuNDM3IDE2LjIgMzAuMzM3IDE3LjIgWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDMwODciIGQ9Ik0gNTUuMzM3IDEwIEwgNTEuNjM3IDEwIEMgNTEuMjM3IDEwIDUwLjkzNyAxMC4yIDUwLjczNyAxMC41IEwgNDUuNTM3IDE4LjEgTCA0My4zMzcgMTAuOCBDIDQzLjIzNyAxMC4zIDQyLjczNyAxMCA0Mi4zMzcgMTAgTCAzOC42MzcgMTAgQyAzOC4yMzcgMTAgMzcuODM3IDEwLjQgMzguMDM3IDEwLjkgTCA0Mi4xMzcgMjMgTCAzOC4yMzcgMjguNCBDIDM3LjkzNyAyOC44IDM4LjIzNyAyOS40IDM4LjczNyAyOS40IEwgNDIuNDM3IDI5LjQgQyA0Mi44MzcgMjkuNCA0My4xMzcgMjkuMiA0My4zMzcgMjguOSBMIDU1LjgzNyAxMC45IEMgNTYuMTM3IDEwLjYgNTUuODM3IDEwIDU1LjMzNyAxMCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny43MzcgMi44IEwgNTkuOTM3IDIuOCBDIDU5LjQzNyAyLjggNTguOTM3IDMuMiA1OC44MzcgMy43IEwgNTUuNzM3IDIzLjYgQyA1NS42MzcgMjQgNTUuOTM3IDI0LjMgNTYuMzM3IDI0LjMgTCA2MC4zMzcgMjQuMyBDIDYwLjczNyAyNC4zIDYxLjAzNyAyNCA2MS4wMzcgMjMuNyBMIDYxLjkzNyAxOCBDIDYyLjAzNyAxNy41IDYyLjQzNyAxNy4xIDYzLjAzNyAxNy4xIEwgNjUuNTM3IDE3LjEgQyA3MC42MzcgMTcuMSA3My42MzcgMTQuNiA3NC40MzcgOS43IEMgNzQuNzM3IDcuNiA3NC40MzcgNS45IDczLjQzNyA0LjcgQyA3Mi4yMzcgMy41IDcwLjMzNyAyLjggNjcuNzM3IDIuOCBaIE0gNjguNjM3IDEwLjEgQyA2OC4yMzcgMTIuOSA2Ni4wMzcgMTIuOSA2NC4wMzcgMTIuOSBMIDYyLjgzNyAxMi45IEwgNjMuNjM3IDcuNyBDIDYzLjYzNyA3LjQgNjMuOTM3IDcuMiA2NC4yMzcgNy4yIEwgNjQuNzM3IDcuMiBDIDY2LjEzNyA3LjIgNjcuNDM3IDcuMiA2OC4xMzcgOCBDIDY4LjYzNyA4LjQgNjguNzM3IDkuMSA2OC42MzcgMTAuMSBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC45MzcgMTAgTCA4Ny4yMzcgMTAgQyA4Ni45MzcgMTAgODYuNjM3IDEwLjIgODYuNjM3IDEwLjUgTCA4Ni40MzcgMTEuNSBMIDg2LjEzNyAxMS4xIEMgODUuMzM3IDkuOSA4My41MzcgOS41IDgxLjczNyA5LjUgQyA3Ny42MzcgOS41IDc0LjEzNyAxMi42IDczLjQzNyAxNyBDIDczLjAzNyAxOS4yIDczLjUzNyAyMS4zIDc0LjgzNyAyMi43IEMgNzUuOTM3IDI0IDc3LjYzNyAyNC42IDc5LjUzNyAyNC42IEMgODIuODM3IDI0LjYgODQuNzM3IDIyLjUgODQuNzM3IDIyLjUgTCA4NC41MzcgMjMuNSBDIDg0LjQzNyAyMy45IDg0LjczNyAyNC4zIDg1LjEzNyAyNC4zIEwgODguNTM3IDI0LjMgQyA4OS4wMzcgMjQuMyA4OS41MzcgMjMuOSA4OS42MzcgMjMuNCBMIDkxLjYzNyAxMC42IEMgOTEuNjM3IDEwLjQgOTEuMzM3IDEwIDkwLjkzNyAxMCBaIE0gODUuNzM3IDE3LjIgQyA4NS4zMzcgMTkuMyA4My43MzcgMjAuOCA4MS41MzcgMjAuOCBDIDgwLjQzNyAyMC44IDc5LjYzNyAyMC41IDc5LjAzNyAxOS44IEMgNzguNDM3IDE5LjEgNzguMjM3IDE4LjIgNzguNDM3IDE3LjIgQyA3OC43MzcgMTUuMSA4MC41MzcgMTMuNiA4Mi42MzcgMTMuNiBDIDgzLjczNyAxMy42IDg0LjUzNyAxNCA4NS4xMzcgMTQuNiBDIDg1LjczNyAxNS4zIDg1LjkzNyAxNi4yIDg1LjczNyAxNy4yIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA5Y2RlIiBkPSJNIDk1LjMzNyAzLjMgTCA5Mi4xMzcgMjMuNiBDIDkyLjAzNyAyNCA5Mi4zMzcgMjQuMyA5Mi43MzcgMjQuMyBMIDk1LjkzNyAyNC4zIEMgOTYuNDM3IDI0LjMgOTYuOTM3IDIzLjkgOTcuMDM3IDIzLjQgTCAxMDAuMjM3IDMuNSBDIDEwMC4zMzcgMy4xIDEwMC4wMzcgMi44IDk5LjYzNyAyLjggTCA5Ni4wMzcgMi44IEMgOTUuNjM3IDIuOCA5NS40MzcgMyA5NS4zMzcgMy4zIFoiPjwvcGF0aD48L3N2Zz4"
+                            alt=""></div>
+                    <div class="w-1/5 p-6 flex justify-center items-center bg-black text-center text-white rounded-md">
+                        <img src="https://www.samsung.com/us/web/express-checkout/static/dist/img/btn-samsung-pay.png.548e554.webp" alt="">
+                    </div>
+                    <div class="w-1/5 p-6 bg-yellow-500 text-center rounded-md">
+                        <img src="https://d2ldlvi1yef00y.cloudfront.net/default/us/live/lwa/lightgray/large/PwA.png" alt="">
+                    </div>
+                    <div class="w-1/3 p-6 flex justify-center items-center bg-black text-white text-center rounded-md">
+                        <img src="https://www.gstatic.com/instantbuy/svg/dark_gpay.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="max-w-screen-2xl w-fit ">Choose your delivery options</section> -->
+            <section class="flex flex-col gap-4 w-full py-6">
+                <h1 class="text-2xl font-medium">Play with card</h1>
+                <div class="flex w-fit gap-6 border rounded-md p-6">
+                    <p>+</p>
+                    <p>Credit/debit card</p>
+                    <img data-v-daed2594=""
+                        src="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-sprite-hori-v2.png.16d6c4c.webp"
+                        alt="" class="ml10">
+                </div>
+            </section>
+            <section class="flex flex-col gap-4 py-6">
+                <div>
+                    <h1 class="text-2xl font-medium">Financing</h1>
+                    <p>12,18 and 24 month plans available</p>
+                </div>
+                <div class="flex gap-6 items-center p-6 border rounded-md w-1/2">
+                    <img class="w-10 h-10"
+                        src="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-samsung-finance.png.045976e.webp"
+                        alt="">
+                    <div>
+                        <h3 class="font-medium">Samsung Financing</h3>
+                        <p>Starting from $8.62/mo</p>
+                        <p>for 24 months</p>
+                    </div>
+                </div>
+            </section>
+            <section class="flex flex-col py-6 gap-4">
+                <div>
+                    <h1 class="text-2xl font-medium">Play in 4 Installments</h1>
+                    <p>No fees | No impact to credit score</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex flex-1 border p-10 gap-6 items-center rounded-md">
+                        <img class="w-24 h-fit"
+                            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-klarna-black.7dcdc1e.svg"
+                            alt="">
+                        <div>
+                            <p>$51.71 every two weeks</p>
+                            <p>$206.85 total</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-1 border p-10 gap-6 rounded-md items-center">
+                        <img class="w-24 h-fit object-cover"
+                            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-affirm.png.9226201.webp"
+                            alt="">
+                        <div>
+                            <p>$51.71 every two weeks</p>
+                            <p>$206.85 total</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="col-span-4 gap">
+            <div class="flex gap-4 justify-between">
+                <img class="w-24"
+                    src="https://image-us.samsung.com/us/mobile-audio/galaxy-buds2-pro/gallery/graphite/Q4B4B2C-86-SM-R510_001_Front_Graphite_RGB-GalleryImage-1600x1200.jpg?$default-400-jpg$"
+                    alt="">
+                <div class="flex flex-col flex-1 gap-2">
+                    <h3 class="text-lg font-medium">Galaxy Buds2 Pro, Graphite</h3>
+                    <p class="text-sm">Pickup: Get it today</p>
+                    <p class="text-sm">Shipping: Get it by Apr. 18</p>
+                </div>
+                <div>
+                    <p>$189.99</p>
+                    <p>$229.99</p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-gray-100 rounded-md p-4 gap-4">
+                <div class="flex justify-between">
+                    <p class="font-medium">Subtotal</p>
+                    <p>$189.99</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="font-medium">Shipping</p>
+                    <p>Free</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="font-medium">Estimated tax</p>
+                        <p class="text-xs">Zip code:10001</p>
+                    </div>
+                    <p>$16.86</p>
+                </div>
+                <hr>
+                <div class="flex justify-between text-xl">
+                    <p>Estimated total:</p>
+                    <p>$206.85</p>
+                </div>
+                <hr>
+                <details class="w-full">
+                    <summary class="flex justify-between">
+                        <p>Total Saving </p>
+                        <p>$40.00</p>
+                    </summary>
+                    <div class="flex justify-between">
+                        <p>Promotional Discount</p>
+                        <p>-$40.00</p>
+                    </div>
+                </details>
 
-    <!-- DO NOT REMOVE THIS SCRIPT TAG -->
-    <script src="./script/index.js" type="module"></script>
+            </div>
+            <div class="py-4"></div>
+            <img src="https://images.samsung.com/is/image/samsung/assets/us/dse/02223/DSE-BannerCard-1200x690.jpg"
+                alt="">
+        </section>
+    </section>
+    <section class="flex flex-col max-w-screen-2xl w-5/6 gap-4 pt-24">
+        <p class="text-xs">By submitting your order, you agree to the Terms of Sale and acknowledge that you have read
+            Samsung’s Privacy
+            Policy. By submitting your order, you agree to the Samsung Rewards Terms and Conditions.</p>
+        <p class="text-xs">*Restrictions apply. User will not receive Rewards points for amount of the order paid for by
+            previously
+            accrued Rewards points. For complete program details, please see Samsung Rewards Terms and Conditions</p>
+        <p class="text-xs">⊕0% APR for 12, 18, 24 Months with Equal Payments: Available on purchases of select products
+            charged to a
+            Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full.
+            Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded
+            down to the nearest penny <a class="text-blue-400" href="#">See More</a></p>
+        <p class="text-xs">σPayment options are offered by Affirm and are subject to an eligibility check. Options
+            depend on your
+            purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are
+            made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
+            affirm.com/licenses.</p>
+        <p class="text-xs">πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See
+            Klarna payment term.
+            A higher initial payment may be required for some consumers. CA residents: Loans made or arranged pursuant
+            to California Financing Law license.</p>
+        <hr>
+        <div class="flex text-sm font-medium text-blue-400 pt-4 pb-6">
+            <a href="#">USA/ENGLISH</a>
+            <div class="flex flex-1 gap-6 justify-center">
+                <a href="#">Privacy Policy</a>
+                <p>|</p>
+                <a href="#">Terms of Sale</a>
+                <p>|</p>
+                <a href="#">Your California Privacy Rights</a>
+            </div>
+        </div>
+    </section>
+    <footer-component></footer-component>
+    <script src="../../script/index.js" type="module"></script>
 </body>
 
 </html>
