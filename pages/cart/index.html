@@ -9,26 +9,71 @@
 
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
-    <div class="flex flex-col items-center">
-        <h1>This is Cart</h1>
+
+    <div>
+
+        <!-- <h1>This is Cart</h1>
         <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
         <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
+        <p>******</p> -->
 
-        <p>******</p>
-        <section class="max-w-screen-2xl w-screen border border-sky-500">
+        <section>
 
-            Cart
+            <div class="pb-2.5 mb-1.5 font-bold text-xl text-start">
+                <h1 >Cart</h1>
+            </div>
 
         </section>
-        <section class="max-w-screen-2xl w-screen border border-sky-500">Order Summary</section>
+
+        <section class="max-w-screen-2xl w-screen">
+            <hr class="border-[#dadada]"/>
+            <div class="py-10 px-3.5 text-center">
+                <div>
+                    <h1 class="font-bold text-xl">Your cart is empty</h1>
+                    <p class="mt-2.5 mb-10 font-light">Sign in to see if you saved items to cart</p>
+                    <button class="w-40 h-10 bg-blue-500 px-7 text-white text-sm font-semibold rounded-3xl">Sign
+                        in</button><br>
+                    <a class="text-blue-500 font-light hover:text-black text-base" href="#">Continue Shopping</a>
+                </div>
+            </div>
+
+        </section>
+
         <section class="max-w-screen-2xl w-screen border border-sky-500">Frequently bought together</section>
-        <section class="max-w-screen-2xl w-screen border border-sky-500">Supported payment types</section>
-        <section class="max-w-screen-2xl w-screen border border-sky-500">Terms</section>
-        <p>******</p>
+
+        <section class="max-w-screen-2xl w-screen items-center">
+            <p class="text-gray-700 mr-3.5">Supported payment types</p>
+            <div class="flex gap-2 h-8 pb-2.5">
+                <img src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
+                <img src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
+                <img src="../../assets/images/cart-payment-logo/icon-discover-3x.jpg.c121996.webp" alt="discover">
+                <img src="../../assets/images/cart-payment-logo/icon-master-3x.jpg.31139e6.webp" alt="master card">
+                <img src="../../assets/images/cart-payment-logo/icon-samsung-pay-3x.jpg.5098b20.webp" alt="samsung pay">
+                <img src="../../assets/images/cart-payment-logo/icon-amazon-pay-3x.jpg.f0813d6.webp" alt="amazon pay">
+                <img src="../../assets/images/cart-payment-logo/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
+                <img src="../../assets/images/cart-payment-logo/icon-samsung-financing-3x.jpg.e589781.webp" alt="Samsung Finance">
+                <img class="h-4 mt-1 mr-2" src="../../assets/images/cart-payment-logo/logo-klarna-black.7dcdc1e.svg" alt="Klarna Payments">
+                <img src="../../assets/images/cart-payment-logo/supported-payment-google-pay.png.52c00e3.webp" alt="Google Pay">
+                <img src="../../assets/images/cart-payment-logo/logo-apple-pay-supported-method.png.ae3faf0.webp" alt="Apple Pay">
+            </div>
+        </section>
+
+        <section class="max-w-screen-2xl w-screen">
+            <p><b class="font-medium">⊕0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded down to the nearest penny
+                <a class="text-blue-500" href="#">See More</a></p>
+            <br>
+            <p>σPayment options are offered by Affirm and are subject to an eligibility check. Options depend on your purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see 
+                <a class="text-blue-500" href="#">affirm.com/licenses.</a></p>
+            <br>
+            <p>πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a class="text-blue-500" href="#">Klarna payment term</a>. A higher initial payment may be required for some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
+        </section>
+
+
+        <!-- <p>******</p> -->
     </div>
 
 
-    <section>
+    <!-- <section>
         <nav></nav>
     </section>
 
@@ -87,7 +132,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <footer-component></footer-component>
 
