@@ -7,7 +7,8 @@
     <title>Cart | Samsung DEV</title>
 </head>
 
-<body>
+<body class="flex flex-col items-center">
+    <navbar-component></navbar-component>
     <div class="flex flex-col items-center">
         <h1>This is Cart</h1>
         <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
@@ -46,7 +47,7 @@
         
         <div class="p-2.5">
             <div class="flex justify-center">
-                <p class="text-[#858a8d] mr-3.5">Supported payment types</p>
+                <p class="text-gray-700 mr-3.5">Supported payment types</p>
                 <div class="flex gap-2 h-8 pb-2.5">
                     <img   src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
                     <img  src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
@@ -75,14 +76,11 @@
             
         </div>
     </section>
-
-    <section>
-        <footer></footer>
-    </section>
-        
+    
+    <footer-component></footer-component>
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
-    <script src="./script/index.js" type="module"></script>
+    <script src="../../script/index.js" type="module"></script>
 </body>
 
 </html>
