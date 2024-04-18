@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/samsungone');
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+
+        
+.mobile {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    background-image: url("../assets/images/home/SDSAC-7185-S24P-HP-LOB-FullBleed-DT-1440x810.avif");
+}
+
