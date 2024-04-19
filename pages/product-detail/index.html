@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/product-detail-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
         Benefit + Graphic Image + Specs
 
                 <!-- Feature 1 code -->
-                <div class="grid grid-cols-2 py-5">
+                <div class="grid grid-cols-1  md:grid-cols-2 py-5">
                     <img class="grid w-full h-full " src="/assets/images/product-detail/f1-buds2-pro.png">
                     <div class="flex flex-col justify-center items-center px-[120px] mx-[16px] ">
                         <div  style="font-family: Inter;">
@@ -356,12 +357,12 @@
             </section>
             <section>
                 <div class="h-[776px] bg-[#e7e7e8] pt-[36.4px] ">
-                    <div class=" flex flex-col ml-[113px] mr-[24px]"> 
+                    <div class=" flex flex-col  flex-initial ml-[113px] mr-[9.9]"> 
                         <!-- row-1 -->
                         <span class="text-[16px] border-x-[24px] mr-[110px] ">Connectivity</span>
-                        <div class="grid grid-cols-4">
+                        <div class="spec-container justify-start">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
                                 <div class="text-[14px] font-semibold">
                                         Bluetooth<sup>®</sup> Version
                                 </div>    
@@ -369,9 +370,8 @@
                             </div>
 
                             <!-- col-2 -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                
-                                <div class="text-[14px]">
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
                                     Bluetooth Profiles
                                 </div>
                                 <div class="text-[14px]">A2DP,AVRCP,HFP</div>
@@ -380,11 +380,11 @@
                         </div>
 
                         <!-- row-2 -->
-                        <div class="grid grid-cols-4">
+                        <div class="spec-container justify-START">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
                                 <span class="text-[16px] ">Physical specification</span>
-                                <div class="text-[14px]">
+                                <div class="text-[14px] font-semibold">
                                     Weight
                                 </div>
                                 <div class="text-[14px]">1.92 oz</div>
@@ -393,101 +393,118 @@
                         </div>
 
                         <!-- row-3 -->
-                        <div class="grid grid-cols-4">
+                        <span class="text-[16px] border-x-[24px] mr-[110px]">Battery</span>
+                        <div class="spec-container justify-START">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                
+                                <div class="text-[14px] font-semibold">
+                                    Battery Capacity (Earbud)
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">61</div>
 
                             </div>
 
                             <!-- col-2 -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
+                                    Battery Capacity (Case)
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">515</div>
 
                             </div>
 
                             <!-- col-3 -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
+                                    Playtime
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">5/20Hr (ANC On), 8/30Hr (ANC Off)</div>
+
+                            </div>
+
+                            <!-- col-4 -->
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
+                                    Talk time
+                                </div>
+                                <div class="text-[14px]">3.5/14Hr (ANC ON), 4/15Hr (ANC OFF)</div>
 
                             </div>
                         </div>
                         <!-- row-4 -->
-                        <div class="grid grid-cols-4">
+                        <span class="text-[16px] border-x-[24px] mr-[110px]">Audio and Video</span>
+                        <div class="spec-container justify-START justify-start">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                
+                                <div class="text-[14px] font-semibold">
+                                    Ambient Sound
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">Yes</div>
 
                             </div>
                         </div>
                         <!-- row-5 -->
-                        <div class="grid grid-cols-4">
+                        <span class="text-[16px] border-x-[24px] mr-[110px] ">Services and Applications</span>
+                        <div class="spec-container justify-START">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                
+                                <div class="text-[14px] font-semibold">
+                                    ANC/Bixby Voice Wake-up
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">(– 35dB, Latency 10us, up to  1kHz)</div>
 
                             </div>
                         </div>
                         <!-- row-6 -->
+                        <span class="text-[16px] border-x-[24px] mr-[110px] ">Key Category Features</span>
                         <div class="grid grid-cols-4">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] w-[206.3px] mr-[110px] pb-[16.6px]">
+                                
+                                <div class="text-[14px] font-semibold">
+                                    Water Resistant
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">IPX7</div>
 
                             </div>
                         </div>
                         <!-- row-7 -->
-                        <div class="grid grid-cols-4">
+                        <span class="text-[16px] border-x-[24px] mr-[110px] ">General Feature</span>
+                        <div class="spec-container justify-START">
                             <!-- col-1  -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
-                                </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
-
+                            <div class="border-x-[24px] border-transparent w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
+                                    Microphone
+                                </div>    
+                                <div class="text-[14px] font-light">3 High-SNR Mics + VPU + Personalized DNN**</div>
                             </div>
 
                             <!-- col-2 -->
-                            <div class="border-x-[24px] mr-[110px] pb-[16.6px]">
-                                <span class="text-[16px] ">Connectivity</span>
-                                <div class="text-[14px]">
-                                    Bluetooth<sup>®</sup> Version
+                            <div class="border-x-[24px] border-transparent  w-[206.3px] mr-[110px] pb-[16.6px]">
+                                <div class="text-[14px] font-semibold">
+                                    Bluetooth Profiles
                                 </div>
-                                <div class="text-[14px]">Bluetooth v5.3</div>
+                                <div class="text-[14px]">2 Way (10mm  woofer + 5.3mm  tweeter)</div>
 
                             </div>
                         </div>
                     </div>
-
-                    
-                    
                 </div>
+
+                <section class=" bg-[#e7e7e8] flex flex-col h-auto text-center mr-6  items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    <h6>HIDE ALL SPEC </h6>  
+                </section>
+                
             </section>
+            
+
         </div>
     
     </section>
