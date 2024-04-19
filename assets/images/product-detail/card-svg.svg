@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="52px" viewBox="0 0 53 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E624BA7A-1FAE-436E-A1A9-F982614841D2</title>
+    <g id="Pre-Order-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile_03" transform="translate(-43.000000, -2671.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="360" height="3103"></rect>
+            <g id="payment_option/mobile/one_time_v2" transform="translate(-0.500000, 2425.000000)">
+                <g id="Group-6" transform="translate(24.000000, 232.000000)">
+                    <rect id="Rectangle" fill="#F7F7F7" x="0" y="0" width="312" height="424" rx="6"></rect>
+                    <g id="Group-5" transform="translate(20.000000, 14.000000)" fill="#000000" fill-rule="nonzero">
+                        <g id="Icon">
+                            <path d="M48.75,7.85416667 C49.7609422,7.85416667 50.5889471,8.64847348 50.6430241,9.64609658 L50.6458333,9.75 L50.6458333,42.25 C50.6458333,43.2609422 49.8515265,44.0889471 48.8539034,44.1430241 L48.75,44.1458333 L3.25,44.1458333 C2.23905781,44.1458333 1.41105293,43.3515265 1.35697587,42.3539034 L1.35416667,42.25 L1.35416667,9.75 C1.35416667,8.73905781 2.14847348,7.91105293 3.14609658,7.85697587 L3.25,7.85416667 L48.75,7.85416667 Z M47.9375,24.9166667 L4.0625,24.9166667 L4.0625,41.4375 L47.9375,41.4375 L47.9375,24.9166667 Z M47.9375,17.875 L4.0625,17.875 L4.0625,22.75 L47.9375,22.75 L47.9375,17.875 Z M47.9375,10.5625 L4.0625,10.5625 L4.0625,15.7083333 L47.9375,15.7083333 L47.9375,10.5625 Z" id="Icon-/-Regular-/-Shopping-/-Payment"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
