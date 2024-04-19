@@ -10,192 +10,197 @@
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <div>
+    <section class="max-w-screen-2xl w-screen">
 
-        <h1>This is Cart</h1>
-        <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
-        <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-        <p>******</p>
+        <div class="grid grid-cols-10">
+            <!-- left col -->
+            <div class="col-span-7">
+                <section class="flex justify-between border-b">
 
-        <section>
+                    <h1 class="font-medium text-xl text-start">Cart</h1>
+                    <p>Zip code: <a class="text-blue-500">96928</a></p>
+                </section>
+                <section class="flex border-b">
 
-            <div class="grid grid-cols-10">
-                <!-- left col -->
-                <div class="col-span-7">
-                    <section class="flex justify-between border-b">
-  
-                        <h1 class="font-medium text-xl text-start">Cart</h1>
-                        <p>Zip code: <a class="text-blue-500">96928</a></p>
-                    </section>
-                    <section class="flex border-b">
-
-                        <!-- upper left col -->
-                        <img class="size-20" src="../../assets/images/cart-payment-logo/buds2.webp" alt="galaxy buds2 pro">
-                        <div class="flex flex-col">
-                            <div class="flex border-b">
-                                <div>
-                                    <p>Galaxy Buds2 Pro, Graphite</p>
-                                    <p>Savings</p>
-                                </div>
-                                <div>
-                                    <p class="float-left">1</p>
-                                    <div class="float-right">
-                                        <p>x</p>
-                                        <p>$189.99</p>
-                                        <p>$229.99</p>
-                                        <a class="text-blue-500" href="#">Save for later</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- lower left col -->
-                            <div class="flex">
-                                <img class="size-10" src="../../assets/images/cart-payment-logo/heart-icon.webp" alt="heart icon">
-                                <div>
-                                    <h1>Get added protection and cofidence</h1>
-                                    <p>From a personal setup session to continued protection for mechanical and electrical breakdowns, we'll take care.</p>
-                                    <div>
-                                        <a class="text-blue-500" href="#">Add</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section>
-                        <!-- learn more-return -->
-                        <div class="flex gap-2">
-                            <img src="../../assets/images/cart-payment-logo/icon-return-box.svg" alt="learn more-return">
-                            <p>Free and easy returns. <a class="text-blue-500" href="#">Learn more</a></p>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- right col -->
-                <div class="col-span-3">
-                    <section class="flex justify-end mr-10 gap-2">
-                        <img src="../../assets/images/cart-payment-logo/chat-icon.svg" alt="chat with expert">
-                        <p class="text-blue-500">Chat with an expert</p>
-                    </section>
-
-                    <!-- box -->
-                    <section class="flex flex-col ml-16">
-
-                        <!-- upper box -->
-                        <div class="w-[333] h-11 bg-gray-100 p-3">
-                            <p class="border-b">Order summary</p>
-                        </div>
-
-                        <!-- lower box -->
-                        <div class="w-[333] h-96 bg-gray-100 p-3">
-
-                            <!-- promo code -->
+                    <!-- upper left col -->
+                    <img class="size-20" src="../../assets/images/cart-payment-logo/buds2.webp"
+                        alt="galaxy buds2 pro">
+                    <div class="flex flex-col">
+                        <div class="flex border-b">
                             <div>
-                                <div>
-                                    <p class="text-blue-500">Enter Promo/Referall Code(s) Here?</p>
+                                <p>Galaxy Buds2 Pro, Graphite</p>
+                                <p>Savings</p>
+                            </div>
+                            <div>
+                                <p class="float-left">1</p>
+                                <div class="float-right">
+                                    <p>x</p>
+                                    <p>$189.99</p>
+                                    <p>$229.99</p>
+                                    <a class="text-blue-500" href="#">Save for later</a>
                                 </div>
-                                <div></div>
-                            </div>
-
-                            <div class="flex justify-between">
-                                <p>Subtotal</p>
-                                <p>$189.99</p>
-                            </div>
-
-                            <div class="flex justify-between">
-                                <p>Shipping</p>
-                                <p>Free</p>
-                            </div>
-
-                            <div class="flex justify-between border-b">
-                                <p>Estimated tax</p>
-                                <p> Will be calculated later</p>
-                            </div>
-
-                            <div class="flex justify-between">
-                                <p>Estimated total :</p>
-                                <p>$189.99</p>
-                            </div>
-
-                            <p class="text-right border-b">Starting from $7.92/ mo for 24 mo ⊕σ</p>
-
-                            <div>
-                                <p>Total Savings</p>
-                                <p>$40.00</p>
-                            </div>
-
-                            <div>
-                                <p>Promotional Discount(s)</p>
-                                <p>-$40.00</p>
                             </div>
                         </div>
 
-                        
-                    </section>
 
-                    <!-- button -->
-                    <section class="flex flex-col my-10 items-center">
-                        <button class="w-72 h-10 bg-blue-500 px-7 rounded-3xl mb-3">Checkout</button>
-                        <button class="w-72 h-10 bg-yellow-500 px7 rounded-3xl">PayPal</button>
-                    </section>
-                </div>
+                        <!-- lower left col -->
+                        <div class="flex">
+                            <img class="size-10" src="../../assets/images/cart-payment-logo/heart-icon.webp"
+                                alt="heart icon">
+                            <div>
+                                <h1>Get added protection and cofidence</h1>
+                                <p>From a personal setup session to continued protection for mechanical and
+                                    electrical breakdowns, we'll take care.</p>
+                                <div>
+                                    <a class="text-blue-500" href="#">Add</a>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </section>
+
+                <section>
+                    <!-- learn more-return -->
+                    <div class="flex gap-2">
+                        <img src="../../assets/images/cart-payment-logo/icon-return-box.svg"
+                            alt="learn more-return">
+                        <p>Free and easy returns. <a class="text-blue-500" href="#">Learn more</a></p>
+                    </div>
+                </section>
             </div>
 
-        </section>
+            <!-- right col -->
+            <div class="col-span-3">
+                <section class="flex justify-end mr-10 gap-2">
+                    <img src="../../assets/images/cart-payment-logo/chat-icon.svg" alt="chat with expert">
+                    <p class="text-blue-500">Chat with an expert</p>
+                </section>
 
-        <section class="max-w-screen-2xl w-screen">
-            sign in
-            <!-- <hr class="border-[#dadada]"/>
-            <div class="py-10 px-3.5 text-center">
-                <div>
-                    <h1 class="font-bold text-xl">Your cart is empty</h1>
-                    <p class="mt-2.5 mb-10 font-light">Sign in to see if you saved items to cart</p>
-                    <button class="w-40 h-10 bg-blue-500 px-7 text-white text-sm font-semibold rounded-3xl">Sign
-                        in</button><br>
-                    <a class="text-blue-500 font-light hover:text-black text-base" href="#">Continue Shopping</a>
-                </div>
-            </div> -->
+                <!-- box -->
+                <section class="flex flex-col ml-16">
 
-            courasel
+                    <!-- upper box -->
+                    <div class="w-[333] h-11 bg-gray-100 p-3">
+                        <p class="border-b">Order summary</p>
+                    </div>
 
-        </section>
+                    <!-- lower box -->
+                    <div class="w-[333] h-96 bg-gray-100 p-3">
 
-        <section class="max-w-screen-2xl w-screen border border-sky-500">Frequently bought together</section>
+                        <!-- promo code -->
+                        <div>
+                            <div>
+                                <p class="text-blue-500">Enter Promo/Referall Code(s) Here?</p>
+                            </div>
+                            <div></div>
+                        </div>
 
-        <section class="max-w-screen-2xl w-screen items-center">
-            <p class="text-gray-700 mr-3.5">Supported payment types</p>
-            <div class="flex gap-2 h-8 pb-2.5">
-                <img src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
-                <img src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
-                <img src="../../assets/images/cart-payment-logo/icon-discover-3x.jpg.c121996.webp" alt="discover">
-                <img src="../../assets/images/cart-payment-logo/icon-master-3x.jpg.31139e6.webp" alt="master card">
-                <img src="../../assets/images/cart-payment-logo/icon-samsung-pay-3x.jpg.5098b20.webp" alt="samsung pay">
-                <img src="../../assets/images/cart-payment-logo/icon-amazon-pay-3x.jpg.f0813d6.webp" alt="amazon pay">
-                <img src="../../assets/images/cart-payment-logo/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
-                <img src="../../assets/images/cart-payment-logo/icon-samsung-financing-3x.jpg.e589781.webp" alt="Samsung Finance">
-                <img class="h-4 mt-1 mr-2" src="../../assets/images/cart-payment-logo/logo-klarna-black.7dcdc1e.svg" alt="Klarna Payments">
-                <img src="../../assets/images/cart-payment-logo/supported-payment-google-pay.png.52c00e3.webp" alt="Google Pay">
-                <img src="../../assets/images/cart-payment-logo/logo-apple-pay-supported-method.png.ae3faf0.webp" alt="Apple Pay">
+                        <div class="flex justify-between">
+                            <p>Subtotal</p>
+                            <p>$189.99</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p>Shipping</p>
+                            <p>Free</p>
+                        </div>
+
+                        <div class="flex justify-between border-b">
+                            <p>Estimated tax</p>
+                            <p> Will be calculated later</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p>Estimated total :</p>
+                            <p>$189.99</p>
+                        </div>
+
+                        <p class="text-right border-b">Starting from $7.92/ mo for 24 mo ⊕σ</p>
+
+                        <div>
+                            <p>Total Savings</p>
+                            <p>$40.00</p>
+                        </div>
+
+                        <div>
+                            <p>Promotional Discount(s)</p>
+                            <p>-$40.00</p>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <!-- button -->
+                <section class="flex flex-col my-10 items-center">
+                    <button class="w-72 h-10 bg-blue-500 px-7 rounded-3xl mb-3">Checkout</button>
+                    <button class="w-72 h-10 bg-yellow-500 px7 rounded-3xl">PayPal</button>
+                </section>
             </div>
-        </section>
 
-        <section class="max-w-screen-2xl w-screen">
-            <p><b class="font-medium">⊕0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded down to the nearest penny
-                <a class="text-blue-500" href="#">See More</a></p>
-            <br>
-            <p>σPayment options are offered by Affirm and are subject to an eligibility check. Options depend on your purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see 
-                <a class="text-blue-500" href="#">affirm.com/licenses.</a></p>
-            <br>
-            <p>πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a class="text-blue-500" href="#">Klarna payment term</a>. A higher initial payment may be required for some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
-        </section>
+        </div>
 
+    </section>
 
-        <!-- <p>******</p> -->
-    </div>
+    <section class="max-w-screen-2xl w-screen">
+        sign in
+        <!-- <hr class="border-[#dadada]"/>
+        <div class="py-10 px-3.5 text-center">
+            <div>
+                <h1 class="font-bold text-xl">Your cart is empty</h1>
+                <p class="mt-2.5 mb-10 font-light">Sign in to see if you saved items to cart</p>
+                <button class="w-40 h-10 bg-blue-500 px-7 text-white text-sm font-semibold rounded-3xl">Sign
+                    in</button><br>
+                <a class="text-blue-500 font-light hover:text-black text-base" href="#">Continue Shopping</a>
+            </div>
+        </div> -->
 
+        courasel
+
+    </section>
+
+    <section class="max-w-screen-2xl w-screen border border-sky-500">Frequently bought together</section>
+
+    <section class="max-w-screen-2xl w-screen items-center">
+        <p class="text-gray-700 mr-3.5">Supported payment types</p>
+        <div class="flex gap-2 h-8 pb-2.5">
+            <img src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
+            <img src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
+            <img src="../../assets/images/cart-payment-logo/icon-discover-3x.jpg.c121996.webp" alt="discover">
+            <img src="../../assets/images/cart-payment-logo/icon-master-3x.jpg.31139e6.webp" alt="master card">
+            <img src="../../assets/images/cart-payment-logo/icon-samsung-pay-3x.jpg.5098b20.webp" alt="samsung pay">
+            <img src="../../assets/images/cart-payment-logo/icon-amazon-pay-3x.jpg.f0813d6.webp" alt="amazon pay">
+            <img src="../../assets/images/cart-payment-logo/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
+            <img src="../../assets/images/cart-payment-logo/icon-samsung-financing-3x.jpg.e589781.webp"
+                alt="Samsung Finance">
+            <img class="h-4 mt-1 mr-2" src="../../assets/images/cart-payment-logo/logo-klarna-black.7dcdc1e.svg"
+                alt="Klarna Payments">
+            <img src="../../assets/images/cart-payment-logo/supported-payment-google-pay.png.52c00e3.webp"
+                alt="Google Pay">
+            <img src="../../assets/images/cart-payment-logo/logo-apple-pay-supported-method.png.ae3faf0.webp"
+                alt="Apple Pay">
+        </div>
+    </section>
+
+    <section class="max-w-screen-2xl w-screen">
+        <p><b class="font-medium">⊕0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of
+            select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
+            eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount
+            multiplied by a repayment factor and rounded down to the nearest penny
+            <a class="text-blue-500" href="#">See More</a>
+        </p>
+        <br>
+        <p>σPayment options are offered by Affirm and are subject to an eligibility check. Options depend on your
+            purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC
+            are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
+            <a class="text-blue-500" href="#">affirm.com/licenses.</a>
+        </p>
+        <br>
+        <p>πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a
+                class="text-blue-500" href="#">Klarna payment term</a>. A higher initial payment may be required for
+            some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
+    </section>
     <footer-component></footer-component>
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
