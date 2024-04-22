@@ -108,58 +108,44 @@
             <div class="product-detail md:flex relative">
 
                 <!-- detail left -->
-                <div class="column-left-main md:w-3/5 md:h-full flex flex-col items-center md:sticky md:top-[172px]">
-                    <div class="image-wrapper flex flex-col  overflow-x-hidden">
-                        <!-- <div class="image-wrapper min-w-[calc(53.33vw)] min-h-[40vw]  overflow-x-hidden"> -->
-
-                        <div id="image-container"
-                            class="flex flex-nowrap min-h-[40vw] transition-transform delay-300 relative">
-                            <img class="w-full mySlides" src="../../assets/images/product-detail/detail-front-1.jpg"
-                                alt="">
-                            <img class="w-full mySlides" width="920"
-                                src="../../assets/images/product-detail/detail-01.jpg" alt="">
-                            <img class="w-full mySlides" width="920"
-                                src="../../assets/images/product-detail/detail-02.jpg" alt="">
-                            <img class="w-full mySlides" width="920"
-                                src="../../assets/images/product-detail/detail-03.jpg" alt="">
-                            <img class="w-full mySlides" width="920"
-                                src="../../assets/images/product-detail/detail-04.jpg" alt="">
-                        </div>
-                        <!-- Next and previous buttons -->
-                        <div class="flex justify-between absolute w-full top-1/2 px-2">
-                            <a class="prev bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
-                                onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
-                                onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-
-                        <div class="w-full flex justify-center">
-                            <div class="row flex gap-2 w-3/4 ">
-                                <div class="column">
-                                    <img class="w-full demo cursor-pointer" onclick="currentSlide(1)"
-                                        src="../../assets/images/product-detail/detail-front-1.jpg" alt="">
-                                </div>
-                                <div class="column">
-                                    <img class="w-full demo cursor-pointer" onclick="currentSlide(2)"
-                                        src="../../assets/images/product-detail/detail-01.jpg" alt="">
-                                </div>
-                                <div class="column">
-                                    <img class="w-full demo cursor-pointer" onclick="currentSlide(3)"
-                                        src="../../assets/images/product-detail/detail-02.jpg" alt="">
-                                </div>
-                                <div class="column">
-                                    <img class="w-full demo cursor-pointer" onclick="currentSlide(4)"
-                                        src="../../assets/images/product-detail/detail-03.jpg" alt="">
-                                </div>
-                                <div class="column">
-                                    <img class="w-full demo cursor-pointer" onclick="currentSlide(5)"
-                                        src="../../assets/images/product-detail/detail-04.jpg" alt="">
-                                </div>
-
+                <div class="column-left-main md:max-w-[800px] md:h-full flex flex-col items-center md:sticky md:top-[172px]">
+                    <div class="image-wrapper flex flex-col  overflow-x-hidden ">
+        
+                           <div id="image-container" class="flex flex-nowrap transition-transform delay-300">
+                            <img class="w-full mySlides" width="800" height="600" src="../../assets/images/product-detail/detail-front-1.jpg" alt="">
+                            <img class="w-full mySlides" width="800"  height="600" src="../../assets/images/product-detail/detail-01.jpg" alt="">
+                            <img class="w-full mySlides" width="800"  height="600" src="../../assets/images/product-detail/detail-02.jpg" alt="">
+                            <img class="w-full mySlides" width="800"  height="600" src="../../assets/images/product-detail/detail-03.jpg" alt="">
+                            <img class="w-full mySlides" width="800"  height="600" src="../../assets/images/product-detail/detail-04.jpg" alt="">                          
+                           </div>
+                            <!-- Next and previous buttons -->
+                            <div class="flex justify-between absolute w-full top-1/2 px-2">
+                                <a class="prev bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer" onclick="plusSlides(1)">&#10095;</a>
                             </div>
+        
+                            <div class="w-full flex justify-center">
+                                <div class="row flex gap-2 w-3/4 ">
+                                    <div class="column">
+                                        <img class="w-full demo cursor-pointer" onclick="currentSlide(1)" src="../../assets/images/product-detail/detail-front-1.jpg" alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="w-full demo cursor-pointer" onclick="currentSlide(2)" src="../../assets/images/product-detail/detail-01.jpg" alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="w-full demo cursor-pointer" onclick="currentSlide(3)" src="../../assets/images/product-detail/detail-02.jpg" alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="w-full demo cursor-pointer" onclick="currentSlide(4)" src="../../assets/images/product-detail/detail-03.jpg" alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="w-full demo cursor-pointer" onclick="currentSlide(5)" src="../../assets/images/product-detail/detail-04.jpg" alt="">
+                                    </div>
+            
+                                </div>
+                            </div>
+                            
                         </div>
-
-                    </div>
                 </div>
 
 
