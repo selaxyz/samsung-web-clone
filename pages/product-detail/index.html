@@ -18,8 +18,9 @@
     <a class="underline" href="../cart/index.html">CLICK HERE: Go to Cart</a>
     <a class="underline" href="../nearby-store/index.html">CLICK HERE: Go to Nearby Store</a>
     <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-    <p>******</p>
-    <section class="max-w-screen-sm md:max-w-screen-md xl:max-w-screen-2xl w-screen border border-sky-500">
+    <navbar-component></navbar-component>
+    <!-- Product Detail -->
+    <section class="max-w-screen-sm md:max-w-screen-xl xl:max-w-screen-2xl w-screen ">
         <!--  #a6a6a6 text-slate-400 -->
         <div class="bread-crumb text-slate-400">
             Home / Mobile / Audio / All Audio / Headphones / Galaxy Buds2 Pro, Graphite
@@ -46,7 +47,7 @@
                                 <p>$7.92/mo <span class="text-[10px] line-through">$9.58/mo</span></p>
                             </div>
 
-                            <button>Add to Cart</button>
+                            <a href="../nearby-store/index.html">Add to Cart</a>
                         </div>
                     </div>
 
@@ -105,7 +106,8 @@
                 </div>
             </div>
 
-            <div class="product-detail md:flex relative">
+            <!-- Product Detail -->
+            <div class="product-detail md:flex relative mt-8 mb-8">
 
                 <!-- detail left -->
                 <div class="column-left-main md:max-w-[800px] md:h-full flex flex-col items-center md:sticky md:top-[172px]">
@@ -144,7 +146,20 @@
             
                                 </div>
                             </div>
-                            
+                            <div class="flex flex-col items-center font-bold mt-8">
+                                <p>Samsung.com Advantage</p>
+                                <div class="flex gap-4 text-xs mt-8">
+                                    <div class="flex flex-col items-center">
+                                        <img width="40" height="30" src="../../assets/images/product-detail/icon-pay.png" alt="">
+                                        <p class="mt-4">Pay in 4 installments</p>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <img height="30" src="../../assets/images/product-detail/icon-store.png" alt="">
+                                        <p class="mt-4 text-center">In-Store Pickup <br>
+                                            available</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
 
@@ -372,9 +387,9 @@
                                     back in Samsung Rewards Points</p>
                             </div>
                             <div class="flex flex-col w-full items-center">
-                                <button
+                                <a href="../cart/index.html"
                                     class="w-3/5 text-sm py-4 px-5 text-white bg-blue-500 font-bold rounded-full">Add to
-                                    cart</button>
+                                    cart</a>
                                 <a class="font-bold text-sm text-blue-500 mt-4" href="">Where to buy</a>
                             </div>
                             <div class="flex flex-col w-full items-center">
@@ -407,9 +422,8 @@
 
 
     </section>
-
-    <section class="max-w-screen-2xl w-screen border border-sky-500">
-        Benefit + Graphic Image + Specs
+    <!--  Benefit + Graphic Image + Specs -->
+    <section class="max-w-screen-2xl w-screen">
         <!-- Feature 1 code -->
         <div class="grid grid-cols-1 md:grid-cols-2 py-5">
             <img class="grid w-full h-full " src="/assets/images/product-detail/f1-buds2-pro.png">
@@ -973,7 +987,9 @@
         </div>
 
     </section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">
+
+    <!-- Product Recommendation -->
+    <section class="max-w-screen-2xl w-screen">
         Product Recommendation
         <div class="container py-[2%] bg-[#f7f7f7]">
             <div class="container flex bg-[#f7f7f7]">
@@ -1033,9 +1049,9 @@
 
 
     </section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">Product Recommendation</section>
     <section class="max-w-screen-2xl w-screen border border-sky-500">Recently Viewed</section>
     <section class="max-w-screen-2xl w-screen border border-sky-500">Terms</section>
+    <footer-component></footer-component>
     <p>******</p>
     <script src="./components/index.js"></script>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
