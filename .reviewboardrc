@@ -1,2 +1,5 @@
-REVIEWBOARD_URL = 'https://review.clp.kr/'
-REPOSITORY = 'Alphabeez'
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "Alphabeez"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/home-page"
+LAND_DEST_BRANCH = "feature/home-page"
