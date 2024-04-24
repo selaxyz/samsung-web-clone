@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr"
+REPOSITORY = "Alphabeez"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/nearby-store"
+LAND_DEST_BRANCH = "feature/nearby-store"
