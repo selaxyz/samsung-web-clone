@@ -9,18 +9,20 @@
 
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
-    <section class="max-w-screen-2xl w-screen">
-        <div>
-
+    <section class="flex flex-col md:flex-col max-w-screen-xl w-full">
+        <section>
+    
             <!-- <h1>This is Cart</h1>
             <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
             <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
             <p>******</p> -->
 
 
-            <div class="grid grid-cols-12 gap-8">
+            <!-- md for desktop. sm for tablet -->
+            <div class="grid md:grid-cols-12 sm:grid-cols-6">
                 <!-- left col -->
-                <div class="col-span-9">
+                <!-- md above span 9. sm above span 6 -->
+                <div class="col-span-9 md:col-span-9 sm:col-span-6">
                     <div class="flex justify-between mb-3">
                         <h1 class="font-medium text-xl text-start">Cart</h1>
                         <p class="text-sm">Zip code: <a class="text-blue-500">96928</a></p>
@@ -29,15 +31,13 @@
                     <section class="flex border-b">
 
                         <!-- upper left col -->
-                        <img class="size-20 mx-12 mt-5" src="../../assets/images/cart-payment-logo/buds2.webp"
+                        <img class="h-16 mx-12 mt-5" src="../../assets/images/cart-payment-logo/buds2.webp"
                             alt="galaxy buds2 pro">
                         <div class="flex w-full flex-col ">
                             <div class="flex border-b justify-between">
-                                <div class="font-semibold mt-7 ">
+                                <div class="md:flex font-semibold md:grow md;justify-between mt-7 sm:flex sm:flex-col">
                                     <p>Galaxy Buds2 Pro, Graphite</p>
-                                </div>
-                                <div class="flex gap-20 items-center">
-                                    <div class="flex gap-1">
+                                    <div class="flex gap-1 mr-16">
                                         <p class="float-left">1</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-1">
@@ -45,6 +45,8 @@
                                                 d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                         </svg>
                                     </div>
+                                </div>
+                                <div class="flex gap-20 items-center">
 
 
                                     <div class="float-right flex flex-col items-end">
@@ -68,7 +70,7 @@
                                         alt="heart icon">
                                     <div class="my-5">
                                         <h1>Get added protection and cofidence</h1>
-                                        <p class="text-xs font-thin">From a personal setup session to continued
+                                        <p class="text-xs font-thin min-w-52 max-w-96">From a personal setup session to continued
                                             protection for mechanical and electrical breakdowns, we'll take care.</p>
                                     </div>
                                 </div>
@@ -80,7 +82,7 @@
 
                     <section>
                         <!-- learn more-return -->
-                        <div class="flex gap-2 font-thin text-xs">
+                        <div class="flex gap-2 font-thin text-xs mb-10">
                             <img class="w-21 h-21 mt-4" src="../../assets/images/cart-payment-logo/icon-return-box.svg"
                                 alt="learn more-return">
                             <p class="mt-5">Free and easy returns. <a class="text-blue-500" href="#">Learn more</a></p>
@@ -89,7 +91,8 @@
                 </div>
 
                 <!-- right col -->
-                <div class="col-span-3 items-center">
+                <!-- hide it, but as pass md show it. means md to above -->
+                <div class="col-span-3 items-center hidden md:block">
                     <section class="flex justify-end mr-7 mb-3">
                         <img src="../../assets/images/cart-payment-logo/chat-icon.svg" alt="chat with expert">
                         <p class="text-blue-500 text-sm font-semibold">Chat with an expert</p>
@@ -162,132 +165,134 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-    <section class="max-w-screen-2xl w-screen">
-        <!-- sign in -->
-        <!-- <hr class="border-[#dadada]"/>
-            <div class="py-10 px-3.5 text-center">
+        </section>
+    
+    
+        <!-- <section class="max-w-screen-2xl w-screen"> -->
+            <!-- sign in -->
+            <!-- <hr class="border-[#dadada]"/>
+                <div class="py-10 px-3.5 text-center">
+                    <div>
+                        <h1 class="font-bold text-xl">Your cart is empty</h1>
+                        <p class="mt-2.5 mb-10 font-light">Sign in to see if you saved items to cart</p>
+                        <button class="w-40 h-10 bg-blue-500 px-7 text-white text-sm font-semibold rounded-3xl">Sign
+                            in</button><br>
+                        <a class="text-blue-500 font-light hover:text-black text-base" href="#">Continue Shopping</a>
+                    </div>
+                </div> -->
+    
+            <!-- courasel -->
+        </section>
+    
+        <section class="max-w-screen-xl w-screen">
+            <div class="items-center">
+                <h1 class="text-2xl font-medium mb-14">Frequently bought together</h1>
                 <div>
-                    <h1 class="font-bold text-xl">Your cart is empty</h1>
-                    <p class="mt-2.5 mb-10 font-light">Sign in to see if you saved items to cart</p>
-                    <button class="w-40 h-10 bg-blue-500 px-7 text-white text-sm font-semibold rounded-3xl">Sign
-                        in</button><br>
-                    <a class="text-blue-500 font-light hover:text-black text-base" href="#">Continue Shopping</a>
-                </div>
-            </div> -->
-
-        <!-- courasel -->
-    </section>
-
-    <section class="max-w-screen-2xl w-screen">
-        <div class="items-center">
-            <h1 class="text-xl font-semibold mb-6">Frequently bought together</h1>
-            <div>
-                <!-- <button class="w-[40] h-[40] border rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                    </svg>
-                </button> -->
-    
-                <div class="flex text-center justify-evenly text-sm">
-                    <div>
-                        <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/watch6.webp"
-                            alt="galaxy watch6 classic">
-                        <a class="font-semibold" href="#">Galaxy Watch6 Classic, 47mm, ...</a>
-                        <div class="flex justify-center gap-1 mb-5 mt-3">
-                            <p class="font-light">$399.99</p>
-                            <p class="text-gray-500 line-through font-light">$479.99</p>
+                    <!-- <button class="w-[40] h-[40] border rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button> -->
+        
+                    <div class="flex text-center justify-evenly text-sm">
+                        <div>
+                            <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/watch6.webp"
+                                alt="galaxy watch6 classic">
+                            <a class="font-semibold" href="#">Galaxy Watch6 Classic, 47mm, ...</a>
+                            <div class="flex justify-center gap-1 mb-5 mt-3">
+                                <p class="font-light">$399.99</p>
+                                <p class="text-gray-500 line-through font-light">$479.99</p>
+                            </div>
+                            
+                            <a class="font-bold underline" href="#">Add to cart</a>
                         </div>
-                        
-                        <a class="font-bold underline" href="#">Add to cart</a>
-                    </div>
-                    <div>
-                        <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/watch6-2.webp"
-                            alt="Galaxy Watch6, 40mm, Gold, BT">
-                        <a class="font-semibold" href="#">Galaxy Watch6, 40mm, Gold, BT</a>
-                        <div class="flex justify-center gap-1 mb-5 mt-3">
-                            <p class="font-light">$239.99</p>
-                            <p class="text-gray-500 line-through font-light">$299.99</p>
+                        <div>
+                            <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/watch6-2.webp"
+                                alt="Galaxy Watch6, 40mm, Gold, BT">
+                            <a class="font-semibold" href="#">Galaxy Watch6, 40mm, Gold, BT</a>
+                            <div class="flex justify-center gap-1 mb-5 mt-3">
+                                <p class="font-light">$239.99</p>
+                                <p class="text-gray-500 line-through font-light">$299.99</p>
+                            </div>
+                            
+                            <a class="font-bold underline" href="#">Add to cart</a>
                         </div>
-                        
-                        <a class="font-bold underline" href="#">Add to cart</a>
+                        <div>
+                            <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/charger.webp"
+                                alt="wireless charger">
+                            <a class="font-semibold" href="#">12W Wireless Charger Duo wit...</a>
+                            <p class="font-light mb-6 mt-3">$89.99</p>
+                            <a class="font-bold underline" href="#">Add to cart</a>
+                        </div>
+                        <div class="hidden sm:block">
+                            <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/tag.webp" alt="tag">
+                            <a class="font-semibold" href="#">Galaxy SmartTag2, White</a>
+                            <p class="font-light mb-6 mt-3">$29.99</p>
+                            <a class="font-bold underline" href="#">Add to cart</a>
+                        </div>
                     </div>
-                    <div>
-                        <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/charger.webp"
-                            alt="wireless charger">
-                        <a class="font-semibold" href="#">12W Wireless Charger Duo wit...</a>
-                        <p class="font-light mb-6 mt-3">$89.99</p>
-                        <a class="font-bold underline" href="#">Add to cart</a>
-                    </div>
-                    <div>
-                        <img class="w-[200] h-[150]" src="../../assets/images/cart-payment-logo/tag.webp" alt="tag">
-                        <a class="font-semibold" href="#">Galaxy SmartTag2, White</a>
-                        <p class="font-light mb-6 mt-3">$29.99</p>
-                        <a class="font-bold underline border" href="#">Add to cart</a>
-                    </div>
+        
+                    <!-- <button class="w-[40] h-[40] border rounded-full itemend">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button> -->
                 </div>
-    
-                <!-- <button class="w-[40] h-[40] border rounded-full itemend">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
-                </button> -->
             </div>
-        </div>
-
+    
+        </section>
+    
+    
+        <!-- <p>******</p> -->
+    
+    
+    
+    
+    
+        <section class="max-w-screen-xl w-screen flex justify-center mt-20 text-sm">
+            <p class="text-gray-700 mr-3.5">Supported payment types</p>
+            <div class="flex gap-2 h-8 pb-2.5">
+                <img src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
+                <img src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
+                <img src="../../assets/images/cart-payment-logo/icon-discover-3x.jpg.c121996.webp" alt="discover">
+                <img src="../../assets/images/cart-payment-logo/icon-master-3x.jpg.31139e6.webp" alt="master card">
+                <img src="../../assets/images/cart-payment-logo/icon-samsung-pay-3x.jpg.5098b20.webp" alt="samsung pay">
+                <img src="../../assets/images/cart-payment-logo/icon-amazon-pay-3x.jpg.f0813d6.webp" alt="amazon pay">
+                <img src="../../assets/images/cart-payment-logo/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
+                <img src="../../assets/images/cart-payment-logo/icon-samsung-financing-3x.jpg.e589781.webp"
+                    alt="Samsung Finance">
+                <img class="h-4 mt-1 mr-2" src="../../assets/images/cart-payment-logo/logo-klarna-black.7dcdc1e.svg"
+                    alt="Klarna Payments">
+                <img src="../../assets/images/cart-payment-logo/supported-payment-google-pay.png.52c00e3.webp"
+                    alt="Google Pay">
+                <img src="../../assets/images/cart-payment-logo/logo-apple-pay-supported-method.png.ae3faf0.webp"
+                    alt="Apple Pay">
+            </div>
+        </section>
+    
+        <section class="max-w-screen-xl w-screen text-xs my-5">
+                
+            <p class="font-thin"><b class="font-medium">⊕0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of
+            select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
+            eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount
+            multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12 month, .05556 for 18 month, .04167 for 24 month).</p>
+            <a class="text-blue-400 font-semibold" href="#">See More</a>
+            <br>
+            <br>
+            <p class="font-thin">
+                σPayment options are offered by Affirm and are subject to an eligibility check. Options depend on your
+                purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC
+                are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
+                <a class="text-blue-400 font-semibold" href="#">affirm.com/licenses.</a>
+            </p>
+            <br>
+            <p class="font-thin">πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a
+                    class="text-blue-400 font-semibold" href="#">Klarna payment term</a>. A higher initial payment may be required for
+                some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
+        </section>
     </section>
 
-
-    <!-- <p>******</p> -->
-
-
-
-
-
-    <section class="max-w-screen-2xl w-screen flex justify-center mt-20 text-sm">
-        <p class="text-gray-700 mr-3.5">Supported payment types</p>
-        <div class="flex gap-2 h-8 pb-2.5">
-            <img src="../../assets/images/cart-payment-logo/icon-visa-3x.jpg.dea005e.webp" alt="visa">
-            <img src="../../assets/images/cart-payment-logo/icon-amex-3x.jpg.46318bb.webp" alt="american express">
-            <img src="../../assets/images/cart-payment-logo/icon-discover-3x.jpg.c121996.webp" alt="discover">
-            <img src="../../assets/images/cart-payment-logo/icon-master-3x.jpg.31139e6.webp" alt="master card">
-            <img src="../../assets/images/cart-payment-logo/icon-samsung-pay-3x.jpg.5098b20.webp" alt="samsung pay">
-            <img src="../../assets/images/cart-payment-logo/icon-amazon-pay-3x.jpg.f0813d6.webp" alt="amazon pay">
-            <img src="../../assets/images/cart-payment-logo/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
-            <img src="../../assets/images/cart-payment-logo/icon-samsung-financing-3x.jpg.e589781.webp"
-                alt="Samsung Finance">
-            <img class="h-4 mt-1 mr-2" src="../../assets/images/cart-payment-logo/logo-klarna-black.7dcdc1e.svg"
-                alt="Klarna Payments">
-            <img src="../../assets/images/cart-payment-logo/supported-payment-google-pay.png.52c00e3.webp"
-                alt="Google Pay">
-            <img src="../../assets/images/cart-payment-logo/logo-apple-pay-supported-method.png.ae3faf0.webp"
-                alt="Apple Pay">
-        </div>
-    </section>
-
-    <section class="max-w-screen-2xl w-screen text-xs my-5">
-            
-        <p class="font-thin"><b class="font-medium">⊕0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of
-        select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
-        eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount
-        multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12 month, .05556 for 18 month, .04167 for 24 month).</p>
-        <a class="text-blue-400 font-semibold" href="#">See More</a>
-        <br>
-        <br>
-        <p class="font-thin">
-            σPayment options are offered by Affirm and are subject to an eligibility check. Options depend on your
-            purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC
-            are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
-            <a class="text-blue-400 font-semibold" href="#">affirm.com/licenses.</a>
-        </p>
-        <br>
-        <p class="font-thin">πIn the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a
-                class="text-blue-400 font-semibold" href="#">Klarna payment term</a>. A higher initial payment may be required for
-            some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
-    </section>
     <footer-component></footer-component>
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
