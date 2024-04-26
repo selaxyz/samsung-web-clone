@@ -174,6 +174,9 @@ function changeContentToSamsung() {
             </div>
         </div>
     </div>
+    <div class="hidden md:flex justify-end">
+        <button class="bg-blue-300 py-4 px-24 rounded-full text-white text-sm"> Continue </button>
+    </div>
 </section>`;
 }
 
@@ -218,6 +221,9 @@ function changeContentToCard() {
                 <a class="underline text-sm" href="#">Or enter address manually</a>
             </div>
         </div>
+        <div class="hidden md:flex justify-end">
+        <button class="bg-blue-300 py-4 px-24 rounded-full text-white text-sm"> Continue </button>
+    </div>
     </section>
 `
 }
@@ -289,6 +295,9 @@ function changeContentToKlarna() {
                 </div>
             </div>
         </div>
+        <div class="hidden md:flex justify-end">
+        <button class="bg-blue-300 py-4 px-24 rounded-full text-white text-sm"> Continue </button>
+    </div>
     </section>`
 }
 
@@ -359,6 +368,9 @@ function changeContentToAffirm() {
                 </div>
             </div>
         </div>
+        <div class="hidden md:flex justify-end">
+        <button class="bg-blue-300 py-4 px-24 rounded-full text-white text-sm"> Continue </button>
+    </div>
     </section>
 `
 }
