@@ -1,12 +1,15 @@
+console.log('hello')
 let slideIndex = 1;
         showSlides(slideIndex);
 
         function plusSlides(n){
+            console.log(slideIndex);
             showSlides(slideIndex += n );
         }
 
         function currentSlide(n){
             showSlides(slideIndex = n)
+            
         }
 
         function showSlides(n){
@@ -78,20 +81,20 @@ const options = {
 };
 
 // instance options object
-const instanceOptions = {
-    id: 'accordion-example',
-    override: true
-};
+// const instanceOptions = {
+//     id: 'accordion-example',
+//     override: true
+// };
 
-import { Accordion } from 'flowbite';
+// import { Accordion } from 'flowbite';
 
-const accordion = new Accordion(accordionElement, accordionItems, options, instanceOptions);
+// const accordion = new Accordion(accordionElement, accordionItems, options, instanceOptions);
 
-// open accordion item based on id
-accordion.open('accordion-example-heading-2');
+// // open accordion item based on id
+// accordion.open('accordion-example-heading-2');
 
-// close accordion item based on id
-accordion.close('accordion-example-heading-2');
+// // close accordion item based on id
+// accordion.close('accordion-example-heading-2');
 
-// toggle visibility of item based on id
-accordion.toggle('accordion-example-heading-3');
+// // toggle visibility of item based on id
+// accordion.toggle('accordion-example-heading-3');
