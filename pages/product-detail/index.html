@@ -1067,7 +1067,7 @@
     </section>
 
     <!-- Product Review -->
-    <section class="md:max-w-screen-2xl w-full ">
+    <section class="md:max-w-screen-2xl w-full px-4">
         <!-- Review Head -->
         <h2 class="text-2xl font-bold mt-5 ml-2">Reviews</h2>
 
@@ -1254,7 +1254,7 @@
         </div>
         <hr />
         <!-- Helpfull Section -->
-        <div class="w-full flex flex-col md:flex-row gap-4 px-4 mb-2">
+        <div class="w-full flex flex-col md:flex-row gap-4 mb-2">
             <!-- Favor -->
             <div class="border border-slate-300 rounded-xl py-2 px-4 w-full md:w-1/2 mt-4 md:mx-0  ">
                 <h3 class="my-2">Most Helpful Favorable Review</h3>
@@ -1398,19 +1398,19 @@
         <!-- Filter Section -->
         <div class="flex flex-col gap-4 mx-2">
             <h3>Filter Reviews</h3>
-            <div class="flex border rounded items-center px-2 py-2"> 
+            <div class="flex border md:w-96 rounded items-center px-2 py-2"> 
                 <input class=" w-full" type="text" placeholder="Search topics and reviews"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg>
             </div>            
-            <div class="w-full border rounded py-2 px-2 flex justify-between items-center">
-                <p>Rating</p>
+            <div class="w-full md:w-40 border rounded py-2 px-2 flex justify-between items-center text-gray-700">
+                <p class="text-sm">Rating</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                   </svg>
             </div>
-            <div class="flex gap-2">
+            <!-- <div class="flex gap-2">
                 <button class="bg-blue-500 text-white flex items-center px-3 py-1 rounded gap-2 text-sm ">
                     <span>5 STAR </span>
                     <span><svg width="8" height="10" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Close</title><path d="M1.431.002a1.585 1.585 0 00-.94 2.728l10.746 10.786L.491 24.276a1.597 1.597 0 000 2.257 1.592 1.592 0 002.253 0l10.772-10.786 10.747 10.786a1.592 1.592 0 002.253 0 1.597 1.597 0 000-2.257l-10.772-10.76L26.516 2.73A1.589 1.589 0 0025.352.002c-.41.01-.8.18-1.09.472l-10.746 10.76L2.744.474a1.584 1.584 0 00-1.14-.472 1.583 1.583 0 00-.173 0z" fill="#FFF" fill-rule="evenodd"></path></svg></span>
@@ -1423,13 +1423,18 @@
                     <span>3 STAR </span>
                     <span><svg width="8" height="10" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>Close</title><path d="M1.431.002a1.585 1.585 0 00-.94 2.728l10.746 10.786L.491 24.276a1.597 1.597 0 000 2.257 1.592 1.592 0 002.253 0l10.772-10.786 10.747 10.786a1.592 1.592 0 002.253 0 1.597 1.597 0 000-2.257l-10.772-10.76L26.516 2.73A1.589 1.589 0 0025.352.002c-.41.01-.8.18-1.09.472l-10.746 10.76L2.744.474a1.584 1.584 0 00-1.14-.472 1.583 1.583 0 00-.173 0z" fill="#FFF" fill-rule="evenodd"></path></svg></span>
                 </button>
+            </div> -->
+            <div class="flex flex-col-reverse items-center gap-6 md:flex-row md:justify-between text-gray-700">
+                <p class="text-xs ">1 – 8 of 4951 Reviews</p>
+                <div class="text-sm w-full md:w-64 border rounded py-2 px-4 flex justify-between items-center">
+                    <p>Sort by Most Helpful</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </div>
             </div>
-            <div class="w-full border rounded py-2 px-2 flex justify-between items-center">
-                <p>Sort by Most Helpful</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                  </svg>
-            </div>
+            
+            <hr>
         </div>
 
         <!-- Review Content -->
