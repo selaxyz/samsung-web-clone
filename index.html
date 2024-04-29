@@ -8,14 +8,14 @@
     <title>Samsung DEV</title>
 </head>
 
-<body class="flex flex-col items-center gap-6">
+<body class="flex flex-col items-center ">
     
     <h1>This is Homepage</h1>
     <a class="underline" href="./pages/product-detail/index.html">CLICK HERE: Go to Product Detail</a>
     <a class="underline" href="./pages/cart/index.html">CLICK HERE: Go to Cart</a>
     <a class="underline" href="./pages/login/index.html">CLICK HERE: Login & Signup</a>
     <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p> -->
-    <navbar-component></navbar-component>
+    <!-- <navbar-component></navbar-component> -->
     <!-- <section class="hero max-w-screen-2xl w-screen ">
         <div class="relative">
             <a href="#">
@@ -32,10 +32,10 @@
         </div>
     </section> -->
 
-    <section class="for_you max-w-screen-2xl w-screen ">
+    <section class="for_you max-w-screen-2xl w-screen mb-8 ">
         <div class="text-5xl flex justify-center font-[600]"><h1>Shop all latest offers and innovations</h1></div>
         <div class="nav">
-            <div class="container flex justify-center space-x-10 mt-5 font-bold">
+            <div class="flex gap-12 justify-center mt-5 font-bold overflow-x-auto">
                 <button>For You</button>
                 <button>Mobile & Computing</button>
                 <button>TV & Audio</button>
@@ -46,7 +46,7 @@
         </div>
         <div class="items-container">
             <div class="items grid grid-cols-2 sm:grid-cols-3 gap-10 mt-5">
-                <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl">
+                <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-4">
                     <a href="./pages/product-detail/index.html">
                         <img src="assets/images/home/for_you/fridge.avif" alt="">
                         <div class="flex justify-center flex-col items-center">
@@ -57,7 +57,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl">
+                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4">
                     <a href="./pages/product-detail/index.html">
                         <img class="h-52" src="assets/images/home/for_you/frame.avif" alt="">
                         <div class="flex justify-center flex-col items-center">
@@ -67,7 +67,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl">
+                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4">
                     <a href="./pages/product-detail/index.html">
                         <img class="h-52" src="assets/images/home/for_you/buds2.avif" alt="">
                         <div class="flex justify-center flex-col items-center">
@@ -77,7 +77,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl">
+                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4">
                     <a href="./pages/product-detail/index.html">
                         <img class="h-52" src="assets/images/home/for_you/big_frige.avif" alt="">
                         <div class="flex justify-center flex-col items-center">
@@ -91,7 +91,7 @@
 
                     </a>
                 </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl">
+                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4">
                     <a href="./pages/product-detail/index.html">
                         <img class="h-52" src="assets/images/home/for_you/s24.avif" alt="">
                         <div class="flex justify-center flex-col items-center">
@@ -102,7 +102,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl"><a href="./pages/product-detail/index.html">
+                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4"><a href="./pages/product-detail/index.html">
                     <img class="h-52" src="assets/images/home/for_you/laptop.avif" alt="">
                     <div class="flex justify-center flex-col items-center">
                         <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
@@ -222,7 +222,7 @@
     </section>
     
     <section class="sus max-w-screen-2xl w-screen">
-        <div class="relative text-white">
+        <div class="relative ">
             <img class="w-full hidden sm:block" src="assets/images/home/sus/sus-big.png" alt="">
             <img class="w-full sm:hidden" src="assets/images/home/sus/sus-small.png" alt="">
                         <!-- <div class="container flex flex-col justify-between h-[810px] items-center  absolute"> -->
@@ -236,73 +236,120 @@
                                 </div>
                             </div> 
                             <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24">
-                                <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2">New phone, less waste</h1>
+                                <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2 font-semibold">New phone, less waste</h1>
                                 <p class="sm:text-[1.5vw] lg:text-xl">Get a refurbished Certified Re-Newed smartphone with the features you love.</p>
                                 <!-- <p class="sm:text-[1.5vw] lg:text-xl">Bold contrast, bright whites, true blacks and rich, Pantone-validated color.</p> -->
                                 <div class="flex gap-4 mt-4">
                                     <!-- <button class="font-semibold border-b-2 border-black">Learn More</button> -->
-                                    <button class="btn bg-white p-2 rounded-full text-black font-semibold ">Learn More</button>
+                                    <button class="btn bg-black p-2 rounded-full text-white font-semibold ">Learn More</button>
                                 </div>
                             </div>
         </div>
     </section>
 
-    <section class="explore max-w-screen-2xl w-screen h-[1100px] ">
-        <div class="hidden sm:flex header text-5xl justify-center items-center pb-10 font-semibold pt-5">
-            <a href="#">
-                <h1>Explore #DoWhatYouCant</h1>
-            </a>
-        </div>
-        <div class="content hidden sm:flex justify-center items-center gap-10">
-            <div class="img ">
-                <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+    <!-- <section class="explore max-w-screen-2xl w-screen h-[1100px] ">
+        
+        <div class="big-screen">
+            <div class="flex header text-5xl justify-center items-center pb-10 font-semibold pt-5">
+                <a href="#">
+                    <h1 class="hidden sm:block">Explore #DoWhatYouCant</h1>
+                    <h1 class="text-center sm:hidden">Explore <br>#DoWhatYouCant</h1>
+                </a>
             </div>
-            <div class="items flex flex-col gap-11 ">
-                <div class="item_1 flex gap-16 border-t-2 border-black pt-5 pb-5 ">
-                    <h1 class="pt-4">01</h1>
-                    <div class="info pb-3 border-black">
-                        <h1 class="text-3xl font-semibold pb-10">Improve your Next pickleball game</h1>
-                        <button class="font-semibold border-b-2 border-black">Learn More</button>
-                        <hr class="mt-5">
+            <div class="content flex justify-center   gap-10">
+                <div class="img flex overflow-auto gap-4 ">
+
+
+                    <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                    <img class="rounded-3xl" src="assets/images/home/explore/img-1.jpg" alt="">
+                    <img class="rounded-3xl" src="assets/images/home/explore/img-2.jpg" alt="">
+                    <img class="rounded-3xl" src="assets/images/home/explore/img-3.jpg" alt="">
+                    <img class="rounded-3xl" src="assets/images/home/explore/img-4.jpg" alt="">
+                </div>
+
+                <div class="flex overflow-auto justify-center">
+                    <div class="flex flex-col items-center">
+                        <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                        <h1 class="font-semibold ">Your Mother's Day Gift Guide</h1>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                        <h1 class="font-semibold ">Your Mother's Day Gift Guide</h1>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                        <h1 class="font-semibold ">Your Mother's Day Gift Guide</h1>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                        <h1 class="font-semibold ">Your Mother's Day Gift Guide</h1>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                        <h1 class="font-semibold ">Your Mother's Day Gift Guide</h1>
+                        <button>Learn More</button>
                     </div>
                 </div>
-                <div class="item_2 flex gap-16">
-                    <h1>02</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">Your action plan for a healthy spring</h1>
-                        <button class="font-semibold border-b-2 border-black">Learn More</button>
-                    </div>
-                </div>
-                <div class="item_3 flex gap-16">
-                    <h1>03</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">Become the ultimate photographer with
-                            <br>
-                            Samsung AI</h1>
+
+
+
+
+
+
+
+
+                <div class="items hidden sm:flex flex-col gap-11 ">
+                    <div class="item_1 flex gap-16 border-t-2 border-black pt-5 pb-5 ">
+                        <h1 class="pt-4">01</h1>
+                        <div class="info pb-3 border-black">
+                            <h1 class="text-3xl font-semibold pb-10">Improve your Next pickleball game</h1>
                             <button class="font-semibold border-b-2 border-black">Learn More</button>
+                            <hr class="mt-5">
+                        </div>
                     </div>
-                </div>
-                <div class="item_4 flex gap-16">
-                    <h1>04</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">AI puts you in the repair driver seat</h1>
-                        <button class="font-semibold border-b-2 border-black">Learn More</button>
-                    </div>
-                </div>
-                <div class="item_5 flex gap-16">
-                    <h1>05</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">See the IRA rebate program in action with
-                            <br>
-                            Samsung</h1>
+                    <div class="item_2 flex gap-16">
+                        <h1>02</h1>
+                        <div class="info">
+                            <h1 class="text-3xl font-semibold">Your action plan for a healthy spring</h1>
                             <button class="font-semibold border-b-2 border-black">Learn More</button>
+                        </div>
                     </div>
+                    <div class="item_3 flex gap-16">
+                        <h1>03</h1>
+                        <div class="info">
+                            <h1 class="text-3xl font-semibold">Become the ultimate photographer with
+                                <br>
+                                Samsung AI</h1>
+                                <button class="font-semibold border-b-2 border-black">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="item_4 flex gap-16">
+                        <h1>04</h1>
+                        <div class="info">
+                            <h1 class="text-3xl font-semibold">AI puts you in the repair driver seat</h1>
+                            <button class="font-semibold border-b-2 border-black">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="item_5 flex gap-16">
+                        <h1>05</h1>
+                        <div class="info">
+                            <h1 class="text-3xl font-semibold">See the IRA rebate program in action with
+                                <br>
+                                Samsung</h1>
+                                <button class="font-semibold border-b-2 border-black">Learn More</button>
+                        </div>
+                    </div>
+                
                 </div>
-            
             </div>
+
         </div>
 
-    </section>
+    </section> -->
 
 
     <section class="max-w-screen-2xl w-screen ">
