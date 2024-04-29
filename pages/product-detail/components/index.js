@@ -1,39 +1,34 @@
-console.log('hello')
-let slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n){
-            console.log(slideIndex);
-            showSlides(slideIndex += n );
-        }
+// Product Detail Image Slider
+let slideIndex = 1; // current slide index
+showSlides(slideIndex); 
 
-        function currentSlide(n){
-            showSlides(slideIndex = n)
-            
-        }
+function plusSlides(n){
+    showSlides(slideIndex += n );
+}
 
-        function showSlides(n){
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let imgContainer = document.getElementById("image-container")
-            console.log(slides);
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++){
-                // slides[i].style.display = "none";
-                slides[i].style.opacity = "1"
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");                
-            }
-            // slides[slideIndex-1].style.display = "block";
-            // slides[slideIndex-1].style.opacity = "1";
-            console.log(imgContainer);
-            imgContainer.style.transform = 'translateX(-' + (slideIndex-1)*100 +'%'
+function currentSlide(n){
+    showSlides(slideIndex = n)
+}
 
-            dots[slideIndex-1].className += " active";            
-        }
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let imgContainer = document.getElementById("image-container")
+    console.log(slides);
+    // n parameter slide index get from user + current slide index
+    if (n > slides.length) {slideIndex = 1} // parameter n > length slides : slide go to 1st page
+    if (n < 1) {slideIndex = slides.length} // parameter n < 1 : slide go to last page
+    for (i = 0; i < slides.length; i++){ 
+        slides[i].style.opacity = "1"
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");                
+    }  
+    imgContainer.style.transform = 'translateX(-' + (slideIndex-1)*100 +'%' 
+    dots[slideIndex-1].className += " active";            
+}
 
 
 // Accordion JS
