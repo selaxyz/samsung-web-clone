@@ -80,6 +80,24 @@ const options = {
     },
 };
 
+// Reivew Image Slider
+const btnPreSlideReview = document.getElementById('pre-slide-review')
+const btnNextSlideReview = document.getElementById('next-slide-review')
+const reviewImageContainer = document.getElementById('review-image-container')
+const nextSlideReviewHandler = () =>{
+    reviewImageContainer.classList.toggle('translate-x-[-50%]')
+    btnNextSlideReview.classList.toggle('invisible')
+    btnPreSlideReview.classList.toggle('invisible')
+}
+const preSlideReviewHandler = () =>{
+    reviewImageContainer.classList.toggle('translate-x-[-50%]')
+    btnNextSlideReview.classList.toggle('invisible')
+    btnPreSlideReview.classList.toggle('invisible')
+}
+
+btnNextSlideReview.addEventListener('click', nextSlideReviewHandler)
+btnPreSlideReview.addEventListener('click', preSlideReviewHandler)
+
 // instance options object
 // const instanceOptions = {
 //     id: 'accordion-example',
