@@ -36,7 +36,7 @@
                         <img class="h-5 w-fit object-contain"
                             src="https://www.samsung.com/us/web/express-checkout/static/dist/img/icon-user-gap-v1.png.bdf24fd.webp"
                             alt="">
-                        <a class="font-medium  text-blue-500" href="#">Sign In</a>
+                        <a class="font-medium  text-blue-500 hover:underline" href="#">Sign In</a>
                     </div>
                     <div class="flex flex-col font-light">
                         <p>Sign in or create an account for a quick checkout.</p>
@@ -95,7 +95,14 @@
                 <hr>
                 <details class="w-full">
                     <summary class="flex justify-between">
-                        <p>Total Saving </p>
+                        <div class="flex items-center gap-2">
+                            <p>Total Saving </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </div>
                         <p class="font-light">$40.00</p>
                     </summary>
                     <div class="flex justify-between text-xs font-light py-2">
@@ -112,7 +119,7 @@
     </section>
     <div class="py-8"></div>
     <section class="flex flex-col max-w-screen-xl w-5/6 gap-4 font-light text-gray-600">
-        <p class="text-xs">By submitting your order, you agree to the Terms of Sale and acknowledge that you have read
+        <p class="text-xs bg-gray-50 p-3">By submitting your order, you agree to the Terms of Sale and acknowledge that you have read
             Samsung’s Privacy
             Policy. By submitting your order, you agree to the <a class="text-blue-400 font-medium" href="#">Samsung
                 Rewards Terms and Conditions</a></p>
