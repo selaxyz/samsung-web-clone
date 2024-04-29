@@ -532,7 +532,7 @@
         <div class="flex flex-col md:pt-[5.75%] pt-[7.16%]">
             <div
                 class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0  mx-5"
+                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0 "
                     style="grid-template-rows: max-content">
                     <h2 class="text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-[8.2px]"
                         style="font-family: Inter">
@@ -564,7 +564,7 @@
         <div class="flex flex-col md:pt-[5.75%] pt-[7.16%]">
             <div
                 class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0  mx-5"
+                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0 "
                     style="grid-template-rows: max-content">
                     <h2 class="text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-[8.2px]"
                         style="font-family: Inter">
@@ -598,7 +598,7 @@
         <div class="flex flex-col pt-[5.75%]">
             <div
                 class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0  mx-5"
+                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0 "
                     style="grid-template-rows: max-content">
                     <h2 class="text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-[8.2px]"
                         style="font-family: Inter">
@@ -631,7 +631,7 @@
         <div class="flex flex-col pt-[5.75%]">
             <div
                 class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0  mx-5"
+                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0 "
                     style="grid-template-rows: max-content">
                     <h2 class="text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-[8.2px]"
                         style="font-family: Inter">
@@ -668,7 +668,7 @@
         <div class="flex flex-col pt-20">
             <div
                 class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0  mx-5"
+                <div class="grid grid-rows-3 text-center md:text-center mx-4 md:mx-0 "
                     style="grid-template-rows: max-content">
                     <h2 class="text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-[8.2px]"
                         style="font-family: Inter">
@@ -900,12 +900,12 @@
 
             <!-- Second row -->
 
-            <div class="c">
+            <div class="accordion-container">
                 <input type="checkbox" id="faq-1" />
                 <h1 class="bg-zinc-100">
-                    <label for="faq-1" class="text-black flex flex-col">
-                        <section class="flex self-center h-auto text-center items-center">
-                            <h6 class="text-[12px]">SEE ALL SPEC</h6>
+                    <label for="faq-1" class="text-black flex flex-col h-8">
+                        <section class="flex self-center h-auto text-center items-center" >
+                            <button class="text-[12px]" id="show-all-spec">SEE ALL SPEC</button>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="h-[14px] mx-1">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -913,153 +913,154 @@
                         </section>
                     </label>
                 </h1>
-                <div class="p">
-                    <section>
-                        <div class="h-[776px] bg-zinc-200 pt-9">
-                            <div class="flex flex-col flex-initial ml-0 md:ml-[113px] mr-[9.9]">
-                                <!-- row-1 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Connectivity</span>
-                                <div
-                                    class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Bluetooth<sup>®</sup> Version
-                                        </div>
-                                        <div class="text-[12px] font-extralight">
-                                            Bluetooth v5.3
-                                        </div>
+                <section class="max-h-0 overflow-hidden transition-all duration-[2000ms]" id="spec-container">
+                    <div class="h-[776px] bg-zinc-200 pt-9">
+                        <div class="flex flex-col flex-initial ml-0 md:ml-[113px] mr-[9.9]">
+                            <!-- row-1 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Connectivity</span>
+                            <div
+                                class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Bluetooth<sup>®</sup> Version
                                     </div>
-
-                                    <!-- col-2 -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Bluetooth Profiles
-                                        </div>
-                                        <div class="text-[12px] font-extralight">
-                                            A2DP,AVRCP,HFP
-                                        </div>
+                                    <div class="text-[12px] font-extralight">
+                                        Bluetooth v5.3
                                     </div>
                                 </div>
 
-                                <!-- row-2 -->
-                                <div class="spec-container justify-START">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <span class="text-4">Physical specification</span>
-                                        <div class="text-[12px] font-semibold">Weight</div>
-                                        <div class="text-[12px] font-extralight">1.92 oz</div>
+                                <!-- col-2 -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Bluetooth Profiles
+                                    </div>
+                                    <div class="text-[12px] font-extralight">
+                                        A2DP,AVRCP,HFP
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- row-2 -->
+                            <div class="spec-container justify-START">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <span class="text-4">Physical specification</span>
+                                    <div class="text-[12px] font-semibold">Weight</div>
+                                    <div class="text-[12px] font-extralight">1.92 oz</div>
+                                </div>
+                            </div>
+
+                            <!-- row-3 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Battery</span>
+                            <div
+                                class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
+                                <!-- col-1  -->
+
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pr-3 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Battery Capacity (Earbud)
+                                    </div>
+                                    <div class="text-[12px] font-extralight">61</div>
+                                </div>
+
+                                <!-- col-2 -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Battery Capacity (Case)
+                                    </div>
+                                    <div class="text-[12px] font-extralight">515</div>
+                                </div>
+
+                                <!-- col-3 -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">Playtime</div>
+                                    <div class="text-[12px] font-extralight">
+                                        5/20Hr (ANC On), 8/30Hr (ANC Off)
                                     </div>
                                 </div>
 
-                                <!-- row-3 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Battery</span>
-                                <div
-                                    class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
-                                    <!-- col-1  -->
-
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pr-3 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Battery Capacity (Earbud)
-                                        </div>
-                                        <div class="text-[12px] font-extralight">61</div>
-                                    </div>
-
-                                    <!-- col-2 -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Battery Capacity (Case)
-                                        </div>
-                                        <div class="text-[12px] font-extralight">515</div>
-                                    </div>
-
-                                    <!-- col-3 -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">Playtime</div>
-                                        <div class="text-[12px] font-extralight">
-                                            5/20Hr (ANC On), 8/30Hr (ANC Off)
-                                        </div>
-                                    </div>
-
-                                    <!-- col-4 -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4 md:col-span-4">
-                                        <div class="text-[12px] font-semibold">Talk time</div>
-                                        <div class="text-[12px] font-extralight">
-                                            3.5/14Hr (ANC ON), 4/15Hr (ANC OFF)
-                                        </div>
+                                <!-- col-4 -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4 md:col-span-4">
+                                    <div class="text-[12px] font-semibold">Talk time</div>
+                                    <div class="text-[12px] font-extralight">
+                                        3.5/14Hr (ANC ON), 4/15Hr (ANC OFF)
                                     </div>
                                 </div>
-                                <!-- row-4 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Audio and Video</span>
-                                <div class="spec-container justify-START justify-start">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">Ambient Sound</div>
-                                        <div class="text-[12px] font-extralight">Yes</div>
+                            </div>
+                            <!-- row-4 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Audio and Video</span>
+                            <div class="spec-container justify-START justify-start">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">Ambient Sound</div>
+                                    <div class="text-[12px] font-extralight">Yes</div>
+                                </div>
+                            </div>
+                            <!-- row-5 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Services and
+                                Applications</span>
+                            <div class="spec-container justify-START">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        ANC/Bixby Voice Wake-up
+                                    </div>
+                                    <div class="text-[12px] font-extralight">
+                                        (– 35dB, Latency 10us, up to 1kHz)
                                     </div>
                                 </div>
-                                <!-- row-5 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Services and
-                                    Applications</span>
-                                <div class="spec-container justify-START">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            ANC/Bixby Voice Wake-up
-                                        </div>
-                                        <div class="text-[12px] font-extralight">
-                                            (– 35dB, Latency 10us, up to 1kHz)
-                                        </div>
+                            </div>
+                            <!-- row-6 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Key Category
+                                Features</span>
+                            <div class="grid grid-cols-4">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Water Resistant
+                                    </div>
+                                    <div class="text-[12px] font-extralight">IPX7</div>
+                                </div>
+                            </div>
+                            <!-- row-7 -->
+                            <span class="text-[16px] border-x-[24px] mr-28 font-extralight">General Feature</span>
+                            <div
+                                class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
+                                <!-- col-1  -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">Microphone</div>
+                                    <div class="text-[12px] font-extralight">
+                                        3 High-SNR Mics + VPU + Personalized DNN**
                                     </div>
                                 </div>
-                                <!-- row-6 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">Key Category
-                                    Features</span>
-                                <div class="grid grid-cols-4">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Water Resistant
-                                        </div>
-                                        <div class="text-[12px] font-extralight">IPX7</div>
-                                    </div>
-                                </div>
-                                <!-- row-7 -->
-                                <span class="text-[16px] border-x-[24px] mr-28 font-extralight">General Feature</span>
-                                <div
-                                    class="grid grid-cols-2 md:columns-[319px] md:grid-cols-4 grid-rows-auto md:grid-rows-2 justify-start">
-                                    <!-- col-1  -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">Microphone</div>
-                                        <div class="text-[12px] font-extralight">
-                                            3 High-SNR Mics + VPU + Personalized DNN**
-                                        </div>
-                                    </div>
 
-                                    <!-- col-2 -->
-                                    <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
-                                        <div class="text-[12px] font-semibold">
-                                            Bluetooth Profiles
-                                        </div>
-                                        <div class="text-[12px] font-extralight">
-                                            2 Way (10mm woofer + 5.3mm tweeter)
-                                        </div>
+                                <!-- col-2 -->
+                                <div class="border-x-[24px] border-transparent w-52 mr-28 pb-4">
+                                    <div class="text-[12px] font-semibold">
+                                        Bluetooth Profiles
+                                    </div>
+                                    <div class="text-[12px] font-extralight">
+                                        2 Way (10mm woofer + 5.3mm tweeter)
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="flex flex-col pb-7 bg-zinc-200 label">
-                            <section class="flex self-center h-full text-center justify-center items-center">
-                                <h6 class="text-[12px]">HIDE ALL SPEC</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="h-[14px] mx-1 self-center">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                                </svg>
-                            </section>
-                        </div>
-                    </section>
+                    <div class="flex flex-col pb-7 bg-zinc-200 label">
+                        <section class="flex self-center h-full text-center justify-center items-center">
+                            <button class="text-[12px] duration-[1000ms]" id="hide-all-spec">HIDE ALL SPEC</button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="h-[14px] mx-1 self-center">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                            </svg>
+                        </section>
+                    </div>
+                </section>
+                <div class="p">
+                    
                 </div>
             </div>
         </div>
@@ -1398,7 +1399,7 @@
         <div class="flex flex-col gap-4 mx-2">
             <h3>Filter Reviews</h3>
             <div class="flex border md:w-96 rounded items-center px-2 py-2"> 
-                <input class=" w-full" type="text" placeholder="Search topics and reviews"/>
+                <input class=" absolute left-0 top-0 h-full w-full opacity-0 invisible " type="text" placeholder="Search topics and reviews"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg>
@@ -1635,7 +1636,7 @@
     <p>******</p>
     <script src="./components/index.js"></script>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
-    <script src="../../script/index.js" type="module"></script>
+    <!-- <script src="../../script/index.js" type="module"></script> -->
 </body>
 
 </html>

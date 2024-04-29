@@ -98,3 +98,21 @@ const options = {
 
 // // toggle visibility of item based on id
 // accordion.toggle('accordion-example-heading-3');
+
+
+const seeAllSpec = document.getElementById('show-all-spec')
+const hideAllSpec = document.getElementById('hide-all-spec')
+const specContainer = document.getElementById('spec-container')
+seeAllSpec.addEventListener("click",seeAllSpecHandler)
+hideAllSpec.addEventListener("click",hideAllSpecHandler)
+console.log(seeAllSpec);
+
+function seeAllSpecHandler (){
+    // specContainer.style.maxHeight = '2000px'
+    specContainer.classList.toggle('max-h-[2000px]')
+    
+}
+
+function hideAllSpecHandler () {
+    specContainer.classList.toggle('max-h-[2000px]')
+}

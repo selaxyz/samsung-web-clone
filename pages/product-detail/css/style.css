@@ -1,10 +1,10 @@
 .mySlides{
-    opacity: 1;
+    opacity: 0;
     width: 100%;
     height: 100%
     
 }
-.image-container{ 
+.image-container{
     transition: transform .3s ease-out;
     min-width:calc(50vw)
 }
@@ -39,7 +39,7 @@
     box-sizing:border-box;
   }
   
-  div.c{
+  div.accordion-container{
     position: relative;
     margin:em;
   }
@@ -49,16 +49,16 @@
     top: 0;
     height:100%;
     width: 100%;
-    opacity:0;
-    visibility: 0;
-  } */
+    /* opacity:0; */
+    /* visibility: 0;
+  } */ 
   
-  /* h1{
+  h1{
     background:grey;
     color:white;
     padding:1em;
     position: relative;
-  } */
+  }
   /* label::before{
     content:"";
     display: inline-block;
@@ -72,6 +72,8 @@
     align-items: center;
   } */
   
+
+
   div.p{
     
     max-height:0px;
@@ -82,7 +84,7 @@
   }
   
   div.p p {
-    padding:2em;
+    padding:2em;  
   }
   input:checked ~ h1 label::before{
     border-left:15px solid transparent;
