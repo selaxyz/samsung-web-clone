@@ -222,31 +222,38 @@
     </section>
     
     <section class="sus max-w-screen-2xl w-screen">
-        <div class="text-white container flex flex-col justify-between h-[810px] bg-[url('assets/images/home/sus/sus-bg.png')]">
-            <div class="nav w-full flex flex-col items-center pt-11 ">
-                <div class="text-5xl font-[600] flex justify-center items-center">
-                    <h1>Sustainability</h1>
-                </div>
-                <div class="container space-x-10 mt-5 font-bold flex justify-center">
-                    <button>Certified Re-Newed</button>
-                    <button>How to recycle</button>
-                </div>
-            </div> 
-            
-            <div class="info flex flex-col items-center justify-center">
-                <h1 class="text-5xl pb-5 font-semibold">New phone, less waste</h1>
-                <p>Get a refurbished Certified Re-Newed smartphone with the features you love.</p>
-                <button class="btn bg-white p-2 rounded-full text-black font-semibold mt-5">Learn more</button>
-            </div>
+        <div class="relative text-white">
+            <img class="w-full hidden sm:block" src="assets/images/home/sus/sus-big.png" alt="">
+            <img class="w-full sm:hidden" src="assets/images/home/sus/sus-small.png" alt="">
+                        <!-- <div class="container flex flex-col justify-between h-[810px] items-center  absolute"> -->
+                            <div class="nav w-full flex flex-col items-center absolute  left-0 top-0 mt-5">
+                                <div class="text-5xl sm:text-[3vw] lg:text-5xl font-[600] flex justify-center items-center">
+                                    <h1>Sustainability</h1>
+                                </div>
+                                <div class="space-x-10 mt-5 font-bold flex sm:text-[1.5vw] lg:text-xl justify-center ">
+                                    <button>Certified Re-Newed</button>
+                                    <button>How to recycle</button>
+                                </div>
+                            </div> 
+                            <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24">
+                                <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2">New phone, less waste</h1>
+                                <p class="sm:text-[1.5vw] lg:text-xl">Get a refurbished Certified Re-Newed smartphone with the features you love.</p>
+                                <!-- <p class="sm:text-[1.5vw] lg:text-xl">Bold contrast, bright whites, true blacks and rich, Pantone-validated color.</p> -->
+                                <div class="flex gap-4 mt-4">
+                                    <!-- <button class="font-semibold border-b-2 border-black">Learn More</button> -->
+                                    <button class="btn bg-white p-2 rounded-full text-black font-semibold ">Learn More</button>
+                                </div>
+                            </div>
+        </div>
     </section>
 
     <section class="explore max-w-screen-2xl w-screen h-[1100px] ">
-        <div class="header text-5xl flex justify-center items-center pb-10 font-semibold pt-5">
+        <div class="hidden sm:flex header text-5xl justify-center items-center pb-10 font-semibold pt-5">
             <a href="#">
                 <h1>Explore #DoWhatYouCant</h1>
             </a>
         </div>
-        <div class="content flex justify-center items-center gap-10">
+        <div class="content hidden sm:flex justify-center items-center gap-10">
             <div class="img ">
                 <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
             </div>
