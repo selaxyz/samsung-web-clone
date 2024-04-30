@@ -71,20 +71,6 @@
     align-items: center;
   } */
   
-
-
-  div.p{
-    
-    max-height:0px;
-    overflow: hidden;
-    transition:max-height 3s;
-    background-color: white;
-    /* box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2); */
-  }
-  
-  div.p p {
-    padding:2em;  
-  }
   input:checked ~ h1 label::before{
     border-left:15px solid transparent;
     border-top:20px solid white;
