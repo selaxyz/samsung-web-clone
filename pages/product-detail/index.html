@@ -42,21 +42,26 @@
                         </h1>
                         <p class="text-xs mt-1 text-slate-400">SM-R510NZAAXAR</p>
                     </div>
-                    <div class="flex flex-col md:flex-row">
+                    <div class="flex flex-col md:flex-row text-gray-500">
                         <div class="flex">
                             <div
                                 class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative inline-block">
                                 <p>Total</p>
-                                <p>$189.99 <span>$229.99</span></p>
+                                <div class="">
+                                    <p class="text-orange-500">$189.99<span class="text-gray-500 text-xs line-through">$229.99</span></p>
+                                </div>
                             </div>
                             <div
                                 class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative">
                                 <div class="flex flex-col">
                                     <p class="text-xs">Samsung Financing starting from</p>
-                                    <p>
+                                    <p class="text-orange-500">
                                         $7.92/mo
-                                        <span class="text-[10px] line-through">$9.58/mo</span>
+                                        <span class="text-gray-500 text-[10px] line-through">$9.58/mo</span>
+                                        <span>24</span>
+                                        <span class="text-gray-500 text-[10px]">mos</span>
                                     </p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -93,7 +98,7 @@
                         </div>
                         <div class="flex">
                             <div class="my-auto">
-                                <img src="../../assets/images/product-detail/message_icon.png" alt="" />
+                                <img src="../../assets/images/product-detail/message-icon.png" alt="" />
                             </div>
                             <a href="#" class="underline text-blue-500 px-2 text-sm w-fit my-auto lg:text-nowrap">Chat with an Expert</a>
 
@@ -111,10 +116,10 @@
             </div>
 
             <!-- Product Show -->
-            <div class="product-detail md:flex relative mt-8">
+            <div class="product-detail md:flex relative justify-between mb-14">
                 <!-- detail left -->
-                <div class="md:max-w-[800px] md:h-full flex flex-col items-center md:sticky md:top-[172px]">
-                    <div class="image-wrapper flex flex-col overflow-x-hidden">
+                <div class="md:max-w-[800px] mt-4 md:h-full mx-4 md:mx-8 flex flex-col items-center md:sticky md:top-[172px]">
+                    <div class="image-wrapper flex flex-col overflow-x-hidden relative">
                         <div id="image-container" class="flex flex-nowrap transition-transform delay-300">
                             <img class="w-full mySlides" width="800" height="600"
                                 src="../../assets/images/product-detail/detail-front-1.jpg" alt="" />
@@ -129,7 +134,7 @@
                         </div>
 
                         <!-- Next and previous buttons -->
-                        <div class="flex justify-between absolute w-full top-1/2 px-2">
+                        <div class="flex justify-between absolute w-full top-1/2 left-0 px-4">
                             <a class="prev bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
                                 onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
@@ -160,32 +165,76 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="hidden md:flex flex-col items-center font-bold mt-8">
+                            <p>Samsung.com Advantage</p>
+                            <div class="flex gap-4 text-xs mt-8">
+                                <div class="flex flex-col items-center">
+                                    <img width="40" height="30" src="../../assets/images/product-detail/icon-pay.webp" alt="">
+                                    <p class="mt-4">Pay in 4 installments</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img height="30" src="../../assets/images/product-detail/icon-store.png" alt="">
+                                    <p class="mt-4 text-center">In-Store Pickup <br>
+                                        available</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- detail-right -->
-                <div class="w-full md:w-2/5 px-2">
-                    <div class="flex">
+                <div class="w-full md:w-2/5 px-4 md:px-2">
+                    <div class="flex md:hidden mt-6 text-sm items-center text-blue-500">
                         <div class="my-auto">
-                            <img src="../../assets/images/product-detail/message_icon.png" alt="" />
+                            <img src="../../assets/images/product-detail/message-icon.png" alt="" />
                         </div>
-                        <a href="#" class="underline text-blue-500 px-2">Chat with an Expert</a>
+                        <a href="#" class="underline  px-2">Chat with an Expert</a>
                         <svg style="color: rgb(73, 73, 223)" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                         </svg>
+                        <span>Wishlist</span>
                     </div>
-                    <h3 class="font-bold md:text-3xl pb-2">
+                    <h3 class="font-bold md:text-3xl pb-2 mt-4">
                         Galaxy Buds2 Pro, Graphite
                     </h3>
-                    <div class="flex text-sky-500 mb-4">
+                    <div class="flex text-sky-500 mb-4 items-center">
                         <p class="text-slate-400 text-sm ml-2">
                             SM-R510 <br />
                             SM-R510NZAAXAR
                         </p>
-                        <div class="px-4">⭐️⭐️⭐️⭐️⭐️ 4.6(4934)</div>
-                        <p>Write a review</p>
+                        <div class="flex flex-wrap items-center">
+                            <div class="flex my-2 pt-1 gap-0.5 px-4 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class=""
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class=""
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class=""
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class=""
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+                                <span class="ml-2">4.6(4934)</span>
+                            </div>
+                            <p class="pl-4">Write a review</p>
+                        </div>
                     </div>
                     <!-- product bage -->
                     <div class="badge-container flex gap-6 w-full justify-evenly">
@@ -345,7 +394,7 @@
 
                         <div class="one-time bg-[#f7f7f7] rounded-lg flex w-full px-3 gap-5 py-4">
                             <div class="">
-                                <img src="../../assets/images/product-detail/card_svg.svg" alt="card" />
+                                <img src="../../assets/images/product-detail/card-svg.svg" alt="card" />
                             </div>
                             <div>
                                 <p class="text-sm font-bold mt-1">One-time payment</p>
@@ -431,6 +480,20 @@
                                         src="../../assets/images/product-detail/card-amazon.png" alt="" />
                                     <img class="w-[43px] h-[22px]"
                                         src="../../assets/images/product-detail/card-google.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex flex-col items-center font-bold mt-8">
+                            <p>Samsung.com Advantage</p>
+                            <div class="flex gap-4 text-xs mt-8">
+                                <div class="flex flex-col items-center">
+                                    <img width="40" height="30" src="../../assets/images/product-detail/icon-pay.webp" alt="">
+                                    <p class="mt-4">Pay in 4 installments</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img height="30" src="../../assets/images/product-detail/icon-store.png" alt="">
+                                    <p class="mt-4 text-center">In-Store Pickup <br>
+                                        available</p>
                                 </div>
                             </div>
                         </div>
@@ -1067,31 +1130,31 @@
                     <div class="flex items-center relative">
                         <p>5 stars</p>
                         <div class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"></div>
-                        <div class="left-16 absolute h-3 w-[45%] rounded-md bg-orange-400"></div>
+                        <div class="left-16 absolute h-3 w-[45%] rounded-l-md  bg-orange-400"></div>
                         <p class="ml-4">3580</p>
                     </div>
                     <div class="flex items-center relative">
                         <p>4 stars</p>
                         <div class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"></div>
-                        <div class="left-16 absolute h-3 w-[25%] rounded-md bg-orange-400"></div>
+                        <div class="left-16 absolute h-3 w-[25%] rounded-l-md bg-orange-400"></div>
                         <p class="ml-4">953</p>
                     </div>
                     <div class="flex items-center relative">
                         <p>3 stars</p>
                         <div class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"></div>
-                        <div class="left-16 absolute h-3 w-[15%] rounded-md bg-orange-400"></div>
+                        <div class="left-16 absolute h-3 w-[15%] rounded-l-md bg-orange-400"></div>
                         <p class="ml-4">202</p>
                     </div>
                     <div class="flex items-center relative">
                         <p>2 stars</p>
                         <div class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"></div>
-                        <div class="left-16 absolute h-3 w-[10%] rounded-md bg-orange-400"></div>
+                        <div class="left-16 absolute h-3 w-[10%] rounded-l-md bg-orange-400"></div>
                         <p class="ml-4">106</p>
                     </div>
                     <div class="flex items-center relative">
                         <p>1 stars</p>
                         <div class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"></div>
-                        <div class="left-16 absolute h-3 w-[10%] rounded-md bg-orange-400"></div>
+                        <div class="left-16 absolute h-3 w-[10%] rounded-l-md bg-orange-400"></div>
                         <p class="ml-4">122</p>
                     </div>
                 </div>
