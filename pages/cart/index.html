@@ -10,7 +10,7 @@
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <section class="max-w-screen-xl w-full">
+    <section class="max-w-screen-xl w-full px-4 mt-7">
         <section>
     
 
@@ -20,14 +20,13 @@
             <p>******</p> -->
 
 
-            <!-- md for desktop. sm for tablet -->
             <div class="grid grid-cols-12 mb-10">
                 <!-- left col -->
-                <!-- md above span 9. sm above span 6 -->
                 <div class="col-span-full md:col-span-8">
-                    <div class="flex justify-between mb-3">
-                        <h1 class="font-medium text-xl text-start">Cart</h1>
-                        <p class="text-sm">Zip code: <a class="text-blue-500">96928</a></p>
+                    <div class="flex justify-between my-3">
+                        <h1 class="font-medium text-xl text-start hidden md:block">Cart</h1>
+                        <p>Zip code: <a class="text-blue-500">96928</a></p>
+                        <a class="text-end text-sm text-blue-500 md:hidden" href="#">Chat with an expert</a>
                     </div>
                     <hr>
                     <section class="flex border-b">
@@ -91,9 +90,8 @@
                 </div>
 
                 <!-- right col -->
-                <!-- hide it, but as pass md show it. means md to above -->
                 <div class="md:col-span-4 hidden md:block">
-                    <section class="flex justify-end mr-10 mb-3 gap-3">
+                    <section class="flex justify-end mr-5 my-3 gap-3">
                         <img class="w-7" src="../../assets/images/cart/chat-icon.svg" alt="chat with expert">
                         <p class="text-blue-500 text-sm font-medium">Chat with an expert</p>
                     </section>
@@ -210,17 +208,10 @@
                             <a class="font-bold underline" href="#">Add to cart</a>
                         </div>
                     </div>
-        
-                    <!-- <button class="w-[40] h-[40] border rounded-full itemend">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button> -->
                 </div>
             </div>
         </section>
-    
-        <!-- <p>******</p> -->
+
         
         <!-- supported payment -->
         <section class="flex flex-col max-w-screen-xl md:flex md:flex-row mt-20 text-sm gap-4">
@@ -264,6 +255,8 @@
     </section>
 
     <footer-component></footer-component>
+
+    <!-- <p>******</p> -->
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
