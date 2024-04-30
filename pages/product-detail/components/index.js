@@ -75,6 +75,28 @@ const options = {
     },
 };
 
+// Product Detail
+// Trade In
+const btnTradeIn = document.getElementById('trade-in')
+const btnNoTradeIn = document.getElementById('no-trade-in')
+const comboBrand = document.getElementById('combo-brand')
+
+const btnNoTradeInHandler = () =>{
+    comboBrand.classList.toggle('hidden')
+    btnNoTradeIn.classList.toggle('border-blue-500')
+    btnTradeIn.classList.toggle('border-blue-500')
+}
+const btnTradeInHandler = () =>{
+    comboBrand.classList.remove('hidden')
+    btnNoTradeIn.classList.toggle('border-blue-500')
+    btnTradeIn.classList.toggle('border-blue-500')
+}
+
+btnNoTradeIn.addEventListener('click', btnNoTradeInHandler)
+btnTradeIn.addEventListener('click', btnTradeInHandler)
+
+
+
 // Reivew Image Slider
 const btnPreSlideReview = document.getElementById('pre-slide-review')
 const btnNextSlideReview = document.getElementById('next-slide-review')
