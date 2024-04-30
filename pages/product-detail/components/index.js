@@ -83,13 +83,17 @@ const comboBrand = document.getElementById('combo-brand')
 
 const btnNoTradeInHandler = () =>{
     comboBrand.classList.toggle('hidden')
-    btnNoTradeIn.classList.toggle('border-blue-500')
-    btnTradeIn.classList.toggle('border-blue-500')
+    btnNoTradeIn.classList.remove('border-slate-300')
+    btnNoTradeIn.classList.add('border-blue-500')
+    btnTradeIn.classList.add('border-slate-300')
+    btnTradeIn.classList.remove('border-blue-500')
 }
 const btnTradeInHandler = () =>{
     comboBrand.classList.remove('hidden')
-    btnNoTradeIn.classList.toggle('border-blue-500')
-    btnTradeIn.classList.toggle('border-blue-500')
+    btnNoTradeIn.classList.add('border-slate-300')
+    btnNoTradeIn.classList.remove('border-blue-500')
+    btnTradeIn.classList.remove('border-slate-300')
+    btnTradeIn.classList.add('border-blue-500')
 }
 
 btnNoTradeIn.addEventListener('click', btnNoTradeInHandler)
