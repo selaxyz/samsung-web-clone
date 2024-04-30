@@ -43,7 +43,7 @@
     position: relative;
     margin:em;
   }
-  /* input{
+  /* /* input{
     position: absolute;
     left: 0;
     top: 0;
@@ -51,8 +51,7 @@
     width: 100%;
     /* opacity:0; */
     /* visibility: 0;
-  } */ 
-/*   
+  } 
   h1{
     background:grey;
     color:white;
