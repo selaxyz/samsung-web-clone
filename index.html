@@ -38,13 +38,16 @@
             <h1 class="text-center sm:hidden">Shop all latest offers and innovations</h1>
             <button class="text-xl border-b-2 border-black">View all offers</button>
         </div>
-        <div class="flex font-semibold text-nowrap justify-center overflow-auto gap-12 ">
-                <button>For You</button>
-                <button>Mobile & Computing</button>
-                <button>TV & Audio</button>
-                <button>Home Appliances</button>
-                <button>Samsung Live</button>
-                <button>For Business</button>
+        
+        <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
+            <div class="overflow-auto flex gap-12 px-4">
+                <button >For you</button>
+                <button >Mobile & Computing</button>
+                <button >TV & Audio</button>
+                <button >Home Appliances</button>
+                <button >Samsung Live</button>
+                <button >For Business</button>
+            </div>
         </div>
         <div class="items-container">
             <div class="items grid grid-cols-2 sm:grid-cols-3 gap-10 mt-5">
@@ -143,8 +146,6 @@
             </div>
             </div>
 
-        </div>
-
     </section>
 
 
@@ -153,30 +154,34 @@
 
     <section class="tv max-w-screen-2xl w-screen ">
         <div class="relative">
-            <img class="w-full hidden sm:block" src="assets/images/home/tv/tv-big.png" alt="">
-            <img class="w-full sm:hidden" src="assets/images/home/tv/tv-small.png" alt="">
-                        <!-- <div class="container flex flex-col justify-between h-[810px] items-center  absolute"> -->
-                            <div class="nav w-full flex flex-col items-center absolute  left-0 top-0 mt-5">
-                                <div class="text-5xl sm:text-[3vw] lg:text-5xl font-[600] flex justify-center items-center">
-                                    <h1>TV & Audio</h1>
-                                </div>
-                                <div class="space-x-10 mt-5 font-bold flex sm:text-[1.5vw] lg:text-xl justify-center ">
-                                    <button>OLED</button>
-                                    <button>NEO QLED</button>
-                                    <button>The Frame</button>
-                                    <button>Music Frame</button>
-                                </div>
-                            </div> 
-                            <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24">
-                                <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2">The early bird gets an extra TV</h1>
-                                <p class="sm:text-[1.5vw] lg:text-xl">Pre-order a 2024 OLED and get a 65” Class TV on us.</p>
-                                <p class="sm:text-[1.5vw] lg:text-xl">Bold contrast, bright whites, true blacks and rich, Pantone-validated color.</p>
-                                <div class="flex gap-4 mt-4">
-                                    <button class="font-semibold border-b-2 border-black">Learn More</button>
-                                    <button class="btn bg-black p-2 rounded-full text-white font-semibold ">Buy Now</button>
-                                </div>
-                            </div>
-        </div>
+            <img class="hidden sm:block w-full" src="assets/images/home/tv/tv-big.png" alt="">
+            <img class=" sm:hidden w-full" src="assets/images/home/tv/tv-small.png" alt="">
+            <div class="absolute top-0 left-0  w-full  mt-4">
+                <div class="text-3xl sm:text-[3vw] lg:text-5xl font-[600] flex justify-center items-center">
+                    <h1>Mobile & Computing</h1>
+                </div>
+                <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
+                    <div class="overflow-auto flex gap-12 px-4">
+                        <button >OLED</button>
+                        <button >NEO QLED</button>
+                        <button >The Frame</button>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24 gap-4">
+                    <h1 class="text-[6vw] lg:text-5xl pb-2">Galaxy S24 Ultra</h1>
+                    <p class="text-[2vw] lg:text-xl">Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.</p>
+                    <div class="hidden sm:flex gap-4 flex-col sm:flex-row">
+                        <button class="btn bg-black p-2 rounded-full text-white font-semibold text-[1.5vw] sm:text-lg ">Buy Now</button>
+                        <button class="btn  p-2  text-black font-semibold text-[1.5vw] sm:text-lg border-b-2 border-black">Learn More</button>
+                    </div>
+                    <div class="flex sm:hidden gap-2 flex-col sm:flex-row">
+                        <button class="btn bg-black p-2 rounded-full text-white font-semibold text-[1.5vw] sm:text-lg ">Buy Now</button>
+                        <button class="btn  p-2  text-black font-semibold text-[1.5vw] sm:text-lg border-b-2 border-black">Learn More</button>
+                    </div>
+            </div>
+            </div>
     </section>
     
     <section class="home_appliances max-w-screen-2xl w-screen ">
@@ -193,7 +198,7 @@
         </div> 
             <!-- <img class="w-full sm:hidden" src="assets/images/home/tv/tv_big.png" alt=""> -->
                         <!-- <div class="container flex flex-col justify-between h-[810px] items-center  absolute"> -->
-                            <div class="info flex flex-col items-center justify-center pb-6  bottom-0 left-24 right-24">
+                            <div class="info text-center flex flex-col items-center justify-center pb-6  bottom-0 left-24 right-24">
                                 <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2">New Bespoke AI Appliances</h1>
                                 <p class="sm:text-[1.5vw] lg:text-xl">Pre-order and save up to $1,200 on our latest technology.</p>
                                 <!-- <p class="sm:text-[1.5vw] lg:text-xl">Bold contrast, bright whites, true blacks and rich, Pantone-validated color.</p> -->
@@ -203,32 +208,37 @@
                                 </div>
                             </div>
     </section>
-    
-    <section class="sus max-w-screen-2xl w-screen">
-        <div class="relative ">
-            <img class="w-full hidden sm:block" src="assets/images/home/sus/sus-big.png" alt="">
-            <img class="w-full sm:hidden" src="assets/images/home/sus/sus-small.png" alt="">
-                        <!-- <div class="container flex flex-col justify-between h-[810px] items-center  absolute"> -->
-                            <div class="nav w-full flex flex-col items-center absolute  left-0 top-0 mt-5">
-                                <div class="text-5xl sm:text-[3vw] lg:text-5xl font-[600] flex justify-center items-center">
-                                    <h1>Sustainability</h1>
-                                </div>
-                                <div class="space-x-10 mt-5 font-bold flex sm:text-[1.5vw] lg:text-xl justify-center ">
-                                    <button>Certified Re-Newed</button>
-                                    <button>How to recycle</button>
-                                </div>
-                            </div> 
-                            <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24">
-                                <h1 class="text-5xl sm:text-[3vw] lg:text-5xl pb-2 font-semibold">New phone, less waste</h1>
-                                <p class="sm:text-[1.5vw] lg:text-xl">Get a refurbished Certified Re-Newed smartphone with the features you love.</p>
-                                <!-- <p class="sm:text-[1.5vw] lg:text-xl">Bold contrast, bright whites, true blacks and rich, Pantone-validated color.</p> -->
-                                <div class="flex gap-4 mt-4">
-                                    <!-- <button class="font-semibold border-b-2 border-black">Learn More</button> -->
-                                    <button class="btn bg-black p-2 rounded-full text-white font-semibold ">Learn More</button>
-                                </div>
-                            </div>
-        </div>
+
+    <section class="sus max-w-screen-2xl w-screen ">
+        <div class="relative">
+            <img class="hidden sm:block w-full" src="assets/images/home/sus/sus-big.png" alt="">
+            <img class=" sm:hidden w-full" src="assets/images/home/sus/sus-small.png" alt="">
+            <div class="absolute top-0 left-0  w-full  mt-4">
+                <div class="text-3xl sm:text-[3vw] lg:text-5xl font-[600] flex justify-center items-center">
+                    <h1>Sustainability</h1>
+                </div>
+                <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
+                    <div class="overflow-auto flex gap-12 px-4">
+                        <button >Certified Re-Newed</button>
+                        <button >How to recycle</button>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="info flex flex-col items-center justify-center pb-6 absolute bottom-0 left-24 right-24 gap-4">
+                    <h1 class="text-[6vw] lg:text-5xl pb-2">New phone, less waste</h1>
+                    <p class="text-[2vw] lg:text-xl">Get a refurbished Certified Re-Newed smartphone with the features you love.</p>
+                    <button class="btn bg-black p-2 rounded-full text-white font-semibold text-[1.5vw] sm:text-lg ">Learn More</button>
+                
+            </div>
+            </div>
     </section>
+
+
+
+
+
+
 
     <!-- <section class="explore max-w-screen-2xl w-screen h-[1100px] ">
         
@@ -430,7 +440,7 @@
         <h1>Test</h1>
 
         </section>
-        <footer-component></footer-component>
+        <!-- <footer-component></footer-component> -->
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="./script/index.js" type="module"></script>
 </body>
