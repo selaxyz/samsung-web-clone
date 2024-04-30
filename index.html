@@ -21,8 +21,7 @@
         <div class="flex flex-col max-w-screen-sm  h-full">
             
             <div class="flex overflow-x-hidden">
-                <div class="flex flex-nowrap transition-transform delay-300 "> 
-
+                <div id="container-img" class="flex flex-nowrap transition-transform delay-300 "> 
                     <div class="relative w-[700px]">
                         <img class="w-full" src="assets/images/home/hero/img-1-small.webp" alt="">
                         <div class="absolute top-0 flex flex-col items-center w-full text-center">
@@ -41,15 +40,13 @@
                             <p>Save up to</p>
                             <button>Buy Now</button>
                         </div>
-            
-                        
                     </div>
                 </div>
             </div>
 
             
-            <div class="flex">
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+            <div class="flex ">
+                <button id="btn" class="btn "><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
                   </svg></button>
                 <button><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
@@ -585,6 +582,7 @@
         <footer-component></footer-component>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="./script/index.js" type="module"></script>
+    <script src="script/home.js"></script>
 </body>
 
 </html>
