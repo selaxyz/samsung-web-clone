@@ -26,7 +26,6 @@
     opacity: 1;            
     border-color: #2189ff;
 }
-
 .spec-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, auto));

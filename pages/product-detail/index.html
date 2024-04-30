@@ -14,16 +14,13 @@
 </head>
 
 <body class="flex flex-col items-center">
-    <h1>This is Product Detail</h1>
+    <!-- <h1>This is Product Detail</h1>
     <a class="underline" href="../cart/index.html">CLICK HERE: Go to Cart</a>
     <a class="underline" href="../nearby-store/index.html">CLICK HERE: Go to Nearby Store</a>
-    <p>
-        Note: The value of the href above contain the path to the target screen,
-        Please don't change it!
-    </p>
-    <p>******</p>
-    <!-- Product Description -->
-    <section class="max-w-screen-2xl w-full">
+    <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p> -->
+    <navbar-component></navbar-component>
+    <!-- Product Detail -->
+    <section class="max-w-screen-sm md:max-w-screen-xl xl:max-w-screen-2xl w-screen ">
         <!--  #a6a6a6 text-slate-400 -->
         <div class="bread-crumb text-slate-400 hidden md:block pl-4 mb-4">
             Home / Mobile / Audio / All Audio / Headphones / Galaxy Buds2 Pro, Graphite
@@ -40,33 +37,24 @@
                         </h1>
                         <p class="text-xs mt-1 text-slate-400">SM-R510NZAAXAR</p>
                     </div>
-                    <div class="flex flex-col md:flex-row text-gray-500">
-                        <div class="flex">
-                            <div
-                                class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative inline-block">
-                                <p>Total</p>
-                                <div class="">
-                                    <p class="text-orange-500">$189.99<span class="text-gray-500 text-xs line-through">$229.99</span></p>
-                                </div>
-                            </div>
-                            <div
-                                class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative">
-                                <div class="flex flex-col">
-                                    <p class="text-xs">Samsung Financing starting from</p>
-                                    <p class="text-orange-500">
-                                        $7.92/mo
-                                        <span class="text-gray-500 text-[10px] line-through">$9.58/mo</span>
-                                        <span>24</span>
-                                        <span class="text-gray-500 text-[10px]">mos</span>
-                                    </p>
-                                    
-                                </div>
-                            </div>
+                    <div class="flex">
+                        <div
+                            class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative inline-block">
+                            <p>Total</p>
+                            <p>$189.99 <span>$229.99</span></p>
                         </div>
-                        <button class="min-w-32 py-2.5 h-10 md:px-5 text-sm bg-blue-500 rounded-full text-white">
-                            Add to Cart
-                        </button>
+                        <div
+                            class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative">
+                            <div class="flex flex-col">
+                                <p class="text-xs">Samsung Financing starting from</p>
+                                <p>$7.92/mo <span class="text-[10px] line-through">$9.58/mo</span></p>
+                            </div>
+
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
+
+
                 </div>
                 <!-- Nav Container bg-#f7f7f7 -->
                 <div class="nav-container bg-slate-50 flex justify-between pl-4"
@@ -503,7 +491,7 @@
             </div>
         </div>
     </section>
-    <!-- Benefit + Graphic Image + Specs -->
+
     <section class="max-w-screen-2xl w-screen border border-sky-500">
         Benefit + Graphic Image + Specs
         <!-- Feature 1 code -->
@@ -1655,8 +1643,6 @@
             </div> -->
         </div>
     </section>
-
-    <!-- Product Recmmendation -->
     <section class="max-w-screen-2xl w-screen border border-sky-500">
         Product Recommendation
         <div class="container py-[2%] bg-[#f7f7f7]">
@@ -1702,12 +1688,9 @@
             <div class="t"></div>
         </div>
     </section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">
-        Recently Viewed
-    </section>
-    <section class="max-w-screen-2xl w-screen border border-sky-500">
-        Terms
-    </section>
+    <section class="max-w-screen-2xl w-screen border border-sky-500">Product Recommendation</section>
+    <section class="max-w-screen-2xl w-screen border border-sky-500">Recently Viewed</section>
+    <section class="max-w-screen-2xl w-screen border border-sky-500">Terms</section>
     <p>******</p>
     <script src="./components/index.js"></script>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
