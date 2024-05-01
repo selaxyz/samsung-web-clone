@@ -38,7 +38,7 @@ const button = document.getElementById('btn')
 
 // console.log(button);
 button.addEventListener('click', () => {
-    container.classList.add('translate-x-[-50%]')
+    container.classList.toggle('translate-x-[-50%]')
 })
 // button.addEventlistener('click', () => {
 //     container.classList.add('translate-x-[-50%]')
