@@ -34,11 +34,14 @@
 
 const container = document.getElementById('container-img')
 
-const button = document.getElementById('btn')
+// const button = document.getElementById('btn')
+const button = document.getElementsByClassName('btn')
+
+console.log(button);
 
 // console.log(button);
 button.addEventListener('click', () => {
-    container.classList.toggle('translate-x-[-50%]')
+    container.classList.toggle('translate-x-[-19%]')
 })
 // button.addEventlistener('click', () => {
 //     container.classList.add('translate-x-[-50%]')
