@@ -155,3 +155,30 @@ function seeAllSpecHandler (){
 function hideAllSpecHandler () {
     specContainer.classList.toggle('max-h-[2000px]')
 }
+// Purchase option
+
+const btnOneTime = document.getElementById('btn-one-time')
+const btnMontly = document.getElementById('btn-monthly')
+const btnInstallment = document.getElementById('btn-installment')
+const cardPurchase = document.querySelectorAll('.card-purchase')
+const cardDesc = document.querySelectorAll('.card-desc')
+// btnOneTime.addEventListener('click', ()=>{
+//     for (let i=0; i<3; i++){
+//         if (i === 0){
+//             cardDesc[0].classList.remove('hidden')
+//         }else{
+//             cardDesc[i].classList.add('hidden')
+//         }
+
+//     }
+// })
+// btnOneTime.addEventListener('click', ()=>{
+//     for (let i=0; i<3; i++){
+//         if (i === 0){
+//             cardDesc[0].classList.remove('hidden')
+//         }else{
+//             cardDesc[i].classList.add('hidden')
+//         }
+
+//     }
+// })
