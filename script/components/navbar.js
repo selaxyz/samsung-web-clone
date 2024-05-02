@@ -17,7 +17,7 @@ export class NavBar extends HTMLElement {
                 </svg>
             </a>
             <ul  class="hidden shrink-0 xl:flex text-sm font-bold items-center ">
-                <li onmouseover="onNavItemClick(this)" onmouseout="onNavItemOut(this)"  class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
+                <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemOver(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">AI</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Mobile</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">TV & Audio</a></li>
@@ -64,7 +64,7 @@ export class NavBar extends HTMLElement {
             </div>
         </section>
     </section>
-    <section class="nav-link hidden shrink-0 xl:flex absolute justify-end xl:justify-center text-center  h-[100%] top-[-100%] w-full">
+    <section class="nav-link delay-300 hidden shrink-0 xl:flex absolute justify-end xl:justify-center text-center  h-[100%] top-[-100%] w-full">
         <div class="absolute z-10 bg-black opacity-60 p-10 w-full h-full"></div>
         <div
             class="flex justify-between z-50 bg-white rounded-bl-2xl rounded-br-2xl max-w-screen-2xl w-screen h-fit border-t text-left pt-6 pb-12 px-12">
@@ -161,13 +161,10 @@ export class NavBar extends HTMLElement {
         <script>
             const navLinks = document.querySelector('.nav-link')
 
-            function onNavItemClick(e) {
-                navLinks.classList.toggle('top-[5%]')
+            function onNavItemOver(e) {
+                navLinks.classList.toggle('top-[83px]')
             }
 
-            function onNavItemOut(e) {
-                navLinks.classList.toggle('top-[-100%]')
-            }
     </script>`
         const scriptEl = document.createRange().createContextualFragment(html);
         this.append(scriptEl);
