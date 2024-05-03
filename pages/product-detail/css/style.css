@@ -6,7 +6,7 @@
 }
 .image-container{
     transition: transform .3s ease-out;
-    min-width:calc(50vw)`
+    min-width:calc(50vw)
 }
 /* .row:after{
     content: "";

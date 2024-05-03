@@ -39,12 +39,12 @@
                     </div>
                     <div class="flex">
                         <div
-                            class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative inline-block">
+                            class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-slate-200 relative inline-block">
                             <p>Total</p>
                             <p>$189.99 <span>$229.99</span></p>
                         </div>
                         <div
-                            class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-[#ddd] relative">
+                            class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-slate-200 relative">
                             <div class="flex flex-col">
                                 <p class="text-xs">Samsung Financing starting from</p>
                                 <p>$7.92/mo <span class="text-[10px] line-through">$9.58/mo</span></p>
@@ -66,14 +66,14 @@
                         <li class="px-1.5 py-3">Support</li>
                         <li class="px-1.5 py-3">Related</li>
                     </ul>
-                    <div class="md:flex hidden">
-                        <div class="flex">
+                    <div class="md:flex hidden gap-3 w-full">
+                        <div class="flex w-full">
                             <!-- samsung blue #2189ff -->
-                            <p class="my-auto pr-2">
+                            <div class="w-full pr-2 text-right py-2">
                                 <span class="text-orange-500">Save</span> up to an
                                 <span class="text-orange-500">extra 10.00%</span> with
                                 <span class="text-blue-500">Samsung Offer Programs</span>
-                            </p>
+                            </div>
                             <button class="text-blue-500">
                                 <svg class="footer-icon-svg" width="11" height="6" viewBox="0 0 11 6">
                                     <polyline data-footer-icon-shape="" stroke="currentColor" stroke-linecap="round"
@@ -82,15 +82,10 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex">
-                            <div class="my-auto">
-                                <img src="../../assets/images/product-detail/message-icon.png" alt="" />
-                            </div>
-                            <a href="#" class="underline text-blue-500 px-2 text-sm w-fit my-auto lg:text-nowrap">Chat with an Expert</a>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="w-6 my-auto" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                            </svg>
+                        <div class="flex w-fit items-center">
+                            <img src="../../assets/images/product-detail/message-icon.png" alt="" />
+                            <!-- <img class="my-auto h-6" src="/assets/images/product-detail/message-icon.png" alt=""> -->                             
+                            <div class="text-nowrap underline text-blue-500 px-2 text-sm w-fit my-auto mr-10">Chat with an Expert</div>
                         </div>
                     </div>
                 </div>
@@ -120,7 +115,7 @@
                         </div>
 
                         <!-- Next and previous buttons -->
-                        <div class="flex justify-between absolute w-full top-1/2 left-0 px-4">
+                        <div class="flex justify-between absolute w-full top-1/3 left-0 px-4">
                             <a class="prev bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
                                 onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next bg-slate-100 size-8 pl-3 pt-1 rounded-full cursor-pointer"
@@ -316,17 +311,21 @@
                         </h4>
                         <div
                             id="trade-in"
-                            class="card-trade cursor-pointer h-16 w-full border-2 border-blue-500 flex justify-center items-center font-bold rounded-md">
+                            class="card-trade cursor-pointer h-16 w-full border-2 border-blue-500 flex justify-center items-center font-bold rounded-md hover:border">
                             <p>Yes,trade-in</p>
                         </div>
-                        <div
-                            id="combo-brand"
-                            class="card-trade cursor-pointer h-16 w-full border-2 border-slate-300 flex justify-center items-center font-bold rounded-md">
-                            <p>Select a Brand</p>
+                        <div id="combo-brand" class="w-full bg-slate-100 p-4 rounded-xl border">
+                            <div                
+                            class="card-trade bg-white cursor-pointer h-16 w-full border-2 border-slate-300 flex justify-center items-center font-bold rounded-md hover:border">
+                            <div class="flex justify-between w-full px-3">
+                                <p>Select a Brand</p>
+                                <img src="/assets/images/product-detail/chevron-down.svg" alt="">
+                            </div>
+                        </div>
                         </div>
                         <div
                             id="no-trade-in"
-                            class="card-trade cursor-pointer h-16 w-full border-2 border-slate-300 flex justify-center items-center font-bold rounded-md">
+                            class="card-trade cursor-pointer h-16 w-full border-2 border-slate-300 flex justify-center items-center font-bold rounded-md hover:border">
                             <p>No</p>
                         </div>
                     </div>
@@ -358,28 +357,28 @@
                         </div>
                     </div>
                     <!-- Purchase Option -->
-                    <div class="purchase">
+                    <div class="purchase w-full">
                         <h4 class="font-bold text-2xl">Choose your purchase option</h4>
                         <div class="text-xs font-bold text-blue-500 mb-4">
                             <a href="#" class="underline">Question? Ask a Financing Expert</a>
                         </div>
-                        <div class="purchase-container overflow-y-hidden snap-x" style="scrollbar-width: none;">
-                            <div class="flex flex-nowrap w-[400px] gap-5 mb-6  text-sm">
+                        <div class="purchase-container cursor-pointer overflow-y-hidden snap-x scroll-smooth" style="scrollbar-width: none;">
+                            <div class="flex flex-nowrap w-[600px] gap-5 mb-6  text-sm">
                                 <div
                                 id="btn-one-time" 
-                                class="card-purchase w-[140px] h-[150px] font-bold tracking-tight flex flex-col justify-between bg-blue-500 text-white py-3 px-4 rounded-md">
+                                class="card-purchase border w-[164px] delay-200 h-[150px] font-bold tracking-tight flex flex-col justify-between bg-blue-500 text-white py-3 px-4 rounded-md">
                                 <p class="text-sm">One-time Payment</p>
-                                <p class="text-base">$189.99</p>
+                                <p class="text-base mb-4">$189.99</p>
                             </div>
                             <div
-                            id="btn-montly" 
-                                class="card-purchase w-[140px] h-[150px] font-bold tracking-tight flex flex-col justify-between border border-[#ddd] py-3 px-4 rounded-md">
+                            id="btn-monthly" 
+                                class="card-purchase cursor-pointer delay-200 w-[164px] h-[150px] font-bold tracking-tight flex flex-col justify-between border border-[#ddd] py-3 px-4 rounded-md">
                                 <p>Pay Monthly</p>
                                 <p>$7.92/mo<br><span>for 24 mos</span></p>
                             </div>
                             <div
                             id="btn-installment" 
-                                class="card-purchase w-[140px] h-[150px] font-bold tracking-tight flex flex-col justify-between border border-[#ddd] py-3 px-4 rounded-md">
+                                class="card-purchase cursor-pointer w-[164px] delay-200 h-[150px] font-bold tracking-tight flex flex-col justify-between border border-[#ddd] py-3 px-4 rounded-md">
                                 <p>Pay in 4 Installments</p>
                                 <p>$47.50<br><span>every two weeks</span></p>
                             </div>
@@ -387,8 +386,8 @@
                             
                         </div>
 
-                        <div class="one-time bg-[#f7f7f7] rounded-lg flex w-full px-3 gap-5 py-4">
-                            <div class="card-desc">
+                        <div class="one-time bg-neutral-100 rounded-lg flex w-full px-3 gap-5 py-4">
+                            <div class="card-desc flex items-center gap-6">
                                 <div>
                                     <img src="../../assets/images/product-detail/card-svg.svg" alt="card" />
                                 </div>
@@ -400,26 +399,65 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-desc flex-col hidden" id="">
+                            <!-- it hidden so it can't flex -->
+                            <div class="card-desc hidden flex-col gap-3" id="">
                                 <div class="min-w-60 border-2 border-blue-500 rounded text-sm my-auto py-2 px-1">
                                     <p class="font-bold">$7.08/mo</p>
                                     <p>for 24 mos</p>
                                 </div>
-                                <div class="">
-                                    <img src="../../assets/images/product-detail/card-svg.svg" alt="card" />
-                                </div>
-                                <div>
-                                    <p class="text-sm font-bold mt-1">Samsung Financing </p>
-                                    <p class="text-xs">
-                                        Plan terms and monthly installments finalized during checkout.
-                                    </p>
-                                </div>
+                                <div class="flex items-center gap-6">
+                                    <img class="h-8" src="../../assets/images/product-detail/samsung-wallet.png" alt="card" />
+                                    <div>
+                                        <p class="text-sm font-bold mt-1">Samsung Financing </p>
+                                        <p class="text-xs">
+                                            Plan terms and monthly installments finalized during checkout.
+                                        </p>
+                                    </div>
+                                </div> 
                             </div>
-
+                            <!-- it hidden so it can't flex -->
+                            <!-- forget to put w-full to the container -->
+                            <div class="card-desc flex-col hidden w-full gap-3" id="">
+                                <div class="installment-container w-full overflow-y-hidden snap-x scroll-smooth" style="scrollbar-width: none;">
+                                    <div class="flex flex-nowrap gap-4 text-xs w-fit">
+                                        <div id="btn-affirm" class="bg-white cursor-pointer min-w-64 border-2 border-blue-500 rounded my-auto py-2 px-1">
+                                            <div class="flex items-center gap-3">
+                                                <img class="h-4" src="/assets/images/product-detail/affirm-icon.png" alt="">
+                                                <div>
+                                                    <p class="font-bold">$42.50 every two weeks total</p>
+                                                    <p>$169.99.total</p>
+                                                    <p>$0 due today</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="btn-klarna" class="bg-white cursor-pointer min-w-64 border-2 rounded my-auto py-2 px-1">
+                                            <div class="flex items-center gap-3">
+                                                <img class="h-4" src="/assets/images/product-detail/klarna-icon.png" alt="">
+                                                <div>
+                                                    <p class="font-bold">$42.50 every two weeks total</p>
+                                                    <p>$169.99.total</p>
+                                                    <p>$0 due today</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                                <div class="flex items-center gap-6">
+                                    <img class="h-8" src="../../assets/images/product-detail/calendar-icon.svg" alt="card" />
+                                    <div>
+                                        <p class="text-sm font-bold mt-1">Pay in 4</p>
+                                        <p class="text-xs mr-6">
+                                            Interest-free. No fees. No impact to credit score.
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
 
                         <!-- Total -->
-                        <div class="purchase-detail bg-[#f7f7f7] flex flex-col w-full px-3 gap-5 py-4 mt-3">
+                        <div class="purchase-detail bg-neutral-100 flex flex-col w-full px-3 gap-5 py-4 mt-3">
                             <div class="flex justify-between font-bold">
                                 <h5>Galaxy Buds2 Pro, Graphite</h5>
                                 <h5>$189.99</h5>
@@ -435,7 +473,7 @@
                                         <p>In-Store Pickup:</p>
                                         <a class="ml-3 text-blue-500" href="#">Select Store</a>
                                     </div>
-                                    <p class="text-[#ff7c2e]">Need it Fast</p>
+                                    <p class="text-orange-500">Need it Fast</p>
                                 </div>
                             </div>
                             <div class="sub-text font-bold text-sm flex">
@@ -471,10 +509,10 @@
                                 </p>
                             </div>
                             <div class="flex flex-col w-full items-center">
-                                <button class="w-3/5 text-sm py-4 px-5 text-white bg-blue-500 font-bold rounded-full">
+                                <a href="../cart/index.html" class="w-3/5 text-center text-sm py-4 px-5 text-white bg-blue-500 font-bold rounded-full">
                                     Add to cart
-                                </button>
-                                <a class="font-bold text-sm text-blue-500 mt-4" href="">Where to buy</a>
+                                </a>
+                                <a href="../nearby-store/index.html" class="font-bold text-sm text-blue-500 mt-4" href="">Where to buy</a>
                             </div>
                             <div class="flex flex-col w-full items-center">
                                 <p>Buying in bulk for your business?</p>

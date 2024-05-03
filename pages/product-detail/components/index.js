@@ -160,8 +160,53 @@ function hideAllSpecHandler () {
 const btnOneTime = document.getElementById('btn-one-time')
 const btnMontly = document.getElementById('btn-monthly')
 const btnInstallment = document.getElementById('btn-installment')
+const btnKlarna = document.getElementById('btn-klarna')
+const btnAffirm = document.getElementById('btn-affirm')
 const cardPurchase = document.querySelectorAll('.card-purchase')
 const cardDesc = document.querySelectorAll('.card-desc')
+const purchasContainer = document.querySelector('.purchase-container')
+const installContainer = document.querySelector('.installment-container')
+
+const cardChangeHandler = (n) =>{
+    if (n==1 || n == 2){
+        purchasContainer.scrollLeft += 100     
+    }else{
+        purchasContainer.scrollLeft = 0
+    }
+    for (let i=0; i<3; i++){
+        if (i === n){
+            cardDesc[n].classList.remove('hidden')
+            cardDesc[n].classList.add('flex')
+            cardPurchase[n].classList.add('bg-blue-500', 'text-white')
+        }else{
+            cardPurchase[i].classList.remove('bg-blue-500', 'text-white')
+            // cardPurchase[i].classList.add('text-white')
+            cardDesc[i].classList.add('hidden')
+            cardDesc[i].classList.remove('flex')
+        }
+    }
+}
+const cardInstallmentHandler = (n) =>{
+    if (n==1) {
+        installContainer.scrollLeft += 200
+        btnAffirm.classList.remove('border-blue-500')
+        btnKlarna.classList.add('border-blue-500')
+    }
+    else {
+        installContainer.scrollLeft = 0
+        btnKlarna.classList.remove('border-blue-500')
+        btnAffirm.classList.add('border-blue-500')
+    }
+}
+
+btnOneTime.addEventListener('click', cardChangeHandler.bind(null, 0))
+btnMontly.addEventListener('click', cardChangeHandler.bind(null, 1))
+btnInstallment.addEventListener('click', cardChangeHandler.bind(null, 2))
+
+btnAffirm.addEventListener('click', cardInstallmentHandler.bind(null, 0))
+btnKlarna.addEventListener('click', cardInstallmentHandler.bind(null, 1))
+// btnMontly.addEventListener('click', ()=>{cardChangeHandler(1)})
+// btnInstallment.addEventListener('click', ()=>{cardChangeHandler(2)})
 // btnOneTime.addEventListener('click', ()=>{
 //     for (let i=0; i<3; i++){
 //         if (i === 0){
