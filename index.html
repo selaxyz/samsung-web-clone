@@ -21,12 +21,12 @@
         <div class="flex  max-w-screen-sm  h-full sm:hidden">
 
                 <div class="relative overflow-hidden flex ">
-                    <div id="container-img" class="flex  transition-transform delay-300   "> 
-                            <img class="w-[1000px] h-[950px]" src="assets/images/home/hero/img-1-small.webp" alt="">
-                            <img class="w-[1000px] h-[1000px]" src="assets/images/home/hero/img-2-small.webp" alt="">      
-                            <img class="w-[1000px] h-[1000px]" src="assets/images/home/hero/img-3-small.webp" alt="">         
-                            <img class="w-[1000px] h-[1000px]" src="assets/images/home/hero/img-4-small.webp" alt="">            
-                            <img class="w-[1000px] h-[1000px]" src="assets/images/home/hero/img-5-small.webp" alt="">
+                    <div id="container-img" class="flex  transition-transform delay-300   w-screen h-screen"> 
+                            <img  src="assets/images/home/hero/img-1-small.webp" alt="">
+                            <img  src="assets/images/home/hero/img-2-small.webp" alt="">      
+                            <img  src="assets/images/home/hero/img-3-small.webp" alt="">         
+                            <img  src="assets/images/home/hero/img-4-small.webp" alt="">            
+                            <img  src="assets/images/home/hero/img-5-small.webp" alt="">
                     </div>
                     <div class="absolute bottom-0  left-24">
                         <div class="hero-btn flex bg-white rounded-full">
@@ -579,37 +579,15 @@
     
     const transition = (percentage) => {
         container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[0%]')
+        container.classList.add(`translate-x-[${percentage}%]`)
+        console.log(container);
     }
 
-
-    btn1.addEventListener('click', () => {
-        container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[0%]')
-        console.log(container.classList);
-   
-    })
-
-    btn2.addEventListener('click', () => {
-        container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[-20%]')
-        console.log(container.classList);
-    })
-    btn3.addEventListener('click', () => {
-        container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[-40%]')
-        console.log(container.classList);
-    })
-
-    btn4.addEventListener('click', () => {
-        container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[-60%]')
-    })
-
-    btn5.addEventListener('click', () => {
-        container.classList.remove(container.classList[4])
-        container.classList.add('translate-x-[-80%]')
-    })
+    btn1.addEventListener('click', () => transition(0))
+    btn2.addEventListener('click', () => transition(-100))
+    btn3.addEventListener('click', () => transition(-200))
+    btn4.addEventListener('click', () => transition(-300))
+    btn5.addEventListener('click', () => transition(-400))
 
 
     </script>
