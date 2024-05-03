@@ -166,7 +166,39 @@ const cardPurchase = document.querySelectorAll('.card-purchase')
 const cardDesc = document.querySelectorAll('.card-desc')
 const purchasContainer = document.querySelector('.purchase-container')
 const installContainer = document.querySelector('.installment-container')
+const rateStars = document.querySelectorAll('.rate-star')
 
+
+
+const rateStarHoverHandle = (n) =>{ 
+    for (let i = 0; i < rateStars.length; i++){
+        if (i <= n){
+            rateStars[i].classList.add('bg-orange-300')
+        }else{
+            rateStars[i].classList.remove('bg-orange-300')
+            // if (rateStars[i].classList.contains('bg-orange-300')){
+            //     rateStars[i].classList.contains('bg-orange-300')
+            // }
+            
+        }
+    }
+}
+const rateStartHoverOutHandle = () =>{
+    console.log('heell');
+    for (let i = 0; i < rateStars.length; i++){
+        rateStars[i].classList.remove('bg-orange-300')
+    }
+}
+for (let i = 0; i < rateStars.length; i++){
+    rateStars[i].addEventListener('mouseover', rateStarHoverHandle.bind(null, i))
+}
+for (let i = 0; i < rateStars.length; i++){
+    rateStars[i].addEventListener('mouseleave', rateStartHoverOutHandle)
+}
+
+// rateStars.forEach((rateStar) => {
+//     rateStar.addEventListener('mouseover', rateStarHoverHandle)
+// })
 const cardChangeHandler = (n) =>{
     if (n==1 || n == 2){
         purchasContainer.scrollLeft += 100     
