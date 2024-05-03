@@ -595,13 +595,15 @@
     const colorTransform = (e) => {
         for (let i = 0; i < heroBtn.length ; i++) {
             heroBtn[i].classList.remove('bg-black')
-            heroBtn[i].classList.remove('bg-gray-500')
-            heroBtn[i].classList.remove('border-2')
-            heroBtn[i].classList.remove('border-black')
-            heroBtn[i].classList.remove('border-dotted')
+            heroBtn[i].classList.add('bg-gray-500')
+            e.parentNode.classList.remove('border-2')
+            e.parentNode.classList.remove('border-black')
+            e.parentNode.classList.remove('border-dotted')
         }
+        console.log(e.parentNode);
+        e.classList.remove('bg-gray-500');
         e.classList.add('bg-black');
-        e.classList.add('border-2', 'border-black', 'border-dotted');
+        e.parentNode.classList.add('border-2', 'border-black', 'border-dotted');
     }
 
         btn1.addEventListener('click', () => transition(0))
@@ -611,6 +613,7 @@
         btn5.addEventListener('click', () => transition(-400))
 
     </script>
+    
     <script>
         const exploreItemLink = document.getElementById("explore-item-link")
         function onItemHover(e) {
