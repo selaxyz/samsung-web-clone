@@ -37,12 +37,12 @@
 
                         
                         <div class="absolute bottom-0  left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <div class="flex bg-white p-2 opacity-80 rounded-full">
-                                <button class="btn-1 "><div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
-                                <button class="btn-2"> <div  class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
-                                <button class="btn-3"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div>   </button>
-                                <button class="btn-4"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div>   </button>
-                                <button class="btn-5"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div>   </button>
+                            <div class="hero-btn-container flex bg-white  opacity-80 rounded-full">
+                                <button class="btn-1 py-2 "><div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
+                                <button class="btn-2 py-2"> <div  class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
+                                <button class="btn-3 py-2"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
+                                <button class="btn-4 py-2"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
+                                <button class="btn-5 py-2"> <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)"></div></button>
                             </div>
                         </div>
                     </div>
@@ -64,8 +64,8 @@
                     extra TV</h1>
                 <p class="pt-12 w-96 pb-12">Pre-order a 2024 TV and get a 65" Class TV on us.
                     (Yes, you read that right. Get a 65" Class TV on us.)</p>
-                <button class="btn bg-black p-2 rounded-full text-white font-semibold mt-5">Pre-order</button>
-            </div>
+                    <button class="btn bg-black p-2 rounded-full text-white font-semibold mt-5">Pre-order</button>
+                </div>
         </div> -->
     </section>
 
@@ -589,8 +589,8 @@
     const btn5 = document.querySelector('.btn-5');
 
     const heroBtn = document.querySelectorAll('.hero-btn');
-
-    console.log(heroBtn);
+    const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
+    console.log(heroBtnContainer);
     
     const transition = (percentage) => {
         container.classList.remove(container.classList[4])
@@ -601,11 +601,11 @@
         for (let i = 0; i < heroBtn.length ; i++) {
             heroBtn[i].classList.remove('bg-black')
             heroBtn[i].classList.add('bg-gray-500')
-            e.parentNode.classList.remove('border-2')
-            e.parentNode.classList.remove('border-black')
-            e.parentNode.classList.remove('border-dotted')
+            heroBtnContainer[i].classList.remove('border-2')
+            heroBtnContainer[i].classList.remove('border-black')
+            heroBtnContainer[i].classList.remove('border-dotted')
+            console.log(heroBtnContainer[i]);
         }
-        console.log(e.parentNode);
         e.classList.remove('bg-gray-500');
         e.classList.add('bg-black');
         e.parentNode.classList.add('border-2', 'border-black', 'border-dotted');
