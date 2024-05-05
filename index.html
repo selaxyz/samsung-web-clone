@@ -64,8 +64,8 @@
                     </div>
                 </div> -->
         <div class="hero-big-screen ">
-                    <div class="card-container flex overflow-hidden h-[80vh] relative">
-                        <div class="img flex ">
+                    <div class="card-container flex overflow-hidden h-[80vh] relative ">
+                        <div class="img-container flex transition-transform delay-300">
                             <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-1-big.webp" alt="">
                             <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-2-big.webp" alt="">
                             <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-3-big.webp" alt="">
@@ -73,16 +73,22 @@
                             <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-5-big.webp" alt="">
                         </div>
                         <div class="btn absolute flex justify-between w-full top-[50%] px-12">
-                            <button class="bg-black/50 size-10 rounded-full flex items-center justify-center">
+                            <button id="left" class="bg-black/50 size-10 rounded-full flex items-center justify-center">
                                 <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="32" height="28" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                                   </svg>
                             </button>
-                            <button class="bg-black/50 size-10 rounded-full flex items-center justify-center">
+                            <button id="right" class="bg-black/50 size-10 rounded-full flex items-center justify-center" onclick="transition()">
                                 <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="32" height="28" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                                   </svg>
                             </button>
+                        </div>
+                        <div class="absolute top-[30%] flex flex-col left-[10%] gap-4">
+                            <p class="text-[1.5vw] font-semibold">Limited time offer</p>
+                            <h2 class="text-[2.5vw] font-bold">Intelligent design, <br> smart savings</h2>
+                            <p>Save up to $2,700 on an 85" Class Samsung Neo <br> QLED 8K QN800C,</p>
+                            <button class="btn bg-black p-2 w-32 rounded-full text-white font-semibold text-[1vw]  ">Buy Now</button>
                         </div>
                     
                     </div>
@@ -519,7 +525,35 @@
 
     const heroBtn = document.querySelectorAll('.hero-btn');
     const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
-    console.log(heroBtnContainer);
+
+    const heroBtnLeft = document.querySelector('#left')
+    const heroBtnRight = document.querySelector('#right')
+    const heroImgContainer = document.querySelector('.img-container')
+    
+    // console.log(heroBtnLeft);
+  
+    let position = 0;
+
+
+    const transitionPage = (condition) => {
+         
+            heroImgContainer.classList.remove(`translate-x-[${position}%]`)
+            if (condition == 'right' && position > -400) {
+                position += -100
+            } else if (condition == "left" && position < 0) {
+                position += 100
+            }
+            heroImgContainer.classList.add(`translate-x-[${position}%]`)
+            console.log(heroImgContainer);
+        
+
+    }
+
+    heroBtnLeft.addEventListener('click', () => transitionPage('left'))
+
+    heroBtnRight.addEventListener('click', () => transitionPage('right'))
+
+
     
     const transition = (percentage) => {
         container.classList.remove(container.classList[4])
