@@ -116,8 +116,7 @@
                 </div>
 
         <div class="hero-big-screen hidden sm:block ">
-                    <div class="card-container flex overflow-hidden relative ">
-                        <div class=" flex">
+                    <div class="card-container flex overflow-hidden relative ">                
                             <ul class="img-container flex  transition-transform duration-500">
                                 <li class="object-cover w-[1540px] relative">
                                     <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-1-big.webp" alt="">
@@ -166,7 +165,7 @@
                                 </li>
                                 
                             </ul>                    
-                        </div>
+                        
                         <div class="btn absolute flex justify-between w-full top-1/2 px-12">
                             <button id="left" class="bg-black/50 size-10 rounded-full flex items-center justify-center">
                                 <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="32" height="28" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -208,8 +207,7 @@
             <button class="text-xl border-b-2 border-black">View all offers</button>
         </div>
 
-        <div
-            class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
+        <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
             <div class="overflow-auto flex gap-12 px-4">
                 <button>For you</button>
                 <button>Mobile & Computing</button>
@@ -219,77 +217,360 @@
                 <button>For Business</button>
             </div>
         </div>
-        <div class="items-container">
-            <div class="items grid grid-cols-2 sm:grid-cols-3 gap-10 mt-5">
-                <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-4 h-80">
-                    <a href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/fridge.avif" alt="">
-                        <div class="text-center text-rap">
-                            <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
-                            <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
-                            <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
-                            <p class="hidden sm:block">From $1499</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
-                    <a href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/frame.avif" alt="">
-                        <div class="text-center">
-                            <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
-                            <!-- <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p> -->
-                            <p class="hidden sm:block">From $1999.99</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
-                    <a href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/buds2.avif" alt="">
-                        <div class="text-center">
-                            <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
-                            <!-- <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p> -->
-                            <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
-                    <a href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/big_frige.avif" alt="">
-                        <div class="text-center">
-                            <p class="max-w-72 font-semibold text-center">23 cu. ft. Bespoke 4-Door Flex
-                                <br>
-                                Refrigerator with AI Family Hub
-                            </p>
-                            <!-- <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p> -->
-                            <p class="text-blue-600 font-semibold hidden sm:block ">Save $1200.</p>
-                            <p class="hidden sm:block">From $3899</p>
-                        </div>
 
-                    </a>
-                </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
-                    <a href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/s24.avif" alt="">
-                        <div class="text-center">
-                            <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
-                            <!-- <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p> -->
-                            <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
-                            <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+        <div class="flex overflow-hidden mt-6 ">
+            <ul class="img-container flex transition-transform duration-500 gap-2">
+                <li class=" w-[100vw] sm:w-[1540px] px-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pl-4 sm:w-[1440px]">
+                        <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/fridge.avif" alt="">
+                                <div class="text-center text-rap">
+                                    <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
+                                    <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
+                                    <p class="hidden sm:block">From $1499</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80"><a
-                        href="./pages/product-detail/index.html">
-                        <img class="" src="assets/images/home/for_you/laptop.avif" alt="">
-                        <div class="text-center">
-                            <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
-                            <!-- <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p> -->
-                            <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
-                            <p class="hidden sm:block">From $1499.99</p>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2 ">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/frame.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
+                                     <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $1999.99</p>
+                                </div>
+                            </a>
                         </div>
-                    </a></div>
-            </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/buds2.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/big_frige.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">23 cu. ft. Bespoke 4-Door Flex
+                                        <br>
+                                        Refrigerator with AI Family Hub
+                                    </p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block ">Save $1200.</p>
+                                    <p class="hidden sm:block">From $3899</p>
+                                </div>
+        
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/s24.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
+                                    <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2"><a
+                                href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px]" src="assets/images/home/for_you/laptop.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
+                                    <p class="hidden sm:block">From $1499.99</p>
+                                </div>
+                            </a></div>
+                    </div>
+                </li>
+                <li class="w-[100vw]  sm:w-[1540px] px-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pl-4 sm:w-[1440px]">
+                        <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/fridge.avif" alt="">
+                                <div class="text-center text-rap">
+                                    <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
+                                    <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
+                                    <p class="hidden sm:block">From $1499</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 row-span-2 flex justify-center items-center rounded-2xl p-2 ">
+                            <a href="./pages/product-detail/index.html">
+                                <img class=" " src="assets/images/home/for_you/s24-ultra.png" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
+                                     <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $1999.99</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/buds2.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/s24.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
+                                    <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2"><a
+                                href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px]" src="assets/images/home/for_you/laptop.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
+                                    <p class="hidden sm:block">From $1499.99</p>
+                                </div>
+                            </a></div>
+                    </div>
+                   
+                </li>
+                <li class="w-[100vw]  sm:w-[1540px] px-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pl-4 sm:w-[1440px]">
+                        <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/fridge.avif" alt="">
+                                <div class="text-center text-rap">
+                                    <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
+                                    <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
+                                    <p class="hidden sm:block">From $1499</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 row-span-2 flex justify-center items-center rounded-2xl p-2 ">
+                            <a href="./pages/product-detail/index.html">
+                                <img class=" " src="assets/images/home/for_you/tv.png" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
+                                     <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $1999.99</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/buds2.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2">
+                            <a href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px] " src="assets/images/home/for_you/s24.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
+                                    <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-2"><a
+                                href="./pages/product-detail/index.html">
+                                <img class="h-[120px] sm:h-[201px]" src="assets/images/home/for_you/laptop.avif" alt="">
+                                <div class="text-center">
+                                    <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
+                                    <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                    <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
+                                    <p class="hidden sm:block">From $1499.99</p>
+                                </div>
+                            </a></div>
+                    </div>
+                   
+                </li>
+                <!-- <li class="object-cover w-[420px] sm:w-[1540px] relative">
+                    <img class="object-cover w-[1540px]" src="assets/images/home/hero/img-2-big.webp" alt="">
+                    <div class="absolute text-white top-[30%] flex flex-col left-[10%] gap-4">
+                        <p class="text-[1.5vw] font-semibold">Save $1,040</p>
+                        <h2 class="text-[2.5vw] font-bold">Meet your new Galaxy <br> family</h2>
+                        <p>Bundle and save up to $1,040 with Galaxy S24 Ultra, Watch6 <br> and Buds2 Pro.</p>
+                        <button class="btn bg-white p-2 w-32 rounded-full text-black font-semibold text-[1vw]  ">Buy Now</button>
+                    </div>
+                </li> -->
+                
+            </ul>                    
+        
         </div>
+  
+
+
+        
+        <!-- <div class="flex overflow-hidden ">
+            <ul class="flex overflow-hidden gap-12  w-full">
+                
+                  
+                        <l class="w-[1440px] items grid grid-cols-2 sm:grid-cols-3 gap-10 mt-5">
+                            <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/fridge.avif" alt="">
+                                    <div class="text-center text-rap">
+                                        <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
+                                        <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
+                                        <p class="hidden sm:block">From $1499</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/frame.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
+                                         <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="hidden sm:block">From $1999.99</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/buds2.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/big_frige.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">23 cu. ft. Bespoke 4-Door Flex
+                                            <br>
+                                            Refrigerator with AI Family Hub
+                                        </p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block ">Save $1200.</p>
+                                        <p class="hidden sm:block">From $3899</p>
+                                    </div>
+            
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/s24.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
+                                        <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80"><a
+                                    href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/laptop.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
+                                        <p class="hidden sm:block">From $1499.99</p>
+                                    </div>
+                                </a></div>
+                        </l>
+               
+
+                
+            
+                    
+                        <li class="items w-[1440px] grid grid-cols-2 sm:grid-cols-3 gap-10 mt-5">
+                            <div class="item bg-gray-200 flex justify-center  items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/fridge.avif" alt="">
+                                    <div class="text-center text-rap">
+                                        <p class="max-w-72 font-semibold text-center">Bespoke 6 cu. ft. Smart Slide-In Gas</p>
+                                        <p class="ml-4 hidden sm:block "> Range with Smart Oven Camera &...</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block">Save $600.</p>
+                                        <p class="hidden sm:block">From $1499</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/frame.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">65"The Frame QLED 4K</p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="hidden sm:block">From $1999.99</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/buds2.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy Buds2 Pro</p>
+                                        <p class="ml-4 hidden sm:block"> Range with Smart Oven Camera &...</p>
+                                        <p class="hidden sm:block">From $229.99 before eligible trade-in.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/big_frige.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">23 cu. ft. Bespoke 4-Door Flex
+                                            <br>
+                                            Refrigerator with AI Family Hub
+                                        </p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block ">Save $1200.</p>
+                                        <p class="hidden sm:block">From $3899</p>
+                                    </div>
+            
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80">
+                                <a href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/s24.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy S24 Ultra, 256GB (Unlocked)</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block">Save up to $150.</p>
+                                        <p class="hidden sm:block"> From $1149.99 before eligible trade-in.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item bg-gray-200 flex justify-center items-center rounded-2xl p-4 h-80"><a
+                                    href="./pages/product-detail/index.html">
+                                    <img class="" src="assets/images/home/for_you/laptop.avif" alt="">
+                                    <div class="text-center">
+                                        <p class="max-w-72 font-semibold text-center">Galaxy Book4 Pro 360, 16"</p>
+                                        <p class="text-blue-600 font-semibold hidden sm:block ">Save $400.</p>
+                                        <p class="hidden sm:block">From $1499.99</p>
+                                    </div>
+                                </a></div>
+                        </li>
+                    
+                
+            </ul>
+
+        </div> -->
     </section>
  
 
@@ -302,7 +583,7 @@
                     <h1>Mobile & Computing</h1>
                 </div>
                 <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden ">
-                    <div class="overflow-auto flex gap-12 px-4">
+                    <div class="overflow-auto flex gap-12 px-2">
                         <button >Galaxy S24 Ultra</button>
                         <button >Galaxy S24+</button>
                         <button >Galaxy Book4 Ultra</button>
@@ -473,7 +754,7 @@
     </section> 
 
 
-  <section class="max-w-screen-2xl w-screen ">
+  <!-- <section class="max-w-screen-2xl w-screen ">
         <div class="flex items-center flex-col justify-center">
             <!-- <div class="header font-semibold text-[48px] w-[87vw] text-center mx-auto md:text-2xl py-8"> -->
             
@@ -626,7 +907,7 @@
         
         
 
-        </section>
+        </section> -->
         <footer-component></footer-component>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="./script/index.js" type="module"></script>
