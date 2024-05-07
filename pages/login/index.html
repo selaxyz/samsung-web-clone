@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login | Samsung DEV</title>
+    <script src="./components/index.js" defer></script>
 </head>
 
-<body class="flex flex-col items-center bg-[#F2F2F2]">
-    <h1>This is Login</h1>
+<body class="flex flex-col items-center bg-slate-50] overflow-hidden">
+    <!-- <h1>This is Login</h1>
     <a class="underline" href="../profile/index.html">CLICK HERE: Go to Profile</a>
     <a class="underline" href="../create-account/index.html">CLICK HERE: Go to Create Account</a>
-    <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-    <header>
-        <img src="/assets/images/login/txt-logo.svg" alt="">
+    <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p> -->
+    <header class="self-start py-6 pl-8 bg-white w-full">
+        <div class="max-w-screen-xl mx-auto">
+            <img src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
+        </div>
+        
     </header>
-    <main>
-        <div class="w-[640px] h-[696px] bg-white rounded-2xl pt-16 px-[20%]">
+
+  </label>
+    <main class="w-full md:w-fit h-full flex flex-col justify-center">
+        <div class=" md:w-[640px] md:h-[696px] w-full h-full bg-white rounded-2xl pt-16 px-[10%] md:px-[20%]">
             <h1 class="text-2xl text-center">One account. Any device. Just for you. Sign in to get started.</h1>
-            <div class="mt-6 border-b-2 border-blue-300">
-                <input type="text" placeholder="Email">                
-            </div>
-            <div class="">
-                <div class="flex gap-4 my-4">
-                    <label for="remember" class="relative">
-                        <input class="opacity-0 absolute top-0 left-0" type="checkbox"><span class="absolute top-0 left-0 rounded-full size-6 border border-gray-300"></span>
-                        <span class="text-slate-500 ml-8">Remember my ID</span>
+            
+            <form id="login-form">
+                <div class="mt-6 border-b-2 border-blue-300">
+                    <input id="email" class="w-full border-0" type="email" placeholder="Email" required onchange="()=>{console.log('aaa')}">                
+                    <p id="error" class="text-red-500 hidden absolute text-sm mt-1 ">ID not valid</p>
+                </div>
+                <div class="flex gap-4 mt-6 mb-4">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox rounded-full ">
+                        <span class="ml-2 text-slate-500 ">Remember my ID</span>
                     </label>
                 </div>
-                <button class="w-full bg-blue-300 py-2 rounded-full mb-8">Next</button>
+                <button type="submit" class="w-full bg-blue-400 py-2 rounded-full mb-8 disabled:bg-blue-200" id="btn-submit" disabled>Next</button>
                 <div class="text-sm text-slate-500 underline flex flex-col gap-5">
                     <a href="#">Find ID</a>
                     <a href="#">Create account</a>
@@ -36,25 +44,42 @@
  
                 <!-- Sigin in with -->
                 <div class="flex gap-6 flex-col py-6 font-bold">
-                    <button class="w-full bg-slate-300 rounded-full py-2">
+                    <button class="w-full bg-slate-300 rounded-full py-2 relative">
                         Sign in with Google
+                        <img class="absolute size-8 top-1 left-1" src="/assets/images/login/google.png" alt="">
                     </button>
-                    <button class="w-full bg-slate-300 rounded-full py-2">
+                    <button class="w-full bg-slate-300 rounded-full py-2 relative">
+                        <img class="absolute size-8 top-1 left-1" src="/assets/images/login/qr-code-icon.png" alt="">
                         Sign in with QR code
                     </button>
 
                     <div class="flex gap-4 my-4 w-full justify-center items-center">
-                        <label for="remember" class="relative">
-                            <input class="opacity-0 absolute top-0 left-0" type="checkbox"><span class="absolute top-0 left-0 rounded-full size-6 border border-gray-300"></span>
-                            <span class="text-slate-500 ml-8">Stay signed in </span>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox rounded-full ">
+                            <span class="text-slate-500 ml-2">Stay signed in </span>
                         </label>
                         <img class="size-10" src="/assets/images/login/info-light.png" alt="">
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
-   
+    <footer class="absolute bottom-0 left-0 text-xs w-full pb-5">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="flex flex-col justify-center md:flex-row md:justify-between md:items-end">
+                <div class="flex gap-5 mb-2 px-6">
+                    <a href="">Terms and conditions</a>
+                    <a class="font-bold" href="">Samsung account Privacy Notice</a>
+                    <a href="">Notice</a>
+                    <a href="">Customer Support</a>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <img class="h-4 md:h-fit" src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
+                    <p class="text-gray-500">Copyright © 1995-2024 Samsung. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="./script/index.js" type="module"></script>
 </body>
