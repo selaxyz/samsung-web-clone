@@ -6,5 +6,6 @@ import { Feedback } from './components/feedback.js'
 
 customElements.define("navbar-component", NavBar);
 customElements.define("footer-component", Footer);
+
 customElements.define("chat-component", Chat);
 customElements.define("feedback-component", Feedback);
