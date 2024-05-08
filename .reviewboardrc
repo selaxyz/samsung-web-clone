@@ -1,5 +1,5 @@
 REVIEWBOARD_URL = "https://review.clp.kr/"
 REPOSITORY = "AlphaBeez/Team-Projects/Sumsung-Clone"
 REPOSITORY_TYPE = "git"
-BRANCH = "feature/feature-sub-navigation"
-LAND_DEST_BRANCH = "feature/feature-sub-navigation"
+BRANCH = "feature/signin-page"
+LAND_DEST_BRANCH = "feature/signin-page"
