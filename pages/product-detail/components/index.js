@@ -237,25 +237,21 @@ btnInstallment.addEventListener('click', cardChangeHandler.bind(null, 2))
 
 btnAffirm.addEventListener('click', cardInstallmentHandler.bind(null, 0))
 btnKlarna.addEventListener('click', cardInstallmentHandler.bind(null, 1))
-// btnMontly.addEventListener('click', ()=>{cardChangeHandler(1)})
-// btnInstallment.addEventListener('click', ()=>{cardChangeHandler(2)})
-// btnOneTime.addEventListener('click', ()=>{
-//     for (let i=0; i<3; i++){
-//         if (i === 0){
-//             cardDesc[0].classList.remove('hidden')
-//         }else{
-//             cardDesc[i].classList.add('hidden')
-//         }
 
-//     }
-// })
-// btnOneTime.addEventListener('click', ()=>{
-//     for (let i=0; i<3; i++){
-//         if (i === 0){
-//             cardDesc[0].classList.remove('hidden')
-//         }else{
-//             cardDesc[i].classList.add('hidden')
-//         }
+// modal
+const body = document.querySelector('body')
+const addModal = document.getElementById('add-modal')
+const openModal = document.getElementById('open-modal')
+const backdrop = document.getElementById('backdrop')
+const btnCancel = document.getElementById('btn-cancel')
+const toggleModal = () =>{
+    addModal.classList.toggle('hidden')
+    backdrop.classList.toggle('hidden')
+    body.classList.toggle('overflow-hidden')
+    
+}
 
-//     }
-// })
+openModal.addEventListener('click', toggleModal)
+backdrop.addEventListener('click', toggleModal)
+btnCancel.addEventListener('click', toggleModal)
+

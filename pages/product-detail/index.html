@@ -20,17 +20,37 @@
     <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p> -->
     <navbar-component></navbar-component>
     <!-- Product Detail -->
-    <section class="max-w-screen-2xl w-screen ">
-        <!--  #a6a6a6 text-slate-400 -->
-        <div class="bread-crumb text-slate-400 hidden md:block pl-4 mb-4">
-            Home / Mobile / Audio / All Audio / Headphones / Galaxy Buds2 Pro, Graphite
+
+    <!-- modal -->
+    <div class="modal-container">
+        <div id="backdrop" class="bg-black/50 absolute w-full h-dvh top-0 left-0 z-40 hidden"></div>
+        <div class="modal hidden absolute z-40 bg-white rounded-lg w-1/4 h-[400px]  top-1/3 left-[40%]" id="add-modal">
+        <div class="modal-content text-center pt-8 px-20 font-bold">
+            <h3 class="text-4xl font-bold py-10">Create your wishlist</h3>
+            <p class="">Don’t miss out on the products you love
+
+                Sign in/Sign up now to access your wishlist on all your devices and get updates on great promotions.</p>                                
         </div>
+        <div class="flex mt-6 gap-5 justify-center font-bold">
+            <button class="btn " id="btn-cancel">Keep Browsing</button>
+            <button class="btn bg-blue-800 text-white py-2 px-10 rounded-full uppercase">Continue</button>
+        </div>
+        </div>
+    </div>
+    <section class="max-w-screen-2xl w-screen ">
+        <ul class="bread-crumb md:flex text-slate-400 hidden  pl-4 mb-4 gap-3">
+            <a href="#"><li>Home /</li></a>
+            <a href="#"><li>Mobile /</li></a>
+            <a href="#"><li>Audio /</li></a>
+            <a href="#"><li>All Audio /</li></a>
+            <a href="#"><li>Headphones /</li></a>
+            <a href="#"><li>Galaxy Buds2 Pro, Graphite</li></a>
+        </ul>
 
         <!-- Sticky Header -->
         <div class="">
-            <div class="sticky-head md:sticky md:top-0 z-50">
-                <div class="pl-4 header-container flex flex-col md:flex-row justify-between p-2 min-h-16 drop-shadow-sm bg-white"
-                    style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25)">
+            <div class="sticky-head md:sticky md:top-0 z-30">
+                <div class="pl-4 header-container flex flex-col md:flex-row justify-between p-2 min-h-16 drop-shadow-sm bg-white shadow-md">
                     <div>
                         <h1 class="text-sm md:text-2xl font-bold">
                             Galaxy Buds2 Pro, Graphite
@@ -39,15 +59,15 @@
                     </div>
                     <div class="flex">
                         <div
-                            class="mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-slate-200 relative inline-block">
+                            class="mr-10 before:absolute before:h-2/3 before:-left-1 before:border-l before:border-slate-200 relative inline-block">
                             <p>Total</p>
                             <p>$189.99 <span>$229.99</span></p>
                         </div>
                         <div
-                            class="flex mr-10 before:absolute before:h-2/3 before:left-[-4px] before:border-l before:border-slate-200 relative">
+                            class="flex mr-10 before:absolute before:h-2/3 before:-left-1 before:border-l before:border-slate-200 relative">
                             <div class="flex flex-col">
                                 <p class="text-xs">Samsung Financing starting from</p>
-                                <p>$7.92/mo <span class="text-[10px] line-through">$9.58/mo</span></p>
+                                <p>$7.92/mo <span class="text-xs line-through">$9.58/mo</span></p>
                             </div>
 
                             <button>Add to Cart</button>
@@ -57,14 +77,13 @@
 
                 </div>
                 <!-- Nav Container bg-#f7f7f7 -->
-                <div class="nav-container bg-slate-50 flex justify-between pl-4"
-                    style="box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1)">
-                    <ul class="w-full justify-center flex font-bold text-xs md:text-sm md:justify-start">
-                        <li class="px-1.5 py-3">Benefits</li>
-                        <li class="px-1.5 py-3">Specs</li>
-                        <li class="px-1.5 py-3">Reviews</li>
-                        <li class="px-1.5 py-3">Support</li>
-                        <li class="px-1.5 py-3">Related</li>
+                <div class="nav-container bg-slate-50 flex justify-between pl-4 shadow-sm">
+                    <ul class="w-full justify-center flex font-bold text-xs md:text-sm md:justify-start gap-3">
+                        <li class="py-3">Benefits</li>
+                        <li class="py-3">Specs</li>
+                        <li class="py-3">Reviews</li>
+                        <li class="py-3">Support</li>
+                        <li class="py-3">Related</li>
                     </ul>
                     <div class="md:flex hidden gap-3 w-full">
                         <div class="flex w-full">
@@ -82,12 +101,24 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex w-fit items-center">
+                        <div class="flex w-fit items-center pr-4">
                             <img src="../../assets/images/product-detail/message-icon.png" alt="" />
+<<<<<<< HEAD
                             <!-- <img class="my-auto h-6" src="/assets/images/product-detail/message-icon.png" alt=""> -->
                             <div class="text-nowrap underline text-blue-500 px-2 text-sm w-fit my-auto mr-10">Chat with
                                 an Expert</div>
+=======
+                            <!-- <img class="my-auto h-6" src="/assets/images/product-detail/message-icon.png" alt=""> -->                             
+                            <a href="#" class="underline text-blue-500 px-2 text-sm w-fit my-auto mr-0 text-center">Chat with an Expert</a>
+                            <button id="open-modal"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 text-blue-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>    </button>                            
+>>>>>>> 65dba5c (product-detail: update modal on product show section)
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="banner bg-black text-white">
@@ -98,12 +129,12 @@
             </div>
 
             <!-- Product Show -->
-            <div class="product-detail md:flex relative justify-between mb-14">
+            <div class="md:flex relative justify-between mb-14">
                 <!-- detail left -->
                 <div
                     class="md:max-w-[800px] mt-4 md:h-full mx-4 md:mx-8 flex flex-col items-center md:sticky md:top-[172px]">
                     <div class="image-wrapper flex flex-col overflow-x-hidden relative">
-                        <div id="image-container" class="flex flex-nowrap transition-transform delay-300">
+                        <div id="image-container" class="flex flex-nowrap transition-transform duration-500">
                             <img class="w-full mySlides" width="800" height="600"
                                 src="../../assets/images/product-detail/detail-front-1.jpg" alt="" />
                             <img class="w-full mySlides" width="800" height="600"
@@ -173,8 +204,8 @@
                             <img src="../../assets/images/product-detail/message-icon.png" alt="" />
                         </div>
                         <a href="#" class="underline  px-2">Chat with an Expert</a>
-                        <svg style="color: rgb(73, 73, 223)" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-6 text-blue-500">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                         </svg>
