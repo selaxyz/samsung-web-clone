@@ -88,92 +88,9 @@
 
 
 
-    <section class="max-w-screen-xl w-screen">
-        <div class="bg-gray-100 bg-auto pt-2 pb-5">
-            <span class="flex justify-center p-5 text-xl md:text-2xl font-semibold mt-3">Find Online</span>
-            <div class="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="container">
-                    <div class="flex flex-wrap items-center justify-center w-full text-center">
-                        <div class=" border-2 bg-white-700 w-44">
-                            <div class=" overflow-hidden shadow-md bg-white">
-                                <div class=" mx-6 box-border h-40 w-32">
-                                    <img class=" h-20 w-28 object-scale-down object-center"
-                                        src="/assets/images/nearby-store/nearby-store2.png" alt="amazon store">
-                                    <p class="text-md">$189.99</p>
-                                    <p class="text-sm text-green-400">In Stock</p>
-                                    <p class="text-sm text-blue-900">View Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container ">
-                    <div class="flex flex-wrap items-center justify-center w-full text-center ">
-                        <div class=" border-2 bg-white-700 w-44">
-                            <div class=" overflow-hidden shadow-md bg-white ">
-                                <div class="mx-6 box-border h-40 w-32">
-                                    <img class=" h-20 w-28 object-scale-down object-center"
-                                        src="/assets/images/nearby-store/nearby-store-3-v2.png" alt="Best buy store">
-                                    <p class="text-md">$189.99</p>
-                                    <p class="text-sm text-green-400">In Stock</p>
-                                    <p class="text-sm text-blue-900">View Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="flex flex-wrap items-center justify-center w-full text-center">
-                        <div class=" border-2 bg-white-700 w-44">
-                            <div class=" overflow-hidden shadow-md bg-white">
-                                <div class="mx-6 box-border h-40 w-32">
-                                    <img class=" h-20 w-28 object-scale-down object-center"
-                                        src="/assets/images/nearby-store/nearby-store-Target.png" alt="Target Store">
-                                    <p class="text-md">$229.99</p>
-                                    <p class="text-sm text-green-400">In Stock</p>
-                                    <p class="text-sm text-blue-900">View Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="flex flex-wrap items-center justify-center w-full text-center">
-                        <div class=" border-2 bg-white-700 w-44">
-                            <div class=" bg-white">
-                                <div class="mx-6 box-border h-40 w-32">
-                                    <img class="h-20 w-28 object-scale-down object-center"
-                                        src="/assets/images/nearby-store/nearby-store-abt.jpeg"
-                                        alt="abt electronic store">
-                                    <p class="text-md">$189.99</p>
-                                    <p class="text-sm text-green-400">In Stock</p>
-                                    <p class="text-sm text-blue-900">View Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="flex flex-wrap items-center justify-center w-full text-center">
-                        <div class=" border-2 bg-white-700 w-44">
-                            <div class=" bg-white">
-                                <div class="mx-6 box-border h-40 w-32">
-                                    <img class=" h-20 w-28 object-scale-down object-center"
-                                        src="/assets/images/nearby-store/nearby-store-4.jpeg" alt="new egg store">
-                                    <p class="text-md">$189.99</p>
-                                    <p class="text-sm text-green-400">In Stock</p>
-                                    <p class="text-sm text-blue-900">View Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="max-w-screen-xl w-screen bg-gray-100 py-12 flex flex-col items-center space-y-12">
+        <span class="text-xl md:text-2xl font-semibold">Find Online</span>
+        <div id='stockList' class="stock-list grid grid-cols-2 md:flex gap-4 "></div>
     </section>
 
 
@@ -245,13 +162,12 @@
         </div>
     </section>
 
-
-
     <footer-component></footer-component>
 
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
+    <script src="./components/index.js"> </script>
 </body>
 
 </html>
