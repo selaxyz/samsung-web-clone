@@ -17,7 +17,7 @@ export class NavBar extends HTMLElement {
                 </svg>
             </a>
             <ul  class="hidden shrink-0 xl:flex text-sm font-bold items-center ">
-                <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemOver(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
+                <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">AI</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Mobile</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">TV & Audio</a></li>
@@ -64,10 +64,10 @@ export class NavBar extends HTMLElement {
             </div>
         </section>
     </section>
-    <section class="nav-link delay-300 hidden shrink-0 xl:flex absolute justify-end xl:justify-center text-center  h-[100%] top-[-100%] w-full">
-        <div class="absolute z-10 bg-black opacity-60 p-10 w-full h-full"></div>
+
+    <section class="nav-link bg-black/50 delay-300 z-50 hidden shrink-0 xl:flex absolute justify-end xl:justify-center transition-trasnform duration-300 text-center  h-0 overflow-hidden w-screen">
         <div
-            class="flex justify-between z-50 bg-white rounded-bl-2xl rounded-br-2xl max-w-screen-2xl w-screen h-fit border-t text-left pt-6 pb-12 px-12">
+            class="sub-nav-link flex justify-between z-50 bg-white rounded-bl-2xl rounded-br-2xl max-w-screen-2xl w-screen h-fit border-t text-left pt-6 pb-12 px-12" >
             <div class="space-y-6">
                 <h2 class="font-bold">Offers</h2>
                 <ul class="space-y-4 text-sm">
@@ -160,15 +160,22 @@ export class NavBar extends HTMLElement {
         const html = ` 
         <script>
             const navLinks = document.querySelector('.nav-link')
+            const subNavLinks = document.querySelector('.sub-nav-link') 
 
             function onNavItemOver(e) {
-                navLinks.classList.toggle('top-[83px]')
+                
+                navLinks.classList.add('h-dvh')
             }
-
-    </script>`
+            function onNavItemLeave(e) {
+                navLinks.classList.remove('h-dvh')
+            }
+            subNavLinks.addEventListener('mouseover', onNavItemOver)
+            subNavLinks.addEventListener('mouseleave', onNavItemLeave)
+            
+        </script>`
         const scriptEl = document.createRange().createContextualFragment(html);
         this.append(scriptEl);
-
+        
     }
 }
 
