@@ -255,3 +255,22 @@ openModal.addEventListener('click', toggleModal)
 backdrop.addEventListener('click', toggleModal)
 btnCancel.addEventListener('click', toggleModal)
 
+// See all Spec -> Hide all Spec
+// Rotate SVG Script
+// function rotateSVG(duration) 
+
+function myFunctionChangeText() {
+    var x = document.getElementById("show-all-spec");
+    if (x.innerHTML === "SEE ALL SPECS") {
+        x.innerHTML = "HIDE ALL SPECS";
+    } else {
+        x.innerHTML = "SEE ALL SPECS";
+    }
+
+    const svgElement = document.querySelectorAll('.rotate-svg');
+    svgElement.forEach(svgElement =>{
+    svgElement.classList.add('transition-transform', 'duration-[1800ms]', );
+    svgElement.classList.toggle('rotate-180');
+    });
+}
+
