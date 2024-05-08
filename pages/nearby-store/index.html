@@ -9,20 +9,16 @@
 </head>
 
 <body class="flex flex-col items-center">
-    <!-- <navbar-component></navbar-component> -->
-    <!-- <h1>This is Nearby Store</h1>
-    <a class="underline" href="../cart/index.html">CLICK HERE: Go to Cart</a>
-    <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-
-    <p>******</p> -->
-
-    <!-- <section class="">
+    <!-- <navbar-component></navbar-component>
+    
+    <a class="underline" href="../cart/index.html"></a>
+    <!<section class="">
         
         <div class="bread-crumb text-slate-400">
             Home / Audio / Shop Our Best Bluetooth Earbuds | Samsung US / Shop Our Best Wireless Headphones | Samsung US
         </div>
 </section> -->
-
+<a class="underline" href="../cart/index.html"></a>
 
 <navbar-component></navbar-component>
 <section class=" xl:max-w-screen-2xl w-screen hidden md:inline-block xl:inline-block">
@@ -83,11 +79,12 @@
             
             <div class="text-black text-xl mt-8 font-semibold"> $169.99</div>
             <div class="text-gray-400 text-xs mt-1">FREE SHIPPING ON ALL ORDERS</div>
-            <button class="rounded-full bg-blue-800 -full w-48 h-10 text-white font-semibold mt-5">
-                <div class="flex gap-3 justify-center items-center">
-                  <span class="text-sm font-sans font-extralight">BUY NOW</span>
+            <button type="button" onclick="window.location.href='http://127.0.0.1:5502/pages/cart/index.html'" class="rounded-full bg-blue-800 w-48 h-10 text-white font-semibold mt-5">
+                <div class="flex justify-center items-center">
+                    <span class="text-sm font-sans font-extralight">BUY NOW</span>
                 </div>
             </button>
+            
             </div>
 
         </div>
@@ -196,15 +193,13 @@
                     <div class="flex border-2 border-black h-11 px-5 space-x-11 items-center">
                         <P class="text-xs">Phnom Penh, Phnom Penh</P>
                         <!--Location arrow-->
-                        <svg class="h-4" viewBox="0 0 20 20" style="fill:red">
-                            <path d="M 11.84 19.6C 11.63 20.16 11.38 20.14 11.28 19.55 11.28 19.55 10.82 10.46 10.82 10.46 10.72 9.87 10.16 9.3 9.57 9.19 9.57 9.19 0.45 8.59 0.45 8.59-0.14 8.48-0.16 8.22 0.4 8.02 0.4 8.02 19.28 0.03 19.28 0.03 19.84-0.17 20.13 0.12 19.92 0.68 19.92 0.68 11.84 19.6 11.84 19.6Z"></path>
-                        </svg>
+                        <img class="w-6 rotate-12" src="../../assets/images/nearby-store/navigation.svg" alt="location arrow">
                     </div>
                     <!-- blue search box -->
                     <div class="w-10 gap-1 bg-blue-900 flex items-center justify-center">
-                        <img src="../../assets/images/nearby-store/magnifying-glass-solid.svg" class="h-5 fill-white rotate-90">
-
+                      <img class="rotate-90 w-6" src="../../assets/images/nearby-store/manifying-glass.svg" alt="manifying-glass">
                     </div>
+                    
                 </div>
                 
                 <div class="my-12 justify-center">
@@ -226,7 +221,7 @@
     </section>
 
     <section class="max-w-screen-xl w-screen">
-        <div class="justify-center items-center text-sm font-extralight">
+        <div class="text-sm font-extralight">
             <div class="flex mt-10 items-center justify-center md:justify-start mx-64">
                 <img src="../../assets/images/nearby-store/pricespider.svg" alt="pricespider logo">
             </div>
@@ -235,7 +230,7 @@
                 <p class="text-xs font-semibold text-gray-400 ml-2">PriceSpider Terms of Service</p>
             </div>
 
-            <p class="mt-10 mb-5 text-xs">Price, Promotion, Processing: Pricing, delivery date and other errors may be withdrawn or revised and/or your order may be cancelled at any time before we have both (a) shipped or provided access to your product or service, and (b) received your payment for the product or service. All sales on Samsung.com are subject to the full Terms of Sale [live link or "in Checkout, viewable before Order Submission."]. Samsung is not responsible for any errors, omissions or misdirected or lost orders, or orders which may be delayed. Samsung reserves the right to modify pricing and modify or cancel promotions at any time, without prior notice.</p>
+            <p class="mx-5 mt-10 mb-5 text-xs">Price, Promotion, Processing: Pricing, delivery date and other errors may be withdrawn or revised and/or your order may be cancelled at any time before we have both (a) shipped or provided access to your product or service, and (b) received your payment for the product or service. All sales on Samsung.com are subject to the full Terms of Sale [live link or "in Checkout, viewable before Order Submission."]. Samsung is not responsible for any errors, omissions or misdirected or lost orders, or orders which may be delayed. Samsung reserves the right to modify pricing and modify or cancel promotions at any time, without prior notice.</p>
         </div>
     </section>
     
