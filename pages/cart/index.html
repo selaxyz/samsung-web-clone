@@ -10,17 +10,28 @@
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
+    <div id="navbar" class="fixed sm:block bg-white w-full z-10 hidden">
+        <div class="flex justify-between px-3 drop-shadow-lg bg-white">
+            <span>Cart</span>
+            <div class="flex gap-3 items-center">
+                <div class="text-end h-fit max-w-full min-w-72">
+                    <p>Subtotal: $169.99</p>
+                    <p class="">Starting from $7.09 / mo for 24 mo <sup>⊕σ</sup></p>
+                </div>
+                <button class="w-full h-fit py-2 px-16 bg-blue-500 text-white text-sm tracking-wider rounded-full">Checkout</button>
+            </div>
+        </div>
+    </div>
+
     <section class="max-w-screen-xl w-full px-4 mt-7">
 
         <!-- summary -->
         <section>
-
             <!-- <h1>This is Cart</h1>
             <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
             <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
             <p>******</p> -->
-
-
+            
             <div class="grid grid-cols-12 mb-10">
                 <!-- left col -->
                 <div class="col-span-full md:col-span-8">
@@ -264,7 +275,8 @@
 
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
-    <script>
+
+    <!-- <script>
         const stickyElement = document.getElementById('sticky-element');
         const nonStickySection = document.getElementById('non-sticky-section');
 
@@ -283,8 +295,20 @@
                 stickyElement.style.position = 'sticky';
             }
         });
-    </script>
+    </script> -->
 
+    <script>
+        // When the user scrolls down 850px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+    </script>
     
     <script src="../../script/index.js" type="module"></script>
 </body>
