@@ -42,6 +42,8 @@
     position: relative;
     margin:em;
   }
-  
- 
+
+ .scroll-bar-hidden{
+  scrollbar-width: none;
+ }
   

@@ -59,25 +59,36 @@ btnTradeIn.addEventListener('click', btnTradeInHandler)
 // Reivew Image Slider
 const btnPreSlideReview = document.getElementById('pre-slide-review')
 const btnNextSlideReview = document.getElementById('next-slide-review')
-const reviewImageContainer = document.getElementById('review-image-container')
-
+const reviewImageContainer = document.querySelector('.review-image-container')
+console.log(reviewImageContainer);
 let currentX = 0
 const nextSlideReviewHandler = () =>{
-    currentX += 300
+    
     console.log(currentX);
-    console.log(reviewImageContainer.scrollWidth);
+    console.log(reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth);   
     console.log(reviewImageContainer.clientWidth);
-    if (currentX<reviewImageContainer.scrollWidth- 700){
-        reviewImageContainer.style.transform = `translateX(-${currentX}px)`
+    remainScrollWidth = reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth
+    if (currentX< remainScrollWidth){
+        currentX += 300
+        reviewImageContainer.scrollLeft = currentX        
+        btnPreSlideReview.classList.remove('invisible')
+        if(currentX>= remainScrollWidth){
+            btnNextSlideReview.classList.add('invisible')
+        }
     }
     // reviewImageContainer.classList.toggle('translate-x-[-50%]')
     // btnNextSlideReview.classList.toggle('invisible')
-    btnPreSlideReview.classList.toggle('invisible')
 }
 const preSlideReviewHandler = () =>{
-    reviewImageContainer.classList.toggle('translate-x-[-50%]')
-    btnNextSlideReview.classList.toggle('invisible')
-    btnPreSlideReview.classList.toggle('invisible')
+    if (currentX > 0){
+        currentX -= 300
+        reviewImageContainer.scrollLeft = currentX        
+        btnNextSlideReview.classList.remove('invisible')
+        if(currentX <= 0){
+            btnPreSlideReview.classList.add('invisible')
+        }
+    }
+
 }
 
 btnNextSlideReview.addEventListener('click', nextSlideReviewHandler)
