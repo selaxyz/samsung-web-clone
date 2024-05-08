@@ -5,7 +5,7 @@ export class NavBar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <section class="flex justify-center">
+        <section class="flex justify-center w-screen">
         <section class="flex max-w-screen-2xl w-screen justify-between py-6 px-4 items-center">
             <a href="../../index.html">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 120 32"
