@@ -569,34 +569,67 @@
         <div class="flex items-center flex-col justify-center">
             <!-- <div class="header font-semibold text-[48px] w-[87vw] text-center mx-auto md:text-2xl py-8"> -->
             
-            <div class="header w-full pt-[3vw] pb-2 md:pt-12 font-bold text-[8vw] sm:text-[3vw]  sm:w-[87vw] text-center  md:py-8">
+            <div class="header w-full pt-[3vw] pb-2 md:pt-12 font-semibold text-[8vw] sm:text-[3vw]  sm:w-[87vw] sm:max-w-[96.6vw] text-center  md:py-8">
                 <h1>Looking for something else?</h1>
             </div>
             
+            <div class=" scale-down-element hidden sm:flex flex-col items-center justify-center ">
+                <div
+                    class="flex md:flex md:w-[35vw] md:max-w-96 my-2 mx-4 justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-4 md:gap-2">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="20 " height="20" fill="currentColor"
+                            class="bi bi-search  col-span-1 h-full" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                    <input class=" bg-gray-100 w-[65vw] sm:w-[20vw] h-[3vh] sm:h-[2vh] " type="text" placeholder="Search Keyword">
+                </div>
+                <div class="btn hidden sm:flex grid-cols-5 items-center justify-center gap-2">
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">Galaxy S24
+                        Ultra</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">Galaxy Z
+                        Flip5</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">The Frame</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">QLED 8K</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">BESPOKE
+                        Jet</button> 
+                </div>
+                <div class="hidden sm:flex justify-center items-center mt-2 gap-2">
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full ">BESPOKE
+                        Refrigerator</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full ">Accessories</button>
+                </div>
+
+            </div>
+
             <div
-                class="flex md:w-[35vw] justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-8">
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="20x " height="20" fill="currentColor"
-                        class="bi bi-search h-full" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg></button>
-                <input class="bg-gray-100 w-[65vw] sm:w-[15vw] h-[3vh] sm:h-[1vh] " type="text" placeholder="Search Keyword">
+                    class="flex sm:hidden  md:w-[35vw] my-2 mx-4 justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-4 md:gap-2">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="20 " height="20" fill="currentColor"
+                            class="bi bi-search  col-span-1 h-full" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                    <input class=" bg-gray-100 w-[65vw] sm:w-[20vw] h-[3vh] sm:h-[2vh] " type="text" placeholder="Search Keyword">
+                </div>
+            <div class="btn sm:hidden grid grid-cols-2  w-11/12 ">
+                <div class="flex col-span-2 justify-center space-x-2">
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Galaxy S24
+                        Ultra</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Galaxy Z
+                        Flip5</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">The Frame</button>
+                </div>
+                <div class="flex col-span-2 justify-center space-x-2">
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">QLED 8K</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">BESPOKE
+                        Jet</button>
+                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4 ">BESPOKE
+                        Refrigerator</button>
+                </div>
+                <div class="flex col-span-2 justify-center space-x-2">
+                    <button class="btn justify-center border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Accessories</button>
+                </div>
             </div>
-            <div class="btn grid grid-cols-5 items-center gap-4">
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">Galaxy S24
-                    Ultra</button>
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">Galaxy Z
-                    Flip5</button>
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">The Frame</button>
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">QLED 8K</button>
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">BESPOKE
-                    Jet</button>
-            </div>
-            <div class="flex justify-center items-center mt-2 gap-4">
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full ">BESPOKE
-                    Refrigerator</button>
-                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full ">Accessories</button>
-            </div>
+
         </div>
     </section>
     <div>
@@ -693,14 +726,14 @@
 
 
     <section class="max-w-screen-2xl w-screen border-b border-gray-200 pt-16 py-6 mx-auto">
-        <div class="md:max-w-[87%] grid md:flex justify-center  text-center">
-            <h2 class="pl-5 text-xl font-semibold">
+        <div class=" flex md:flex-row flex-col justify-center md:items-end items-center space-x-4 space-y-4">
+            <h2 class="text-xl font-semibold pt-1">
                 Privacy. Its always personal.
             </h2>
-            <p class="pl-5 p-4 md:p-0">Easily control what you share or don’t share with us.</p>
+            <p class="">Easily control what you share or don’t share with us.</p>
 
             <u>
-                <strong class="pl-5">Learn more</strong>
+                <strong class="">Learn more</strong>
             </u>
         </div>
 
@@ -802,6 +835,24 @@
                 element.setAttribute('hidden', '');
             }
         }
+
+        // Scale down Script 
+        function scaleElement() {
+            const viewportWidth = window.innerWidth;
+
+            const element = document.querySelector('.scale-down-element')
+            // const scaleFactor = 0.8;
+            
+            const scaleFactor = (viewportWidth - 768)/650;
+            // const scaledWidth = viewportWidth * scaleFactor;
+            // element.style.width = scaledWidth + 'px';
+            if (0.65 < scaleFactor && scaleFactor < 1.25) {
+                element.style.scale = scaleFactor
+            };
+            console.log('work')
+        }
+        window.addEventListener('resize', scaleElement);
+        scaleElement();
     </script>
 </body>
 
