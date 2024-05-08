@@ -30,3 +30,20 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, auto));
 }
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  
+  div.accordion-container{
+    position: relative;
+    margin:em;
+  }
+
+ .scroll-bar-hidden{
+  scrollbar-width: none;
+ }
+  
