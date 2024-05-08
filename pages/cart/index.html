@@ -11,6 +11,8 @@
     <navbar-component></navbar-component>
 
     <section class="max-w-screen-xl w-full px-4 mt-7">
+
+        <!-- summary -->
         <section>
 
             <!-- <h1>This is Cart</h1>
@@ -49,7 +51,7 @@
                                             <option value="8">8</option>
                                             <option value="9">9</option>
                                             <option value="10">10</option>
-                                          </select>
+                                            </select>
                                     </div>
                                 </div>
 
@@ -73,7 +75,7 @@
                                         alt="heart icon">
                                     <div class="my-5">
                                         <h1>Get added protection and cofidence</h1>
-                                        <p class="text-xs font-thin">From a personal setup session to continued
+                                        <p class="text-xs font-light">From a personal setup session to continued
                                             protection for mechanical and electrical breakdowns, we'll take care.</p>
                                     </div>
                                 </div>
@@ -85,7 +87,7 @@
 
                     <section>
                         <!-- learn more-return -->
-                        <div class="flex gap-2 font-thin text-xs mb-10">
+                        <div class="flex gap-2 font-light text-xs mb-10">
                             <img class="w-21 h-21 mt-4" src="../../assets/images/cart/icon-return-box.svg"
                                 alt="learn more-return">
                             <p class="mt-5">Free and easy returns. <a class="text-blue-500" href="#">Learn more</a></p>
@@ -95,13 +97,13 @@
 
                 <!-- right col -->
                 <div class="md:col-span-4 hidden md:block">
-                    <section class="flex justify-end mr-5 my-3 gap-3">
+                    <div class="flex justify-end mr-5 my-3 gap-3">
                         <img class="w-7" src="../../assets/images/cart/chat-icon.svg" alt="chat with expert">
                         <p class="text-blue-500 text-sm font-medium">Chat with an expert</p>
-                    </section>
+                    </div>
 
                     <!-- box -->
-                    <div class="flex flex-col items-center min-w-96 max-w-full px-5">
+                    <div id="sticky-element" class="sticky top-0 flex flex-col items-center min-w-96 max-w-full px-5">
 
                         <!-- upper box -->
                         <div class="flex flex-col bg-gray-100 p-3 w-full h-fit">
@@ -127,18 +129,18 @@
 
                             <div class="flex justify-between">
                                 <p class="font-semibold">Subtotal</p>
-                                <p class="font-thin">$189.99</p>
+                                <p class="font-light">$189.99</p>
                             </div>
 
                             <div class="flex justify-between">
                                 <p class="font-semibold">Shipping</p>
-                                <p class="font-thin">Free</p>
+                                <p class="font-light">Free</p>
                             </div>
 
                             <div>
                                 <div class="flex justify-between">
                                     <p class="font-semibold">Estimated tax</p>
-                                    <p class="font-thin text-xs"> Will be calculated later</p>
+                                    <p class="font-light text-xs"> Will be calculated later</p>
                                 </div>
                                 <p class="font-semibold">Zip code: <a class="text-blue-500" href="#">96928</a></p>                             
                             </div>
@@ -172,17 +174,17 @@
                     </div>
                 </div>
             </div>
-
         </section>
     
-        <section class="max-w-screen-xl w-screen">
+        <!-- Frequently bought -->
+        <section id="non-sticky-section" class="max-w-screen-xl w-full">
             <div>
                 <h1 class="text-2xl font-medium mb-14">Frequently bought together</h1>
                 <div>
                     <div class="flex text-center justify-evenly text-sm">
                         <div>
                             <a href="#"><img class="w-[200px] h-[150px]" src="../../assets/images/cart/watch6.webp" alt="galaxy watch6 classic"></a>
-                            <a class="font-semibold" href="#">Galaxy Watch6 Classic, 47mm, ...</a>
+                            <a class="font-semibold" href="#">Galaxy Watch6 Classic, 47mm,...</a>
                             <div class="flex justify-center gap-1 mb-5 mt-3">
                                 <p class="font-light">$399.99</p>
                                 <p class="text-gray-500 line-through font-light">$479.99</p>
@@ -215,6 +217,7 @@
                 </div>
             </div>
         </section>
+
         
         <!-- supported payment -->
         <section class="flex flex-col justify-start max-w-screen-xl md:flex md:flex-row md:justify-center mt-20 text-sm gap-4">
@@ -234,7 +237,7 @@
             </div>
         </section>
     
-        <section class="max-w-screen-xl w-screen text-sm my-5 font-extralight">
+        <section class="max-w-screen-xl w-screen text-sm my-5 font-light">
                 
             <p ><span class="font-medium"><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal Payments:</span> Available on purchases of
             select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
@@ -261,6 +264,27 @@
 
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
+    <script>
+        const stickyElement = document.getElementById('sticky-element');
+        const nonStickySection = document.getElementById('non-sticky-section');
+
+        console.log(stickyElement);
+        console.log(nonStickySection);
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const nonStickySectionHeight = nonStickySection.offsetHeight;
+            const halfNonStickySectionHeight = nonStickySectionHeight / 2;
+            const stickyElementTop = stickyElement.offsetTop;
+
+            if (scrollTop > stickyElementTop + halfNonStickySectionHeight) {
+                stickyElement.style.position = 'relative';
+            } else {
+                stickyElement.style.position = 'sticky';
+            }
+        });
+    </script>
+
     
     <script src="../../script/index.js" type="module"></script>
 </body>
