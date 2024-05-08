@@ -480,7 +480,7 @@
         <div class="big-screen hidden sm:flex gap-12 px-4 items-center">
 
             <div class="">
-                <img class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
+                <img id="img-explore" class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
             </div>
 
             <div class="items hidden sm:flex flex-col gap-4">
@@ -714,11 +714,13 @@
     <script>
 
         const container = document.getElementById('container-img')
+        const imgExplor = document.getElementById('img-explore')
         const btn1 = document.querySelector('.btn-1');
         const btn2 = document.querySelector('.btn-2');
         const btn3 = document.querySelector('.btn-3');
         const btn4 = document.querySelector('.btn-4');
         const btn5 = document.querySelector('.btn-5');
+        
 
         const heroBtn = document.querySelectorAll('.hero-btn');
         const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
@@ -729,6 +731,13 @@
 
         // console.log(heroBtnLeft);
 
+        const imgExplorPath = [
+        'assets/images/home/explore/explore.png',
+        'assets/images/home/explore/img-1.jpg',
+        'assets/images/home/explore/img-2.jpg',
+        'assets/images/home/explore/img-3.jpg',
+        'assets/images/home/explore/img-4.jpg',
+        ]
         let position = 0;
 
 
@@ -778,14 +787,15 @@
 
     <script>
         const exploreItemLinks = document.querySelectorAll(".explore-item-link");
-        exploreItemLinks.forEach(link => {
-            link.addEventListener('mouseenter', onItemHover);
-            link.addEventListener('mouseleave', onItemHover);
+        exploreItemLinks.forEach((link,i )=> {
+            link.addEventListener('mouseenter', ()=>onItemHover(i));
+            link.addEventListener('mouseleave', ()=>onItemHover(i));
         });
 
-        function onItemHover(e) {
-            this.classList.toggle("border-t-4");
-            const element = this.lastElementChild.lastElementChild;
+        function onItemHover(i) {            
+            imgExplor.src = imgExplorPath[i]
+            exploreItemLinks[i].classList.toggle("border-t-4");
+            const element = exploreItemLinks[i].lastElementChild.lastElementChild;
             if (element.hasAttribute('hidden')) {
                 element.removeAttribute('hidden');
             } else {
