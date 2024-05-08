@@ -24,7 +24,7 @@
                 <div class=" flex">
                     <ul id="container-img" class=" flex  transition-transform delay-300 ">
                         <li class="object-cover w-screen relative">
-                            <img class="object-cover  w-[640px]" src="assets/images/home/hero/img-1-small.webp" alt="">
+                            <img class="rounded-2xl object-cover  w-[640px]" src="assets/images/home/hero/img-1-small.webp" alt="">
                             <dsm:iv
                                 class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 items-center text-center">
                                 <p class="text-[1.5vw] font-semibold">Limited time offer</p>
@@ -36,7 +36,7 @@
                             </dsm:iv>
                         </li>
                         <li class="object-cover w-screen relative">
-                            <img class="object-cover w-[640px]" src="assets/images/home/hero/img-2-small.webp" alt="">
+                            <img class="rounded-2xl object-cover w-[640px]" src="assets/images/home/hero/img-2-small.webp" alt="">
                             <div
                                 class="absolute text-white top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4  items-center text-center">
                                 <p class="text-[1.5vw] font-semibold">Save $1,040</p>
@@ -48,7 +48,7 @@
                             </div>
                         </li>
                         <li class="object-cover w-screen relative">
-                            <img class="object-cover w-[640px]" src="assets/images/home/hero/img-3-small.webp" alt="">
+                            <img class="rounded-2xl object-cover w-[640px]" src="assets/images/home/hero/img-3-small.webp" alt="">
                             <div
                                 class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4  items-center text-center">
                                 <p class="text-[1.5vw] font-semibold">Limited time offer</p>
@@ -60,7 +60,7 @@
                             </div>
                         </li>
                         <li class="object-cover w-screen relative">
-                            <img class="object-cover w-[640px]" src="assets/images/home/hero/img-4-small.webp" alt="">
+                            <img class="rounded-2xl object-cover w-[640px]" src="assets/images/home/hero/img-4-small.webp" alt="">
                             <div
                                 class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4  items-center text-center">
                                 <p class="text-[1.5vw] font-semibold">Limited time offer</p>
@@ -72,7 +72,7 @@
                             </div>
                         </li>
                         <li class="object-cover w-screen relative">
-                            <img class="object-cover w-[640px]" src="assets/images/home/hero/img-5-small.webp" alt="">
+                            <img class="rounded-2xl object-cover w-[640px]" src="assets/images/home/hero/img-5-small.webp" alt="">
                             <div
                                 class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4  items-center text-center text-white">
                                 <p class="text-[1.5vw] font-semibold">Save $800</p>
@@ -90,7 +90,7 @@
                 <div class="absolute bottom-0  left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div class="hero-btn-container flex bg-white  opacity-80 rounded-full">
                         <button class="btn-1 py-2 ">
-                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                         <button class="btn-2 py-2">
@@ -869,26 +869,42 @@
         </div>
 
         <div class="md:hidden  relative">
-            <div class="flex flex-nowrap overflow-x-scroll pl-4 pb-8 ">
-                <div class="item flex gap-6 ">
-                    <div class="flex-none flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="w-full object-cover bg-cover" src="https://images.samsung.com/is/image/samsung/assets/us/home/04302024/homepage_explore_MRbeast_MO.jpg?$624_624_PNG$"
+            <div class="flex flex-nowrap overflow-x-scroll pl-4 pb-14" style="scrollbar-width: none;">
+                <div id="explore-container" class="item flex gap-4 w-screen px-3 transition-transform duration-500">
+                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
+                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="/assets/images/home/explore/explore.png"
                             alt="">
                         <div class="flex flex-col justify-center px-12 gap-8">
                             <p class="text-2xl font-semibold text-center">Opening a Galaxy of opportunities with Mr.Beast</p>
                             <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
                         </div>
                     </div>
-                    <div class="flex-none flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="w-full object-cover bg-cover" src="https://images.samsung.com/is/image/samsung/assets/us/home/04302024/homepage_explore_DudePerfect_MO.jpg?$624_624_PNG$"
+                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
+                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-1.jpg"
                             alt="">
                         <div class="flex flex-col justify-center px-12 gap-8">
                             <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
                             <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
                         </div>
                     </div>
-                    <div class="flex-none flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="w-full object-cover bg-cover" src="https://images.samsung.com/is/image/samsung/assets/us/home/04302024/homepage_explore_DudePerfect_MO.jpg?$624_624_PNG$"
+                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
+                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-2.jpg"
+                            alt="">
+                        <div class="flex flex-col justify-center px-12 gap-8">
+                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
+                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
+                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-3.jpg"
+                            alt="">
+                        <div class="flex flex-col justify-center px-12 gap-8">
+                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
+                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
+                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-4.jpg"
                             alt="">
                         <div class="flex flex-col justify-center px-12 gap-8">
                             <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
@@ -899,25 +915,25 @@
 
             </div>
             <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div class="hero-btn-container flex bg-black rounded-full">
-                    <button class="btn-1 py-2 ">
-                        <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                <div class="explore-btn-container flex border-2 rounded-full">
+                    <button class="btn-explore py-2 ">
+                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
                         </div>
                     </button>
-                    <button class="btn-2 py-2">
-                        <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                    <button class="btn-explore py-2">
+                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
                         </div>
                     </button>
-                    <button class="btn-3 py-2">
-                        <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                    <button class="btn-explore py-2">
+                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
                         </div>
                     </button>
-                    <button class="btn-4 py-2">
-                        <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                    <button class="btn-explore py-2">
+                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
                         </div>
                     </button>
-                    <button class="btn-5 py-2">
-                        <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                    <button class="btn-explore py-2">
+                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
                         </div>
                     </button>
                 </div>
@@ -927,70 +943,38 @@
     </section>
 
 
-    <section class="max-w-screen-2xl w-screen flex flex-col items-center">
-        <div class="header flex  justify-center w-full pt-[2.5vw] pb-4 md:pt-[1.2vw] font-semibold text-[8vw] sm:text-[3vw]  sm:w-[87vw] sm:min-w-[96.6vw] text-center  ">
-            <h1>Looking for something else?</h1>
-        </div>
-        <div class="flex items-center  flex-col justify-start">
+    <section class="max-w-screen-2xl w-screen ">
+        <div class="flex items-center flex-col justify-center">
             <!-- <div class="header font-semibold text-[48px] w-[87vw] text-center mx-auto md:text-2xl py-8"> -->
             
-            <div class=" scale-down-element  hidden sm:flex flex-col items-center justify-start ">
-                <div
-                    class="flex md:flex md:w-[35vw] md:max-w-96 my-2 mx-4 justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-4 md:gap-2">
-                    <button><svg xmlns="http://www.w3.org/2000/svg" width="20 " height="20" fill="currentColor"
-                            class="bi bi-search  col-span-1 h-full" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg></button>
-                    <input class="bg-gray-100 w-[65vw] sm:w-[20vw] h-[3vh] sm:h-[2vh] " type="text" placeholder="Search Keyword">
-                </div>
-                <div class="btn hidden sm:flex grid-cols-5 items-center justify-center gap-2">
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">Galaxy S24
-                        Ultra</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">Galaxy Z
-                        Flip5</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">The Frame</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">QLED 8K</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-5">BESPOKE
-                        Jet</button> 
-                </div>
-                <div class="hidden sm:flex justify-center items-center mt-2 gap-2">
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full ">BESPOKE
-                        Refrigerator</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full ">Accessories</button>
-                </div>
-
+            <div class="header w-full pt-[3vw] pb-2 md:pt-12 font-bold text-[8vw] sm:text-[3vw]  sm:w-[87vw] text-center  md:py-8">
+                <h1>Looking for something else?</h1>
             </div>
-
+            
             <div
-                    class="flex sm:hidden  md:w-[35vw] my-2 mx-4 justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-4 md:gap-2">
-                    <button><svg xmlns="http://www.w3.org/2000/svg" width="20 " height="20" fill="currentColor"
-                            class="bi bi-search  col-span-1 h-full" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg></button>
-                    <input class=" bg-gray-100 w-[65vw] sm:w-[20vw] h-[3vh] sm:h-[2vh] " type="text" placeholder="Search Keyword">
-                </div>
-            <div class="btn sm:hidden grid grid-cols-2  w-11/12 ">
-                <div class="flex col-span-2 justify-center space-x-2">
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Galaxy S24
-                        Ultra</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Galaxy Z
-                        Flip5</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">The Frame</button>
-                </div>
-                <div class="flex col-span-2 justify-center space-x-2">
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">QLED 8K</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">BESPOKE
-                        Jet</button>
-                    <button class="btn border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4 ">BESPOKE
-                        Refrigerator</button>
-                </div>
-                <div class="flex col-span-2 justify-center space-x-2">
-                    <button class="btn justify-center border-2 sm:text-xs text-base border-gray-200 p-2 rounded-full mt-2 flex px-4">Accessories</button>
-                </div>
+                class="flex md:w-[35vw] justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 pl-[1.5rem] pr-[5.2rem]  sm:pr-20 py-4 gap-8">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="20x " height="20" fill="currentColor"
+                        class="bi bi-search h-full" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></button>
+                <input class="bg-gray-100 w-[65vw] sm:w-[15vw] h-[3vh] sm:h-[1vh] " type="text" placeholder="Search Keyword">
             </div>
-
+            <div class="btn grid grid-cols-5 items-center gap-4">
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">Galaxy S24
+                    Ultra</button>
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">Galaxy Z
+                    Flip5</button>
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">The Frame</button>
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">QLED 8K</button>
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full mt-5">BESPOKE
+                    Jet</button>
+            </div>
+            <div class="flex justify-center items-center mt-2 gap-4">
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full ">BESPOKE
+                    Refrigerator</button>
+                <button class="btn border-2 text-xs text-[9px] border-gray-200 p-2 rounded-full ">Accessories</button>
+            </div>
         </div>
     </section>
     <div>
@@ -1087,14 +1071,14 @@
 
 
     <section class="max-w-screen-2xl w-screen border-b border-gray-200 pt-16 py-6 mx-auto">
-        <div class=" flex md:flex-row flex-col justify-center md:items-end items-center space-x-4 space-y-4">
-            <h2 class="text-xl font-semibold pt-1">
+        <div class="md:max-w-[87%] grid md:flex justify-center  text-center">
+            <h2 class="pl-5 text-xl font-semibold">
                 Privacy. Its always personal.
             </h2>
-            <p class="">Easily control what you share or don’t share with us.</p>
+            <p class="pl-5 p-4 md:p-0">Easily control what you share or don’t share with us.</p>
 
             <u>
-                <strong class="">Learn more</strong>
+                <strong class="pl-5">Learn more</strong>
             </u>
         </div>
 
@@ -1123,10 +1107,11 @@
         console.log(tvContainer);
         const heroBtn = document.querySelectorAll('.hero-btn');
         const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
-
+        const btnExploreContainer = document.querySelectorAll('.explore-btn-container button')
         const heroBtnLeft = document.querySelector('#left')
         const heroBtnRight = document.querySelector('#right')
         const heroImgContainer = document.querySelector('.img-container')
+        const exploreContainer = document.querySelector('#explore-container')
 
         const btnForYou = document.querySelectorAll('.btn-forYou')
         const btnHome = document.querySelectorAll('.btn-home')
@@ -1135,6 +1120,31 @@
         const btnTv = document.querySelectorAll('.btn-tv')
         const btnSus = document.querySelectorAll('.btn-sus')
 
+        let positonExplore = 0
+
+        btnExploreContainer.forEach((e, i) => {
+            console.log(positonExplore);
+            btnMoving(e, positonExplore)
+            positonExplore+=90
+            // e.addEventListener('click', () => {
+
+            //     exploreContainer.style.transform = `translateX(-${positonExplore}%)`
+            //     positonExplore += 90
+            // })
+        })
+
+        // for (let i =0 ; i<btnExploreContainer.length;i++){
+        //     test(btnExploreContainer[i],positonExplore)
+        //     console.log(positonExplore);
+        //     positonExplore+=90
+        // }
+        function btnMoving(btn,pos){
+            btn.addEventListener("click",()=>{
+                exploreContainer.style.transform = `translateX(-${pos}%)`
+            })
+        }
+
+        console.log(exploreContainer[1]);
 
         console.log(btnHome);
 
@@ -1198,6 +1208,15 @@
             })
         }
 
+        function caroselSmall(container, btn) {
+            btn.forEach((btn, i) => {
+                btn.addEventListener('click', () => {
+                    container.style.transform = `translateX(-${i + 8}0%)`
+                } )
+            })
+        }
+
+        
 
         caroselTab(foryouContainer, btnForYou)
         caroselTab(mobileContainer, btnMobile)
@@ -1248,28 +1267,6 @@
                 element.setAttribute('hidden', '');
             }
         }
-
-        // Scale down Script 
-        function scaleElement() {
-            const viewportWidth = window.innerWidth;
-
-            const element = document.querySelector('.scale-down-element')
-            // const scaleFactor = 0.8;
-            
-            const scaleFactor = (viewportWidth - 768)/650;
-            // const scaledWidth = viewportWidth * scaleFactor;
-            // element.style.width = scaledWidth + 'px';
-            if (0.65 < scaleFactor && scaleFactor < 1.25) {
-                element.style.scale = scaleFactor
-            } else if (scaleFactor < 0.65 ) {
-                element.style.scale = 0.65
-            }  else if (scaleFactor > 1.25 ) {
-                element.style.scale = 1.25
-            };
-            console.log('work')
-        }
-        window.addEventListener('resize', scaleElement);
-        scaleElement();
     </script>
 </body>
 
