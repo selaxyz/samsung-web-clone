@@ -60,9 +60,18 @@ btnTradeIn.addEventListener('click', btnTradeInHandler)
 const btnPreSlideReview = document.getElementById('pre-slide-review')
 const btnNextSlideReview = document.getElementById('next-slide-review')
 const reviewImageContainer = document.getElementById('review-image-container')
+
+let currentX = 0
 const nextSlideReviewHandler = () =>{
-    reviewImageContainer.classList.toggle('translate-x-[-50%]')
-    btnNextSlideReview.classList.toggle('invisible')
+    currentX += 300
+    console.log(currentX);
+    console.log(reviewImageContainer.scrollWidth);
+    console.log(reviewImageContainer.clientWidth);
+    if (currentX<reviewImageContainer.scrollWidth- 700){
+        reviewImageContainer.style.transform = `translateX(-${currentX}px)`
+    }
+    // reviewImageContainer.classList.toggle('translate-x-[-50%]')
+    // btnNextSlideReview.classList.toggle('invisible')
     btnPreSlideReview.classList.toggle('invisible')
 }
 const preSlideReviewHandler = () =>{
