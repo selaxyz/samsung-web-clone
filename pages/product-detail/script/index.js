@@ -209,7 +209,7 @@ const budWhite = document.getElementById('bud-white')
 const budBora = document.getElementById('bud-bora')
 const mySlides = document.querySelectorAll('.mySlides')
 const demo = document.querySelectorAll('.demo')
-
+const colorContainer = document.querySelectorAll('.color-card')
 const imgPaths = {
     black: [
         '/assets/images/product-detail/detail-front-1.jpg',
@@ -228,6 +228,14 @@ const imgPaths = {
     ]
 }
 function changeBudColorsHandler (e){
+    colorContainer.forEach(container =>{
+        if (container.id === this.id) {
+            container.classList.add('border-blue-500')
+        }else{
+            container.classList.remove('border-blue-500')
+        }
+})
+
     if(this.id === 'bud-black'){
         imgPaths.black.forEach((path, i)=>{
             mySlides[i].src = path  
@@ -246,6 +254,7 @@ function changeBudColorsHandler (e){
             demo[i].src = path
         })
     }
+    
 }
 
 budBlack.addEventListener('click', changeBudColorsHandler)
