@@ -272,8 +272,75 @@
     <chat-component></chat-component>
     <footer-component></footer-component>
 
-    <!-- DO NOT REMOVE THIS SCRIPT TAG -->
-    <script src="../../script/index.js" type="module"></script>
+    <!-- mobile checkout -->
+    <section class="fixed block bottom-0 md:hidden w-screen shadow-2xl shadow-black">
+        <div class="flex flex-col w-full px-4 bg-white">
+
+            <details>
+                <summary id="expand-button" class="flex justify-center ">
+
+                    <svg id="chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-4 cursor-pointer bg-blue-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                      
+                </summary>
+                <div class="bg-gray-50 py-6 space-y-2">
+                    <div class="flex justify-between text-sm font-light">
+                        <p>Subtotal</p>
+                        <p>$169.99</p>
+                    </div>
+                    <div class="flex justify-between text-sm font-light">
+                        <p>Shipping</p>
+                        <p>Free</p>
+                    </div>
+                    <div class="flex justify-between text-sm font-light">
+                        <p>Estimated tax</p>
+                        <p>Will be calculated later</p>
+                    </div>
+                    <div class="text-start text-sm font-light">
+                        <p>Zip code: 96928</p>
+                    </div>
+                    <div class="flex justify-between text-sm font-medium">
+                        <p>Estimated total:</p>
+                        <p>$169.99</p>
+                    </div>
+                    <div class="text-end text-sm font-medium">
+                        <p>Starting from $7.9/ mo for 24 mo</p>
+                    </div>
+                    
+                    <details>
+                        <summary class="flex justify-between text-sm font-medium">
+                            <div class="flex items-center">
+                                <p>Total Savings</p>
+                                <svg id="chevron-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="black" class="w-8 h-4 cursor-pointer">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                                    </svg>
+                            </div>
+                            <p>$60.00</p>
+                        </summary>
+                        <div class="flex justify-between font-light text-sm mt-2">
+                            <p>Promotional Discount(s)</p>
+                            <p>-$60.00</p>
+                        </div>
+                    </details>
+                </div>
+                
+                
+            </details>
+            <div id="order-summary">
+                <div class="flex justify-between py-5">
+                    <p class="text-xl font-medium">Order Summary</p>
+                    <p class="text-sm font-medium ">Est. total: $169.99</p>
+                </div>
+                <p class="text-blue-500 font-light">Promo code?</p>
+            </div>
+            <a class="self-center" href="../../pages/checkout/index.html">
+                <button class="w-52 h-fit py-2 mt-5 bg-blue-500 text-white text-sm tracking-wider rounded-full">Checkout</button>
+            </a>
+            <button class="flex justify-center self-center w-52 h-fit bg-yellow-400 hover:bg-yellow-500 rounded-full font-bold text-lg italic mb-5 mt-3"><p class=" text-blue-900 mt-1">Pay</p><p class="text-blue-400 mt-1">Pal</p></button>
+        </div>
+    </section>
+
 
     <script>
 
@@ -289,6 +356,30 @@
             }
         }
 
+        const orderSummary = document.getElementById("order-summary");
+        const chevron = document.getElementById("chevron");
+        const expandButton = document.getElementById("expand-button");
+
+        const chevron2 = document.getElementById("chevron-2");
+
+        const toggleSummaryHandle = () => {
+            orderSummary.classList.toggle("hidden");
+            expandButton.classList.toggle("bg-gray-50");
+            chevron.classList.toggle("rotate-180");
+        }
+        chevron.addEventListener("click", toggleSummaryHandle)
+
+        const toggleSummaryHandle2 = () => {
+            chevron2.classList.toggle("rotate-180")
+        }
+
+        chevron2.addEventListener("click", toggleSummaryHandle2)
+        
+    </script>
+
+    
+    
+    <script src="../../script/index.js" type="module"></script>
     </script>
 
     <script>
