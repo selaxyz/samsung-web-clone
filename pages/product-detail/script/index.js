@@ -60,13 +60,9 @@ btnTradeIn.addEventListener('click', btnTradeInHandler)
 const btnPreSlideReview = document.getElementById('pre-slide-review')
 const btnNextSlideReview = document.getElementById('next-slide-review')
 const reviewImageContainer = document.querySelector('.review-image-container')
-console.log(reviewImageContainer);
 let currentX = 0
 const nextSlideReviewHandler = () =>{
     
-    console.log(currentX);
-    console.log(reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth);   
-    console.log(reviewImageContainer.clientWidth);
     remainScrollWidth = reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth
     if (currentX< remainScrollWidth){
         currentX += 300
@@ -279,3 +275,62 @@ function myFunctionChangeText() {
     svgElement.classList.toggle('rotate-180');
     });
 }
+
+// Prodect-detail
+// Related Products carousel
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselInner = document.querySelector('#carouselInner');
+    const slides = document.querySelectorAll('.w-full.flex-shrink-0');
+    const indicators = document.querySelectorAll('.indicator');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+
+    function updateCarousel() {
+        const transformValue = -currentSlide * 100;
+        carouselInner.style.transform = `translateX(${transformValue}%)`;
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('bg-gray-400', index === currentSlide);
+        });
+    }
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarousel();
+        });
+    });
+
+    updateCarousel();
+});
+
+// recently viewed 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselInner1 = document.querySelector('#carouselInner1');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator1');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+
+    function updateCarousel() {
+        const slideWidth = slides[0].clientWidth;
+        const transformValue = -currentSlide * slideWidth;
+        carouselInner1.style.transform = `translateX(${transformValue}px)`;
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('bg-gray-400', index === currentSlide);
+            indicator.classList.toggle('bg-transparent', index !== currentSlide);
+        });
+    }
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarousel();
+        });
+    });
+
+    updateCarousel();
+});
+
+

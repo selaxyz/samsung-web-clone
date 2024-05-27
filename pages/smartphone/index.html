@@ -1,0 +1,580 @@
+<html class="scroll-smooth md:scroll-auto"  lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/product-detail-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Product | Samsung DEV</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+  </head>
+
+  <body>
+    <!-- <body class="flex flex-col items-center"> -->
+    <navbar-component></navbar-component>
+    <!-- sub nav -->
+
+    <main class="mx-auto w-full max-w-screen-2xl">
+      <section class="sticky top-0 z-10 w-full">
+        <div
+          class="flex flex-col justify-between bg-white md:flex-row md:items-center"
+        >
+          <h1 class="mx-4 pt-2 text-start text-3xl font-bold">Smartphones</h1>
+          <!-- sub nav -->
+          <nav class="ml-4 overflow-x-auto bg-white md:flex">
+            <div class="flex gap-10">
+              <div
+                class="h-fit flex-none py-8 text-sm font-bold underline underline-offset-[20px] md:text-xl"
+              >
+                <a href="#feature">Feature Favorite</a>
+              </div>
+              <div
+                class="h-fit flex-none py-8 text-sm font-bold md:text-xl"
+              >
+                <a href="#design">Design Inspiration</a>
+              </div>
+              <div
+                class="h-fit flex-none py-8 text-sm font-bold md:text-xl"
+              >
+                <a href="#switch">Switch to Galaxy</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <div
+        class="item overflow-x-auto border-y bg-gray-50 py-6 text-center md:flex"
+      >
+        <!-- render subnav content -->
+        <div id="sub-nav-content"></div>
+      </div>
+      <hero-carousel-smart></hero-carousel-smart>
+
+      <!-- hero section -->
+
+      <!-- explore galaxy -->
+      <section class="w-full">
+        <div class="relative text-center">
+          <div
+            class="flex w-full flex-col bg-zinc-100 md:h-[390px] md:flex-row"
+          >
+            <div class="size-full p-10 md:w-1/2 md:text-left">
+              <h2
+                class="mb-10 mt-8 text-3xl font-bold md:mb-5 md:text-4xl xl:w-10/12"
+              >
+                Give it a try. Explore Galaxy AI.
+              </h2>
+              <p
+                class="mb-10 px-4 text-lg sm:text-2xl md:mb-5 md:p-0 md:text-base lg:text-xl"
+              >
+                Try Galaxy AI, now available on even more Galaxy Phones from
+                participating carriers. Buy it now, try it for 30 days, then
+                keep it or get a full refund.⋈
+              </p>
+              <custom-button theme="bg-black" class="">Buy Now</custom-button>
+            </div>
+            <div
+              class="flex justify-center gap-2 pb-8 md:w-1/2 md:items-center md:gap-8 md:pb-0"
+            >
+              <img
+                class="h-11 md:h-[50px]"
+                src="../../assets/images/smartphone/tmobile-logo.png"
+                alt=""
+              />
+              <img
+                class="h-11 md:h-[50px]"
+                src="../../assets/images/smartphone/atnt-logo.png"
+                alt=""
+              />
+              <img
+                class="h-8 md:h-[30px]"
+                src="../../assets/images/smartphone/verizon-logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- discover galaxy -->
+        <div>
+          <custom-h2 class="mb-4">Discover Galaxy smartphone</custom-h2>
+          <div class="item mt-2 overflow-x-auto py-6 text-center md:flex">
+            <div id="discover-content" class="ml-20"></div>
+          </div>
+        </div>
+
+        <!-- epic -->
+        <div class="relative text-center">
+          <div
+            class="flex w-full flex-col items-center justify-center bg-zinc-100 md:h-[640px] md:flex-row"
+          >
+            <div class="p-10 md:w-1/2 md:text-left">
+              <h2
+                class="mb-10 mt-8 text-2xl font-bold sm:text-5xl md:mb-5 md:text-3xl lg:text-5xl xl:w-10/12"
+              >
+                Epic, just like that
+              </h2>
+              <p
+                class="mb-10 px-4 text-lg sm:text-xl md:mb-5 md:p-0 md:text-base lg:text-xl"
+              >
+                Engineered with game-changing AI capabilities, Galaxy S24 Ultra
+                opens up a new world of possibilities.²
+              </p>
+              <custom-button theme="bg-black" class="">Buy Now</custom-button>
+            </div>
+            <div
+              class="flex justify-center gap-2 pb-8 md:w-1/2 md:items-center md:gap-8 md:pb-0"
+            >
+              <img
+                class="h-80 md:h-[560px]"
+                src="../../assets/images/smartphone/galaxy-ai-mobile.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="overflow-hidden">
+            <div class="galaxy-ai-container flex w-full transition-transform">
+              <div
+                class="md:max-h-500 relative h-[778px] min-w-full bg-[url('../../assets/images/smartphone/galaxy-ai.png')] bg-center bg-no-repeat md:h-[600px] md:w-full md:min-w-[400px] md:bg-cover"
+              >
+                <div
+                  class="absolute left-0 top-1/2 w-full text-center text-white"
+                >
+                  <h2 class="mb-6 text-5xl font-bold">Galaxy AI</h2>
+                  <p class="px-[5%] text-base sm:text-xl">
+                    A new era of mobile is here. Get ready to raise your
+                    creativity and productivity to epic new heights with Galaxy
+                    S24 Ultra.
+                  </p>
+                  <custom-button class="mt-8" theme="bg-white"
+                    >Learn more</custom-button
+                  >
+                </div>
+              </div>
+              <div
+                class="md:max-h-500 relative h-[778px] min-w-full bg-[url('../../assets/images/smartphone/galaxy-camera.png')] bg-top bg-no-repeat md:h-[600px] md:w-full md:min-w-[400px] md:bg-cover"
+              >
+                <div
+                  class="absolute left-0 top-1/2 w-full text-center text-white"
+                >
+                  <h2 class="mb-6 text-5xl font-bold">Galaxy Camera</h2>
+                  <p class="px-[5%] text-base sm:text-xl">
+                    The Galaxy S24 Series elevates everything you shoot from
+                    great to gorgeous with high-res cameras and
+                    Nightography.<sup>3,4,5</sup>
+                  </p>
+                  <custom-button class="mt-8" theme="bg-white"
+                    >Learn more</custom-button
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 -translate-y-1/2 transform md:hidden"
+          >
+            <div
+              class="hero-btn-container flex rounded-full border border-gray-500 bg-black opacity-80"
+            >
+              <div class="btn-previous py-2">
+                <button
+                  class="btn-slide mx-4 size-4 rounded-full bg-gray-500"
+                ></button>
+              </div>
+              <div class="btn-next py-2">
+                <button
+                  class="btn-slide mx-4 size-4 rounded-full bg-gray-500"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- feature faves -->
+      <section id="feature" class="pt-8">
+        <!-- feature faves -->
+        <div class="explore max-w-screen-2xl space-y-14 py-12">
+          <div
+            class="header flex items-center justify-center text-4xl font-semibold md:text-5xl"
+          >
+            <a href="#">
+              <h1 class="">Feature faves⁶</h1>
+            </a>
+          </div>
+
+          <!-- desktop screen -->
+          <div class="hidden flex-row-reverse items-center gap-12 px-4 md:flex">
+            <img
+              id="img-feature"
+              class="rounded-3xl"
+              src="../../assets/images/smartphone/feat-1.jpg"
+              alt=""
+            />
+            <div class="side-container"></div>
+          </div>
+
+          <!-- mobile screen -->
+          <carousel-mobile></carousel-mobile>
+          <!-- <div>
+            <div class="carousel-container overflow-x-hidden">
+              <carousel-mobile></carousel-mobile>
+            </div>
+            <div class="indicator-container md:hidden"></div>
+          </div> -->
+        </div>
+
+        <!-- epic video -->
+        <custom-h2 class="mt-8">Watch epic in action</custom-h2>
+        <div class="flex flex-col gap-4 p-4 md:flex-row">
+          <action-image
+            img="../../assets/images/smartphone/action-1.jpg"
+          ></action-image>
+          <action-image
+            img="../../assets/images/smartphone/action-2.jpg"
+          ></action-image>
+          <action-image
+            img="../../assets/images/smartphone/action-3.jpg"
+          ></action-image>
+        </div>
+        <!-- galaxy close up -->
+        <div>
+          <custom-h2 class="pb-10 text-center"
+            >See your Galaxy up close</custom-h2
+          >
+          <div
+            class="flex flex-col items-center justify-center gap-2 md:flex-row"
+          >
+            <div class="flex gap-2">
+              <upclose-button>Galaxy S24</upclose-button>
+              <upclose-button>Galaxy Z Flip 5</upclose-button>
+              <upclose-button>Galaxy Z Fold5</upclose-button>
+            </div>
+            <div class="flex gap-2">
+              <upclose-button>Galaxy S23 Series</upclose-button>
+              <upclose-button>Galaxy A15 5G</upclose-button>
+              <upclose-button>Galaxy A25</upclose-button>
+            </div>
+          </div>
+
+          <div class="flex flex-col-reverse items-center md:flex-row">
+            <div class="flex w-full justify-center md:w-1/2">
+              <img
+                class="w-[320px] md:w-full"
+                src="../../assets/images/smartphone/galaxy-s24-ultra-big.png"
+                alt=""
+              />
+            </div>
+            <div class="w-full px-4 text-center md:w-1/2 md:px-10 md:text-left">
+              <h2
+                class="mb-10 mt-8 text-2xl font-bold sm:text-5xl md:mb-5 md:text-3xl lg:text-5xl xl:w-10/12"
+              >
+                Galaxy S24 Ultra
+              </h2>
+              <p>
+                Unleash new levels of creativity, productivity and possibility
+                with the most epic AI-powered Galaxy ever. Just like that.
+              </p>
+              <div class="mt-8 flex justify-center gap-4 md:justify-start">
+                <custom-button>Learn more</custom-button>
+                <custom-button theme="bg-white">Buy now</custom-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- design inspiration -->
+      <section id="design" class="pt-8">
+        <custom-h2>Power for your passions</custom-h2>
+        <!-- Power -->
+        <div class="mb-8 justify-center text-xl font-bold">
+          <h3 class="underline underline-offset-8 text-center mb-8">View all offer</h3>
+          <div class="flex justify-center gap-8  px-4">
+            <button class="btn-inspired underline-offset-8">Creator</button>
+            <button class="btn-inspired underline-offset-8">Streamer</button>
+            <button class="btn-inspired underline-offset-8">Multi-Tasker</button>
+          </div>
+        </div>
+      <div class="flex overflow-hidden">
+        <div id="inspired-tab" class="w-full flex transition-transform duration-500">
+          <inspired-container content="creator"></inspired-container>
+          <inspired-container content="streamer"></inspired-container>
+          <inspired-container content="multi"></inspired-container>
+        </div>
+      </div>
+
+        <custom-h2>The connected power of Samsung Galaxy</custom-h2>
+        <p class="mx-8 mt-6 text-center md:text-xl">
+          Sync, share and seamlessly connect across your smartphone, tablet,
+          laptop, Buds and Watch. Galaxy works together to bring your world
+          closer.
+        </p>
+        <custom-button theme="bg-white" class="my-6 text-center"
+          >Learn more</custom-button
+        >
+
+        <div class="hidden gap-6 md:flex">
+          <div class="w-1/3 text-center">
+            <img
+              class="rounded-xl"
+              src="../../assets/images/smartphone/connect-1.jpg"
+              alt=""
+            />
+            <div class="mt-5 flex flex-col gap-2">
+              <h4 class="text-2xl font-bold">Call/Text from any device</h4>
+              <p>
+                Never miss an important message again. Call and text across your
+                phone, tablet, watch and PC.13
+              </p>
+              <custom-button theme="bg-white" class="my-3 text-center"
+                >Learn more</custom-button
+              >
+            </div>
+          </div>
+          <div class="w-1/3 text-center">
+            <img
+              class="rounded-xl"
+              src="../../assets/images/smartphone/connect-2.jpg"
+              alt=""
+            />
+            <div class="mt-5 flex flex-col gap-2">
+              <h4 class="text-2xl font-bold">Call/Text from any device</h4>
+              <p>
+                Never miss an important message again. Call and text across your
+                phone, tablet, watch and PC.13
+              </p>
+              <custom-button theme="bg-white" class="my-3 text-center"
+                >Learn more</custom-button
+              >
+            </div>
+          </div>
+          <div class="w-1/3 text-center">
+            <img
+              class="rounded-xl"
+              src="../../assets/images/smartphone/connect-3.jpg"
+              alt=""
+            />
+            <div class="mt-5 flex flex-col gap-2">
+              <h4 class="text-2xl font-bold">Call/Text from any device</h4>
+              <p>
+                Never miss an important message again. Call and text across your
+                phone, tablet, watch and PC.13
+              </p>
+              <custom-button theme="bg-white" class="my-3 text-center"
+                >Learn more</custom-button
+              >
+            </div>
+          </div>
+        </div>
+        <!-- mobile carousel -->
+        <carousel-mobile section="connected"></carousel-mobile>
+        <!-- galaxy store -->
+        <div class="flex flex-col gap-5 py-10 text-center">
+          <h3 class="text-6xl font-semibold">The Galaxy Store</h3>
+          <p class="text-lg tracking-wide">
+            Powerful apps to help you work smarter and play harder.
+          </p>
+          <div class="flex flex-col justify-center md:flex-row">
+            <div class="relative mx-4 flex w-full flex-col md:h-full md:w-3/6">
+              <img
+                class="md:hidden"
+                src="../../assets/images/smartphone/galaxy-store-1.jpg"
+                alt=""
+              />
+              <img
+                class="hidden md:block"
+                src="../../assets/images/smartphone/galaxy-store-1-big.jpg"
+                alt=""
+              />
+              <div
+                class="absolute bottom-2 flex flex-col gap-2 px-6 text-white"
+              >
+                <p class="text-4xl font-semibold">
+                  Bixby: Your intelligent assistant
+                </p>
+                <p>
+                  With Bixby at your command, you can answer texts, ask
+                  questions and control your world without lifting a finger.
+                </p>
+                <custom-button theme="bg-white">Learn more</custom-button>
+              </div>
+            </div>
+            <div class="flex w-full gap-4 px-6 md:w-2/6 md:flex-col">
+              <div class="flex w-1/2 flex-col gap-2 rounded-3xl bg-gray-50 p-8">
+                <img
+                  src="../../assets/images/smartphone/smart-switch.png"
+                  alt=""
+                />
+                <p class="font-bold">Smart Switch</p>
+              </div>
+              <div class="flex w-1/2 flex-col gap-2 rounded-3xl bg-gray-50 p-8">
+                <img src="../../assets/images/smartphone/wallet.png" alt="" />
+                <p class="font-bold">Smart Switch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- beyon smartphones -->
+      <section class="flex flex-col">
+        <h2 class="flex text-center self-center py-16 text-6xl font-semibold">
+          Galaxy goes beyond smartphones
+        </h2>
+        <a href="#"
+          ><div class="flex overflow-x-auto py-20" id="hscroll-container">
+            <catergory-hscroll></catergory-hscroll></div
+        ></a>
+        <!-- galaxy business -->
+        <div
+          class="mt-20 flex w-full flex-col items-center justify-between bg-[#EFF6FC] text-center md:flex-row"
+        >
+          <div
+            class="order-1 mx-8 my-5 flex w-full flex-col tracking-wide md:ml-20 md:w-1/2 md:text-start"
+          >
+            <h3 class="mb-4 pt-10 text-4xl font-semibold md:pt-5">
+              Galaxy for Business
+            </h3>
+            <p class="mx-10 text-lg md:mx-0">
+              Get exclusive deals, volume pricing, free shipping and flexible
+              financing on a wide range of Samsung technology for your business.
+            </p>
+            <a
+              class="mt-5 flex w-fit justify-center self-center rounded-full bg-black pb-1 text-sm font-semibold text-white hover:bg-zinc-600 md:self-start"
+              href="#"
+            >
+              <button class="mx-10 my-3 pt-1">Learn more</button>
+            </a>
+          </div>
+          <img
+            class="order-2 bg-center md:w-1/2"
+            src="../../assets/images/smartphone/smartphone-banner.jpeg"
+            alt=""
+          />
+        </div>
+        <!-- care -->
+        <div
+          class="flex w-full flex-col items-center justify-center pt-10 text-center md:flex-row"
+        >
+          <div
+            class="order-1 my-5 flex flex-col md:pl-20 md:pr-10 px-2 tracking-wide md:w-1/2 md:text-start"
+          >
+            <h3 class="mb-4 pt-10 text-4xl font-semibold md:pt-5">
+              If the unexpected happens, we’re here
+            </h3>
+            <p>
+              Did you know that Samsung products comes protected with Samsung
+              Care? Choose from convenient service options that work with your
+              schedule and needs. This includes our Walk-in, We Come to You,
+              Mail-in and Self-repair options. We’re here to help. For even more
+              protection, you can add Samsung Care+ for a fee.
+            </p>
+            <a
+              class="align-self-end flex w-fit self-center border-black pb-1 pt-10 font-semibold underline underline-offset-8 md:self-start md:text-xs"
+              href="#"
+              >Learn more</a
+            >
+          </div>
+          <img
+            class="order-2 h-fit w-full bg-center md:w-1/2"
+            src="../../assets/images/smartphone/care-banner-big.jpg"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="flex w-full flex-col items-center justify-center pt-10 text-center md:flex-row md:text-start"
+        >
+          <div
+            class="order-1 mx-8 my-5 ml-0 flex flex-col items-center tracking-wide md:ml-[10%] md:w-1/2"
+          >
+            <h3 class="mb-4 w-full text-4xl font-semibold">
+              Try Galaxy on your phone
+            </h3>
+            <p class="w-full">
+              Experience One UI on your device and learn more about Galaxy
+              AI.<sup>15</sup>
+            </p>
+            <a
+              class="mt-8 flex w-fit items-center justify-center rounded-full bg-black pb-1 text-sm font-semibold text-white hover:bg-zinc-600 md:self-start"
+              href="#"
+            >
+              <button class="my-3 ml-10 pt-1">Try Galaxy</button>
+              <img
+                class="mr-5 size-10 pt-1"
+                src="../../assets/images/smartphone/arrow-upright-white.svg"
+              />
+            </a>
+          </div>
+          <img
+            class="order-2 h-fit bg-center md:w-1/2"
+            src="../../assets/images/smartphone/try-banner.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- switch to galaxy -->
+      <section id="switch">
+        <div
+          class="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-4 lg:px-20"
+        >
+          <card-switch
+            img="../../assets/images/smartphone/smart-switch.png"
+            desc="Switching made simple."
+            >Smart Switch</card-switch
+          >
+          <card-switch
+            img="../../assets/images/smartphone/trade-in.png"
+            desc="Trade in your old devices for a brand new Galaxy."
+            bgColor="bg-orange-50"
+            >Trade-in</card-switch
+          >
+          <card-switch
+            img="../../assets/images/smartphone/samsung-care.png"
+            desc="Extra protection and peace of mind."
+            bgColor="bg-red-50"
+            >Samsung Care+</card-switch
+          >
+          <card-switch
+            img="../../assets/images/smartphone/samsung-support.png"
+            bgColor="bg-gray-50"
+            desc="Samsung support on the spot."
+            >Support</card-switch
+          >
+        </div>
+
+        <div
+          class="mx-5 my-5 flex max-w-screen-2xl flex-col rounded-3xl bg-gray-100 px-[1.66vw] text-center md:mx-[1.66vw] md:py-4"
+        >
+          <h4 class="my-6 pt-2 text-[min(4.5vw,24px)] font-semibold md:my-0">
+            Buy with confidence
+          </h4>
+          <icon-desc></icon-desc>
+        </div>
+      </section>
+    </main>
+
+    <footer-component class="mx-auto max-w-screen-xl"></footer-component>
+
+    <!-- DO NOT REMOVE THIS SCRIPT TAG -->
+    <script src="../../script/index.js" type="module"></script>
+    <script src="./components/index.js" type="module"></script>
+    <script src="./script/index.js" type="module"></script>
+    <script src="./components/buy.js" type="module"></script>
+    <script src="./components/hscroll.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
+    <title>All-Deals Dev</title>
+</head>
+<body class="flex flex-col items-center gap-12 ">
+    <navbar-component></navbar-component>
+
+    <section class="sub-header max-w-screen-2xl w-full">
+        <div class="tab-container flex w-full justify-around text-center gap-12 overflow-auto scrollbar-none">
+            <a class="main-tab flex-none ">
+                <img src="../../assets/images/continue-shoping/image/Featured_Black_80x50.webp" alt="">
+                <p>Phones</p>
+            </a>
+            <a href="#" class="tab flex-none ">
+                <img src="../../assets/images/continue-shoping/image/Phones_Black_80x50.webp" alt="">
+                <p class="w-20">Phones</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/TV_Home_Theater_Black_80x50.webp" alt="">
+                <p class="w-20">TV & Home Theater</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Appliances_Smart_Home_Black_80x50.webp" alt="">
+                <p class="w-20">Appliances</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Watch_Audio&Accessories_Black_80x50.webp" alt="">
+                <p class="w-20">Watches & Audio</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Tablets_Computing_Black_80x50.webp" alt="">
+                <p class="w-20">Tablets & Computing</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Monitor-Memory-Storage-80x50.png" alt="">
+                <p class="w-20">Monitors, Memory & Storage</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Icon_Bundle01.svg.png" alt="">
+                <p class="w-20">Bundle</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Students_Educators_Black_80x50.webp" alt="">
+                <p class="w-20">Student & Educators</p>
+            </a>
+            <a href="#" class="tab flex-none">
+                <img src="../../assets/images/continue-shoping/image/Small_Businesses_Black_80x50.webp" alt="">
+                <p class="w-20">Business</p>
+            </a>
+       
+    </div>
+    </section>
+    <section class="hero-section max-w-screen-2xl">
+        
+        <div class="banner relative">
+            <img class="hidden md:block" src="../../assets/images/continue-shoping/image/hero-section/DSE-ADP-KV-DT.jpg" alt="">
+            <img class=" md:hidden" src="../../assets/images/continue-shoping/image/hero-section/DSE-ADP-KV-MO.jpg" alt="">
+            <div class="text-small absolute top-[15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-12 md:hidden">
+                <div class="text-big text-center flex flex-col items-center ">
+                 <p class="bg-blue-500 px-2 py-2 text-white w-[45%] text-center  rounded-lg  lg:text-lg font-semibold">May 20-26</p>
+                 <h2 class="text-3xl font-semibold">Our sizzling summer sale is on now</h2>
+                 <p class="sm:text-xs lg:text-base">Save up to 35% for your smart home with these unique daily deals,
+                     limited time promotions and bundles across all our categories.</p>
+                </div>
+            </div>
+
+            <div class="text-big absolute top-1/4 left-[5%] right-2/3 hidden md:block">
+                <div class="text ">
+                 <p class="bg-blue-500 size-8 text-white w-1/3 text-center  rounded-lg  sm:text-sm lg:text-lg font-semibold">May 20-26</p>
+                 <h2 class="sm:text-xl lg:text-3xl font-semibold">Our sizzling summer sale is on now</h2>
+                 <p class="sm:text-xs lg:text-base">Save up to 35% for your smart home with these unique daily deals,
+                     limited time promotions and bundles across all our categories.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <featured-components></featured-components>
+
+    <section class="sub-footer max-w-screen-2xl">
+        <div class="relative">
+            <img class="w-full hidden md:block" src="../../assets/images/continue-shoping/image/sub-footer/big-image.png" alt="">
+            <img class="w-full md:hidden" src="../../assets/images/continue-shoping/image/sub-footer/small-image.png" alt="">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col md:flex-row gap-12 md:gap-24 md:w-full justify-center">
+                <div class="item text-center">
+                    <h2 class="text-white text-3xl">Free Shopping</h2>
+                    <button class="uppercase text-[10px] text-blue-400 border-b">Learn More</button>
+                </div>
+                <div class="item text-center border-y-2 py-12 md:border-x-2 md:border-y-0 md:px-12 md:py-0  ">
+                    <h2 class="text-white text-3xl">Extended returns</h2>
+                    <button class="uppercase text-[10px] text-blue-400 border-b">Learn More</button>
+                </div>
+                <div class="item text-center">
+                    <h2 class="text-white text-3xl">Financing that fits your life</h2>
+                    <button class="uppercase text-[10px] text-blue-400 border-b">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-[8px] space-y-2 pl-2 pt-4">
+            <p>⊕0% APR for 12, 18 or 24, Months with Equal Payments: Available on purchases of select products charged to a Samsung Financing account. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>○While supplies last. Offer dates, times and availability will vary.</p>
+            <p>*Products sold separately. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>W05/13/24-06/02/24, while supplies last. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>Ⴖ05/13/24-06/02/24, while supplies last. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>CValid from 5/20/24 to 5/26/24, while supplies last. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>σPayment options are offered by Affirm, are subject to an eligibility check, and may not be available in all states. <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>KPortion of storage/memory occupied by existing content.</p>
+            <p>‡5/16/24 – 5/27/2024, while supplies last, purchase a Galaxy S24U 512gb("Qualifying Purchase") for the price of the next lowest storage level at samsung.com or the Shop Samsung app. The discount will be automatically applied at checkout. The Gift is non transferrable and limited to 1 per Qualifying Purchase. If you return or cancel your purchase the discount will be lost.</p>
+            <p>θFor a limited time only, on Samsung.com/Shop Samsung App, or purchase a new qualifying Galaxy device (“Qualifying Purchase”), send in your qualifying trade-in device to Samsung through the Samsung Trade-In Program, and if Samsung determines your trade-in device meets all eligibility requirements, you will receive a trade-in credit specific to your qualifying trade-in device to apply toward your Qualifying Purchase.</p>
+            <p>§5/20/24 – 6/17/24, while supplies last, on samsung.com or Samsung Shop App, pre-order and purchase a new select Galaxy Book4 Edge device ("Qualifying Purchase") and receive a Samsung 50" Class Crystal UHD DU7200 TV on us ("Promotional Product"). <span><a class="text-blue-500" href="#">Show More</a></span></p>
+            <p>NFor a limited time, purchase the latest Galaxy Z Flip5 carrier locked device from AT&T, T-Mobile, Verizon, US Cellular ("Qualifying Purchase") on samsung.com or in the Shop Samsung App and receive a $75 Samsung Credit("Gift"). <span><a class="text-blue-500" href="#">Show More</a></span></p>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+
+
+    <script src="components/card-component.js" type="module"></script>
+    <script src="../../script/index.js" type="module"></script>
+</body>
+</html>

@@ -9,95 +9,50 @@
 </head>
 
 <body class="flex flex-col items-center">
+  
+<a class="underline" href="../cart/index.html"></a>
+
+<navbar-component></navbar-component>
+<section class="max-w-screen-xl hidden md:inline-block">
+    
+    <nav aria-label="breadcrumb" class="text-gray-800">
+        <ul class="flex h-8 space-x-2 text-gray-800">
+            <li class="text-gray-300 flex items-center pl-5 text-xs">
+                 <a rel="" href="#" title="Back to homepage" class="flex items-center ">Home</a>
+            </li>
+            <li class="flex items-center space-x-1">
+                <span class="text-black text-xs">/</span>
+                <a rel="" href="#" title="go to Audio Page" class="flex text-gray-300 capitalize text-xs">Audio</a>
+            </li>
+            <li class="flex items-center space-x-1">
+                <span class="text-black text-xs">/</span>
+                <a rel="" href="#" title="go to shop page" class="flex text-gray-300 items-center capitalize text-xs">Shop Our Best Bluetooth Earbuds|Samsung US</a>
+            </li>
+            <li class="flex items-center space-x-1">
+                <span class="text-black text-xs">/</span>
+                <a rel="" href="#" title="go to shop page" class="flex text-gray-400 capitalize hover:no-underline cursor-default text-xs">Shop Our Best Wireless Headphones|Samsung US</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+    
+<div id="product-detail" class="max-w-screen-xl mx-auto"></div>
+<script src="./components/product.js"></script>
 
 
-    <navbar-component></navbar-component>
-    <section class=" xl:max-w-screen-2xl w-screen hidden md:inline-block xl:inline-block">
-
-        <nav aria-label="breadcrumb" class="text-gray-800">
-            <ol class="flex h-8 space-x-2 text-gray-800">
-                <li class="text-gray-300 flex items-center pl-5 text-xs">
-                    <a rel="" href="#" title="Back to homepage" class="flex items-center ">Home</a>
-                </li>
-                <li class="flex items-center space-x-1">
-                    <span class="text-black text-xs">/</span>
-                    <a rel="" href="#" title="go to Audio Page" class="flex text-gray-300 capitalize text-xs">Audio</a>
-                </li>
-                <li class="flex items-center space-x-1">
-                    <span class="text-black text-xs">/</span>
-                    <a rel="" href="#" title="go to shop page"
-                        class="flex text-gray-300 items-center capitalize text-xs">Shop Our Best Bluetooth
-                        Earbuds|Samsung US</a>
-                </li>
-                <li class="flex items-center space-x-1">
-                    <span class="text-black text-xs">/</span>
-                    <a rel="" href="#" title="go to shop page"
-                        class="flex text-gray-400 capitalize hover:no-underline cursor-default text-xs">Shop Our Best
-                        Wireless Headphones|Samsung US</a>
-                </li>
-            </ol>
-        </nav>
-    </section>
-
-
-    <section class=" max-w-screen-xl w-screen ">
-        <p class="text-center p-10 text-xl md:text-2xl font-semibold mt-3">Buy Direct From Samsung</p>
-
-        <div class="flex md:flex-row flex-col items-center md:justify-center justify-stretch mt-4">
-            <div class="md:full xs:w-full h-48 w-80 mx-16">
-                <img class="object-contain" src="../../assets/images/nearby-store/nearby-store-1.png"
-                    alt="samsung galaxy buds2 pro graphite" />
-            </div>
-            <div class="flex flex-col justify-evenly w-full">
-                <div class="flex flex-col items-center md:items-start p-5 pb-10 ">
-                    <p class="text-gray-400 text-xs">
-                        SM-R510NZAAXAR
-                    </p>
-                    <h2 class="text-xl font-semibold text-gray-800 mt-4">
-                        Samsung Galaxy Buds2 Pro Graphite
-                    </h2>
-                    <div class="flex items-center text-xs">
-                        <div class="flex text-xs">
-                            <img class="w-4 h-4 mx-px text-black" src="../../assets/images/nearby-store/star-solid.svg">
-                            <img class="w-4 h-4 mx-px text-black" src="../../assets/images/nearby-store/star-solid.svg">
-                            <img class="w-4 h-4 mx-px text-black" src="../../assets/images/nearby-store/star-solid.svg">
-                            <img class="w-4 h-4 mx-px text-black" src="../../assets/images/nearby-store/star-solid.svg">
-                            <img class="w-4 h-4 mx-px text-black"
-                                src="../../assets/images/nearby-store/star-half-stroke-solid.svg">
-
-
-                        </div>
-
-                        <div class="text-gray-500 ml-2 text-md mt-1">
-                            4.6/ 5.0 (4927 Reviews)
-                        </div>
-                    </div>
-
-                    <div class="text-black text-xl mt-8 font-semibold"> $169.99</div>
-                    <div class="text-gray-400 text-xs mt-1">FREE SHIPPING ON ALL ORDERS</div>
-                    <a type="button" href='../cart/index.html'
-                        class="flex items-center justify-center rounded-full bg-blue-800 w-full h-fit md:w-48 text-white font-medium py-4 mt-5">
-                        BUY NOW
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="max-w-screen-xl w-screen bg-gray-100 py-12 flex flex-col items-center space-y-12">
-        <span class="text-xl md:text-2xl font-semibold">Find Online</span>
-        <div id='stockList' class="stock-list grid grid-cols-2 md:flex gap-4 "></div>
-    </section>
+   
+<section class="max-w-screen-xl w-full bg-gray-100 py-12 flex flex-col items-center space-y-12">
+    <span class="text-xl md:text-2xl font-semibold">Find Online</span>
+    <div id='stockList' class="stock-list grid grid-cols-2 md:flex gap-4 "></div>
+</section>
+<script src="../nearby-store/components/find-online.js"></script>
 
 
 
 
 
-    <section class="max-w-screen w-screen ">
+
+    <section class="max-w-screen w-full ">
         <p class="flex justify-center p-10 text-xl md:text-2xl font-semibold mt-3">Find Store Nearby</p>
         <div class="relative w-full h-96">
             <iframe class="absolute top-0 left-0 w-full h-full"
@@ -105,10 +60,10 @@
                 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
 
-            <div class=" h-5/6 mt-10 w-80 bg-white absolute mx-20 my-7 -md">
+            <div class=" h-5/6 w-80 bg-white absolute mx-20 my-7 -md">
                 <div class="flex m-3">
-                    <div class="flex border-2 border-black h-11 px-5 space-x-11 items-center">
-                        <P class="text-xs">Phnom Penh, Phnom Penh</P>
+                    <div class="flex border-2 border-black h-11 px-5 gap-11 items-center">
+                        <p class="text-xs">Phnom Penh, Phnom Penh</p>
                         <!--Location arrow-->
                         <img class="w-6 rotate-12" src="../../assets/images/nearby-store/navigation.svg"
                             alt="location arrow">
@@ -142,7 +97,7 @@
 
     </section>
 
-    <section class="max-w-screen-xl w-screen">
+    <section class="max-w-screen-xl w-full">
         <div class="text-sm font-extralight">
             <div class="flex mt-10 items-center justify-center md:justify-start mx-64">
                 <img src="../../assets/images/nearby-store/pricespider.svg" alt="pricespider logo">
@@ -162,12 +117,15 @@
         </div>
     </section>
 
-    <footer-component></footer-component>
+<footer-component></footer-component>
+    
+    
+
 
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
-    <script src="./components/index.js"> </script>
+   
 </body>
 
 </html>

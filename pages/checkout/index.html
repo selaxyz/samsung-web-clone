@@ -1,171 +1,216 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Checkout | Samsung DEV</title>
-    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+  </head>
 
-<body class="flex flex-col items-center" onload="setDefaultPayment()">
-    <section class="flex max-w-screen-xl w-screen justify-start py-4 md:justify-center px-6">
-        <a href="../../index.html">
-            <svg class="icon h-8 w-fit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" role="presentation"
-                aria-hidden="true" tabindex="-1">
-                <rect id="Clear_space" width="120" height="32" fill="none"></rect>
-                <path id="Logo_ratio"
-                    d="M0,11.651V10.511H3.994v1.45a1.334,1.334,0,0,0,1.494,1.346A1.3,1.3,0,0,0,6.932,12.3a1.833,1.833,0,0,0-.026-1.113C6.133,9.243.851,8.363.18,5.333a5.347,5.347,0,0,1-.025-2.02C.567.88,2.705,0,5.359,0c2.113,0,5.025.492,5.025,3.754V4.816H6.674V3.884A1.275,1.275,0,0,0,5.282,2.537a1.25,1.25,0,0,0-1.365,1.01,2.021,2.021,0,0,0,.026.777c.437,1.734,6.081,2.667,6.7,5.8a6.943,6.943,0,0,1,.025,2.46C10.307,15.068,8.091,16,5.412,16,2.6,16,0,14.99,0,11.651ZM48.392,11.6V10.46h3.943v1.424A1.312,1.312,0,0,0,53.8,13.23a1.286,1.286,0,0,0,1.443-.984,1.759,1.759,0,0,0-.025-1.088c-.748-1.915-5.979-2.8-6.648-5.825a5.215,5.215,0,0,1-.026-1.994C48.959.932,51.1.052,53.7.052c2.088,0,4.973.518,4.973,3.728V4.816H54.989V3.91a1.268,1.268,0,0,0-1.365-1.346,1.2,1.2,0,0,0-1.34.984,2.017,2.017,0,0,0,.025.777c.412,1.734,6,2.641,6.623,5.747a6.806,6.806,0,0,1,.025,2.434c-.361,2.486-2.551,3.392-5.2,3.392C50.97,15.9,48.392,14.887,48.392,11.6Zm14.121.545a5.876,5.876,0,0,1-.025-.985V.44H66.25V11.495a4.111,4.111,0,0,0,.025.57,1.468,1.468,0,0,0,2.835,0,3.97,3.97,0,0,0,.026-.57V.44H72.9V11.158c0,.285-.026.829-.026.985-.257,2.8-2.448,3.7-5.179,3.7S62.771,14.938,62.513,12.143Zm30.974-.156A7.808,7.808,0,0,1,93.435,11V4.712c0-.259.025-.725.051-.985C93.821.932,96.063.052,98.717.052c2.629,0,4.947.88,5.206,3.676a7.185,7.185,0,0,1,.025.985V5.2h-3.762V4.376a3.1,3.1,0,0,0-.051-.57,1.553,1.553,0,0,0-2.964,0,3.088,3.088,0,0,0-.051.7V11.34a4.17,4.17,0,0,0,.026.57A1.472,1.472,0,0,0,98.717,13a1.406,1.406,0,0,0,1.52-1.087,2.09,2.09,0,0,0,.026-.57V9.165h-1.52V6.99H104V11a7.674,7.674,0,0,1-.052.984c-.257,2.718-2.6,3.676-5.231,3.676S93.744,14.705,93.487,11.987ZM41.049,15.378l-.1-13.825L38.369,15.378H34.607L32.055,1.553l-.1,13.825H28.242L28.551.466h6.056l1.881,11.651L38.369.466h6.055l.335,14.912Zm-19.79,0L19.249,1.553,17.187,15.378H13.168L15.9.466h6.623l2.732,14.912Zm62.977-.155L80.5,2.822l.206,12.4H77.046V.466h5.514l3.5,12.013L85.859.466h3.685V15.224Z"
-                    transform="translate(8 8)"></path>
-            </svg>
-        </a>
+  <body class="flex flex-col items-center" onload="setDefaultPayment()">
+    <section
+      class="flex w-full max-w-screen-xl justify-start px-6 py-4 md:justify-center"
+    >
+      <a href="../../index.html">
+        <svg
+          class="icon h-8 w-fit"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 120 32"
+          role="presentation"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <rect id="Clear_space" width="120" height="32" fill="none"></rect>
+          <path
+            id="Logo_ratio"
+            d="M0,11.651V10.511H3.994v1.45a1.334,1.334,0,0,0,1.494,1.346A1.3,1.3,0,0,0,6.932,12.3a1.833,1.833,0,0,0-.026-1.113C6.133,9.243.851,8.363.18,5.333a5.347,5.347,0,0,1-.025-2.02C.567.88,2.705,0,5.359,0c2.113,0,5.025.492,5.025,3.754V4.816H6.674V3.884A1.275,1.275,0,0,0,5.282,2.537a1.25,1.25,0,0,0-1.365,1.01,2.021,2.021,0,0,0,.026.777c.437,1.734,6.081,2.667,6.7,5.8a6.943,6.943,0,0,1,.025,2.46C10.307,15.068,8.091,16,5.412,16,2.6,16,0,14.99,0,11.651ZM48.392,11.6V10.46h3.943v1.424A1.312,1.312,0,0,0,53.8,13.23a1.286,1.286,0,0,0,1.443-.984,1.759,1.759,0,0,0-.025-1.088c-.748-1.915-5.979-2.8-6.648-5.825a5.215,5.215,0,0,1-.026-1.994C48.959.932,51.1.052,53.7.052c2.088,0,4.973.518,4.973,3.728V4.816H54.989V3.91a1.268,1.268,0,0,0-1.365-1.346,1.2,1.2,0,0,0-1.34.984,2.017,2.017,0,0,0,.025.777c.412,1.734,6,2.641,6.623,5.747a6.806,6.806,0,0,1,.025,2.434c-.361,2.486-2.551,3.392-5.2,3.392C50.97,15.9,48.392,14.887,48.392,11.6Zm14.121.545a5.876,5.876,0,0,1-.025-.985V.44H66.25V11.495a4.111,4.111,0,0,0,.025.57,1.468,1.468,0,0,0,2.835,0,3.97,3.97,0,0,0,.026-.57V.44H72.9V11.158c0,.285-.026.829-.026.985-.257,2.8-2.448,3.7-5.179,3.7S62.771,14.938,62.513,12.143Zm30.974-.156A7.808,7.808,0,0,1,93.435,11V4.712c0-.259.025-.725.051-.985C93.821.932,96.063.052,98.717.052c2.629,0,4.947.88,5.206,3.676a7.185,7.185,0,0,1,.025.985V5.2h-3.762V4.376a3.1,3.1,0,0,0-.051-.57,1.553,1.553,0,0,0-2.964,0,3.088,3.088,0,0,0-.051.7V11.34a4.17,4.17,0,0,0,.026.57A1.472,1.472,0,0,0,98.717,13a1.406,1.406,0,0,0,1.52-1.087,2.09,2.09,0,0,0,.026-.57V9.165h-1.52V6.99H104V11a7.674,7.674,0,0,1-.052.984c-.257,2.718-2.6,3.676-5.231,3.676S93.744,14.705,93.487,11.987ZM41.049,15.378l-.1-13.825L38.369,15.378H34.607L32.055,1.553l-.1,13.825H28.242L28.551.466h6.056l1.881,11.651L38.369.466h6.055l.335,14.912Zm-19.79,0L19.249,1.553,17.187,15.378H13.168L15.9.466h6.623l2.732,14.912Zm62.977-.155L80.5,2.822l.206,12.4H77.046V.466h5.514l3.5,12.013L85.859.466h3.685V15.224Z"
+            transform="translate(8 8)"
+          ></path>
+        </svg>
+      </a>
     </section>
-    <section class="grid grid-cols-12 max-w-screen-xl w-full gap-6 items-center md:w-5/6">
-        <section class="col-span-full p-6 md:col-span-8">
-            <section class="hidden flex-col py-6 gap-6 md:flex">
-                <div class="flex items-center gap-4">
-                    <h1 class="font-bold text-xl">Guest Checkout</h1>
-                    <div class="flex items-center gap-1">
-                        <img class="h-4 w-fit"
-                            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/icon-secure-lock.png.5855131.webp"
-                            alt="">
-                        <p class="text-sm text-gray-400 font-light">Secure</p>
-                    </div>
-                </div>
-                <div class="flex w-fit rounded-md items-center p-4 gap-8 text-sm bg-gray-50">
-                    <div class="flex gap-2 items-center">
-                        <img class="h-5 w-fit object-contain"
-                            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/icon-user-gap-v1.png.bdf24fd.webp"
-                            alt="">
-                        <a class="font-medium  text-blue-500 hover:underline" href="../../pages/login/index.html">Sign In</a>
-                    </div>
-                    <div class="flex flex-col font-light">
-                        <p>Sign in or create an account for a quick checkout.</p>
-                        <p>Earn up to 570 Samsung Rewards points* on this order.</p>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section id="paymentOption" class="w-full h-fit">
-            </section>
+    <section
+      class="grid w-full max-w-screen-xl grid-cols-12 items-center gap-6 md:w-5/6"
+    >
+      <section class="col-span-full p-6 md:col-span-8">
+        <section class="hidden flex-col gap-6 py-6 md:flex">
+          <div class="flex items-center gap-4">
+            <h1 class="text-xl font-bold">Guest Checkout</h1>
+            <div class="flex items-center gap-1">
+              <img
+                class="h-4 w-fit"
+                src="../../assets/images/checkout/icon/secure.webp"
+                alt=""
+              />
+              <p class="text-sm font-light text-gray-400">Secure</p>
+            </div>
+          </div>
+          <div
+            class="flex w-fit items-center gap-8 rounded-md bg-gray-50 p-4 text-sm"
+          >
+            <div class="flex items-center gap-2">
+              <img
+                class="h-5 w-fit object-contain"
+                src="../../assets/images/checkout/icon/user.svg"
+                alt=""
+              />
+              <a
+                class="font-medium text-blue-500 hover:underline"
+                href="../../pages/login/index.html"
+                >Sign In</a
+              >
+            </div>
+            <div class="flex flex-col font-light">
+              <p>Sign in or create an account for a quick checkout.</p>
+              <p>Earn up to 570 Samsung Rewards points* on this order.</p>
+            </div>
+          </div>
         </section>
-        <section class="col-span-4 px-4 hidden md:block">
-            <div class="flex justify-end gap-4 py-6">
-                <img src="https://www.samsung.com/us/web/express-checkout/static/dist/img/icon-chat-now.ecfbb12.svg"
-                    alt="">
-                <p class="text-sm text-blue-500 font-medium">Chat with an expert</p>
-                <a href="../../pages/cart/index.html" class="relative w-fit">
-                    <img class="w-fit h-6"
-                        src="https://www.samsung.com/us/web/express-checkout/static/dist/img/icon-sc-cart.e093449.svg"
-                        alt="Cart">
-                    <span
-                        class="absolute top-0 right-0 bg-red-500 text-[10px] text-white w-3 h-3 text-center content-center rounded-full">1</span>
-                </a>
+        <hr />
+        <section id="paymentOption" class="h-fit w-full"></section>
+      </section>
+      <section class="col-span-4 hidden px-4 md:block">
+        <div class="flex justify-end gap-4 py-6">
+          <img src="../../assets/images/checkout/icon/chat.svg" alt="" />
+          <p class="text-sm font-medium text-blue-500">Chat with an expert</p>
+          <a href="../../pages/cart/index.html" class="relative w-fit">
+            <img
+              class="h-6 w-fit"
+              src="../../assets/images/checkout/icon/cart.svg"
+              alt="Cart"
+            />
+            <span
+              class="absolute right-0 top-0 h-3 w-3 content-center rounded-full bg-red-500 text-center text-[10px] text-white"
+              >1</span
+            >
+          </a>
+        </div>
+        <div class="flex justify-between py-4">
+          <img
+            class="h-16 w-fit"
+            src="../../assets/images/checkout/images/earbud.webp"
+            alt=""
+          />
+          <h3 class="flex-1 pl-6 text-base font-medium">
+            Galaxy Buds2 Pro,<br />Graphite
+          </h3>
+          <div class="flex flex-col items-end">
+            <p class="text-sm font-light">$189.99</p>
+            <p class="text-xs font-light text-gray-400 line-through">$229.99</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 rounded-md bg-gray-100 p-4 text-sm font-medium"
+        >
+          <div class="flex justify-between">
+            <p>Subtotal</p>
+            <p class="text-sm font-light">$189.99</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Shipping</p>
+            <p class="text-sm font-light">Free</p>
+          </div>
+          <div class="flex justify-between">
+            <div>
+              <p>Estimated tax</p>
+              <p class="text-xs font-light">Zip code:10001</p>
             </div>
-            <div class="flex justify-between py-4">
-                <img class="w-fit h-16"
-                    src="https://image-us.samsung.com/us/mobile-audio/galaxy-buds2-pro/gallery/graphite/Q4B4B2C-86-SM-R510_001_Front_Graphite_RGB-GalleryImage-1600x1200.jpg?$default-400-jpg$"
-                    alt="">
-                <h3 class="flex-1 pl-6 text-base font-medium">Galaxy Buds2 Pro,<br>Graphite</h3>
-                <div class="flex flex-col items-end">
-                    <p class="text-sm font-light">$189.99</p>
-                    <p class="text-xs font-light text-gray-400 line-through">$229.99</p>
-                </div>
+            <p class="text-xs font-light">Will be calculated later</p>
+          </div>
+          <hr />
+          <div class="flex justify-between text-base">
+            <p>Estimated total:</p>
+            <p>$206.85</p>
+          </div>
+          <hr />
+          <details class="w-full">
+            <summary class="flex justify-between">
+              <div class="flex items-center gap-2">
+                <p>Total Saving</p>
+                <img
+                  src="../../assets/images/checkout/icon/chevron-down.svg"
+                  alt=""
+                />
+              </div>
+              <p class="font-light">$40.00</p>
+            </summary>
+            <div class="flex justify-between py-2 text-xs font-light">
+              <p>Promotional Discount</p>
+              <p>-$40.00</p>
             </div>
-            <div class="flex flex-col bg-gray-100 text-sm font-medium rounded-md p-4 gap-4">
-                <div class="flex justify-between">
-                    <p>Subtotal</p>
-                    <p class="text-sm font-light">$189.99</p>
-                </div>
-                <div class="flex justify-between">
-                    <p>Shipping</p>
-                    <p class="text-sm font-light">Free</p>
-                </div>
-                <div class="flex justify-between">
-                    <div>
-                        <p>Estimated tax</p>
-                        <p class="text-xs font-light">Zip code:10001</p>
-                    </div>
-                    <p class="text-xs font-light">Will be calculated later</p>
-                </div>
-                <hr>
-                <div class="flex justify-between text-base">
-                    <p>Estimated total:</p>
-                    <p>$206.85</p>
-                </div>
-                <hr>
-                <details class="w-full">
-                    <summary class="flex justify-between">
-                        <div class="flex items-center gap-2">
-                            <p>Total Saving </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg>
-                        </div>
-                        <p class="font-light">$40.00</p>
-                    </summary>
-                    <div class="flex justify-between text-xs font-light py-2">
-                        <p>Promotional Discount</p>
-                        <p>-$40.00</p>
-                    </div>
-                </details>
-
-            </div>
-            <div class="py-4"></div>
-            <img src="https://images.samsung.com/is/image/samsung/assets/us/dse/02223/DSE-BannerCard-1200x690.jpg"
-                alt="">
-        </section>
+          </details>
+        </div>
+        <div class="py-4"></div>
+        <img
+          src="../../assets/images/checkout/images/certificate.webp"
+          alt=""
+        />
+      </section>
     </section>
     <div class="py-8"></div>
-    <section class="flex flex-col max-w-screen-xl w-5/6 gap-4 font-light text-gray-600">
-        <p class="text-xs bg-gray-50 p-3">By submitting your order, you agree to the Terms of Sale and acknowledge that
-            you have read
-            Samsung’s Privacy
-            Policy. By submitting your order, you agree to the <a class="text-blue-400 font-medium" href="#">Samsung
-                Rewards Terms and Conditions</a></p>
-        <p class="text-xs"> <strong class="font-medium">*Restrictions apply</strong>. User will not receive Rewards
-            points for amount of the
-            order paid for by
-            previously
-            accrued Rewards points. For complete program details, please see Samsung Rewards Terms and Conditions</p>
-        <p class="text-xs"><strong class="font-medium"><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal
-                Payments:</strong>
-            Available on purchases of select products
-            charged to a
-            Samsung Financing account. Minimum purchase: $50. 0% APR from date of eligible purchase until paid in full.
-            Estimated monthly payment equals the eligible purchase amount multiplied by a repayment factor and rounded
-            down to the nearest penny <br> <a class="text-blue-400 font-medium" href="#">See More</a></p>
-        <p class="text-xs"><sup>σ</sup>Payment options are offered by Affirm and are subject to an eligibility check.
-            Options
-            depend on your
-            purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are
-            made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
-            <a class="text-blue-400 font-medium" href="#">affirm.com/licenses.</a>
-        </p>
-        <p class="text-xs"><sup>π</sup>In the US, Klarna Pay in 4 is available in all states except Hawaii and New
-            Mexico. See
-            <a class="text-blue-400 font-medium" href="#">Klarna payment term.</a>
-            A higher initial payment may be required for some consumers. CA residents: Loans made or arranged pursuant
-            to California Financing Law license.
-        </p>
-        <div class="flex text-xs font-medium text-blue-400 border-t pt-4 pb-6">
-            <a href="#">USA/ENGLISH</a>
-            <div class="flex flex-1 gap-2 justify-center">
-                <a href="#">Privacy Policy</a>
-                <p class="text-black font-light">|</p>
-                <a href="#">Terms of Sale</a>
-                <p class="text-black font-light">|</p>
-                <a href="#">Your California Privacy Rights</a>
-            </div>
+    <section
+      class="flex w-5/6 max-w-screen-xl flex-col gap-4 font-light text-gray-600"
+    >
+      <p class="bg-gray-50 p-3 text-xs">
+        By submitting your order, you agree to the Terms of Sale and acknowledge
+        that you have read Samsung’s Privacy Policy. By submitting your order,
+        you agree to the
+        <a class="font-medium text-blue-400" href="#"
+          >Samsung Rewards Terms and Conditions</a
+        >
+      </p>
+      <p class="text-xs">
+        <strong class="font-medium">*Restrictions apply</strong>. User will not
+        receive Rewards points for amount of the order paid for by previously
+        accrued Rewards points. For complete program details, please see Samsung
+        Rewards Terms and Conditions
+      </p>
+      <p class="text-xs">
+        <strong class="font-medium"
+          ><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal Payments:</strong
+        >
+        Available on purchases of select products charged to a Samsung Financing
+        account. Minimum purchase: $50. 0% APR from date of eligible purchase
+        until paid in full. Estimated monthly payment equals the eligible
+        purchase amount multiplied by a repayment factor and rounded down to the
+        nearest penny <br />
+        <a class="font-medium text-blue-400" href="#">See More</a>
+      </p>
+      <p class="text-xs">
+        <sup>σ</sup>Payment options are offered by Affirm and are subject to an
+        eligibility check. Options depend on your purchase amount, and a down
+        payment may be required. CA residents: Loans by Affirm Loan Services,
+        LLC are made or arranged pursuant to a California Finance Lender
+        license. For licenses and disclosures, see
+        <a class="font-medium text-blue-400" href="#">affirm.com/licenses.</a>
+      </p>
+      <p class="text-xs">
+        <sup>π</sup>In the US, Klarna Pay in 4 is available in all states except
+        Hawaii and New Mexico. See
+        <a class="font-medium text-blue-400" href="#">Klarna payment term.</a>
+        A higher initial payment may be required for some consumers. CA
+        residents: Loans made or arranged pursuant to California Financing Law
+        license.
+      </p>
+      <div class="flex border-t pb-6 pt-4 text-xs font-medium text-blue-400">
+        <a href="#">USA/ENGLISH</a>
+        <div class="flex flex-1 justify-center gap-2">
+          <a href="#">Privacy Policy</a>
+          <p class="font-light text-black">|</p>
+          <a href="#">Terms of Sale</a>
+          <p class="font-light text-black">|</p>
+          <a href="#">Your California Privacy Rights</a>
         </div>
+      </div>
     </section>
     <chat-component></chat-component>
     <feedback-component></feedback-component>
     <footer-component></footer-component>
     <script src="./script/index.js"></script>
-    <script src="../../script/index.js" type="module"></script>
-</body>
-
+    <script src="../cart/components/cartbutton.js" type="module"></script>
+  </body>
 </html>

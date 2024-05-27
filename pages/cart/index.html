@@ -20,58 +20,67 @@
                     <p class="text-sm">Starting from $7.09 / mo for 24 mo <sup>⊕σ</sup></p>
                 </div>
                 <a href="../../pages/checkout/index.html">
-                    <button
-                        class="w-full h-fit py-2 px-16 bg-blue-500 text-white text-sm tracking-wider rounded-full">Checkout</button>
+                    <cart-button class=""
+                        data-text="Checkout"
+                        data-color="bg-blue-500"
+                    ></cart-button>
                 </a>
             </div>
         </div>
     </div>
 
-    <section class="max-w-screen-xl w-full px-4 mt-7">
+    <section class="max-w-screen-xl w-full mt-7">
 
+        <!-- summary -->
+        <section class="px-5">
+            <!-- <h1>This is Cart</h1>
+            <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
+            <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
+            <p>******</p> -->
 
-        <section class="grid grid-cols-12 mb-10">
-            <!-- left col -->
-            <div class="col-span-full md:col-span-8">
-                <div class="flex justify-between my-3 text-xs">
-                    <h1 class="font-medium text-xl text-start hidden md:block">Cart</h1>
-                    <p>Zip code: <a class="text-blue-500">96928</a></p>
-                    <a class="text-end text-blue-500 md:hidden" href="#">Chat with an expert</a>
-                </div>
-                <hr>
-                <section class="flex border-b">
+            <div class="grid grid-cols-12 mb-10">
+                <!-- left col -->
+                <div class="col-span-full md:col-span-8">
+                    <div class="flex justify-between my-3">
+                        <h1 class="font-medium text-xl text-start hidden md:block">Cart</h1>
+                        <p>Zip code: <a class="text-blue-500">96928</a></p>
+                        <a class="text-end text-sm text-blue-500 md:hidden" href="#">Chat with an expert</a>
+                    </div>
+                    <hr>
+                    <section class="flex border-b">
 
-                    <!-- upper left col -->
-                    <img class="h-16 mx-12 mt-5" src="../../assets/images/cart/buds2.webp" alt="galaxy buds2 pro">
-                    <div class="flex w-full flex-col ">
-                        <div class="flex border-b justify-between">
-                            <div class="flex flex-col md:flex-row md:w-[70%] font-semibold md:justify-between mt-7">
-                                <p>Galaxy Buds2 Pro, Graphite</p>
-                                <div>
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
+                        <!-- upper left col -->
+                        <img class="h-16 mx-12 mt-5" src="../../assets/images/cart/buds2.webp"
+                            alt="galaxy buds2 pro">
+                        <div class="flex w-full flex-col">
+                            <div class="flex border-b justify-between">
+                                <div class="flex flex-col md:flex-row md:w-[70%] font-semibold md:justify-between mt-7">
+                                    <p>Galaxy Buds2 Pro, Graphite</p>
+                                    <div>
+                                        <select class="cursor-pointer">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-end w-5/12">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-3">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
-                                <p>$189.99</p>
-                                <p class="font-thin text-xs line-through">$229.99</p>
-                                <a class="text-blue-500 text-sm font-medium text-end" href="#">Save for later</a>
-                            </div>
+                                <div class="flex flex-col items-end w-5/12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-3 cursor-pointer">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+                                    </svg>
+                                    <p>$189.99</p>
+                                    <p class="font-thin text-xs line-through">$229.99</p>
+                                    <a class="text-blue-500 text-sm font-medium text-end" href="#">Save for later</a>
+                                </div>
 
                         </div>
 
@@ -104,7 +113,7 @@
 
             <!-- right col -->
             <div class="md:col-span-4 hidden md:block">
-                <div class="flex justify-end mr-5 my-3 gap-3">
+                <div class="flex justify-end px-6 my-3 gap-3">
                     <img class="w-7" src="../../assets/images/cart/chat-icon.svg" alt="chat with expert">
                     <p class="text-blue-500 text-sm font-medium">Chat with an expert</p>
                 </div>
@@ -184,34 +193,43 @@
                             </div>
                         </details>
                     </div>
-                    <section class="flex flex-col my-10 items-center w-full px-10">
-                        <a class="w-full flex items-center justify-center h-10 bg-blue-500 rounded-3xl mb-3 text-white font-semibold text-xs tracking-widest"
-                            href="../checkout/index.html">Checkout</a>
-                        <button
-                            class="flex justify-center w-full h-10 bg-yellow-400 hover:bg-yellow-500 rounded-3xl font-bold text-lg italic">
-                            <p class="text-blue-900 mt-1">Pay</p>
-                            <p class="text-blue-400 mt-1">Pal</p>
-                        </button>
-                    </section>
 
+                    <div class="flex flex-col gap-3 py-10">
+                        <a href="../checkout/index.html">
+                            <cart-button
+                                data-text="Checkout"
+                                data-color="bg-blue-500"
+                                data-image=""
+                            ></cart-button>
+                        </a>
+
+                        <cart-button
+                            data-text=""
+                            data-image="../../assets/images/cart/paypal.svg"
+                            data-color="bg-yellow-400 hover:bg-yellow-500"
+                        ></cart-button>
+                    </div>
+                    
                     <img src="../../assets/images/cart/DSE-BannerCard-1200x690.webp" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Frequently bought (component) -->
+        <section class="max-w-screen-xl w-screen px-5">
+            <div class="items-center">
+                <h1 class="text-2xl font-medium mb-14">Frequently bought together</h1>
+                <div>
+                    <div id="productList" class="flex text-center justify-evenly text-sm overflow-auto">
+
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <!-- Frequently bought -->
-        <section class="max-w-screen-xl w-full">
-            <h1 class="text-2xl font-medium mb-14">Frequently bought together</h1>
-            <div id="productList"
-                class="product-list flex md:overflow-hidden overflow-x-scroll text-center text-sm py-6">
-            </div>
-        </section>
-
-
         <!-- supported payment -->
-        <section
-            class="flex flex-col justify-start max-w-screen-xl md:flex md:flex-row md:justify-center mt-20 text-sm gap-4">
+        <section class="flex flex-col justify-start max-w-screen-xl md:flex md:flex-row md:justify-center mt-20 text-sm gap-4 px-5">
             <p class="text-gray-700">Supported payment types</p>
             <div class="flex flex-wrap gap-3 pb-2.5">
                 <img class="w-10 h-6" src="../../assets/images/cart/icon-visa-3x.jpg.dea005e.webp" alt="visa">
@@ -234,12 +252,10 @@
                     alt="Apple Pay">
             </div>
         </section>
-
-    </section>
-    <section class="max-w-screen-xl w-screen text-xs py-6 font-light space-y-6 px-5">
-
-        <p><sup>⊕</sup><strong class="font-medium">0% APR for 12, 18, 24 Months with Equal Payments:</strong> Available
-            on purchases of
+    
+        <section class="max-w-screen-xl w-screen text-xs my-5 px-5">
+                
+            <p class="font-thin"><b class="font-medium"><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of
             select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
             eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount
             multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12
@@ -274,7 +290,7 @@
 
     <!-- mobile checkout -->
     <section class="fixed block bottom-0 md:hidden w-screen shadow-2xl shadow-black">
-        <div class="flex flex-col w-full px-4 bg-white">
+        <div class="flex flex-col px-4 bg-white">
 
             <details>
                 <summary id="expand-button" class="flex justify-center ">
@@ -328,109 +344,39 @@
                 
             </details>
             <div id="order-summary">
-                <div class="flex justify-between py-5">
+                <div class="flex justify-between py-2">
                     <p class="text-xl font-medium">Order Summary</p>
                     <p class="text-sm font-medium ">Est. total: $169.99</p>
                 </div>
                 <p class="text-blue-500 font-light">Promo code?</p>
             </div>
-            <a class="self-center" href="../../pages/checkout/index.html">
-                <button class="w-52 h-fit py-2 mt-5 bg-blue-500 text-white text-sm tracking-wider rounded-full">Checkout</button>
-            </a>
-            <button class="flex justify-center self-center w-52 h-fit bg-yellow-400 hover:bg-yellow-500 rounded-full font-bold text-lg italic mb-5 mt-3"><p class=" text-blue-900 mt-1">Pay</p><p class="text-blue-400 mt-1">Pal</p></button>
+            <div class="w-full flex flex-col items-center gap-y-2 py-3">
+                <div class="flex flex-col gap-3 pt-3">
+                    <a href="../checkout/index.html">
+                        <cart-button
+                            data-text="Checkout"
+                            data-color="bg-blue-500"
+                            data-image=""
+                        ></cart-button>
+                    </a>
+                    <cart-button
+                        data-text=""
+                        data-image="../../assets/images/cart/paypal.svg"
+                        data-color="bg-yellow-400 hover:bg-yellow-500"
+                    ></cart-button>
+                </div>
+            </div>
+                
+            </div>            
         </div>
     </section>
 
 
-    <script>
+ 
 
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-80px";
-            }
-        }
-
-        const orderSummary = document.getElementById("order-summary");
-        const chevron = document.getElementById("chevron");
-        const expandButton = document.getElementById("expand-button");
-
-        const chevron2 = document.getElementById("chevron-2");
-
-        const toggleSummaryHandle = () => {
-            orderSummary.classList.toggle("hidden");
-            expandButton.classList.toggle("bg-gray-50");
-            chevron.classList.toggle("rotate-180");
-        }
-        chevron.addEventListener("click", toggleSummaryHandle)
-
-        const toggleSummaryHandle2 = () => {
-            chevron2.classList.toggle("rotate-180")
-        }
-
-        chevron2.addEventListener("click", toggleSummaryHandle2)
-        
-    </script>
-
-    
-    
     <script src="../../script/index.js" type="module"></script>
-    </script>
-
-    <script>
-        const products = [
-            {
-                name: "Galaxy Watch6 Classic, 47mm",
-                image: "../../assets/images/cart/watch6.webp",
-                price1: "$299.99",
-                price2: "$1000",
-            },
-            {
-                name: "Galaxy Watch6, 40mm, Gold, BT",
-                image: "../../assets/images/cart/watch6-2.webp",
-                price1: "$399.99",
-                price2: "$1000",
-            },
-            {
-                name: "12W Wireless Charger Duo wit",
-                image: "../../assets/images/cart/charger.webp",
-                price1: "$89.99",
-                price2: "$1280",
-            },
-            {
-                name: "Galaxy SmartTag2, White",
-                image: "../../assets/images/cart/tag.webp",
-                price1: "$29.99",
-                price2: "$160",
-            }
-        ]
-        const productList = document.getElementById("productList")
-
-        products.forEach(product => {
-            const productItem = document.createElement('div')
-            productItem.classList.add('product-list')
-            productItem.classList.add("flex-none", "md:w-1/4", "px-2", "w-1/3")
-            productItem.innerHTML = `
-            <div>
-            <img class="object-cover" src="${product.image}" alt="galaxy watch6 classic">
-                    <a class="font-semibold" href="#">${product.name}</a>
-                    <div class="flex justify-center gap-1 mb-5 mt-3">
-                        <p class="font-light">${product.price1}</p>
-                        <p class="text-gray-500 line-through font-light">${product.price2}</p>
-                    </div>
-                <a class="font-bold underline" href="#">Add to cart</a>
-            </div>
-            `
-            productList.appendChild(productItem)
-        })
-
-    </script>
-
+    <script src="../cart/components/cartbutton.js"></script>
+    <script src="../cart/script/index.js" type="module"></script>
 </body>
 
 </html>

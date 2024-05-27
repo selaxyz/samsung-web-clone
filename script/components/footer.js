@@ -3,9 +3,10 @@ export class Footer extends HTMLElement {
         super();
     }
     connectedCallback() {
+        this.classList.add("w-full")
         this.innerHTML = `
-        <section class="flex flex-col">
-        <div class="hidden md:block max-w-screen-2xl w-screen ">
+        <section class="flex flex-col items-center bg-white">
+        <div class="hidden md:block max-w-screen-2xl w-full">
             <hr>
             <section class="grid grid-cols-4">
                 <div class="flex flex-col gap-4 p-6 border-r">
@@ -31,8 +32,8 @@ export class Footer extends HTMLElement {
                 <div class="flex flex-col gap-4 p-6 border-r">
                     <h3 class="font-bold text-lg">SUPPORT</h3>
                     <ul class="flex flex-col text-sm gap-2">
-                        <li><a href="#">Chat with Us</a></li>
-                        <li><a href="#">Product Support</a></li>
+                        <li><a href="../../pages/track-order/index.html">Track Order</a></li>
+                        <li><a href="../../pages/account-benefit/index.html">Why Create Account?</a></li>
                         <li><a href="#">Order Support</a></li>
                         <li><a href="#">Your Account</a></li>
                         <li><a href="#">Register Your Product</a></li>
@@ -89,7 +90,7 @@ export class Footer extends HTMLElement {
             </section>
             <hr>
         </div>
-        <div class=" w-screen p-6 text-xl font-semibold md:hidden">
+        <div class=" w-[100%] p-6 text-xl font-semibold md:hidden">
             <details class="py-6 px-4 border-b">
                 <summary class="flex justify-between items-center">
                     <p>SHOP</p>
@@ -219,14 +220,14 @@ export class Footer extends HTMLElement {
             </details>
         </div>
         <section
-            class="md:flex md:flex-row items-center justify-between max-w-screen-2xl w-screen py-2 px-6 space-y-4">
+            class="md:flex md:flex-row items-center justify-between max-w-screen-2xl w-full py-2 px-6 space-y-4">
             <p class="text-xs">Copyright© 1995-2024 SAMSUNG All Rights Reserved.</p>
             <img alt="Never miss a thing. Sign up for texts to be notified about our best offers"
                 src="//images.samsung.com/is/image/samsung/assets/us/homepage/03182024/SMS-font-aliasing-experiment.png?$ORIGIN_PNG$">
         </section>
         <hr>
         <section
-            class="flex flex-col-reverse md:flex-row max-w-screen-2xl w-screen justify-center md:justify-between items-center md:text-xs text-base">
+            class="flex flex-col-reverse md:flex-row max-w-screen-2xl w-full justify-center md:justify-between items-center md:text-xs text-base">
             <ul class="flex flex-wrap md:flex-row gap-3 md:gap-6  w-fit md:justify-start justify-center px-6 py-6">
                 <li><a href="#" class="font-bold">USA/ENGLISH</a></li>
                 <li>|</li>

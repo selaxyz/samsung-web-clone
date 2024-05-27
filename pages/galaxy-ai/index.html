@@ -1,0 +1,285 @@
+<html class="scroll-smooth md:scroll-auto" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Galaxy AI | Samsung DEV</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+  </head>
+
+  <body class="flex flex-col items-center">
+    <navbar-component></navbar-component>
+    <section
+      class="sticky top-0 z-20 flex w-full max-w-screen-2xl flex-col justify-between gap-8 border-b bg-white p-6 md:flex-row md:gap-0"
+    >
+      <p class="text-2xl font-bold md:text-base">Galaxy AI</p>
+      <div
+        class="flex items-center justify-between space-x-6 text-lg md:justify-start md:text-sm"
+      >
+        <a href="#teamgalaxy">#TeamGalaxy</a>
+        <a href="#features"> Features</a>
+        <a href="#alldevices">All Devices</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </section>
+    <hero-component></hero-component>
+    <section
+      class="flex w-full max-w-screen-2xl flex-col items-center justify-between gap-12 bg-gray-50 px-12 py-16 text-center md:flex-row md:gap-0 md:text-start"
+    >
+      <div class="flex flex-col items-center gap-6 md:items-start">
+        <div class="space-y-4">
+          <p class="text-4xl font-bold md:text-3xl">
+            Give it a try <br />
+            Explore Galaxy AI.
+          </p>
+          <p class="text-lg md:text-xs">
+            Try Galaxy AI, now available on even more Galaxy Phones from
+            participating carriers.
+            <br class="hidden md:block" />
+            Buy it now, try it for 30 days, then keep it or get a full refund.
+          </p>
+        </div>
+        <a
+          href="#"
+          class="w-fit rounded-full bg-black px-4 py-2 text-sm text-white"
+          >Buy now</a
+        >
+      </div>
+      <img
+        class="h-20"
+        src="../../assets/images/galaxy-ai/refund-agent.png"
+        alt=""
+      />
+    </section>
+    <section id="teamgalaxy" class="flex flex-col items-center gap-12 py-12">
+      <div
+        class="flex flex-col items-center gap-6 text-center text-4xl font-bold"
+      >
+        <img
+          class="h-8 w-fit md:h-12"
+          src="../../assets/images/galaxy-ai/team-galaxy.png"
+          alt=""
+        />
+        <h1>See how influencers are using Galaxy AI</h1>
+      </div>
+      <div class="flex w-full flex-col gap-8 px-6 md:flex-row md:gap-3">
+        <influencer-card
+          data-image="../../assets/images/galaxy-ai/team-galaxy-01.png"
+        ></influencer-card>
+        <influencer-card
+          data-image="../../assets/images/galaxy-ai/team-galaxy-02.png"
+        ></influencer-card>
+        <influencer-card
+          data-image="../../assets/images/galaxy-ai/team-galaxy-03.png"
+        ></influencer-card>
+      </div>
+    </section>
+    <section id="features" class="space-y-12 px-6 py-12">
+      <div class="flex flex-col items-center gap-4 text-center">
+        <h1 class="text-4xl font-bold">
+          In-ear translations, in-person conversations
+        </h1>
+        <p class="max-w-2xl">
+          No need to pass your phone back and forth. Get translations right in
+          your ear while using features like Interpreter when you connect Buds
+          to your Galaxy device
+        </p>
+      </div>
+      <img src="../../assets/images/galaxy-ai/bud-ai.png" alt="" />
+    </section>
+    <section
+      class="flex w-full max-w-screen-xl flex-col items-center justify-center px-6 py-12"
+    >
+      <featured-card
+        data-subheading="circle to search"
+        data-image="../../assets/images/galaxy-ai/product-featured-01.png"
+        data-heading="Search made simple"
+        data-description="A new way to search is here: Circle to Search with Google.1,2 While scrolling or watching videos, use your finger to circle items and get Google Search results."
+      ></featured-card>
+
+      <featured-card
+        data-reverse="flex-row-reverse"
+        data-subheading="photo assist"
+        data-image="../../assets/images/galaxy-ai/product-featured-02.png"
+        data-heading="Take a great photo.<br>Then make it better."
+        data-description="For effortless editing, leave it to Photo Assist. Take a photo and open it in the Gallery to see AI suggestions that help you polish your pics in just a few taps."
+      ></featured-card>
+
+      <featured-card
+        data-subheading="photo assist"
+        data-image="../../assets/images/galaxy-ai/product-featured-04.png"
+        data-heading="They say “hola,”<br>you hear “hello”"
+        data-description="Wish you could speak like a local, no matter where you go? Now its easy to communicate freely with someone in another language. Simply use Interpreter with Galaxy AI for real-time translations during face-to-face conversations."
+      ></featured-card>
+
+      <featured-card
+        data-subheading="live translate"
+        data-reverse="flex-row-reverse"
+        data-image="../../assets/images/galaxy-ai/product-featured-03.png"
+        data-heading="Be lost in conversation,<br>not in translation"
+        data-description="Break down language barriers over the phone with Live Translate.1,3 Combine your device with Buds for rapid, hands-free translations."
+      ></featured-card>
+    </section>
+    <galaxy-ai-tablet></galaxy-ai-tablet>
+    <section id="alldevices" class="p-12">
+      <img
+        src="../../assets/images/galaxy-ai/meet-galaxy-ai-family.png"
+        alt=""
+      />
+    </section>
+    <section
+      class="flex max-w-4xl flex-col items-center gap-6 py-12 text-center"
+    >
+      <h1 class="text-5xl font-bold">Smartphones</h1>
+      <p>
+        Bring Galaxy AI with you on the device that matters most. Snap low-light
+        pics from afar with Nightography Zoom, edit them with ease using Photo
+        Assist and get real-time translations with Live Translate.
+      </p>
+    </section>
+    <section
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
+    >
+      <h2 class="text-4xl font-bold">Galaxy S Series</h2>
+      <div
+        id="galaxySList"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
+      ></div>
+      <carousel-mobile section="galaxy-s-product"></carousel-mobile>
+    </section>
+    <section
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
+    >
+      <h2 class="text-4xl font-bold">Galaxy Z Series</h2>
+      <div
+        id="galaxyZList"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
+      ></div>
+      <carousel-mobile section="galaxy-z-product"></carousel-mobile>
+    </section>
+
+    <section
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12 text-center"
+    >
+      <h2 class="text-4xl font-bold">Tablets</h2>
+      <p>
+        The large screens on Tab S9 Series are great for precise editing with
+        Galaxy AI. Snap a pic on your phone, and then have more space to take it
+        from great to jaw-dropping on your Tab using Photo Assist and Generative
+        Edit.
+      </p>
+      <div
+        id="tabletList"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
+      ></div>
+      <carousel-mobile section="tablet-product"></carousel-mobile>
+      <div class="flex flex-col gap-12">
+        <p class="text-lg">Not sure what tablet to buy?</p>
+        <a class="text-sm font-semibold underline underline-offset-4" href="#">
+          Compare</a
+        >
+      </div>
+    </section>
+
+    <section
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12 text-center"
+    >
+      <h2 class="text-4xl font-bold">Galaxy Buds</h2>
+      <p>
+        Enhance everyday listening by pairing your Galaxy device with Buds, and
+        get the most out of integrated AI features like Live Translate and
+        Intrepreter.
+      </p>
+      <div
+        id="budList"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden md:px-24"
+      ></div>
+      <carousel-mobile section="bud-product"></carousel-mobile>
+    </section>
+
+    <section id="faq" class="w-full max-w-screen-2xl pt-12">
+      <h2 class="py-2 text-center text-4xl font-bold">FAQS</h2>
+      <div id="faqList"></div>
+    </section>
+    <section class="py-3"></section>
+    <section
+      class="max-w-screen-2xl space-y-6 bg-gray-50 px-6 py-12 md:px-20 md:text-xs"
+    >
+      <p>
+        Images simulated for illustrative purposes. Sequences shortened and
+        simulated. Actual UI may be different. All specifications and
+        descriptions provided herein may be different from the actual
+        specifications and descriptions for the product. Samsung reserves the
+        right to make changes to this document and the product described herein,
+        at anytime, without obligation on Samsung to provide notification of
+        such change. All functionality, features, specifications, GUI and other
+        product information provided in this document including, but not limited
+        to, the benefits, design, pricing, components, performance, availability
+        and capabilities of the product are subject to change without notice or
+        obligation. The contents within the screen are simulated images and are
+        for demonstration purposes only.
+      </p>
+      <p>
+        Galaxy AI features by Samsung will be provided for free until the end of
+        2025 on supported Samsung Galaxy devices.
+      </p>
+      <p>
+        Requires internet connection; results may vary by uniqueness, clarity
+        and framing of circled image and related factors. Samsung does not make
+        any promises, assurances or guarantees as to the accuracy, completeness
+        or reliability of the output provided by AI features.
+      </p>
+      <p>
+        Samsung account log-in required. Calls must be made using the native
+        Samsung phone app. Samsung does not make any promises, assurances or
+        guarantees as to the accuracy, completeness or reliability of the output
+        provided by AI features.
+      </p>
+      <p>
+        For text in Samsung Notes only (200-4000 characters); requires Samsung
+        account log-in and internet connection. Samsung does not make any
+        promises, assurances or guarantees as to the accuracy, completeness or
+        reliability of the output provided by AI features.
+      </p>
+      <p>
+        Requires Samsung account log-in and internet connection. Samsung does
+        not make any promises, assurances or guarantees as to the accuracy,
+        completeness or reliability of the output provided by AI features.
+      </p>
+      <p>
+        Requires compatible Galaxy device. Samsung account log in and language
+        preset (English and Spanish pre-installed; other languages require free
+        download). Results may vary.
+      </p>
+      <p>
+        Purchase 4/15/24-6/30/24, while supplies last, extended return available
+        only with Galaxy S23, Galaxy S23 FE, Galaxy S24 Series, Galaxy Z Fold5
+        and Galaxy Z Flip5 (“Qualifying Purchase”); excludes carrier financed
+        devices of T-Mobile & AT&T, and Buy Online Pick-up In Store. Trade-in
+        window extended for 30 days from date of delivery; if you return the
+        Qualifying Purchase after you have submitted an eligible trade-in device
+        the value of the eligible trade-in device will be lost. See additional
+        trade-in terms and conditions that apply.
+      </p>
+    </section>
+    <section
+      class="flex w-full max-w-screen-2xl justify-start gap-2 border-b border-t px-6 py-4 text-lg md:border-none md:px-0 md:text-sm"
+    >
+      <a href="../../index.html"> Home </a>
+      <img src="../../assets/images/galaxy-ai/icon/chevron-right.svg" />
+      <a href="#">Galaxy AI </a>
+    </section>
+
+    <feedback-component></feedback-component>
+    <footer-component></footer-component>
+    <script src="./script/index.js" type="module"></script>
+    <script src="../../script/index.js" type="module"></script>
+    <script src="./script/components/faq.js"></script>
+    <script src="./script/components/product-series.js"></script>
+    <script src="./script/components/product-carousel.js"></script>
+  </body>
+</html>
