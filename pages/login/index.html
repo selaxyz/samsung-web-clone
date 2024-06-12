@@ -8,74 +8,82 @@
     <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
 </head>
 
-<body class="flex flex-col items-center bg-slate-50 overflow-hidden">
-    <header class="self-start py-6 pl-8 bg-white w-full">
-        <a href="../../index.html" class="max-w-screen-xl mx-auto">
-            <img src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
-        </a>
-        
-    </header>
-
-  </label>
-    <main class="w-full md:w-fit h-full md:pt-12 ">
-        <div class=" md:w-[640px] md:h-[696px] w-full h-full bg-white rounded-2xl pt-16 px-[10%] md:px-[20%]">
-            <h1 class="text-2xl text-center">One account. Any device. Just for you. Sign in to get started.</h1>
+<body class="flex flex-col items-center bg-slate-50">
+    
+    <section class="flex flex-col items-center h-full w-full"> 
+        <!-- Header Section -->
+        <header class="self-start py-6 pl-8 bg-white w-full flex-none">
+            <div class="max-w-screen-xl mx-auto">
+                <a href="../../index.html">
+                    <img src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
+                </a>
+            </div>
             
-            <form id="login-form">
-                <div class="mt-6 border-b-2 border-blue-300">
-                    <input id="email" class="w-full border-0" type="email" placeholder="Email" required">                
-                    <p id="error" class="text-red-500 hidden absolute text-sm mt-1 ">ID not valid</p>
-                </div>
-                <div class="flex gap-4 mt-6 mb-4">
-                    <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox rounded-full ">
-                        <span class="ml-2 text-slate-500 ">Remember my ID</span>
-                    </label>
-                </div>
-                <button type="submit" class="w-full bg-blue-400 py-2 rounded-full mb-8 disabled:bg-blue-200" id="btn-submit" disabled>Next</button>
-                <div class="text-sm text-slate-500 underline flex flex-col gap-5">
-                    <a href="#">Find ID</a>
-                    <a href="#">Create account</a>
-                </div>
- 
-                <!-- Sigin in with -->
-                <div class="flex gap-6 flex-col py-6 font-bold">
-                    <button class="w-full bg-slate-300 rounded-full py-2 relative">
-                        Sign in with Google
-                        <img class="absolute size-8 top-1 left-1" src="/assets/images/login/google.png" alt="">
-                    </button>
-                    <button class="w-full bg-slate-300 rounded-full py-2 relative">
-                        <img class="absolute size-8 top-1 left-1" src="/assets/images/login/qr-code-icon.png" alt="">
-                        Sign in with QR code
-                    </button>
+        </header>
 
-                    <div class="flex gap-4 my-4 w-full justify-center items-center">
+        <!-- Form Section -->
+        <main class="w-full md:w-fit md:py-12 grow">
+            <div class=" md:w-[640px] md:h-[696px] w-full h-full bg-white rounded-2xl pt-16 px-[10%] md:px-[20%]">
+                <h1 class="text-2xl text-center">One account. Any device. Just for you. Sign in to get started.</h1>
+                
+                <form id="login-form">
+                    <div class="mt-6 border-b-2 border-blue-300">
+                        <input id="email" class="w-full border-0" type="email" placeholder="Email" required">                
+                        <p id="error" class="text-red-500 hidden absolute text-sm mt-1 ">ID not valid</p>
+                    </div>
+                    <div class="flex gap-4 mt-6 mb-4">
                         <label class="inline-flex items-center">
                             <input type="checkbox" class="form-checkbox rounded-full ">
-                            <span class="text-slate-500 ml-2">Stay signed in </span>
+                            <span class="ml-2 text-slate-500 ">Remember my ID</span>
                         </label>
-                        <img class="size-10" src="/assets/images/login/info-light.png" alt="">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-400 py-2 rounded-full mb-8 disabled:bg-blue-200" id="btn-submit" disabled>Next</button>
+                    <div class="text-sm text-slate-500 underline flex flex-col gap-5">
+                        <a href="#">Find ID</a>
+                        <a href="#">Create account</a>
+                    </div>
+     
+                    <!-- Sigin in with -->
+                    <div class="flex gap-6 flex-col py-6 font-bold">
+                        <button class="w-full bg-slate-300 rounded-full py-2 relative">
+                            Sign in with Google
+                            <img class="absolute size-8 top-1 left-1" src="/assets/images/login/google.png" alt="icon">
+                        </button>
+                        <button class="w-full bg-slate-300 rounded-full py-2 relative">
+                            <img class="absolute size-8 top-1 left-1" src="/assets/images/login/qr-code-icon.png" alt="icon">
+                            Sign in with QR code
+                        </button>
+    
+                        <div class="flex gap-4 my-4 w-full justify-center items-center">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" class="form-checkbox rounded-full ">
+                                <span class="text-slate-500 ml-2">Stay signed in </span>
+                            </label>
+                            <img class="size-10" src="/assets/images/login/info-light.png" alt="icon">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bottom-0 left-0 text-xs w-full pb-5 flex-none">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="flex flex-col justify-center md:flex-row md:justify-between md:items-end">
+                    <div class="flex gap-5 mb-2 px-6">
+                        <a href="">Terms and conditions</a>
+                        <a class="font-bold" href="">Samsung account Privacy Notice</a>
+                        <a href="">Notice</a>
+                        <a href="">Customer Support</a>
+                    </div>
+                    <div class="flex flex-col gap-4 items-center">
+                        <img class="h-4 md:h-fit" src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
+                        <p class="text-gray-500">Copyright © 1995-2024 Samsung. All Rights Reserved.</p>
                     </div>
                 </div>
-            </form>
-        </div>
-    </main>
-    <footer class="absolute bottom-0 left-0 text-xs w-full pb-5">
-        <div class="max-w-screen-xl mx-auto">
-            <div class="flex flex-col justify-center md:flex-row md:justify-between md:items-end">
-                <div class="flex gap-5 mb-2 px-6">
-                    <a href="">Terms and conditions</a>
-                    <a class="font-bold" href="">Samsung account Privacy Notice</a>
-                    <a href="">Notice</a>
-                    <a href="">Customer Support</a>
-                </div>
-                <div class="flex flex-col gap-4 items-center">
-                    <img class="h-4 md:h-fit" src="/assets/images/login/txt-logo.svg" alt="samsung-text-logo">
-                    <p class="text-gray-500">Copyright © 1995-2024 Samsung. All Rights Reserved.</p>
-                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
     <script src="./script/index.js"></script>

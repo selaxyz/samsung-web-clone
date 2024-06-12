@@ -1,3 +1,11 @@
+/**
+ * Array containing frequently asked questions (FAQs) along with their respective answers.
+ * Each FAQ object contains a question and its corresponding answer.
+ * @type {Array<{
+*   question: string, // The question being asked
+*   answer: string    // The answer to the question
+* }>}
+*/ 
 const faqs = [
     {
         question: "What is Galaxy AI?",

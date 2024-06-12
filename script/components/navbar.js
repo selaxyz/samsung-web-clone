@@ -1,13 +1,19 @@
+/**
+ * NavBar custom HTML element.
+ * 
+ * This class defines a custom HTML element for the navigation bar of a web page,
+ * including sections for main and secondary items, shortcut items, and responsive design for small screens.
+ * It also handles interactions for expanding and collapsing navigation items.
+ */
+
 export class NavBar extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-
-
-        this.classList.add("w-full")
-        this.innerHTML = `
+  connectedCallback() {
+    this.classList.add("w-full");
+    this.innerHTML = `
 
             <section>
                 <section class="flex justify-center">
@@ -21,228 +27,60 @@ export class NavBar extends HTMLElement {
                                     transform="translate(8 8)"></path>
                             </svg>
                         </a>
-                        <ul  class="hidden shrink-0 xl:flex text-sm font-bold items-center ">
-                            <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/galaxy-ai/index.html">AI</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Mobile</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">TV & Audio</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Appliances</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Computing</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Displays</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Accessories</a></li>
-                            <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">SmartThings</a></li>
-                        </ul>
-            
-                        <div class="xl:flex gap-12 items-center">
-                            <ul class="xl:flex hidden shrink-0  justify-center  text-sm font-bold">
-                                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Explore</a></li>
-                                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/support/index.html">Support</a></li>
-                                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">For Business</a></li>
-                            </ul>
-                            <div class="flex gap-4 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path   
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                </svg>
-                                <a href="../../pages/cart/index.html">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                                        class="bi bi-cart" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                                    </svg>
-                                </a>
-                                <a href="../../pages/login/index.html">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                                    </svg>
-                                </a>
-                                <a onclick="onSmallNavLinkClick(this)">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                                    class="bi bi-list xl:hidden" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                                </svg>
-                                </a>
-            
-                            </div>
-                        </div>
-                        </div>
-                    </section>
-                    <section class="small-nav-link fixed text-center z-50 h-screen overflow-hidden">
-                            <div onclick="onSmallNavLinkClick(this)" class="small-nav-link-layer absolute w-screen h-screen delay-200 transition-opacity opacity-0 backdrop-blur-sm bg-black/50"></div>
-                            <div class="small-sub-nav-link fixed flex flex-col gap-12 right-[-500px] transition-all ease-in-out bg-white w-80 h-screen p-6 font-medium overflow-y-auto">
-                            <div class="flex gap-3 items-center">
-                                    <div class="flex px-3 bg-gray-100 py-3 w-full rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                  </svg>
-                                    </div>
-                                    <a onclick="onSmallNavLinkClick(this)">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                                        </svg>
-                                    </a>
-                            </div>
-                            <div class="flex flex-col gap-5 text-start font-normal">
-                                    <a href="../../pages/login/index.html">Sign in Create Account</a>    
-                                    <hr>
-                                    <a>Shop</a>
-                                    <a href="../../pages/continue-shopping/index.html">All Offers</a>
-                                    <a href="../../pages/smartphone/index.html">Smartphones</a>
-                                    <a href="../../pages/galaxy-ai/index.html">Galaxy AI</a>
-                                    <a>Computing</a>
-                                    <a>Displays</a>
-                                    <a>Accesories</a>
-                                    <a>Discover Samsung Sale</a>
-                                    <hr>
-                                    <a href="../../pages/support/index.html">Support</a>
-                                    <a href="../../pages/privacy-page/index.html">Privacy</a>
-                                    <hr>
-                                    <a href="../../pages/account-benefit/index.html">Why Create Account?</a>
-                                    <a href="../../pages/track-order/index.html">Track your Orders</a>
-                                    <a>Business Account</a>
-                                    <hr>
+                            <top-nav-item data-category="mainItems" class="hidden shrink-0 xl:flex text-sm font-bold items-center" ></top-nav-item>
                             
-                                    
-                            </div>
+                        <div class="xl:flex gap-12 items-center">
+                            <top-nav-item data-category="secondaryItems" class="hidden shrink-0 xl:flex text-sm font-bold items-center" ></top-nav-item>
+                            <top-nav-item data-category="shortcut" class="flex gap-4 items-center"></top-nav-item>
 
                         </div>
+                        </div>
                     </section>
+                        <section class="small-nav-link fixed text-center z-50 h-screen overflow-hidden">
+                                <div onclick="onSmallNavLinkClick(this)" class="small-nav-link-layer absolute w-screen h-screen delay-200 transition-opacity opacity-0 backdrop-blur-sm bg-black/50"></div>
+                                <div class="small-sub-nav-link fixed flex flex-col gap-12 right-[-500px] transition-all ease-in-out bg-white w-80 h-screen p-6 font-medium overflow-y-auto">
+                                    <div class="flex gap-3 items-center">
+                                        <div class="flex px-3 bg-gray-100 py-3 w-full rounded-full">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                            </svg>
+                                        </div>
+                                            <a onclick="onSmallNavLinkClick(this)">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                                </svg>
+                                            </a>
+                                    </div>
+                                    <drawer-category  class="flex flex-col gap-5 text-start font-normal"></drawer-category>
+                            </div>
+                        </section>
             </section>
         
             <section class="nav-link bg-black/50 delay-300 z-50 hidden shrink-0 xl:flex absolute justify-end xl:justify-center transition-trasnform duration-300 text-center  h-0 overflow-hidden w-[100%]">
                 <div
                     class="sub-nav-link flex justify-between z-50 bg-white rounded-bl-2xl rounded-br-2xl max-w-screen-2xl w-screen h-fit border-t text-left pt-6 pb-12 px-12" >
+                    <sub-nav-category data-title="Offers" data-category="offers"></sub-nav-category>
+                    <sub-nav-category data-title="Offer Programs" data-category="offersPrograms"></sub-nav-category>
                     <div class="space-y-6">
-                        <h2 class="font-bold">Offers</h2>
-                        <ul class="space-y-4 text-sm">
-                            <li><a href="../../pages/continue-shopping/index.html" class="hover:font-medium">All Offers</a></li>
-                            <li><a href="../../pages/smartphone/index.html" class="hover:font-medium">Smartphones</a></li>
-                            <li><a href="#" class="hover:font-medium">TV & Home Theater</a></li>
-                            <li><a href="#" class="hover:font-medium">Appliances</a></li>
-                            <li><a href="#" class="hover:font-medium">Watches & Audio</a></li>
-                            <li><a href="#" class="hover:font-medium">Tablets & Computing</a></li>
-                            <li><a href="#" class="hover:font-medium">Monitor, Memory & Storage</a></li>
-                            <li><a href="#" class="hover:font-medium">Bundle Deals</a></li>
-                        </ul>
+                        <sub-nav-category data-title="Gift Ideas" data-category="giftIdeas"></sub-nav-category>
+                        <sub-nav-category data-title="Buying Guides" data-category="buyingIdeas"></sub-nav-category>
                     </div>
-        
                     <div class="space-y-6">
-                        <h2 class="font-bold">Offer Programs</h2>
-                        <ul class="space-y-4 text-sm">
-                            <li><a href="#" class="hover:font-medium">All Offer Programs</a></li>
-                            <li><a href="#" class="hover:font-medium">Education Offers Program</a></li>
-                            <li><a href="#" class="hover:font-medium">First Responders Offers Program</a></li>
-                            <li><a href="#" class="hover:font-medium">Military Offers Program</a></li>
-                            <li><a href="#" class="hover:font-medium">Government Offers Program</a></li>
-                            <li><a href="#" class="hover:font-medium">Employee Offers Program</a></li>
-                            <li><a href="#" class="hover:font-medium">Galaxy Campus Store</a></li>
-                        </ul>
+                    <sub-nav-category data-title="Trade-In & Upgrade" data-category="tradeUpgrade"></sub-nav-category>
+                    <sub-nav-category data-title="Gaming" data-category="gaming"></sub-nav-category>
                     </div>
-        
                     <div class="space-y-6">
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Gift Ideas</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Mother's Day Gifts NEW</a></li>
-                                <li><a href="#" class="hover:font-medium">Gifts under $1000</a></li>
-                                <li><a href="#" class="hover:font-medium">Gifts under $500</a></li>
-                                <li><a href="#" class="hover:font-medium">Gifts under $200</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Buying Guides</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Mobile Buying Guide</a></li>
-                                <li><a href="#" class="hover:font-medium">TV Buying Guide</a></li>
-                                <li><a href="#" class="hover:font-medium">Home Appliance Buying Guides</a></li>
-                            </ul>
-                        </div>
+                    <sub-nav-category data-title="Additional Offers" data-category="additionalOffers"></sub-nav-category>        
+                    <sub-nav-category data-title="Samsung Outlet" data-category="samsungOutlet"></sub-nav-category>        
                     </div>
-        
-                    <div class="space-y-6">
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Trade-In & Upgrade</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Samsung Trade-In</a></li>
-                                <li><a href="#" class="hover:font-medium">TV Upgrade</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Gaming</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Gaming Portal</a></li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <div class="space-y-6">
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Additional Offers</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Redeem Retail Offers</a></li>
-                                <li><a href="#" class="hover:font-medium">Home Appliances Rebates</a></li>
-                                <li><a href="#" class="hover:font-medium">Samsung Carrier Stores</a></li>
-                                <li><a href="#" class="hover:font-medium">Discover Samsung Event</a></li>
-                                <li><a href="#" class="hover:font-medium">Why Shop Samsung.com</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="space-y-6">
-                            <h2 class="font-bold">Samsung Outlet</h2>
-                            <ul class="space-y-4 text-sm">
-                                <li><a href="#" class="hover:font-medium">Samsung Outlet</a></li>
-                                <li><a href="#" class="hover:font-medium">Shop Samsung Outlet</a></li>
-                            </ul>
-                        </div>
-                    </div>
-        
                 </div>
             </section>
         </section>
-
-        `
-        const html = ` 
-        <script>
-            const navLinks = document.querySelector('.nav-link')
-            const subNavLinks = document.querySelector('.sub-nav-link') 
-
-            const smallSubNavLinkLayer = document.querySelector('.small-nav-link-layer')
-            const smallSubNavLink = document.querySelector('.small-sub-nav-link')
-            const smallNavLink = document.querySelector('.small-nav-link')
-
-            
-
-            function onSmallNavLinkClick(e) {
-                smallSubNavLinkLayer.classList.toggle('opacity-100')
-                smallNavLink.classList.toggle('w-screen')
-                smallNavLink.classList.toggle('right-0')
-                smallSubNavLink.classList.toggle('right-0')
-                smallSubNavLink.classList.toggle('right-[-500px]')
-                document.querySelector('body').classList.toggle('fixed')
-            }
-
-            function onNavItemOver(e) {
-                
-                navLinks.classList.add('h-dvh')
-            }
-            function onNavItemLeave(e) {
-                navLinks.classList.remove('h-dvh')
-            }
-            subNavLinks.addEventListener('mouseover', onNavItemOver)
-            subNavLinks.addEventListener('mouseleave', onNavItemLeave)
-            
-        </script>`
-        const scriptEl = document.createRange().createContextualFragment(html);
-        this.append(scriptEl);
-
-    }
-
+        `;
+    const html = `<script src="../../script/components/navbar-behaviour.js"></script>`;
+    const scriptEl = document.createRange().createContextualFragment(html);
+    this.append(scriptEl);
+  }
 }
 
 customElements.define("navbar-component", NavBar);

@@ -1,3 +1,9 @@
+/**
+ * Custom chat component for displaying a chat interface.
+ * This component creates a fixed chat interface positioned at the bottom left of the screen.
+ * It includes an avatar image and a notification indicator.
+ */
+
 export class Chat extends HTMLElement {
     constructor() {
         super();
@@ -7,7 +13,7 @@ export class Chat extends HTMLElement {
         ` <section class="fixed left-6 bottom-10 rounded-full shadow-indigo-500/50 shadow-lg">
             <img class="w-16 h-fit rounded-full "
                 src="https://static.iadvize.com/uploads/engagement/notification/avatar/75418395-1ca8-4ed4-bf7b-5cbd25a099c1"
-                alt="">
+                alt="Chat">
             <div class="w-4 h-4 bg-green-500 rounded-full border-white border absolute top-0 right-0"></div>
          </section>
         `

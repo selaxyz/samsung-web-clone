@@ -1,19 +1,28 @@
-import { homepage } from './carouselHero-data.js';
+import { homepage } from "./carousel-hero-data.js";
 
-export class Hero extends HTMLElement {
-    connectedCallback() {
-        const items = homepage.items;
-        console.log(items);
+/**
+ * Class representing a Hero Carousel component.
+ * @extends HTMLElement
+ */
+class Hero extends HTMLElement {
+  /**
+   * Called when the element is inserted into the DOM.
+   * Sets up the hero carousel's HTML structure and initializes the carousels.
+   */
+  connectedCallback() {
+    const items = homepage.items;
 
-        this.innerHTML = `
+    this.innerHTML = `
         <section class="hero max-w-screen-2xl w-screen mb-12">
             <div class="hero-small-screen flex max-w-screen-sm sm:hidden">
                 <div class="card-container flex overflow-hidden relative">
                     <div class="flex">
                         <ul id="hero-container" class="flex transition-transform duration-300">
-                            ${items.map(item => `
+                            ${items
+                              .map(
+                                (item) => `
                             <li class="object-cover w-screen relative">
-                                <img class="rounded-2xl object-cover w-[640px]" src="${item.smallImage}" alt="">
+                                <img class="rounded-2xl object-cover w-[640px]" src="${item.smallImage}" alt="product-img">
                                 <div class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 items-center text-center">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>
@@ -21,7 +30,9 @@ export class Hero extends HTMLElement {
                                     <button class="btn bg-black p-2 w-32 rounded-full text-white font-semibold sm:text-[1vw]">Buy Now</button>
                                 </div>
                             </li>
-                            `).join('')}
+                            `,
+                              )
+                              .join("")}
                         </ul>
                     </div>
                     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -49,9 +60,11 @@ export class Hero extends HTMLElement {
                 <div class="card-container flex overflow-hidden relative">
                     <div class="flex">
                         <ul id="hero-big-container" class="img-container flex transition-transform duration-500">
-                            ${items.map(item => `
+                            ${items
+                              .map(
+                                (item) => `
                             <li class="object-cover w-screen relative">
-                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="">
+                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="product-img">
                                 <div class="absolute top-[25%] flex flex-col left-[10%] gap-4">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>
@@ -59,7 +72,9 @@ export class Hero extends HTMLElement {
                                     <button class="btn bg-black p-2 w-32 rounded-full text-white font-semibold text-[1vw]">Buy Now</button>
                                 </div>
                             </li>
-                            `).join('')}
+                            `,
+                              )
+                              .join("")}
                         </ul>
                     </div>
                     <div class="btn absolute flex justify-between w-full top-1/2 px-12">
@@ -79,46 +94,67 @@ export class Hero extends HTMLElement {
         </section>
         `;
 
-        this.initCarousel();
-        this.carouselSmall();  // Call the carouselSmall method here
+    this.initCarousel();
+    this.carouselSmall(); // Call the carouselSmall method here
+  }
+
+  /**
+   * Initializes the big screen carousel functionality.
+   * Sets up event listeners for the left and right navigation buttons.
+   */
+  initCarousel() {
+    let position = 0;
+    const heroImgContainer = this.querySelector("#hero-big-container");
+    const heroBtnLeft = this.querySelector("#left");
+    const heroBtnRight = this.querySelector("#right");
+
+    /**
+     * Transitions the hero page by adjusting the position based on the condition.
+     * @param {string} condition - Direction to transition ('left' or 'right').
+     */
+    const transitionHeroPage = (condition) => {
+      heroImgContainer.classList.remove(`translate-x-[${position}%]`);
+      if (condition === "right" && position > -80) {
+        position -= 20;
+      } else if (condition === "left" && position < 0) {
+        position += 20;
+      }
+      heroImgContainer.classList.add(`translate-x-[${position}%]`);
+    };
+
+    heroBtnLeft.addEventListener("click", () => transitionHeroPage("left"));
+    heroBtnRight.addEventListener("click", () => transitionHeroPage("right"));
+  }
+
+  /**
+   * Initializes the small screen carousel functionality.
+   * Sets up event listeners for the carousel buttons.
+   */
+  carouselSmall() {
+    const heroContainer = this.querySelector("#hero-container");
+    const heroBtnContainer = this.querySelectorAll(
+      "#hero-btn-container button",
+    );
+
+    /**
+     * Handles the carousel tab functionality by adjusting the container's transform property.
+     * @param {HTMLElement} container - The container element to transform.
+     * @param {NodeListOf<Element>} btn - The buttons that trigger the transformation.
+     */
+    function carouselTab(container, btn) {
+      btn.forEach((button, i) => {
+        button.addEventListener("click", () => {
+          container.style.transform = `translateX(-${i * 20}%)`; // Adjust the transformation value
+        });
+      });
     }
 
-    initCarousel() {
-        let position = 0;
-        const heroImgContainer = this.querySelector('#hero-big-container');
-        const heroBtnLeft = this.querySelector('#left');
-        const heroBtnRight = this.querySelector('#right');
-
-        const transitionHeroPage = (condition) => {
-            heroImgContainer.classList.remove(`translate-x-[${position}%]`);
-            if (condition == 'right' && position > -80) {
-                position -= 20;
-            } else if (condition == 'left' && position < 0) {
-                position += 20;
-            }
-            heroImgContainer.classList.add(`translate-x-[${position}%]`);
-        };
-
-        heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'));
-        heroBtnRight.addEventListener('click', () => transitionHeroPage('right'));
-    }
-
-    carouselSmall() {
-        const heroContainer = this.querySelector('#hero-container');
-        const heroBtn = this.querySelectorAll('.hero-btn');
-        const heroBtnContainer = this.querySelectorAll('#hero-btn-container button');
-        console.log(heroBtn);
-
-        function carouselTab(container, btn) {
-            btn.forEach((button, i) => {
-                button.addEventListener('click', () => {
-                    container.style.transform = `translateX(-${i * 20}%)`;  // Adjust the transformation value
-                });
-            });
-        }
-
-        carouselTab(heroContainer, heroBtnContainer);
-    }
+    carouselTab(heroContainer, heroBtnContainer);
+  }
 }
 
-customElements.define('hero-carousel', Hero);
+/**
+ * Defines the 'hero-carousel' custom element.
+ */
+
+customElements.define("hero-carousel", Hero);

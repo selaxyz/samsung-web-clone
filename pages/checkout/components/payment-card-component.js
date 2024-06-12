@@ -1,3 +1,43 @@
+/**
+ * Represents a custom HTML element for a payment card component.
+ * @extends HTMLElement
+ */
+ 
+/**
+ * Constructor for the PaymentCardComponent class.
+ * @constructor
+ */
+ 
+/**
+ * Called when the element is inserted into a document, including when the element is first created.
+ * It is invoked after connectedCallback.
+ */
+ 
+/**
+ * The title of the payment card.
+ * @type {string}
+ */
+ 
+/**
+ * The description of the payment card.
+ * @type {string}
+ */
+ 
+/**
+ * The URL of the image to be displayed on the payment card.
+ * @type {string}
+ */
+ 
+/**
+ * The callback function to be executed on button click.
+ * @type {string}
+ */
+ 
+/**
+ * Flag indicating whether the card is a single card or not.
+ * @type {string}
+ */
+
 class PaymentCardComponent extends HTMLElement {
     
     constructor() {

@@ -1,4 +1,10 @@
-
+/**
+ * Custom HTML element representing a mobile carousel.
+ *
+ * @export
+ * @class CarouselMobile
+ * @extends {HTMLElement}
+ */
 export class CarouselMobile extends HTMLElement {
     constructor() {
         super()
@@ -39,7 +45,7 @@ export class CarouselMobile extends HTMLElement {
                 
                 <div class="flex flex-col gap-4 items-center mt-8">
                   <h3 class="text-xl font-bold">${data.title}</h3>
-                  ${data.desc != undefined ? `<p class="w-10/12 mx-auto text-center">${data.desc}</p>` : ''}
+                  ${data.desc != undefined ? `<p class="w-10/12 mx-auto text-center">${data.desc}</p>` : ""}
                   <button class="border-b-2 border-black font-bold">Learn more</button>
                 </div>
             </div>
@@ -197,17 +203,22 @@ export class CarouselMobile extends HTMLElement {
     ]
 
 }
-
+/**
+ * Create and append button indicators for the carousel.
+ * 
+ * @param {HTMLElement} indicatorContainer - The container to append the indicators to.
+ * @returns {void}
+ */
 function createButtonIndicator(indicatorContainer) {
-    const slideLength = favContainer.querySelectorAll('.slide').length
+  const slideLength = favContainer.querySelectorAll(".slide").length;
 
-    for (let i = 0; i < slideLength; i++) {
-        const btnIndicator = document.createElement('button')
-        btnIndicator.classList += `btn-slide mx-3 size-3 rounded-full bg-gray-500`
-        indicatorContainer.append(btnIndicator)
-    }
-    indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
-
+  for (let i = 0; i < slideLength; i++) {
+    const btnIndicator = document.createElement("button");
+    btnIndicator.classList += `btn-slide mx-3 size-3 rounded-full bg-gray-500`;
+    indicatorContainer.append(btnIndicator);
+  }
+  indicatorContainer.classList +=
+    " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2";
 }
 
 customElements.define("carousel-mobile", CarouselMobile);

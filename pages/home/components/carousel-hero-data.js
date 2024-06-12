@@ -1,3 +1,4 @@
+// homepage data
 export const homepage = {
     items: [
         {
@@ -38,4 +39,5 @@ export const homepage = {
      
     ],
 
+    
 };

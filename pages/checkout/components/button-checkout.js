@@ -1,3 +1,38 @@
+/**
+ * The callback function to be executed on button click.
+ * @type {string}
+ */
+ 
+/**
+ * The color of the button.
+ * @type {string}
+ */
+ 
+/**
+ * The URL of the image to be displayed on the button.
+ * @type {string}
+ */
+ 
+/**
+ * The breakpoint class for responsive design.
+ * @type {string}
+ */
+ 
+/**
+ * Represents a custom HTML element for a checkout button.
+ * @extends HTMLElement
+ */
+ 
+/**
+ * Constructor for the ButtonCheckout class.
+ * @constructor
+ */
+ 
+/**
+ * Called when the element is inserted into a document, including when the element is first created.
+ * It is invoked after connectedCallback.
+ */
+
 class ButtonCheckout extends HTMLElement {
     constructor() {
         super()
@@ -16,7 +51,7 @@ class ButtonCheckout extends HTMLElement {
         class="w-full py-4 px-8 h-fit flex justify-center items-center ${color} text-center text-white rounded-md">
         <img class="h-6 object-contain"
             src="${image}"
-            alt="">
+            alt="Button Checkout Image">
         </button>
         </div>
         `

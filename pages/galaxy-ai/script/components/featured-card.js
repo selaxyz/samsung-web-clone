@@ -1,3 +1,9 @@
+/**
+ * Custom HTML element for displaying a featured card with heading, subheading, image, and description.
+ * The card layout can be adjusted to display content in reverse order for better visual balance.
+ * @extends HTMLElement
+ */
+
 export class FeaturedCard extends HTMLElement {
     constructor() {
         super()

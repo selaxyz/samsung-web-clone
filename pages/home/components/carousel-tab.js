@@ -1,29 +1,30 @@
-import { mobileData, tvData, homeData, susData } from './carouselTab-data.js';
+import { mobileData, tvData, homeData, susData } from './carousel-tab-data.js';
 
-
-
+/**
+ * Class representing a Carousel Tab component.
+ * @extends HTMLElement
+ */
 export class CarouselTab extends HTMLElement {
+    /**
+     * Called when the element is inserted into the DOM.
+     * Sets up the carousel's HTML structure and initializes the carousel functionality.
+     */
     connectedCallback() {
-
-        // get attribute from html
-        
+        // Get the data-type attribute from the HTML
         const dataType = this.getAttribute('data-type');
-        let data;
         
-        // Checking Which Data to use
-        if (dataType === 'mobile') {
-                data = mobileData;
-            } else if (dataType === 'tv'){
-                data = tvData;
-            } else if (dataType === 'home') {
-                data = homeData;
-            } else if (dataType === 'sus') {
-                data = susData;
-            }
+        // Determine which data to use based on the data-type attribute using short-circuiting
+        const data = 
+            (dataType === 'mobile' && mobileData) ||
+            (dataType === 'tv' && tvData) ||
+            (dataType === 'home' && homeData) ||
+            (dataType === 'sus' && susData) ||
+            { items: [], headerText: '', buttons: [] };
         
+        // Unpack data into individual variables
+        const { items, headerText, buttons } = data;
         
-        const { items, headerText, buttons } = data; // Unpacking Data
-        
+        // Set the innerHTML of the carousel
         this.innerHTML = `
         <section class="carousel max-w-screen-2xl w-screen">
             <div class="carousel-container relative">
@@ -31,8 +32,8 @@ export class CarouselTab extends HTMLElement {
                     <div id="carousel-inner-container" class="flex transition-transform duration-500">
                         ${items.map(item => `
                             <div class="item w-full h-full relative flex-none">
-                                <img class="hidden sm:block w-full" src="${item.largeImage}" alt="">
-                                <img class="sm:hidden w-full" src="${item.smallImage}" alt="">
+                                <img class="hidden sm:block w-full" src="${item.largeImage}" alt="product-img">
+                                <img class="sm:hidden w-full" src="${item.smallImage}" alt="product-img">
                                 <div class="info flex flex-col sm:gap-2 text-center items-center justify-center pb-6 absolute bottom-8 sm:bottom-0 left-24 right-24">
                                     <h1 class="text-[6vw] sm:text-[3vw] lg:text-3xl pb-2">${item.title}</h1>
                                     <p class="text-[2vw] sm:text-[1vw] lg:text-xl">${item.description}</p>
@@ -58,22 +59,23 @@ export class CarouselTab extends HTMLElement {
         </section>
     `;
 
-    const container = this.querySelector('#carousel-inner-container');
-    const btns = this.querySelectorAll('.carousel-btn');
-    carouselTab(container, btns);
+        const container = this.querySelector('#carousel-inner-container');
+        const btns = this.querySelectorAll('.carousel-btn');
+        carouselTab(container, btns);
     }
 }
 
 customElements.define('carousel-tab', CarouselTab);
 
-
-// For carousel
-
+/**
+ * Sets up the carousel tab functionality by adding event listeners to the buttons.
+ * @param {HTMLElement} container - The container element to transform.
+ * @param {NodeListOf<Element>} btns - The buttons that trigger the transformation.
+ */
 function carouselTab(container, btns) {
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
             const index = btn.getAttribute('data-index');
-            console.log(index)
             container.style.transform = `translateX(-${index}00%)`;
         });
     });

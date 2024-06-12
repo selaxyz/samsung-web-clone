@@ -1,3 +1,8 @@
+/**
+ * Custom HTML element for displaying product series.
+ * @extends HTMLElement
+ */
+
 export class ProductSeriesCard extends HTMLElement {
     constructor() {
         super()

@@ -67,12 +67,6 @@ const cardData = [
         
     ];
 
-// for (i of cardData) {
-//     console.log(i);
-//     console.log(i.title);
-// }
-
-// console.log(cardData[0].title);
 
 class Featured extends HTMLElement {
     constructor() {
@@ -86,7 +80,7 @@ class Featured extends HTMLElement {
         <div class="card-container w-full flex flex-wrap px-2 gap-2">
             ${cardData.map(items => `
             <div class="card bg-gray-100 w-full sm:w-[350px] rounded-xl border-2  p-4 text-wrap flex flex-col gap-4  shadow-2xl flex-none items-center ">
-                <img class=" h-64"  src="${items.image}" alt="">
+                <img class=" h-64"  src="${items.image}" alt="Featured Image">
                 <div class="flex flex-col gap-2">
                     <p class="text-white bg-blue-500 w-2/3 text-lg p-2 rounded-xl font-bold text-center">${items.title}</p>
                     <h2 class="font-bold">Save up to $900</h2>

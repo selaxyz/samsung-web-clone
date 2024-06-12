@@ -1,335 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>privacy-page</title>
-    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
-
-</head>
-
-<body class="flex flex-col items-center  ">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+    <script src="../privacy-page/script/index.js"></script>
+  </head>
+  <!-- Privacy page -->
+  <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <!-- Privacy pages  -->
-    <section class="max-w-screen-2xl w-full flex justify-between px-4">
-        <div class="w-full flex  pb-2 justify-between">
-            <div class="flex  ">
-                <h1 class=" font-bold text-2xl flex">Privacy</h1>
-                <img src="../../assets/images/privacy/flg.jpg" class=" w-13 h-6 pl-3  ">
-            </div>
-
-            <h1>Privacy Policy</h1>
-
+    <!-- Privacy hero section -->
+    <section class="flex w-full max-w-screen-2xl justify-between px-4">
+      <div class="flex w-full justify-between pb-2">
+        <div class="flex">
+          <h1 class="flex text-2xl font-bold">Privacy</h1>
+          <img
+            src="../../assets/images/privacy/flg.jpg"
+            class="w-13 h-6 pl-3"
+          />
         </div>
+
+        <h1>Privacy Policy</h1>
+      </div>
     </section>
-    <!-- image  -->
-    <section class="flex flex-col w-full max-w-screen-2xl px-4">
-        <div class="relative flex flex-col w-full">
-            <img src="../../assets/images/privacy/privacy-1.png" alt="#" class=" w-full  h-[485px] object-cover rounded-2xl">
-            <h2 class="absolute inset-0 flex text-center  justify-center items-center text-white text-6xl font-bold">
-                knowing your privacy right
-            </h2>
-        </div>
+    <!-- Knowing your privacy right section section -->
+    <section class="flex w-full max-w-screen-2xl flex-col px-4">
+      <div class="relative flex w-full flex-col">
+        <img
+          src="../../assets/images/privacy/privacy-1.png"
+          alt="#"
+          class="h-[485px] w-full rounded-2xl object-cover"
+        />
+        <h2
+          class="absolute inset-0 flex items-center justify-center text-center text-6xl font-bold text-white"
+        >
+          knowing your privacy right
+        </h2>
+      </div>
 
-        <div>
-            <div class="text-center text-5xl font-bold mt-8">
-                <h2>Manage Your Personal Information</h2>
-            </div>
-            <!-- img 1 -->
-            <div class="pt-24 w-full flex justify-center">
-                <img src="../../assets/images/privacy/privacy-2.png" alt="">
-            </div>
+      <div>
+        <div class="mt-8 text-center text-5xl font-bold">
+          <h2>Manage Your Personal Information</h2>
+        </div>
+        <!-- img 1 -->
+        <div class="flex w-full justify-center pt-24">
+          <img src="../../assets/images/privacy/privacy-2.png" alt="Privacy Image" />
+        </div>
+      </div>
     </section>
-    <!-- carousel Your Privacy section -->
-    <section class="flex flex-col max-w-screen-lg">
-        <div class=" text-center hidden md:block">
-            <h2 class="text-4xl font-bold py-12">Your Privacy Rights</h2>
+    <!--  Your Privacy right section-->
+    <section class="flex max-w-screen-lg flex-col">
+      <div class="hidden text-center md:block">
+        <h2 class="py-12 text-4xl font-bold">Your Privacy Rights</h2>
 
-
-            <div class="flex justify-center  ">
-
-                <div class="carousel-slide  text-center  justify-center ">
-                    <h3 class="text-3xl font-bold text-center mb-8"> Access</h3>
-                    <p class=" text-gray-700">You can request access to the personal information
-                        that Samsung has collected about you.</p>
-
-                </div>
-                <div class="px-24 carousel-slide ">
-
-                    <h3 class="text-3xl font-bold text-center mb-8 "> Deletion</h3>
-                    <p class="text-center text-gray-700">You can request that Samsung delete personal
-                        information about you.</p>
-                </div>
-                <div class="carousel-slide ">
-                    <h3 class="text-3xl font-bold text-center mb-8"> Correct</h3>
-                    <p class="text-center text-gray-700">You can request that Samsung correct the personal
-                        information Samsung maintains about you.
-                    </p>
-                </div>
-            </div>
-            <div class="flex pt-32 justify-center ">
-                <div class="px-28">
-                    <h3 class="text-3xl font-bold text-center mb-8"> Do Not Sell or Share <br>(opt out of
-                        targeted Ads)</h3>
-                    <p class="text-center text-gray-700">You can request that Samsung not sell your
-                        personal information, share it with third paries for cross-context behavioral
-                        dvertising purposes, or process it for targeted advertising purposes.</p>
-                </div>
-                <div class="pr-40 w-full ">
-                    <h3 class="text-3xl font-bold text-center pt-3"> Appeal</h3>
-                    <p class="text-center text-gray-700 pt-16 ">You can appeal Samsung's decisons with
-                        respect to your <br> privacy right requests.</p>
-                </div>
-            </div>
-
+        <div class="flex justify-center">
+          <div class="carousel-slide justify-center text-center">
+            <h3 class="mb-8 text-center text-3xl font-bold">Access</h3>
+            <p class="text-gray-700">
+              You can request access to the personal information that Samsung
+              has collected about you.
+            </p>
+          </div>
+          <div class="carousel-slide px-24">
+            <h3 class="mb-8 text-center text-3xl font-bold">Deletion</h3>
+            <p class="text-center text-gray-700">
+              You can request that Samsung delete personal information about
+              you.
+            </p>
+          </div>
+          <div class="carousel-slide">
+            <h3 class="mb-8 text-center text-3xl font-bold">Correct</h3>
+            <p class="text-center text-gray-700">
+              You can request that Samsung correct the personal information
+              Samsung maintains about you.
+            </p>
+          </div>
         </div>
-
+        <div class="flex justify-center pt-32">
+          <div class="px-28">
+            <h3 class="mb-8 text-center text-3xl font-bold">
+              Do Not Sell or Share <br />(opt out of targeted Ads)
+            </h3>
+            <p class="text-center text-gray-700">
+              You can request that Samsung not sell your personal information,
+              share it with third paries for cross-context behavioral dvertising
+              purposes, or process it for targeted advertising purposes.
+            </p>
+          </div>
+          <div class="w-full pr-40">
+            <h3 class="pt-3 text-center text-3xl font-bold">Appeal</h3>
+            <p class="pt-16 text-center text-gray-700">
+              You can appeal Samsung's decisons with respect to your <br />
+              privacy right requests.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- mobile screen carousel privacy section -->
-    <section class="flex flex-col max-w-screen-lg">
-        <div class="flex flex-col w-full mt-10  md:hidden">
-            <div class="relative overflow-hidden ">
-                <h2 class="text-4xl  text-center font-bold pt-12">Your Privacy Rights</h2>
-
-                <div id="carouselInner" class="flex transition-transform duration-500 ease-in-out ">
-                    <div class=" slide min-w-full   text-center flex flex-col justify-center">
-                        <h3 class="text-3xl font-bold mb-8">Access</h3>
-                        <p class="text-gray-700">You can request access to the personal information<br> that Samsung
-                            has collected about you.</p>
-                    </div>
-                    <div class="slide min-w-full  text-center flex flex-col justify-center">
-                        <h3 class="text-3xl font-bold mb-8">Deletion</h3>
-                        <p class="text-gray-700">You can request that Samsung delete personal<br> information about
-                            you.</p>
-                    </div>
-                    <div class="slide min-w-full   text-center flex flex-col justify-center">
-                        <h3 class="text-3xl font-bold mb-8">Correct</h3>
-                        <p class="text-gray-700">You can request that Samsung correct the personal<br> information
-                            Samsung maintains about you.</p>
-                    </div>
-                    <div class="slide min-w-full   text-center flex flex-col justify-center p-12">
-                        <h3 class="text-3xl font-bold mb-8 w-full">Do Not Sell or Share<br>(opt out of targeted Ads)
-                        </h3>
-                        <p class="text-gray-700">You can request that Samsung not sell your<br> personal
-                            information, share it with third parties for<br> cross-context behavioral advertising
-                            purposes, or<br> process it for targeted advertising purposes.</p>
-                    </div>
-                    <div class="slide min-w-full   text-center flex flex-col justify-center">
-                        <h3 class="text-3xl font-bold ">Appeal</h3>
-                        <p class="text-gray-700 pt-12">You can appeal Samsung's decisions<br> with respect to your
-                            privacy right requests.</p>
-                    </div>
-                </div>
+    <section class="flex max-w-screen-lg flex-col">
+      <div class="mt-10 flex w-full flex-col md:hidden">
+        <div class="relative overflow-hidden">
+          <h2 class="pt-12 text-center text-4xl font-bold">
+            Your Privacy Rights
+          </h2>
+          <div
+            id="carouselInner"
+            class="flex w-screen transition-transform duration-500 ease-in-out"
+          >
+            <div
+              class="slide flex min-w-full flex-col justify-center text-center"
+            >
+              <h3 class="mb-8 text-3xl font-bold">Access</h3>
+              <p class="text-gray-700">
+                You can request access to the personal information<br />
+                that Samsung has collected about you.
+              </p>
             </div>
-
-            <!-- Indicators -->
-            <div class="flex justify-center gap-5">
-                <button class="indicator w-4 h-4 rounded-full border  border-gray-400"></button>
-                <button class="indicator w-4 h-4 rounded-full border  border-gray-400 "></button>
-                <button class="indicator w-4 h-4 rounded-full border  border-gray-400"></button>
-                <button class="indicator w-4 h-4 rounded-full border  border-gray-400"></button>
-                <button class="indicator w-4 h-4 rounded-full border  border-gray-400"></button>
+            <div
+              class="slide flex min-w-full flex-col justify-center text-center"
+            >
+              <h3 class="mb-8 text-3xl font-bold">Deletion</h3>
+              <p class="text-gray-700">
+                You can request that Samsung delete personal<br />
+                information about you.
+              </p>
             </div>
+            <div
+              class="slide flex min-w-full flex-col justify-center text-center"
+            >
+              <h3 class="mb-8 text-3xl font-bold">Correct</h3>
+              <p class="text-gray-700">
+                You can request that Samsung correct the personal<br />
+                information Samsung maintains about you.
+              </p>
+            </div>
+            <div
+              class="slide flex min-w-full flex-col justify-center p-12 text-center"
+            >
+              <h3 class="mb-8 w-full text-3xl font-bold">
+                Do Not Sell or Share<br />(opt out of targeted Ads)
+              </h3>
+              <p class="text-gray-700">
+                You can request that Samsung not sell your<br />
+                personal information, share it with third parties for<br />
+                cross-context behavioral advertising purposes, or<br />
+                process it for targeted advertising purposes.
+              </p>
+            </div>
+            <div
+              class="slide flex min-w-full flex-col justify-center text-center"
+            >
+              <h3 class="text-3xl font-bold">Appeal</h3>
+              <p class="pt-12 text-gray-700">
+                You can appeal Samsung's decisions<br />
+                with respect to your privacy right requests.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- Indicators -->
+        <div class="flex justify-center gap-5">
+          <button
+            class="indicator h-4 w-4 rounded-full border border-gray-400"
+          ></button>
+          <button
+            class="indicator h-4 w-4 rounded-full border border-gray-400"
+          ></button>
+          <button
+            class="indicator h-4 w-4 rounded-full border border-gray-400"
+          ></button>
+          <button
+            class="indicator h-4 w-4 rounded-full border border-gray-400"
+          ></button>
+          <button
+            class="indicator h-4 w-4 rounded-full border border-gray-400"
+          ></button>
+        </div>
+      </div>
     </section>
-
-
- 
-
-
-    <!-- Make a Request -->
-    <!-- desktop screen -->
-    <section class="flex flex-col max-w-screen-lg px-6 w-full">
-        <div class="px-28 pt-24 hidden md:block ">
-            <h3 class="text-4xl font-bold text-center mb-8"> Make a request</h3>
-            <p class="text-center text-gray-700 w-full">To get started with new request, click the Create Request button
-                below. To check the status of a prior request, or to appeal a decision about a prior request,e enter
-                your ticket number and click the Submit button below.</p>
-        </div>
-
+    <!-- Make a Request  section -->
+    <section class="flex w-full max-w-screen-lg flex-col px-6">
+      <div class="hidden px-28 pt-24 md:block">
+        <h3 class="mb-8 text-center text-4xl font-bold">Make a request</h3>
+        <p class="w-full text-center text-gray-700">
+          To get started with new request, click the Create Request button
+          below. To check the status of a prior request, or to appeal a decision
+          about a prior request,e enter your ticket number and click the Submit
+          button below.
+        </p>
+      </div>
     </section>
-    <section class="flex flex-col max-w-screen-lg">
-        <!-- 2 border with blue-button  -->
-        <div class="pt-12 text-center hidden md:block">
-            <div class="w-full flex justify-center px-16 gap-4">
-
-                <!--  request button -->
-                <div class="border  w-screen items-center rounded-3xl bg-gray-100 py-10 ">
-                    <h3 class="font-bold pt-12 text-3xl "> Create New Request</h3>
-                    <div class="flex justify-center py-10">
-                        <img src="../../assets/images/privacy/createNew02.png">
-                    </div>
-                    <button
-                        class="bg-blue-900 text-white font-bold py-4 px-16  rounded-full hover:bg-black focus:outline-none focus:ring-2 ">
-                        CREATE REQUEST
-                    </button>
-                </div>
-                <!-- submit button with enter text  -->
-                <div class="border w-screen  rounded-3xl bg-gray-100 ">
-                    <h3 class="font-bold pt-12 text-3xl py-12"> Review Prior Request <br>Or Submit an Appeal</h3>
-                    <div class="container mx-auto p-6">
-                        <div>
-                            <div class=" relative">
-                                <input placeholder="Please Enter Your Number Here"
-                                    class="  bg-transparent w-full focus:outline-none  peer text-center pb-1 ">
-                                <div class="absolute inset-x-0 bottom-0 "></div>
-
-                            </div class>
-                            <a href="#" class=" pb-2 text-sm mt-4 text-gray-500 underline">Can't locate your ticket
-                                number?</a>
-                        </div>
-                        <div class="py-10">
-                            <button
-                                class="  bg-blue-900 text-white font-bold py-4 px-28  rounded-full hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-                                SUBMIT
-                            </button>
-                        </div>
-                    </div>
-                </div>
+    <section class="flex max-w-screen-lg flex-col">
+      <!-- 2 border with blue-button  -->
+      <div class="hidden pt-12 text-center md:block">
+        <div class="flex w-full justify-center gap-4 px-16">
+          <!--  request button -->
+          <div
+            class="w-screen items-center rounded-3xl border bg-gray-100 py-10"
+          >
+            <h3 class="pt-12 text-3xl font-bold">Create New Request</h3>
+            <div class="flex justify-center py-10">
+              <img src="../../assets/images/privacy/createNew02.png" />
             </div>
+            <button
+              class="rounded-full bg-blue-900 px-16 py-4 font-bold text-white hover:bg-black focus:outline-none focus:ring-2"
+            >
+              CREATE REQUEST
+            </button>
+          </div>
+          <!-- submit button with enter text  -->
+          <div class="w-screen rounded-3xl border bg-gray-100">
+            <h3 class="py-12 pt-12 text-3xl font-bold">
+              Review Prior Request <br />Or Submit an Appeal
+            </h3>
+            <div class="container mx-auto p-6">
+              <div>
+                <div class="relative">
+                  <input
+                    placeholder="Please Enter Your Number Here"
+                    class="peer w-full bg-transparent pb-1 text-center focus:outline-none"
+                  />
+                  <div class="absolute inset-x-0 bottom-0"></div>
+                </div>
+                <a href="#" class="mt-4 pb-2 text-sm text-gray-500 underline"
+                  >Can't locate your ticket number?</a
+                >
+              </div>
+              <div class="py-10">
+                <button
+                  class="rounded-full bg-blue-900 px-28 py-4 font-bold text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Mobile screen carousel   -->
-    <section class="flex flex-col max-w-screen-lg w-full">
-        <div class="flex flex-col w-full mt-10 md:hidden overflow-hidden">
-            <!-- Carousel only visible on mobile screens -->
-            <div class="relative ">
-                <h2 class="text-4xl text-center font-bold py-12">Make a Request</h2>
-                <p class="text-center text-xl text-gray-700">To get started with a new request, click the
-                    Create Request button below. To check the status of a prior request, or to appeal a
-                    decision about a prior request, enter your ticket number and click the Submit button below.
-                </p>
+    <section class="flex w-full max-w-screen-lg flex-col">
+      <div class="mt-10 flex w-full flex-col overflow-hidden md:hidden">
+        <!-- Carousel only visible on mobile screens -->
+        <div class="relative">
+          <h2 class="py-12 text-center text-4xl font-bold">Make a Request</h2>
+          <p class="text-center text-xl text-gray-700">
+            To get started with a new request, click the Create Request button
+            below. To check the status of a prior request, or to appeal a
+            decision about a prior request, enter your ticket number and click
+            the Submit button below.
+          </p>
 
-                <div id="carouselInner1" class="flex transition-transform duration-500 ease-in-out">
-                    <!-- Slide 1 -->
-                    <div class="carousel-slide min-w-full p-14 text-center flex flex-col justify-center">
-                        <div class="w-full items-center rounded-3xl bg-gray-100 py-10">
-                            <h3 class="font-bold pt-12 text-3xl">Create New Request</h3>
-                            <div class="flex justify-center py-10">
-                                <img src="../../assets/images/privacy/createNew02.png" alt="Create New Request">
-                            </div>
-                            <button
-                                class="bg-blue-900 text-white font-bold py-4 px-16 rounded-full hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-                                CREATE REQUEST
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-slide min-w-full p-14 text-center flex flex-col justify-center">
-                        <div class="w-full rounded-3xl bg-gray-100 py-10">
-                            <h3 class="font-bold pt-12 text-3xl  ">Review Prior Request <br>or Submit an Appeal</h3>
-                            <div class="container mx-auto p-6">
-                                <div class="relative">
-                                    <input placeholder="Please Enter Your Number Here"
-                                        class="  bg-transparent focus:outline-none peer text-center pb-1">
-
-                                </div>
-                                <a href="#" class="pb-2 text-sm mt-4 text-gray-500 underline">Can't locate your
-                                    ticket number?</a>
-                            </div>
-                            <div class="py-10">
-                                <button
-                                    class="bg-blue-900 text-white font-bold py-4 px-28 rounded-full hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-                                    SUBMIT
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+          <div
+            id="carouselInner1"
+            class="flex transition-transform duration-500 ease-in-out"
+          >
+            <!-- Slide 1 -->
+            <div
+              class="carousel-slide flex min-w-full flex-col justify-center p-14 text-center"
+            >
+              <div class="w-full items-center rounded-3xl bg-gray-100 py-10">
+                <h3 class="pt-12 text-3xl font-bold">Create New Request</h3>
+                <div class="flex justify-center py-10">
+                  <img
+                    src="../../assets/images/privacy/createNew02.png"
+                    alt="Create New Request"
+                  />
                 </div>
+                <button
+                  class="rounded-full bg-blue-900 px-16 py-4 font-bold text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                >
+                  CREATE REQUEST
+                </button>
+              </div>
             </div>
-
-            <!-- Indicators -->
-            <div class="flex justify-center gap-4 mt-4">
-                <button class="indicator1 w-4 h-4 rounded-full border border-gray-400 bg-transparent"
-                    data-slide="0"></button>
-                <button class="indicator1 w-4 h-4 rounded-full border border-gray-400 bg-transparent"
-                    data-slide="1"></button>
+            <!-- Slide 2 -->
+            <div
+              class="carousel-slide flex min-w-full flex-col justify-center p-14 text-center"
+            >
+              <div class="w-full rounded-3xl bg-gray-100 py-10">
+                <h3 class="pt-12 text-3xl font-bold">
+                  Review Prior Request <br />or Submit an Appeal
+                </h3>
+                <div class="container mx-auto p-6">
+                  <div class="relative">
+                    <input
+                      placeholder="Please Enter Your Number Here"
+                      class="peer bg-transparent pb-1 text-center focus:outline-none"
+                    />
+                  </div>
+                  <a href="#" class="mt-4 pb-2 text-sm text-gray-500 underline"
+                    >Can't locate your ticket number?</a
+                  >
+                </div>
+                <div class="py-10">
+                  <button
+                    class="rounded-full bg-blue-900 px-28 py-4 font-bold text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <section class="flex flex-col max-w-screen-lg">
-            <div class="pt-16 w-full text-center p-12 ">
-                <p> For requests from California residents in ther roles as employees, applicants,independent
-                    contractors,and other work-related roles, <a class="underline" href="#">click here.</a><br>For
-                    requests frome California residents who are personnel of a business customer,partner or
-                    vendor,<a class="underline" href="#">click here.</a></p>
-            </div>
+        <!-- Indicators -->
+        <div class="mt-4 flex justify-center gap-4">
+          <button
+            class="indicator1 h-4 w-4 rounded-full border border-gray-400 bg-transparent"
+            data-slide="0"
+          ></button>
+          <button
+            class="indicator1 h-4 w-4 rounded-full border border-gray-400 bg-transparent"
+            data-slide="1"
+          ></button>
+        </div>
+      </div>
 
-            <!-- bottom boder -->
-            <div class="  border w-full px-20 text-center rounded-3xl bg-gray-100 py-2 mb-24">
-                <p class=" ">
-                    If you require assistance to submit your request contact our Customer Care Center at
-                    1-800-SAMSUNG, when prompted, <br>
-                    Say "Privacy Rights"
+      <section class="flex max-w-screen-lg flex-col">
+        <div class="w-full p-12 pt-16 text-center">
+          <p>
+            For requests from California residents in ther roles as employees,
+            applicants,independent contractors,and other work-related roles,
+            <a class="underline" href="#">click here.</a><br />For requests
+            frome California residents who are personnel of a business
+            customer,partner or vendor,<a class="underline" href="#"
+              >click here.</a
+            >
+          </p>
+        </div>
 
-                </p>
-            </div>
-        </section>
-
+        <!-- bottom boder -->
+        <div
+          class="mb-24 w-full rounded-3xl border bg-gray-100 px-20 py-2 text-center"
+        >
+          <p class=" ">
+            If you require assistance to submit your request contact our
+            Customer Care Center at 1-800-SAMSUNG, when prompted, <br />
+            Say "Privacy Rights"
+          </p>
+        </div>
+      </section>
     </section>
     <footer-component></footer-component>
-</body>
-<script src="../../script/index.js" type="module"></script>
-<!-- Your privacy script -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carouselInner = document.querySelector('#carouselInner');
-        const slides = document.querySelectorAll('.slide');
-        const indicators = document.querySelectorAll('.indicator');
-        const totalSlides = slides.length;
-        let currentSlide = 0;
-
-        function updateCarousel() {
-            const transformValue = -currentSlide * 100;
-            carouselInner.style.transform = `translateX(${transformValue}%)`;
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('bg-gray-400', index === currentSlide);
-
-            });
-        }
-
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = index;
-                updateCarousel();
-            });
-        });
-
-        updateCarousel();
-    });
-</script>
-
-<!-- Make a request script -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carouselInner1 = document.querySelector('#carouselInner1');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const indicators = document.querySelectorAll('.indicator1');
-        const totalSlides = slides.length;
-        let currentSlide = 0;
-
-        function updateCarousel() {
-            const transformValue = -currentSlide * 100;
-            carouselInner1.style.transform = `translateX(${transformValue}%)`;
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('bg-gray-400', index === currentSlide);
-                indicator.classList.toggle('bg-transparent', index !== currentSlide);
-            });
-        }
-
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = index;
-                updateCarousel();
-            });
-        });
-
-        updateCarousel();
-    });
-</script>
-
+  </body>
+  <script src="../../script/index.js" type="module"></script>
 </html>

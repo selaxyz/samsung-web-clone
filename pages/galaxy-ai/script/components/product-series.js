@@ -1,3 +1,10 @@
+/**
+ * Represents a product with its name and image.
+ * @typedef {Object} Product
+ * @property {string} name - The name of the product.
+ * @property {string} image - The image path of the product.
+ */
+
 const galaxysProducts = [
     {
         name: "Galaxy S24 Ultra",

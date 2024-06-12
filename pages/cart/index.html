@@ -1,382 +1,471 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cart | Samsung DEV</title>
-    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+  </head>
 
-<body class="flex flex-col items-center">
+  <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <div id="navbar" class="fixed sm:block bg-white w-full z-10 hidden duration-300">
-        <div class="flex justify-between px-3 drop-shadow-lg bg-white py-4">
-            <span class="font-medium text-lg">Cart</span>
-            <div class="flex gap-3 items-center">
-                <div class="text-end h-fit max-w-full min-w-72">
-                    <p class="font-medium">Subtotal: $169.99</p>
-                    <p class="text-sm">Starting from $7.09 / mo for 24 mo <sup>⊕σ</sup></p>
-                </div>
-                <a href="../../pages/checkout/index.html">
-                    <cart-button class=""
-                        data-text="Checkout"
-                        data-color="bg-blue-500"
-                    ></cart-button>
-                </a>
-            </div>
+    <!-- drop down checkout -->
+    <section
+      id="navbar"
+      class="fixed z-10 hidden w-full bg-white duration-300 sm:block"
+    >
+      <div class="flex justify-between bg-white px-3 py-4 drop-shadow-lg">
+        <span class="text-lg font-medium">Cart</span>
+        <div class="flex items-center gap-3">
+          <div class="h-fit min-w-72 max-w-full text-end">
+            <p class="font-medium">Subtotal: $169.99</p>
+            <p class="text-sm">
+              Starting from $7.09 / mo for 24 mo <sup>⊕σ</sup>
+            </p>
+          </div>
+          <a href="../../pages/checkout/index.html">
+            <cart-button
+              data-text="Checkout"
+              data-color="bg-blue-500"
+            ></cart-button>
+          </a>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <section class="max-w-screen-xl w-full mt-7">
-
-        <!-- summary -->
-        <section class="px-5">
-            <!-- <h1>This is Cart</h1>
-            <a class="underline" href="../checkout/index.html">CLICK HERE: Go to Checkout</a>
-            <p>Note: The value of the href above contain the path to the target screen, Please don't change it!</p>
-            <p>******</p> -->
-
-            <div class="grid grid-cols-12 mb-10">
-                <!-- left col -->
-                <div class="col-span-full md:col-span-8">
-                    <div class="flex justify-between my-3">
-                        <h1 class="font-medium text-xl text-start hidden md:block">Cart</h1>
-                        <p>Zip code: <a class="text-blue-500">96928</a></p>
-                        <a class="text-end text-sm text-blue-500 md:hidden" href="#">Chat with an expert</a>
-                    </div>
-                    <hr>
-                    <section class="flex border-b">
-
-                        <!-- upper left col -->
-                        <img class="h-16 mx-12 mt-5" src="../../assets/images/cart/buds2.webp"
-                            alt="galaxy buds2 pro">
-                        <div class="flex w-full flex-col">
-                            <div class="flex border-b justify-between">
-                                <div class="flex flex-col md:flex-row md:w-[70%] font-semibold md:justify-between mt-7">
-                                    <p>Galaxy Buds2 Pro, Graphite</p>
-                                    <div>
-                                        <select class="cursor-pointer">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col items-end w-5/12">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-3 cursor-pointer">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
-                                    </svg>
-                                    <p>$189.99</p>
-                                    <p class="font-thin text-xs line-through">$229.99</p>
-                                    <a class="text-blue-500 text-sm font-medium text-end" href="#">Save for later</a>
-                                </div>
-
-                        </div>
-
-                        <!-- lower left col -->
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="flex items-center size-14 m-3"
-                                    src="../../assets/images/cart/heart-icon.webp" alt="heart icon">
-                                <div class="my-5">
-                                    <h1>Get added protection and cofidence</h1>
-                                    <p class="text-xs font-light">From a personal setup session to continued
-                                        protection for mechanical and electrical breakdowns, we'll take care.</p>
-                                </div>
-                            </div>
-                            <a class="text-blue-500 text-sm font-medium" href="#">Add</a>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section>
-                    <!-- learn more-return -->
-                    <div class="flex gap-2 font-light text-xs mb-10">
-                        <img class="w-21 h-21 mt-4" src="../../assets/images/cart/icon-return-box.svg"
-                            alt="learn more-return">
-                        <p class="mt-5">Free and easy returns. <a class="text-blue-500" href="#">Learn more</a></p>
-                    </div>
-                </section>
+    <!-- cart summary -->
+    <section class="mt-7 w-full max-w-screen-xl">
+      <!-- summary -->
+      <section class="px-5">
+        <div class="mb-10 grid grid-cols-12">
+          <!-- left col -->
+          <div class="col-span-full md:col-span-8">
+            <div class="my-3 flex justify-between">
+              <h1 class="hidden text-start text-xl font-medium md:block">
+                Cart
+              </h1>
+              <p>Zip code: <a class="text-blue-500">96928</a></p>
+              <a class="text-end text-sm text-blue-500 md:hidden" href="#"
+                >Chat with an expert</a
+              >
             </div>
+            <hr />
+            <section class="flex border-b">
+              <!-- upper left col -->
+              <img
+                class="mt-5 hidden min-[265px]:block min-[265px]:h-[min(10vw,5rem)] sm:mx-12"
+                src="../../assets/images/cart/buds2.webp"
+                alt="galaxy buds2 pro"
+              />
+              <div class="flex w-full flex-col">
+                <div class="flex justify-between border-b">
+                  <div
+                    class="mt-7 flex flex-col font-semibold md:w-[70%] md:flex-row md:justify-between"
+                  >
+                    <p>Galaxy Buds2 Pro, Graphite</p>
+                    <div>
+                      <select class="cursor-pointer">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
 
-            <!-- right col -->
-            <div class="md:col-span-4 hidden md:block">
-                <div class="flex justify-end px-6 my-3 gap-3">
-                    <img class="w-7" src="../../assets/images/cart/chat-icon.svg" alt="chat with expert">
-                    <p class="text-blue-500 text-sm font-medium">Chat with an expert</p>
+                  <div class="flex w-5/12 flex-col items-end">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="mt-3 h-5 w-5 cursor-pointer"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12"
+                      />
+                    </svg>
+                    <p>$189.99</p>
+                    <p class="text-xs font-thin line-through">$229.99</p>
+                    <a
+                      class="text-end text-sm font-medium text-blue-500"
+                      href="#"
+                      >Save for later</a
+                    >
+                  </div>
                 </div>
 
-                <!-- box -->
-                <div class="flex flex-col items-center min-w-96 max-w-full px-5">
-
-                    <!-- upper box -->
-                    <div class="flex flex-col bg-gray-100 p-3 w-full h-fit">
-                        <p>Order summary</p>
-                        <hr class="mt-3">
+                <!-- lower left col -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      class="m-3 hidden size-[min(10vw,4rem)] min-[265px]:block"
+                      src="../../assets/images/cart/heart-icon.webp"
+                      alt="heart icon"
+                    />
+                    <div class="my-5">
+                      <h1>Get added protection and cofidence</h1>
+                      <p class="text-xs font-light">
+                        From a personal setup session to continued protection
+                        for mechanical and electrical breakdowns, we'll take
+                        care.
+                      </p>
                     </div>
-
-                    <!-- lower box -->
-                    <div class="bg-gray-100 p-3 text-sm space-y-3 w-full h-fit">
-
-                        <!-- promo code -->
-                        <details open class="w-full">
-                            <summary class="flex items-center gap-2">
-                                <p class="text-sm text-blue-500">Enter Promo/Referral Code(s) Here? </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                </svg>
-                            </summary>
-                            <div class="w-full h-fit bg-white mt-2 border border-black">
-                                <div class="flex justify-between p-3 text-xs">
-                                    <p class="font-thin">Enter promo code</p>
-                                    <p class="text-blue-500">Apply</p>
-                                </div>
-                            </div>
-                        </details>
-
-                        <div class="flex justify-between">
-                            <p class="font-semibold">Subtotal</p>
-                            <p class="font-light">$189.99</p>
-                        </div>
-
-                        <div class="flex justify-between">
-                            <p class="font-semibold">Shipping</p>
-                            <p class="font-light">Free</p>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between">
-                                <p class="font-semibold">Estimated tax</p>
-                                <p class="font-light text-xs"> Will be calculated later</p>
-                            </div>
-                            <p class="font-semibold">Zip code: <a class="text-blue-500" href="#">96928</a></p>
-                        </div>
-                        <hr>
-
-                        <div class="flex justify-between font-semibold">
-                            <p>Estimated total :</p>
-                            <p>$229.99</p>
-                        </div>
-
-                        <p class="text-right">Starting from <b>$7.92</b>/ mo for <b>24</b> mo <sup>⊕σ</sup></p>
-                        <hr>
-
-                        <details open class="w-full space-y-3">
-                            <summary class="flex justify-between">
-                                <div class="flex items-center gap-2">
-                                    <p class="font-semibold">Total Savings</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                    </svg>
-                                </div>
-                                <p>$40.00</p>
-                            </summary>
-                            <div class="flex justify-between text-xs">
-                                <p>Promotional Discount(s)</p>
-                                <p>-$40.00</p>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="flex flex-col gap-3 py-10">
-                        <a href="../checkout/index.html">
-                            <cart-button
-                                data-text="Checkout"
-                                data-color="bg-blue-500"
-                                data-image=""
-                            ></cart-button>
-                        </a>
-
-                        <cart-button
-                            data-text=""
-                            data-image="../../assets/images/cart/paypal.svg"
-                            data-color="bg-yellow-400 hover:bg-yellow-500"
-                        ></cart-button>
-                    </div>
-                    
-                    <img src="../../assets/images/cart/DSE-BannerCard-1200x690.webp" alt="">
+                  </div>
+                  <a class="text-sm font-medium text-blue-500" href="#">Add</a>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <!-- learn more-return -->
+              <div class="mb-10 flex gap-2 text-xs font-light">
+                <img
+                  class="w-21 h-21 mt-4"
+                  src="../../assets/images/cart/icon-return-box.svg"
+                  alt="learn more-return"
+                />
+                <p class="mt-5">
+                  Free and easy returns.
+                  <a class="text-blue-500" href="#">Learn more</a>
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <!-- right col -->
+          <div class="hidden md:col-span-4 md:block">
+            <div class="my-3 flex w-full justify-end gap-3">
+              <img
+                class="w-7"
+                src="../../assets/images/cart/chat-icon.svg"
+                alt="chat with expert"
+              />
+              <p class="text-sm font-medium text-blue-500">
+                Chat with an expert
+              </p>
             </div>
-        </section>
-    
-        <!-- Frequently bought (component) -->
-        <section class="max-w-screen-xl w-screen px-5">
-            <div class="items-center">
-                <h1 class="text-2xl font-medium mb-14">Frequently bought together</h1>
+
+            <!-- box -->
+            <div class="flex min-w-64 max-w-full flex-col items-center pl-5">
+              <!-- upper box -->
+              <div class="flex h-fit w-full flex-col bg-gray-100 p-3">
+                <p>Order summary</p>
+                <hr class="mt-3" />
+              </div>
+
+              <!-- lower box -->
+              <div class="h-fit w-full space-y-3 bg-gray-100 p-3 text-sm">
+                <!-- promo code -->
+                <details open class="w-full">
+                  <summary class="flex cursor-pointer items-center gap-2">
+                    <p class="text-sm text-blue-500">
+                      Enter Promo/Referral Code(s) Here?
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </summary>
+
+                  <form class="relative mt-2 text-xs" action="">
+                    <input
+                      class="w-full border border-black p-3 font-thin placeholder-black outline-none"
+                      type="text"
+                      placeholder="Enter promo code"
+                    />
+                    <span
+                      class="absolute right-3 top-3 cursor-pointer text-blue-500"
+                      >Apply</span
+                    >
+                  </form>
+                </details>
+
+                <div class="flex justify-between">
+                  <p class="font-semibold">Subtotal</p>
+                  <p class="font-light">$189.99</p>
+                </div>
+
+                <div class="flex justify-between">
+                  <p class="font-semibold">Shipping</p>
+                  <p class="font-light">Free</p>
+                </div>
+
                 <div>
-                    <div id="productList" class="flex text-center justify-evenly text-sm overflow-auto">
-
-                    </div>
+                  <div class="flex justify-between">
+                    <p class="font-semibold">Estimated tax</p>
+                    <p class="text-end text-xs font-light">
+                      Will be calculated later
+                    </p>
+                  </div>
+                  <p class="font-semibold">
+                    Zip code: <a class="text-blue-500" href="#">96928</a>
+                  </p>
                 </div>
+                <hr />
+
+                <div class="flex justify-between font-semibold">
+                  <p>Estimated total :</p>
+                  <p>$229.99</p>
+                </div>
+
+                <p class="text-right">
+                  Starting from <b>$7.92</b>/ mo for <b>24</b> mo <sup>⊕σ</sup>
+                </p>
+                <hr />
+
+                <details open class="w-full space-y-3">
+                  <summary class="flex justify-between">
+                    <div class="flex cursor-pointer items-center gap-2">
+                      <p class="font-semibold">Total Savings</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-chevron-down"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                        />
+                      </svg>
+                    </div>
+                    <p>$40.00</p>
+                  </summary>
+                  <div class="flex justify-between text-xs">
+                    <p>Promotional Discount(s)</p>
+                    <p>-$40.00</p>
+                  </div>
+                </details>
+              </div>
+
+              <div class="flex flex-col gap-3 py-10">
+                <a href="../checkout/index.html">
+                  <cart-button
+                    data-text="Checkout"
+                    data-color="bg-blue-500"
+                    data-image=""
+                  ></cart-button>
+                </a>
+
+                <cart-button
+                  data-text=""
+                  data-image="../../assets/images/cart/paypal.svg"
+                  data-color="bg-yellow-400 hover:bg-yellow-500"
+                ></cart-button>
+              </div>
+
+              <img
+                src="../../assets/images/cart/DSE-BannerCard-1200x690.webp"
+                alt="banner card image"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- Frequently bought (component) -->
+      <section class="w-screen max-w-screen-xl px-5">
+        <div class="items-center">
+          <h1 class="mb-14 text-2xl font-medium">Frequently bought together</h1>
+          <div>
+            <div
+              id="productList"
+              class="flex justify-evenly overflow-auto text-center text-sm"
+            ></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- supported payment -->
-        <section class="flex flex-col justify-start max-w-screen-xl md:flex md:flex-row md:justify-center mt-20 text-sm gap-4 px-5">
-            <p class="text-gray-700">Supported payment types</p>
-            <div class="flex flex-wrap gap-3 pb-2.5">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-visa-3x.jpg.dea005e.webp" alt="visa">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-amex-3x.jpg.46318bb.webp"
-                    alt="american express">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-discover-3x.jpg.c121996.webp" alt="discover">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-master-3x.jpg.31139e6.webp" alt="master card">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-samsung-pay-3x.jpg.5098b20.webp"
-                    alt="samsung pay">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-amazon-pay-3x.jpg.f0813d6.webp"
-                    alt="amazon pay">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-paypal-3x.jpg.aa2db00.webp" alt="paypal">
-                <img class="w-10 h-6" src="../../assets/images/cart/icon-samsung-financing-3x.jpg.e589781.webp"
-                    alt="Samsung Finance">
-                <img class="w-10 h-6 py-1" src="../../assets/images/cart/logo-klarna-black.7dcdc1e.svg"
-                    alt="Klarna Payments">
-                <img class="w-10 h-6" src="../../assets/images/cart/supported-payment-google-pay.png.52c00e3.webp"
-                    alt="Google Pay">
-                <img class="w-10 h-6" src="../../assets/images/cart/logo-apple-pay-supported-method.png.ae3faf0.webp"
-                    alt="Apple Pay">
-            </div>
-        </section>
-    
-        <section class="max-w-screen-xl w-screen text-xs my-5 px-5">
-                
-            <p class="font-thin"><b class="font-medium"><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal Payments:</b> Available on purchases of
-            select products charged to a Samsung Financing account. Minimum purchase: $50. 0% APR from date of
-            eligible purchase until paid in full. Estimated monthly payment equals the eligible purchase amount
-            multiplied by a repayment factor and rounded down to the nearest penny (repayment factors: .08333 for 12
-            month, .05556 for 18 month, .04167 for 24 month).</p>
-        <a class="text-blue-400 font-semibold" href="#">See More</a>
+      <!-- supported payment -->
+      <section
+        class="mt-20 flex max-w-screen-xl flex-col justify-start gap-4 px-5 text-sm md:flex md:flex-row md:justify-center"
+      >
+        <p class="text-gray-700">Supported payment types</p>
+        <div id="supported-payment" class="flex flex-wrap gap-3 pb-2.5"></div>
+      </section>
 
-        <p><sup>σ</sup>Payment options are offered by Affirm and are subject to an eligibility check. Options depend
-            on your
-            purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC
-            are made or arranged pursuant to a California Finance Lender license. For licenses and disclosures, see
-            <a class="text-blue-400 font-semibold" href="#">affirm.com/licenses.</a>
+      <section class="my-5 w-screen max-w-screen-xl px-5 text-xs">
+        <p class="font-thin">
+          <b class="font-medium"
+            ><sup>⊕</sup>0% APR for 12, 18, 24 Months with Equal Payments:</b
+          >
+          Available on purchases of select products charged to a Samsung
+          Financing account. Minimum purchase: $50. 0% APR from date of eligible
+          purchase until paid in full. Estimated monthly payment equals the
+          eligible purchase amount multiplied by a repayment factor and rounded
+          down to the nearest penny (repayment factors: .08333 for 12 month,
+          .05556 for 18 month, .04167 for 24 month).
+        </p>
+        <a class="font-semibold text-blue-400" href="#">See More</a>
+
+        <p>
+          <sup>σ</sup>Payment options are offered by Affirm and are subject to
+          an eligibility check. Options depend on your purchase amount, and a
+          down payment may be required. CA residents: Loans by Affirm Loan
+          Services, LLC are made or arranged pursuant to a California Finance
+          Lender license. For licenses and disclosures, see
+          <a class="font-semibold text-blue-400" href="#"
+            >affirm.com/licenses.</a
+          >
         </p>
 
-        <p><sup>π</sup>In the US, Klarna Pay in 4 is available in all states except Hawaii and New Mexico. See <a
-                class="text-blue-400 font-semibold" href="#">Klarna payment term</a>. A higher initial payment may
-            be required for
-            some consumers. CA residents: Loans made or arranged pursuant to California Financing Law license.</p>
-            <div class="flex text-xs font-medium text-blue-400 border-t pt-4">
-                <a href="#">USA/ENGLISH</a>
-                <div class="flex flex-1 gap-2 justify-center">
-                    <a href="#">Privacy Policy</a>
-                    <p class="text-black font-light">|</p>
-                    <a href="#">Terms of Sale</a>
-                    <p class="text-black font-light">|</p>
-                    <a href="#">Your California Privacy Rights</a>
-                </div>
-            </div>
+        <p>
+          <sup>π</sup>In the US, Klarna Pay in 4 is available in all states
+          except Hawaii and New Mexico. See
+          <a class="font-semibold text-blue-400" href="#">Klarna payment term</a
+          >. A higher initial payment may be required for some consumers. CA
+          residents: Loans made or arranged pursuant to California Financing Law
+          license.
+        </p>
+        <div class="flex gap-2 border-t pt-4 text-xs font-medium text-blue-400">
+          <a href="#">USA/ENGLISH</a>
+          <div class="flex-1 justify-center gap-1 min-[265px]:flex">
+            <a href="#">Privacy Policy</a>
+            <span class="font-light text-black">|</span>
+            <a href="#">Terms of Sale</a>
+            <span class="font-light text-black">|</span>
+            <a href="#">Your California Privacy Rights</a>
+          </div>
+        </div>
+      </section>
     </section>
+
+    <!-- mobile checkout -->
+    <section
+      class="fixed bottom-0 block w-screen shadow-2xl shadow-black sm:hidden"
+    >
+      <div class="flex flex-col bg-white px-4">
+        <details>
+          <summary id="expand-button" class="flex justify-center">
+            <svg
+              id="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="h-4 w-10 cursor-pointer bg-blue-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+              />
+            </svg>
+          </summary>
+          <div class="space-y-2 bg-gray-50 py-6">
+            <div class="flex justify-between text-sm font-light">
+              <p>Subtotal</p>
+              <p>$169.99</p>
+            </div>
+            <div class="flex justify-between text-sm font-light">
+              <p>Shipping</p>
+              <p>Free</p>
+            </div>
+            <div class="flex justify-between text-sm font-light">
+              <p>Estimated tax</p>
+              <p>Will be calculated later</p>
+            </div>
+            <div class="text-start text-sm font-light">
+              <p>Zip code: 96928</p>
+            </div>
+            <div class="flex justify-between text-sm font-medium">
+              <p>Estimated total:</p>
+              <p>$169.99</p>
+            </div>
+            <div class="text-end text-sm font-medium">
+              <p>Starting from $7.9/ mo for 24 mo</p>
+            </div>
+
+            <details>
+              <summary class="flex justify-between text-sm font-medium">
+                <div class="flex items-center">
+                  <p>Total Savings</p>
+                  <svg
+                    id="chevron-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                    stroke="black"
+                    class="h-4 w-8 cursor-pointer"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                    />
+                  </svg>
+                </div>
+                <p>$60.00</p>
+              </summary>
+              <div class="mt-2 flex justify-between text-sm font-light">
+                <p>Promotional Discount(s)</p>
+                <p>-$60.00</p>
+              </div>
+            </details>
+          </div>
+        </details>
+        <div id="order-summary">
+          <div class="flex justify-between py-2">
+            <p class="text-xl font-medium">Order Summary</p>
+            <p class="text-sm font-medium">Est. total: $169.99</p>
+          </div>
+          <a href="#" class="font-light text-blue-500">Promo code?</a>
+        </div>
+        <div class="flex w-full flex-col items-center gap-y-2 py-3">
+          <div class="flex flex-col gap-3 pt-3">
+            <a href="../checkout/index.html">
+              <cart-button
+                data-text="Checkout"
+                data-color="bg-blue-500"
+                data-image=""
+              ></cart-button>
+            </a>
+            <cart-button
+              data-text=""
+              data-image="../../assets/images/cart/paypal.svg"
+              data-color="bg-yellow-400 hover:bg-yellow-500"
+            ></cart-button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- add component to file -->
     <feedback-component></feedback-component>
     <chat-component></chat-component>
     <footer-component></footer-component>
 
-    <!-- mobile checkout -->
-    <section class="fixed block bottom-0 md:hidden w-screen shadow-2xl shadow-black">
-        <div class="flex flex-col px-4 bg-white">
-
-            <details>
-                <summary id="expand-button" class="flex justify-center ">
-
-                    <svg id="chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-4 cursor-pointer bg-blue-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                    </svg>
-                      
-                </summary>
-                <div class="bg-gray-50 py-6 space-y-2">
-                    <div class="flex justify-between text-sm font-light">
-                        <p>Subtotal</p>
-                        <p>$169.99</p>
-                    </div>
-                    <div class="flex justify-between text-sm font-light">
-                        <p>Shipping</p>
-                        <p>Free</p>
-                    </div>
-                    <div class="flex justify-between text-sm font-light">
-                        <p>Estimated tax</p>
-                        <p>Will be calculated later</p>
-                    </div>
-                    <div class="text-start text-sm font-light">
-                        <p>Zip code: 96928</p>
-                    </div>
-                    <div class="flex justify-between text-sm font-medium">
-                        <p>Estimated total:</p>
-                        <p>$169.99</p>
-                    </div>
-                    <div class="text-end text-sm font-medium">
-                        <p>Starting from $7.9/ mo for 24 mo</p>
-                    </div>
-                    
-                    <details>
-                        <summary class="flex justify-between text-sm font-medium">
-                            <div class="flex items-center">
-                                <p>Total Savings</p>
-                                <svg id="chevron-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="black" class="w-8 h-4 cursor-pointer">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                                    </svg>
-                            </div>
-                            <p>$60.00</p>
-                        </summary>
-                        <div class="flex justify-between font-light text-sm mt-2">
-                            <p>Promotional Discount(s)</p>
-                            <p>-$60.00</p>
-                        </div>
-                    </details>
-                </div>
-                
-                
-            </details>
-            <div id="order-summary">
-                <div class="flex justify-between py-2">
-                    <p class="text-xl font-medium">Order Summary</p>
-                    <p class="text-sm font-medium ">Est. total: $169.99</p>
-                </div>
-                <p class="text-blue-500 font-light">Promo code?</p>
-            </div>
-            <div class="w-full flex flex-col items-center gap-y-2 py-3">
-                <div class="flex flex-col gap-3 pt-3">
-                    <a href="../checkout/index.html">
-                        <cart-button
-                            data-text="Checkout"
-                            data-color="bg-blue-500"
-                            data-image=""
-                        ></cart-button>
-                    </a>
-                    <cart-button
-                        data-text=""
-                        data-image="../../assets/images/cart/paypal.svg"
-                        data-color="bg-yellow-400 hover:bg-yellow-500"
-                    ></cart-button>
-                </div>
-            </div>
-                
-            </div>            
-        </div>
-    </section>
-
-
- 
-
+    <!-- import script -->
     <script src="../../script/index.js" type="module"></script>
-    <script src="../cart/components/cartbutton.js"></script>
+    <script src="../cart/components/cart-button.js"></script>
     <script src="../cart/script/index.js" type="module"></script>
-</body>
-
+  </body>
 </html>

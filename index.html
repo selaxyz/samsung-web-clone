@@ -1,634 +1,1136 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Samsung DEV</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo/fav-icon.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/logo/fav-icon.ico"
+    />
+  </head>
 
-</head>
+  <body class="flex flex-col items-center">
+    <!-- Navbar Section -->
 
-<body class="flex flex-col items-center ">
     <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
 
     <hero-carousel></hero-carousel>
 
+    <!-- For You Section -->
 
-    <section class="for_you max-w-screen-2xl w-screen mb-8 ">
-        <div class="text-5xl flex flex-col items-center font-[600] pb-12 gap-8">
-            <h1 class="hidden sm:block">Shop all latest offers and innovations</h1>
-            <h1 class="text-center sm:hidden">Shop all latest offers and innovations</h1>
-            <button class="text-xl border-b-2 border-black">View all offers</button>
+    <section class="for_you mb-8 w-screen max-w-screen-2xl">
+      <div class="flex flex-col items-center gap-8 pb-12 text-5xl font-[600]">
+        <h1 class="hidden sm:block">Shop all latest offers and innovations</h1>
+        <h1 class="text-center sm:hidden">
+          Shop all latest offers and innovations
+        </h1>
+        <button class="border-b-2 border-black text-xl">View all offers</button>
+      </div>
+
+      <div
+        class="mb-8 mt-5 flex justify-center space-x-10 overflow-x-hidden text-nowrap font-bold sm:text-[1.5vw] lg:text-xl"
+      >
+        <div class="scrollbar-none flex gap-12 overflow-auto px-4">
+          <button class="btn-forYou">For you</button>
+          <button class="btn-forYou">Mobile & Computing</button>
+          <button class="btn-forYou">TV & Audio</button>
+          <button class="btn-forYou">Home Appliances</button>
+          <button class="btn-forYou">Samsung Live</button>
+          <button class="btn-forYou">For Business</button>
         </div>
+      </div>
 
-        <div class="flex text-nowrap justify-center space-x-10 mt-5 font-bold  sm:text-[1.5vw] lg:text-xl overflow-x-hidden  mb-8">
-            <div class="overflow-auto flex gap-12 px-4" style="scrollbar-width: none;">
-                <button class="btn-forYou">For you</button>
-                <button class="btn-forYou" >Mobile & Computing</button>
-                <button class="btn-forYou">TV & Audio</button>
-                <button class="btn-forYou">Home Appliances</button>
-                <button class="btn-forYou">Samsung Live</button>
-                <button class="btn-forYou">For Business</button>
+      <div class="container-1 flex gap-12">
+        <div class="flex w-full overflow-hidden">
+          <div
+            id="foryou-card-container"
+            class="flex w-full pr-4 transition-transform duration-500 sm:gap-12 sm:px-6"
+          >
+            <div
+              class="item-container-1 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/fridge.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Bespoke 6 cu. ft. Smart Slide-In Gas <br />
+                      Range with Smart Oven Camera &…
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/big_frige.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      23 cu. ft. Bespoke 4-Door Flex <br />
+                      Refrigerator with AI Family Hub
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save up to $150.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $1149.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/frame.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/s24.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy S24 Ultra, 256GB (Unlocked)
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save up to $150.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $1149.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/buds2.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Buds2 Pro
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $229.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/laptop.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Book4 Pro 360, 16"
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
             </div>
-        </div>
-
-        <div class="container-1 flex     gap-12 ">
-
-            <div class="w-full flex  overflow-hidden">
-                <div id="foryou-card-container" class="flex  sm:gap-12 w-full pr-4 sm:px-6 transition-transform duration-500">
-                    <div class="item-container-1 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none ">
-                     <div class="item-1 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                         
-                        <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4 sm:h-[50%]  rounded-3xl col-span-6">
-                             <img class="h-[120px] sm:h-[201px] object-cover"  src="assets/images/home/for_you/fridge.avif" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">Bespoke 6 cu. ft. Smart Slide-In Gas <br>
-                                     Range with Smart Oven Camera &… </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                         <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4  sm:h-[46%] rounded-3xl col-span-6" >
-                             <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/big_frige.avif" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">23 cu. ft. Bespoke 4-Door Flex <br>
-                                     Refrigerator with AI Family Hub</h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save up to $150.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]"> From $1149.99 before eligible trade-in.</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-2 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                            
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4 sm:h-[50%]  rounded-3xl col-span-6">
-                                <img class="h-[120px] sm:h-[201px] object-cover"  src="assets/images/home/for_you/frame.avif" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                                </div>
-                            </a>
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4  sm:h-[46%] rounded-3xl col-span-6" >
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/s24.avif" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy S24 Ultra, 256GB (Unlocked)</h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save up to $150.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]"> From $1149.99 before eligible trade-in.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item-3 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[50%] rounded-3xl col-span-6 ">
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/buds2.avif" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Buds2 Pro</h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]"> From $229.99 before eligible trade-in.</p>
-                                </div>
-                            </a>
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[46%] rounded-3xl col-span-6" >
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/laptop.avif" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Book4 Pro 360, 16" </h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-container-2 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none">
-                     <div class="item-1 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                         
-                        <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4 sm:h-[50%]  rounded-3xl col-span-6">
-                             <img class="h-[120px] sm:h-[201px] object-cover"  src="assets/images/home/for_you/mobile-1.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">Galaxy Book4 Ultra</h2>
-                                 <!-- <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p> -->
-                                 <p class="hidden sm:block sm:text-[0.5vw]">Get $500 off and more.</p>
-                             </div>
-                         </a>
-                         <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4  sm:h-[46%] rounded-3xl col-span-6" >
-                             <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/mobile-2.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">Galaxy Buds2 Pro</h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save up to $150.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">Get up to $50 instant trade-in credit.</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-2  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/s24-ultra.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-3 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[50%] rounded-3xl col-span-6 ">
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/mobile-3.png" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Buds2 Pro</h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]"> From $229.99 before eligible trade-in.</p>
-                                </div>
-                            </a>
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[46%] rounded-3xl col-span-6" >
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/mobile-4.png" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Book4 Pro 360, 16" </h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                     <div class="item-container-3 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none">
-                     <div class="item-1 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                         
-                        <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4 sm:h-[50%]  rounded-3xl col-span-6">
-                             <img class="h-[120px] sm:h-[201px] object-cover"  src="assets/images/home/for_you/img-tv-1.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">Bespoke 6 cu. ft. Smart Slide-In Gas <br>
-                                     Range with Smart Oven Camera &… </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                         <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4  sm:h-[46%] rounded-3xl col-span-6" >
-                             <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/img-tv-2.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">23 cu. ft. Bespoke 4-Door Flex <br>
-                                     Refrigerator with AI Family Hub</h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save up to $150.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]"> From $1149.99 before eligible trade-in.</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-2  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex  gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/tv.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-3 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[50%] rounded-3xl col-span-6 ">
-                                <img class="h-[120px] sm:h-[301px] object-contain" src="assets/images/home/for_you/img-tv-3.png" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Buds2 Pro</h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]"> From $229.99 before eligible trade-in.</p>
-                                </div>
-                            </a>
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[46%] rounded-3xl col-span-6" >
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/frame.avif" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Book4 Pro 360, 16" </h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-container-4 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none">
-                     <div class="item-1 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                         
-                        <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4 sm:h-[50%]  rounded-3xl col-span-6">
-                             <img class="h-[120px] sm:h-[201px] object-cover"  src="assets/images/home/for_you/img-home-1.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">Bespoke 6 cu. ft. Smart Slide-In Gas <br>
-                                     Range with Smart Oven Camera &… </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                         <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-4  sm:h-[46%] rounded-3xl col-span-6" >
-                             <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/img-home-2.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">23 cu. ft. Bespoke 4-Door Flex <br>
-                                     Refrigerator with AI Family Hub</h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save up to $150.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]"> From $1149.99 before eligible trade-in.</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-2  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/fridge-big.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                        <div class="item-3 h-full col-span-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center">
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[50%] rounded-3xl col-span-6 ">
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/img-home-3.png" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Buds2 Pro</h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]"> From $229.99 before eligible trade-in.</p>
-                                </div>
-                            </a>
-                            <a href="pages/product-detail/index.html" class="flex h-full flex-col items-center bg-gray-200 p-2 sm:h-[46%] rounded-3xl col-span-6" >
-                                <img class="h-[120px] sm:h-[201px] object-cover" src="assets/images/home/for_you/img-home-4.png" alt="">
-                                <div class="text text-center">
-                                    <h2 class="sm:text-[1vw] font-semibold">Galaxy Book4 Pro 360, 16" </h2>
-                                    <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item-container-5 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none">
-                     <div class="item-1  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/sam-live-1.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                     <div class="item-2  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                            <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/sam-live-2.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                     <div class="item-3  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/sam-live-3.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                    </div>
-                    <div class="item-container-6 grid grid-cols-12 gap-4 w-[100vw] sm:w-full px-6 sm:p-0 h-full flex-none">
-                     <div class="item-1  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/business-1.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                     <div class="item-2  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/business-2.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                     <div class="item-3  col-span-full w-full sm:col-span-4 sm:space-y-6 sm:block grid grid-cols-subgrid items-center justify-center ">
-                         <a href="pages/product-detail/index.html" class="flex gap-4 sm:flex-col items-center justify-center bg-gray-200 p-4 sm:h-full col-span-12 rounded-3xl">
-                             <img class="h-[250px] sm:h-full object-cover" src="assets/images/home/for_you/business-3.png" alt="">
-                             <div class="text text-center">
-                                 <h2 class="sm:text-[1vw] font-semibold">65"The Frame QLED 4K </h2>
-                                 <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p>
-                                 <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
-                             </div>
-                         </a>
-                     </div>
-                    </div>
-                </div>
-                 
+            <div
+              class="item-container-2 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/mobile-1.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Book4 Ultra
+                    </h2>
+                    <!-- <p class="hidden sm:block sm:text-[0.7vw] text-blue-600">Save $600.</p> -->
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                      Get $500 off and more.
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/mobile-2.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Buds2 Pro
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save up to $150.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                      Get up to $50 instant trade-in credit.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/s24-ultra.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/mobile-3.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Buds2 Pro
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $229.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/mobile-4.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Book4 Pro 360, 16"
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
             </div>
-
+            <div
+              class="item-container-3 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-tv-1.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Bespoke 6 cu. ft. Smart Slide-In Gas <br />
+                      Range with Smart Oven Camera &…
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-tv-2.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      23 cu. ft. Bespoke 4-Door Flex <br />
+                      Refrigerator with AI Family Hub
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save up to $150.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $1149.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/tv.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-contain sm:h-[301px]"
+                    src="assets/images/home/for_you/img-tv-3.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Buds2 Pro
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $229.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/frame.avif"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Book4 Pro 360, 16"
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="item-container-4 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-home-1.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Bespoke 6 cu. ft. Smart Slide-In Gas <br />
+                      Range with Smart Oven Camera &…
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-4 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-home-2.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      23 cu. ft. Bespoke 4-Door Flex <br />
+                      Refrigerator with AI Family Hub
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save up to $150.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $1149.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/fridge-big.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid h-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[50%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-home-3.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Buds2 Pro
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">
+                       From $229.99 before eligible trade-in.
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-6 flex h-full flex-col items-center rounded-3xl bg-gray-200 p-2 sm:h-[46%]"
+                >
+                  <img
+                    class="h-[120px] object-cover sm:h-[201px]"
+                    src="assets/images/home/for_you/img-home-4.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      Galaxy Book4 Pro 360, 16"
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="item-container-5 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/sam-live-1.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/sam-live-2.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/sam-live-3.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="item-container-6 grid h-full w-[100vw] flex-none grid-cols-12 gap-4 px-6 sm:w-full sm:p-0"
+            >
+              <div
+                class="item-1 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/business-1.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-2 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/business-2.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="item-3 col-span-full grid w-full grid-cols-subgrid items-center justify-center sm:col-span-4 sm:block sm:space-y-6"
+              >
+                <a
+                  href="pages/product-detail/index.html"
+                  class="col-span-12 flex items-center justify-center gap-4 rounded-3xl bg-gray-200 p-4 sm:h-full sm:flex-col"
+                >
+                  <img
+                    class="h-[250px] object-cover sm:h-full"
+                    src="assets/images/home/for_you/business-3.png"
+                    alt="product-img"
+                  />
+                  <div class="text text-center">
+                    <h2 class="font-semibold sm:text-[1vw]">
+                      65"The Frame QLED 4K
+                    </h2>
+                    <p class="hidden text-blue-600 sm:block sm:text-[0.7vw]">
+                      Save $600.
+                    </p>
+                    <p class="hidden sm:block sm:text-[0.5vw]">From $1499</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- Mobile Section -->
 
     <carousel-tab id="mobile" data-type="mobile"></carousel-tab>
 
+    <!-- TV Section -->
+
     <carousel-tab id="tv" data-type="tv" class="text-white"></carousel-tab>
 
-    <carousel-tab id="home" data-type="home" ></carousel-tab>
-    
-    <carousel-tab id="sus" data-type="sus" ></carousel-tab>
+    <!-- Home Section -->
 
-    <section class="explore max-w-screen-2xl w-screen py-12 space-y-14">
+    <carousel-tab id="home" data-type="home"></carousel-tab>
 
-        <div class="flex header  text-4xl sm:text-5xl justify-center items-center font-semibold ">
-            <a href="#">
-                <h1 class="hidden sm:block">Explore #DoWhatYouCant</h1>
-                <h1 class="text-center sm:hidden">Explore <br>#DoWhatYouCant</h1>
-            </a>
-        </div>
-        <div class="big-screen hidden sm:flex gap-12 px-4 items-center">
+    <!-- SUS Section -->
 
-            <div class="">
-                <img id="img-explore" class="rounded-3xl" src="assets/images/home/explore/explore.png" alt="">
-            </div>
+    <carousel-tab id="sus" data-type="sus"></carousel-tab>
 
-            <div class="items hidden sm:flex flex-col gap-4">
-                <div class="explore-item-link flex items-center gap-16 py-4 border-black grow">
-                    <h1 class="font-bold text-lg">01</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">Improve your Next pickleball game</h1>
-                        <div hidden class="border-b mt-6">
-                            <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
-                                More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore-item-link flex items-center gap-16 py-4 border-black">
-                    <h1 class="font-bold text-lg">02</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">Your action plan for a healthy spring</h1>
-                        <div hidden class="border-b mt-6">
-                            <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
-                                More</button>
+    <!-- Explore Section -->
 
-                        </div>
-                    </div>
-                </div>
-                <div class="explore-item-link flex items-center gap-16 py-4 border-black">
-                    <h1 class="font-bold text-lg">03</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">Become the ultimate photographer with
-                            <br>
-                            Samsung AI
-                        </h1>
-                        <div hidden class="border-b mt-6">
-                            <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
-                                More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore-item-link flex items-center gap-16 py-4 border-black">
-                    <h1 class="font-bold text-lg">04</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">AI puts you in the repair driver seat</h1>
-                        <div hidden class="border-b mt-6">
-                            <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
-                                More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore-item-link flex items-center gap-16 py-4 border-black">
-                    <h1 class="font-bold text-lg">05</h1>
-                    <div class="info">
-                        <h1 class="text-3xl font-semibold">See the IRA rebate program in action with Samsung
-                        </h1>
-                        <div hidden class="border-b mt-6">
-                            <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
-                                More</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <section class="explore w-screen max-w-screen-2xl space-y-14 py-12">
+      <div
+        class="header flex items-center justify-center text-4xl font-semibold sm:text-5xl"
+      >
+        <a href="#">
+          <h1 class="hidden sm:block">Explore #DoWhatYouCant</h1>
+          <h1 class="text-center sm:hidden">Explore <br />#DoWhatYouCant</h1>
+        </a>
+      </div>
+      <div class="big-screen hidden items-center gap-12 px-4 sm:flex">
+        <div class="">
+          <img
+            id="img-explore"
+            class="rounded-3xl"
+            src="assets/images/home/explore/explore.png"
+            alt="product-img"
+          />
         </div>
 
-        <div class="sm:hidden  relative">
-            <div class="flex flex-nowrap overflow-x-scroll pl-4 pb-14" style="scrollbar-width: none;">
-                <div id="explore-container" class="item flex gap-4 w-screen px-3 transition-transform duration-500">
-                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="/assets/images/home/explore/explore.png"
-                            alt="">
-                        <div class="flex flex-col justify-center px-12 gap-8">
-                            <p class="text-2xl font-semibold text-center">Opening a Galaxy of opportunities with Mr.Beast</p>
-                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
-                        </div>
-                    </div>
-                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-1.jpg"
-                            alt="">
-                        <div class="flex flex-col justify-center px-12 gap-8">
-                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
-                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
-                        </div>
-                    </div>
-                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-2.jpg"
-                            alt="">
-                        <div class="flex flex-col justify-center px-12 gap-8">
-                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
-                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
-                        </div>
-                    </div>
-                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-3.jpg"
-                            alt="">
-                        <div class="flex flex-col justify-center px-12 gap-8">
-                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
-                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
-                        </div>
-                    </div>
-                    <div class="flex-none  flex flex-col justify-center items-center w-11/12 p-2 gap-6">
-                        <img class="rounded-2xl w-[600px] object-cover bg-cover" src="assets/images/home/explore/img-4.jpg"
-                            alt="">
-                        <div class="flex flex-col justify-center px-12 gap-8">
-                            <p class="text-2xl font-semibold text-center">Stay in the game with Galaxy AI and Dude Perfect</p>
-                            <button class="text-xl font-semibold underline underline-offset-8">Learn more</button>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="items hidden flex-col gap-4 sm:flex">
+          <div
+            class="explore-item-link flex grow items-center gap-16 border-black py-4"
+          >
+            <h1 class="text-lg font-bold">01</h1>
+            <div class="info">
+              <h1 class="text-3xl font-semibold">
+                Improve your Next pickleball game
+              </h1>
+              <div hidden class="mt-6 border-b">
+                <button
+                  class="border-black pb-8 font-semibold underline underline-offset-8"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
-            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div class="explore-btn-container flex border-2 rounded-full">
-                    <button class="btn-explore py-2 ">
-                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
-                        </div>
-                    </button>
-                    <button class="btn-explore py-2">
-                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
-                        </div>
-                    </button>
-                    <button class="btn-explore py-2">
-                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
-                        </div>
-                    </button>
-                    <button class="btn-explore py-2">
-                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
-                        </div>
-                    </button>
-                    <button class="btn-explore py-2">
-                        <div class=" size-4 bg-gray-500 rounded-full mx-4" >
-                        </div>
-                    </button>
-                </div>
+          </div>
+          <div
+            class="explore-item-link flex items-center gap-16 border-black py-4"
+          >
+            <h1 class="text-lg font-bold">02</h1>
+            <div class="info">
+              <h1 class="text-3xl font-semibold">
+                Your action plan for a healthy spring
+              </h1>
+              <div hidden class="mt-6 border-b">
+                <button
+                  class="border-black pb-8 font-semibold underline underline-offset-8"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
+          </div>
+          <div
+            class="explore-item-link flex items-center gap-16 border-black py-4"
+          >
+            <h1 class="text-lg font-bold">03</h1>
+            <div class="info">
+              <h1 class="text-3xl font-semibold">
+                Become the ultimate photographer with
+                <br />
+                Samsung AI
+              </h1>
+              <div hidden class="mt-6 border-b">
+                <button
+                  class="border-black pb-8 font-semibold underline underline-offset-8"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="explore-item-link flex items-center gap-16 border-black py-4"
+          >
+            <h1 class="text-lg font-bold">04</h1>
+            <div class="info">
+              <h1 class="text-3xl font-semibold">
+                AI puts you in the repair driver seat
+              </h1>
+              <div hidden class="mt-6 border-b">
+                <button
+                  class="border-black pb-8 font-semibold underline underline-offset-8"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="explore-item-link flex items-center gap-16 border-black py-4"
+          >
+            <h1 class="text-lg font-bold">05</h1>
+            <div class="info">
+              <h1 class="text-3xl font-semibold">
+                See the IRA rebate program in action with Samsung
+              </h1>
+              <div hidden class="mt-6 border-b">
+                <button
+                  class="border-black pb-8 font-semibold underline underline-offset-8"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-    </section>
-
-
-    <section class="max-w-screen-2xl w-screen ">
-        <div class="flex items-center flex-col justify-center">
-            <!-- <div class="header font-semibold text-[48px] w-[87vw] text-center mx-auto md:text-2xl py-8"> -->
-            
-            <div class="header w-full pt-[3vw] pb-2 md:pt-12 font-bold text-[8vw] sm:text-[3vw]  sm:w-[87vw] text-center  md:py-8">
-                <h1>Looking for something else?</h1>
-            </div>
-            
+      <div class="relative sm:hidden">
+        <div
+          class="scrollbar-none flex flex-nowrap overflow-x-scroll pb-14 pl-4"
+        >
+          <div
+            id="explore-container"
+            class="item flex w-screen gap-4 px-3 transition-transform duration-500"
+          >
             <div
-                class="flex md:w-[35vw] justify-start items-center rounded-full border-gray-600 border-2  bg-gray-100 sm:pl-[1.5rem] sm:pr-[5.2rem]  px-4 py-4 gap-8">
-                <button><svg xmlns="http://www.w3.org/2000/svg" width="20x " height="20" fill="currentColor"
-                        class="bi bi-search h-full" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg></button>
-                <input class="bg-gray-100 w-[65vw] sm:w-[15vw] h-[3vh] sm:h-[1vh] " type="text" placeholder="Search Keyword">
+              class="flex w-11/12 flex-none flex-col items-center justify-center gap-6 p-2"
+            >
+              <img
+                class="w-[600px] rounded-2xl bg-cover object-cover"
+                src="/assets/images/home/explore/explore.png"
+                alt="product-img"
+              />
+              <div class="flex flex-col justify-center gap-8 px-12">
+                <p class="text-center text-2xl font-semibold">
+                  Opening a Galaxy of opportunities with Mr.Beast
+                </p>
+                <button
+                  class="text-xl font-semibold underline underline-offset-8"
+                >
+                  Learn more
+                </button>
+              </div>
             </div>
-            <div class="btn grid grid-cols-5 items-center gap-2">
-                <button class="btn border-2 text-[1vh] lg:text-xl  border-gray-200 p-2 rounded-full mt-5">Galaxy S24
-                    Ultra</button>
-                <button class="btn border-2 text-[1vh] lg:text-xl  border-gray-200 p-2 rounded-full mt-5">Galaxy Z
-                    Flip5</button>
-                <button class="btn border-2 text-[1vh] lg:text-xl  border-gray-200 p-2 rounded-full mt-5">The Frame</button>
-                <button class="btn border-2 text-[1vh] lg:text-xl  border-gray-200 p-2 rounded-full mt-5">QLED 8K</button>
-                <button class="btn border-2 text-[1vh] lg:text-xl  border-gray-200 p-2 rounded-full mt-5">BESPOKE
-                    Jet</button>
+            <div
+              class="flex w-11/12 flex-none flex-col items-center justify-center gap-6 p-2"
+            >
+              <img
+                class="w-[600px] rounded-2xl bg-cover object-cover"
+                src="assets/images/home/explore/img-1.jpg"
+                alt="product-img"
+              />
+              <div class="flex flex-col justify-center gap-8 px-12">
+                <p class="text-center text-2xl font-semibold">
+                  Stay in the game with Galaxy AI and Dude Perfect
+                </p>
+                <button
+                  class="text-xl font-semibold underline underline-offset-8"
+                >
+                  Learn more
+                </button>
+              </div>
             </div>
-            <div class="flex justify-center items-center mt-2 gap-2">
-                <button class="btn border-2 text-[1vh] lg:text-xl border-gray-200 p-2 rounded-full ">BESPOKE
-                    Refrigerator</button>
-                <button class="btn border-2 text-[1vh] lg:text-xl border-gray-200 p-2 rounded-full ">Accessories</button>
+            <div
+              class="flex w-11/12 flex-none flex-col items-center justify-center gap-6 p-2"
+            >
+              <img
+                class="w-[600px] rounded-2xl bg-cover object-cover"
+                src="assets/images/home/explore/img-2.jpg"
+                alt="product-img"
+              />
+              <div class="flex flex-col justify-center gap-8 px-12">
+                <p class="text-center text-2xl font-semibold">
+                  Stay in the game with Galaxy AI and Dude Perfect
+                </p>
+                <button
+                  class="text-xl font-semibold underline underline-offset-8"
+                >
+                  Learn more
+                </button>
+              </div>
             </div>
+            <div
+              class="flex w-11/12 flex-none flex-col items-center justify-center gap-6 p-2"
+            >
+              <img
+                class="w-[600px] rounded-2xl bg-cover object-cover"
+                src="assets/images/home/explore/img-3.jpg"
+                alt="product-img"
+              />
+              <div class="flex flex-col justify-center gap-8 px-12">
+                <p class="text-center text-2xl font-semibold">
+                  Stay in the game with Galaxy AI and Dude Perfect
+                </p>
+                <button
+                  class="text-xl font-semibold underline underline-offset-8"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex w-11/12 flex-none flex-col items-center justify-center gap-6 p-2"
+            >
+              <img
+                class="w-[600px] rounded-2xl bg-cover object-cover"
+                src="assets/images/home/explore/img-4.jpg"
+                alt="product-img"
+              />
+              <div class="flex flex-col justify-center gap-8 px-12">
+                <p class="text-center text-2xl font-semibold">
+                  Stay in the game with Galaxy AI and Dude Perfect
+                </p>
+                <button
+                  class="text-xl font-semibold underline underline-offset-8"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform"
+        >
+          <div class="explore-btn-container flex rounded-full border-2">
+            <button class="btn-explore py-2">
+              <div class="mx-4 size-4 rounded-full bg-gray-500"></div>
+            </button>
+            <button class="btn-explore py-2">
+              <div class="mx-4 size-4 rounded-full bg-gray-500"></div>
+            </button>
+            <button class="btn-explore py-2">
+              <div class="mx-4 size-4 rounded-full bg-gray-500"></div>
+            </button>
+            <button class="btn-explore py-2">
+              <div class="mx-4 size-4 rounded-full bg-gray-500"></div>
+            </button>
+            <button class="btn-explore py-2">
+              <div class="mx-4 size-4 rounded-full bg-gray-500"></div>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
-    <div>
 
-    </div>
+    <!-- Looking Section -->
 
-
-    <section class="max-w-screen-2xl w-screen border-b border-gray-200 pt-5 pb-14 px-8 ">
-        <div class="item_1  ">
-            <div class="header flex gap-2 items-center ">
-                <a href="#" class="bg-black p-1 rounded-full"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg"
-                        width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-                    </svg></a>
-                <div>
-                    <strong>Mobile Disclosures:</strong>
-                </div>
-
-            </div>
-            <div class="info pl-8 flex flex-col gap-6 pt-6 text-sm">
-
-                <div>
-                    <sup>U</sup>For a limited time only, on Samsung.com/Shop Samsung App, or purchase a new qualifying
-                    Galaxy
-                    device (“Qualifying Purchase”), send in your qualifying trade-in device to Samsung through the
-                    Samsung Trade-In Program,
-                    and if Samsung determines your trade-in device meets all eligibility requirements, you will receive
-                    a trade-in credit specific to your
-                    qualifying trade-in device to apply toward your Qualifying Purchase. <a class="text-blue-500"
-                        href="#">Show More</a>
-                </div>
-                <div>
-                    <sup>Ψ</sup>Guarantee limited to current Galaxy S24 series trade-in promos (up to $1000 off S24+ or
-                    S24 Ultra
-                    with min. $95 trade-in value; up to $800 off S24 with min. $35 trade-in value) for new and existing
-                    consumer postpaid wireless customers; excludes offers available through select channels. <a
-                        class="text-blue-500" href="#">Show More</a>
-                </div>
-                <div>
-                    <sup>⋈</sup>Contact T-Mobile before cancelling account to continue remaining bill credits, or
-                    credits stop &
-                    balance on required finance agreement is due (e.g., $999.99 – Samsung Galaxy S24+ 256GB). <a
-                        class="text-blue-500" href="#">Show More</a>
-                </div>
-                <div>
-                    <sup>J</sup>4/1 - 6/30, while supplies last, Purchase the latest Galaxy S24 Carrier locked device
-                    from AT&T,
-                    T-Mobile, Verizon, US Cellular ("Qualifying Purchase") on samsung.com or in the Shop Samsung App and
-                    receive $75 Samsung Credit ("Gift"). <a class="text-blue-500" href="#">Show More</a>
-                </div>
-                <div>
-                    <sup>θ</sup>N4/1 - 6/30, while supplies last, Purchase the latest Galaxy S24 Carrier locked device
-                    from AT&T,
-                    T-Mobile, Verizon, US Cellular ("Qualifying Purchase") on samsung.com or in the Shop Samsung App and
-                    receive $50 Samsung Credit ("Gift"). <a class="text-blue-500" href="#">Show More</a>
-                </div>
-
-            </div>
+    <section class="w-screen max-w-screen-2xl">
+      <div class="flex flex-col items-center justify-center gap-6">
+        <div
+          class="header w-full pb-2 pt-[3vw] text-center text-[8vw] font-bold sm:w-[87vw] sm:text-[3vw] md:py-8 md:pt-12"
+        >
+          <h1>Looking for something else?</h1>
         </div>
-        <div class="item_2 pt-12">
-            <div class="header flex gap-2 items-center ">
-                <a href="#" class="bg-black p-1 rounded-full"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg"
-                        width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-                    </svg></a>
-                <div>
-                    <strong>Home Entertainment Disclosures:</strong>
-                </div>
 
-            </div>
-            <div class="info pl-8 flex flex-col gap-6 pt-6 text-sm">
-                <div>
-                    <sup>μ</sup>Offer valid 3/21-4/11, while supplies last, at participating retailers only. <a
-                        class="text-blue-500" href="#">Show More</a>
-                </div>
-                <div>
-                    Between 3/21/2024 - 4/11/2024, purchase a Music Frame at Samsung.com or Shop Samsung App, and get a
-                    $50 Samsung.com Reward eCertificate. <a class="text-blue-500" href="#">Show More</a>
-                </div>
-            </div>
+        <div
+          class="flex items-center justify-start gap-8 rounded-full border-2 border-gray-600 bg-gray-100 px-4 py-4 sm:pl-[1.5rem] sm:pr-[5.2rem] md:w-[35vw]"
+        >
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20 "
+              height="20"
+              fill="currentColor"
+              class="bi bi-search h-full"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </button>
+          <input
+            class="h-[3vh] w-[65vw] bg-gray-100 sm:h-[1vh] sm:w-[15vw]"
+            type="text"
+            placeholder="Search Keyword"
+          />
         </div>
-        <div class=" flex flex-col gap-2 pt-6 text-sm ">
-            <p>F4/1/24 - 6/30/24, promotional discount applies while supplies last, when purchasing a Samsung Book Cover
-                Keyboard Slim for Galaxy Tab S9 Series device on Samsung.com or in the Shop Samsung App. <a
-                    class="text-blue-500" href="#">Show More</a></p>
-            <p><sup>§</sup>By 12/31/24 11:59 PM EST, purchase select Samsung products ("Qualifying Purchase") on
-                Samsung.com/business with a valid Samsung Business Account and receive up to 15% off eligible products.
-                <a class="text-blue-500" href="#">Show More</a>
-            </p>
+
+        <div
+          id="hero-button-lg"
+          class="hero-button flex flex-wrap justify-center gap-3 lg:w-1/2"
+        ></div>
+      </div>
+    </section>
+    <div></div>
+
+    <!-- Guide Section -->
+
+    <section
+      class="w-screen max-w-screen-2xl border-b border-gray-200 px-8 pb-14 pt-5"
+    >
+      <div class="item_1">
+        <div class="header flex items-center gap-2">
+          <a href="#" class="rounded-full bg-black p-1"
+            ><svg
+              class="fill-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+              /></svg
+          ></a>
+          <div>
+            <strong>Mobile Disclosures:</strong>
+          </div>
         </div>
+        <div class="info flex flex-col gap-6 pl-8 pt-6 text-sm">
+          <div>
+            <sup>U</sup>For a limited time only, on Samsung.com/Shop Samsung
+            App, or purchase a new qualifying Galaxy device (“Qualifying
+            Purchase”), send in your qualifying trade-in device to Samsung
+            through the Samsung Trade-In Program, and if Samsung determines your
+            trade-in device meets all eligibility requirements, you will receive
+            a trade-in credit specific to your qualifying trade-in device to
+            apply toward your Qualifying Purchase.
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+          <div>
+            <sup>Ψ</sup>Guarantee limited to current Galaxy S24 series trade-in
+            promos (up to $1000 off S24+ or S24 Ultra with min. $95 trade-in
+            value; up to $800 off S24 with min. $35 trade-in value) for new and
+            existing consumer postpaid wireless customers; excludes offers
+            available through select channels.
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+          <div>
+            <sup>⋈</sup>Contact T-Mobile before cancelling account to continue
+            remaining bill credits, or credits stop & balance on required
+            finance agreement is due (e.g., $999.99 – Samsung Galaxy S24+
+            256GB). <a class="text-blue-500" href="#">Show More</a>
+          </div>
+          <div>
+            <sup>J</sup>4/1 - 6/30, while supplies last, Purchase the latest
+            Galaxy S24 Carrier locked device from AT&T, T-Mobile, Verizon, US
+            Cellular ("Qualifying Purchase") on samsung.com or in the Shop
+            Samsung App and receive $75 Samsung Credit ("Gift").
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+          <div>
+            <sup>θ</sup>N4/1 - 6/30, while supplies last, Purchase the latest
+            Galaxy S24 Carrier locked device from AT&T, T-Mobile, Verizon, US
+            Cellular ("Qualifying Purchase") on samsung.com or in the Shop
+            Samsung App and receive $50 Samsung Credit ("Gift").
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+        </div>
+      </div>
+      <div class="item_2 pt-12">
+        <div class="header flex items-center gap-2">
+          <a href="#" class="rounded-full bg-black p-1"
+            ><svg
+              class="fill-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-up"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+              /></svg
+          ></a>
+          <div>
+            <strong>Home Entertainment Disclosures:</strong>
+          </div>
+        </div>
+        <div class="info flex flex-col gap-6 pl-8 pt-6 text-sm">
+          <div>
+            <sup>μ</sup>Offer valid 3/21-4/11, while supplies last, at
+            participating retailers only.
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+          <div>
+            Between 3/21/2024 - 4/11/2024, purchase a Music Frame at Samsung.com
+            or Shop Samsung App, and get a $50 Samsung.com Reward eCertificate.
+            <a class="text-blue-500" href="#">Show More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 pt-6 text-sm">
+        <p>
+          F4/1/24 - 6/30/24, promotional discount applies while supplies last,
+          when purchasing a Samsung Book Cover Keyboard Slim for Galaxy Tab S9
+          Series device on Samsung.com or in the Shop Samsung App.
+          <a class="text-blue-500" href="#">Show More</a>
+        </p>
+        <p>
+          <sup>§</sup>By 12/31/24 11:59 PM EST, purchase select Samsung products
+          ("Qualifying Purchase") on Samsung.com/business with a valid Samsung
+          Business Account and receive up to 15% off eligible products.
+          <a class="text-blue-500" href="#">Show More</a>
+        </p>
+      </div>
     </section>
 
+    <section
+      class="mx-auto w-screen max-w-screen-2xl border-b border-gray-200 py-6 pt-16"
+    >
+      <div class="grid justify-center text-center md:flex md:max-w-[87%]">
+        <h2 class="pl-5 text-xl font-semibold">
+          Privacy. Its always personal.
+        </h2>
+        <p class="p-4 pl-5 md:p-0">
+          Easily control what you share or don’t share with us.
+        </p>
 
-    <section class="max-w-screen-2xl w-screen border-b border-gray-200 pt-16 py-6 mx-auto">
-        <div class="md:max-w-[87%] grid md:flex justify-center  text-center">
-            <h2 class="pl-5 text-xl font-semibold">
-                Privacy. Its always personal.
-            </h2>
-            <p class="pl-5 p-4 md:p-0">Easily control what you share or don’t share with us.</p>
-
-            <u>
-                <a href="./pages/privacy-page/index.html"><strong class="pl-5">Learn more</strong></a>
-            </u>
-        </div>
-
-
-
+        <u>
+          <a href="./pages/privacy-page/index.html"
+            ><strong class="pl-5">Learn more</strong></a
+          >
+        </u>
+      </div>
     </section>
     <footer-component></footer-component>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="./script/index.js" type="module"></script>
-    <script src="/pages/home/components.js" type="module"></script>
-    <script src="/pages/home/script.js"></script>
-    <script src="pages/home/components/carouselTab.js" type="module"></script>
-
-
-
-
-</body>
-
+    <script src="/pages/home/index.js"></script>
+    <script
+      src="./pages/home/components/carousel-hero.js"
+      type="module"
+    ></script>
+    <script src="./pages/home/components/search-component.js"></script>
+  </body>
 </html>

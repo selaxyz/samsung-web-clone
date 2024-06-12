@@ -17,35 +17,33 @@
             <div class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-300">
                 <p class="text-lg font-semibold py-2 px-6">Support</p>
                 <div class="flex text-sm gap-5 font-light py-2 px-6">
-                    <a>Search</a>
-                    <a>Find resources</a>
-                    <a>Contact us</a>
+                    <a href="#">Search</a>
+                    <a href="#">Find resources</a>
+                    <a href="#">Contact us</a>
                 </div>
             </div>
         </section>
 
         <!-- hero -->
         <section class=" relative flex flex-col items-center w-full">
-            <img class="md:hidden w-full object-cover h-fit" src="../../assets/images/support/image-mo.png"
-                alt="">
-            <img class="hidden md:block object-cover h-fit w-full" src="../../assets/images/support/image-pc.png" alt="">
+            <img class="md:hidden w-full object-cover h-fit" src="../../assets/images/support/image-mo.png" alt="hero image small">
+            <img class="hidden md:block object-cover h-fit w-full" src="../../assets/images/support/image-pc.png"alt="hero image big">
             <div class="absolute top-16 flex flex-col gap-y-5 items-center text-white text-center">
                 <p class="text-xl font-bold">We're here for you</p>
-                <p class="text-4xl md:text-5xl font-bold text-center w-96 md:w-fit">Search Samsung Support</p>
-                <form id="searchbar-dropdown" class="relative flex text-black cursor-pointer">
-                    <input id="input-bar" class="rounded-full py-2 px-3 text-sm w-72 sm:w-[500px] border-none outline-none" type="text"
-                        placeholder="Search Samsung Support"></input>
-                    <img class="absolute w-5 h-5 right-3 top-1.5" src="../../assets/images/support/icon-search.svg"
-                        alt="">
+                <p class="text-4xl md:text-5xl font-bold text-center w-fit">Search Samsung Support</p>
+                <form id="searchbar-dropdown" class="relative flex text-black cursor-pointer w-[min(80vw,30rem)]">
+                    <input id="input-bar" class="rounded-full py-2 px-3 text-sm w-full border-none outline-none"
+                        type="text" placeholder="Search Samsung Support"></input>
+                    <img class="absolute w-5 h-5 right-3 top-1.5" src="../../assets/images/support/icon-search.svg"alt="search icon">
                 </form>
-         
+
                 <div class=" hidden sm:block w-[500px]">
                     <div id="hero-button-lg" class="hero-button flex flex-wrap justify-center gap-3">
                     </div>
                 </div>
             </div>
             <div class="block sm:hidden">
-                <div class="w-full flex justify-center bg-gray-50">
+                <div class="w-screen flex justify-center bg-gray-100">
                     <div id="hero-button-sm" class="max-w-96 flex flex-wrap justify-center gap-2 py-3">
 
                     </div>
@@ -54,50 +52,58 @@
         </section>
 
         <!-- get product help -->
-        <section class=" flex flex-col items-center gap-10 py-16 px-5">
+        <section class=" flex flex-col items-center gap-10 pt-16 pb-5 px-5">
             <h1 class="font-semibold text-4xl">Get product help</h1>
             <div class="flex flex-col items-center md:flex-row md:justify-center gap-5">
-                <form class="relative flex">
-                    <input class="bg-gray-100 rounded-full py-5 md:py-3 pl-5 text w-96 outline-none" type="text"
-                        placeholder="Search by model number or product name"></input>
+                <form class="relative flex w-[min(80vw,28rem)]">
+                    <input class="bg-gray-100 rounded-full py-5 md:py-3 px-5 pr-16 md:pr-0 w-full outline-none"
+                        type="text" placeholder="Search by model number or product name"></input>
                     <img class="absolute w-5 h-5 right-4 top-5 md:top-3"
-                        src="../../assets/images/support/icon-search.svg" alt="">
+                        src="../../assets/images/support/icon-search.svg" alt="search icon">
                 </form>
                 <p class="min-[534px]:text-sm underline font-bold">How to find my model number</p>
             </div>
-            <div id="product-category" class="flex items-center gap-2 rounded-full border border-black px-3 py-2 hover:bg-gray-100 cursor-pointer">
+            <div id="product-category"
+                class="flex items-center gap-2 rounded-full border border-black px-3 py-2 hover:bg-gray-100 cursor-pointer">
                 <span class="font-semibold text-sm">Search by product category</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="currentColor" class="w-4 h-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
-        </section>
+            <div class="flex flex-col items-center">
+                <h1 id="choose-product-heading" class="font-semibold text-4xl hidden">Choose your product</h1>
+                <div id="choose-product" class="grid grid-cols-12 gap-7 sm:gap-9 md:gap-7 py-10">
 
-        <div class="flex flex-col items-center">
-            <h1 id="choose-product-heading" class="font-semibold text-4xl hidden">Choose your product</h1>
-            <div id="choose-product" class="grid grid-cols-12 gap-9 md:gap-7 py-10">
-        
-            </div>
-        </div>
-
-        <!-- request repair -->
-        <section class=" relative h-96 md:h-44 flex justify-center px-5">
-            <div class="absolute top-0 block md:hidden">
-                <img class="size-96" src="../../assets/images/support/bts-banner-updated-mo.png" alt="">
-                <div class="absolute top-28 text-white px-4 flex flex-col gap-y-3">
-                    <p class="text-3xl font-semibold w-64">Samsung Upfront pricing for out-of-warranty repairs</p>
-                    <div>
-                        <p class="text-sm">We'll give you a competitive and transparent cost upfront, and that price won't
-                            change even if the repairs end up costing more.<sup>3</sup></p>
-                        <p class="text-sm">Request a repair, tell us your issue and get your upfront pricing.</p>
-                    </div>
-                    <support-button class="text-black hover:text-white duration-300 ease-in-out" data-text="Request a repair" data-color="white hover:bg-gray-700"></support-button>
                 </div>
             </div>
-            <div class="absolute hidden md:block">
-                <img class="w-[1000px] h-[158px] object-cover"
-                    src="../../assets/images/support/bts-banner-updated-pc.png" alt="">
+        </section>
+
+
+        <!-- request repair -->
+        <section class="w-full h-fit flex justify-center items-center">
+            <!-- mobile -->
+            <div class="flex justify-center">
+                <div class="relative block w-full md:hidden px-5">
+                    <img class="size-96" src="../../assets/images/support/bts-banner-updated-mo.png" alt="banner image small">
+                    <div class="absolute top-28 text-white px-4 flex flex-col gap-y-3 max-w-full">
+                        <p class="text-3xl font-semibold max-w-64">Samsung Upfront pricing for out-of-warranty repairs
+                        </p>
+                        <div class="max-w-80">
+                            <p class="text-sm">We'll give you a competitive and transparent cost upfront, and that price
+                                won't
+                                change even if the repairs end up costing more.<sup>3</sup></p>
+                            <p class="text-sm">Request a repair, tell us your issue and get your upfront pricing.</p>
+                        </div>
+                        <support-button class="text-black hover:text-white duration-300 ease-in-out"
+                            data-text="Request a repair" data-color="white hover:bg-gray-700"></support-button>
+                    </div>
+                </div>
+            </div>
+            <!-- desktop -->
+            <div class="relative  items-center hidden md:flex px-5">
+                <img class="w-full h-full object-cover" src="../../assets/images/support/bts-banner-updated-pc.png"
+                    alt="banner image big">
                 <div class="absolute top-0 text-white px-3 py-2 flex flex-col gap-y-3">
                     <p class="text-xl font-semibold">Samsung Upfront pricing for out-of-warranty repairs</p>
                     <div>
@@ -105,7 +111,8 @@
                             won't change even if the repairs end up costing more.<sup>3</sup></p>
                         <p class="text-xs">Request a repair, tell us your issue and get your upfront pricing.</p>
                     </div>
-                    <support-button class="text-black hover:text-white duration-300 ease-in-out" data-text="Request a repair" data-color="white hover:bg-gray-700"></support-button>
+                    <support-button class="text-black hover:text-white duration-300 ease-in-out"
+                        data-text="Request a repair" data-color="white hover:bg-gray-700"></support-button>
                 </div>
             </div>
         </section>
@@ -113,8 +120,8 @@
         <!-- carousel -->
         <section>
             <div class="w-full relative flex flex-col items-center overflow-hidden pt-10 px-5 md:pt-0 gap-5">
-                <div id="carousel-container"></div>
-                <div id="carousel-buttons" class=" rounded-full px-2 "></div>
+                <div id="carousel-container" class="w-full flex justify-center"></div>
+                <div id="carousel-buttons" class="rounded-full px-2 "></div>
             </div>
         </section>
 
@@ -123,7 +130,7 @@
             <h1 class="font-semibold text-4xl text-black text-center py-5">Do more</h1>
             <div class="grid grid-cols-12 gap-2">
                 <div class="col-span-full md:col-span-6 relative flex justify-center h-fit">
-                    <img class="object-cover w-full" src="../../assets/images/support/samsung_care.png" alt="">
+                    <img class="object-cover w-full" src="../../assets/images/support/samsung_care.png" alt="samsung care image">
                     <p class="absolute bottom-10 text-center w-72 md:w-fit">Samsung Care+, your phone with added peace
                         of mind</p>
                 </div>
@@ -131,25 +138,23 @@
                     <div class="relative flex justify-center w-1/2 p-1">
                         <img class="rounded-lg w-full"
                             src="../../assets/images/support/PH_S23_One-UI-5-personalization-with-galaxy-S23-2.png"
-                            alt="">
+                            alt="galaxy S23 image">
                         <span class="absolute bottom-10">One UI 6</span>
                     </div>
                     <div class="relative flex justify-center w-1/2 p-1">
                         <img class="rounded-lg w-full"
                             src="../../assets/images/support/smartthings-to-control-your-samsung-dryer-remotely.jpg"
-                            alt="">
+                            alt="smartthings image">
                         <span class="absolute bottom-8 text-center">Use Bluetooth devices with your smart TV</span>
                     </div>
 
                     <div class="relative flex justify-center w-1/2 p-1">
-                        <img class="rounded-lg w-full"
-                            src="../../assets/images/support/domore_bt.png" alt="">
+                        <img class="rounded-lg w-full" src="../../assets/images/support/domore_bt.png" alt="bluetooth device image">
                         <span class="absolute bottom-8 text-center">Use SmartThings with your devices</span>
                     </div>
 
                     <div class="relative flex justify-center w-1/2 p-1">
-                        <img class="rounded-lg w-full"
-                            src="../../assets/images/support/clean-the-pc-screen.png" alt="">
+                        <img class="rounded-lg w-full" src="../../assets/images/support/clean-the-pc-screen.png" alt="clean device image">
                         <span class="absolute bottom-10 text-center">Keep your devices clean</span>
                     </div>
 
@@ -177,10 +182,11 @@
                     <p class="text-xs max-w-96">Contact us online through chat and get support from an expert on your
                         computer, mobile device or tablet. Support is also available on your mobile device through the
                         Samsung Members App.</p>
-                    <support-button class="text-white" data-text="Get support" data-color="black hover:bg-opacity-70"></support-button>
+                    <support-button class="text-white" data-text="Get support"
+                        data-color="black hover:bg-opacity-70"></support-button>
                 </div>
                 <img class="h-72 md:absolute bottom-0 right-0 w-fit md:mt-24 object-cover"
-                    src="../../assets/images/support/contact_us-pc-2x.png" alt="">
+                    src="../../assets/images/support/contact_us-pc-2x.png" alt="contact image">
             </div>
         </section>
 

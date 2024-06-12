@@ -1,131 +1,195 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Nearby Store | Samsung DEV</title>
-    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/logo/fav-icon.ico"
+    />
+  </head>
 
-<body class="flex flex-col items-center">
-  
-<a class="underline" href="../cart/index.html"></a>
+  <body class="flex flex-col items-center">
+    <a class="underline" href="../cart/index.html"></a>
 
-<navbar-component></navbar-component>
-<section class="max-w-screen-xl hidden md:inline-block">
-    
-    <nav aria-label="breadcrumb" class="text-gray-800">
+    <!-- Header Section -->
+
+    <navbar-component></navbar-component>
+
+    <!-- Product Section  -->
+    <div id="product-detail" class="mx-auto max-w-screen-xl"></div>
+
+    <!-- Card Section -->
+
+    <section class="hidden max-w-screen-xl md:inline-block">
+      <nav aria-label="breadcrumb" class="text-gray-800">
         <ul class="flex h-8 space-x-2 text-gray-800">
-            <li class="text-gray-300 flex items-center pl-5 text-xs">
-                 <a rel="" href="#" title="Back to homepage" class="flex items-center ">Home</a>
-            </li>
-            <li class="flex items-center space-x-1">
-                <span class="text-black text-xs">/</span>
-                <a rel="" href="#" title="go to Audio Page" class="flex text-gray-300 capitalize text-xs">Audio</a>
-            </li>
-            <li class="flex items-center space-x-1">
-                <span class="text-black text-xs">/</span>
-                <a rel="" href="#" title="go to shop page" class="flex text-gray-300 items-center capitalize text-xs">Shop Our Best Bluetooth Earbuds|Samsung US</a>
-            </li>
-            <li class="flex items-center space-x-1">
-                <span class="text-black text-xs">/</span>
-                <a rel="" href="#" title="go to shop page" class="flex text-gray-400 capitalize hover:no-underline cursor-default text-xs">Shop Our Best Wireless Headphones|Samsung US</a>
-            </li>
+          <li class="flex items-center pl-5 text-xs text-gray-300">
+            <a
+              rel=""
+              href="#"
+              title="Back to homepage"
+              class="flex items-center"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center space-x-1">
+            <span class="text-xs text-black">/</span>
+            <a
+              rel=""
+              href="#"
+              title="go to Audio Page"
+              class="flex text-xs capitalize text-gray-300"
+              >Audio</a
+            >
+          </li>
+          <li class="flex items-center space-x-1">
+            <span class="text-xs text-black">/</span>
+            <a
+              rel=""
+              href="#"
+              title="go to shop page"
+              class="flex items-center text-xs capitalize text-gray-300"
+              >Shop Our Best Bluetooth Earbuds|Samsung US</a
+            >
+          </li>
+          <li class="flex items-center space-x-1">
+            <span class="text-xs text-black">/</span>
+            <a
+              rel=""
+              href="#"
+              title="go to shop page"
+              class="flex cursor-default text-xs capitalize text-gray-400 hover:no-underline"
+              >Shop Our Best Wireless Headphones|Samsung US</a
+            >
+          </li>
         </ul>
-    </nav>
-</section>
-    
-<div id="product-detail" class="max-w-screen-xl mx-auto"></div>
-<script src="./components/product.js"></script>
-
-
-   
-<section class="max-w-screen-xl w-full bg-gray-100 py-12 flex flex-col items-center space-y-12">
-    <span class="text-xl md:text-2xl font-semibold">Find Online</span>
-    <div id='stockList' class="stock-list grid grid-cols-2 md:flex gap-4 "></div>
-</section>
-<script src="../nearby-store/components/find-online.js"></script>
-
-
-
-
-
-
-    <section class="max-w-screen w-full ">
-        <p class="flex justify-center p-10 text-xl md:text-2xl font-semibold mt-3">Find Store Nearby</p>
-        <div class="relative w-full h-96">
-            <iframe class="absolute top-0 left-0 w-full h-full"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-            </iframe>
-
-            <div class=" h-5/6 w-80 bg-white absolute mx-20 my-7 -md">
-                <div class="flex m-3">
-                    <div class="flex border-2 border-black h-11 px-5 gap-11 items-center">
-                        <p class="text-xs">Phnom Penh, Phnom Penh</p>
-                        <!--Location arrow-->
-                        <img class="w-6 rotate-12" src="../../assets/images/nearby-store/navigation.svg"
-                            alt="location arrow">
-                    </div>
-                    <!-- blue search box -->
-                    <div class="w-10 gap-1 bg-blue-900 flex items-center justify-center">
-                        <img class="rotate-90 w-6" src="../../assets/images/nearby-store/manifying-glass.svg"
-                            alt="manifying-glass">
-                    </div>
-
-                </div>
-
-                <div class="my-12 justify-center">
-                    <div class="bg-white mx-8  w-4/5 h-auto pl-5 text-center items-center justify-center">
-                        <div class="flex flex-col items-center justify-center">
-                            <svg class="w-8" viewBox="0 0 35 46">
-                                <path
-                                    d="M331.5,1597s-17.5-19.22-17.5-28.75a17.5,17.5,0,0,1,35,0C349,1577.78,331.5,1597,331.5,1597Zm0-40.25a11.5,11.5,0,1,0,11.667,11.5A11.586,11.586,0,0,0,331.5,1556.75Zm1.229,16.63a1.106,1.106,0,0,0-.39-0.86,1.358,1.358,0,0,0-1.831.01,1.189,1.189,0,0,0-.383.88,1.122,1.122,0,0,0,.106.48,1.259,1.259,0,0,0,.285.39,1.462,1.462,0,0,0,.415.25,1.2,1.2,0,0,0,.5.1,1.261,1.261,0,0,0,.92-0.37A1.172,1.172,0,0,0,332.729,1573.38Zm-0.325-3.09a1.456,1.456,0,0,1,.269-0.68,4.49,4.49,0,0,1,.773-0.77c0.249-.22.474-0.42,0.675-0.62a4.051,4.051,0,0,0,.513-0.61,2.7,2.7,0,0,0,.325-0.71,3.094,3.094,0,0,0,.114-0.89,3.009,3.009,0,0,0-.276-1.33,2.742,2.742,0,0,0-.757-0.97,3.291,3.291,0,0,0-1.107-.59,4.443,4.443,0,0,0-1.327-.2,4.22,4.22,0,0,0-2,.47,3.246,3.246,0,0,0-1.351,1.37,1.616,1.616,0,0,0-.162.43,1.647,1.647,0,0,0-.033.27,0.889,0.889,0,0,0,.261.67,0.936,0.936,0,0,0,.683.26,1.018,1.018,0,0,0,.513-0.14,1.13,1.13,0,0,0,.415-0.53,1.864,1.864,0,0,1,.6-0.77,1.562,1.562,0,0,1,.944-0.29,1.506,1.506,0,0,1,1.31,2.29,3.019,3.019,0,0,1-.529.61l-0.732.69a3.931,3.931,0,0,0-.806.97,2.219,2.219,0,0,0-.252,1.07,1.149,1.149,0,0,0,.106.53,0.855,0.855,0,0,0,.252.32,0.684,0.684,0,0,0,.309.15,1.04,1.04,0,0,0,.277.04,0.957,0.957,0,0,0,.269-0.04,0.683,0.683,0,0,0,.3-0.15,1,1,0,0,0,.26-0.31A1.509,1.509,0,0,0,332.4,1570.29Z"
-                                    transform="translate(-314 -1551)" fill="#d8d8d8"></path>
-                            </svg>
-                        </div>
-                        <div class="pt-2 text-gray-900 text-sm"> NO RESULTS</div>
-                        <span class="pt-2 text-sm text-gray-400 font-extralight">TIP: Try entering a location or using
-                            your current location.</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-
+      </nav>
     </section>
 
-    <section class="max-w-screen-xl w-full">
-        <div class="text-sm font-extralight">
-            <div class="flex mt-10 items-center justify-center md:justify-start mx-64">
-                <img src="../../assets/images/nearby-store/pricespider.svg" alt="pricespider logo">
-            </div>
-            <div class="flex items-center justify-center">
-                <p class="text-xs font-extralight">© PriceSpider 2005-2024</p>
-                <p class="text-xs font-semibold text-gray-400 ml-2">PriceSpider Terms of Service</p>
-            </div>
+    <!-- Find Section -->
 
-            <p class="mx-5 mt-10 mb-5 text-xs">Price, Promotion, Processing: Pricing, delivery date and other errors may
-                be withdrawn or revised and/or your order may be cancelled at any time before we have both (a) shipped
-                or provided access to your product or service, and (b) received your payment for the product or service.
-                All sales on Samsung.com are subject to the full Terms of Sale [live link or "in Checkout, viewable
-                before Order Submission."]. Samsung is not responsible for any errors, omissions or misdirected or lost
-                orders, or orders which may be delayed. Samsung reserves the right to modify pricing and modify or
-                cancel promotions at any time, without prior notice.</p>
-        </div>
+    <section
+      class="flex w-full max-w-screen-xl flex-col items-center space-y-12 bg-gray-100 py-12"
+    >
+      <span class="text-xl font-semibold md:text-2xl">Find Online</span>
+      <div
+        id="stockList"
+        class="stock-list grid grid-cols-1 gap-4 sm:grid-cols-2 md:flex"
+      ></div>
     </section>
 
-<footer-component></footer-component>
-    
-    
+    <!-- Nearby Section -->
 
+    <section class="max-w-screen w-full">
+      <p
+        class="mt-3 flex justify-center p-10 text-xl font-semibold md:text-2xl"
+      >
+        Find Store Nearby
+      </p>
+      <div class="relative h-96 w-full">
+        <iframe
+          class="absolute left-0 top-0 h-full w-full"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
+        </iframe>
 
+        <div class="absolute mx-20 my-7 hidden h-5/6 w-80 bg-white sm:block">
+          <div class="m-3 flex">
+            <div
+              class="flex h-11 items-center gap-11 border-2 border-black px-5"
+            >
+              <p class="text-xs">Phnom Penh, Phnom Penh</p>
+              <!--Location arrow-->
+              <img
+                class="w-6 rotate-12"
+                src="../../assets/images/nearby-store/navigation.svg"
+                alt="location arrow"
+              />
+            </div>
+            <!-- blue search box -->
+            <div
+              class="flex w-10 items-center justify-center gap-1 bg-blue-900"
+            >
+              <img
+                class="w-6 rotate-90"
+                src="../../assets/images/nearby-store/manifying-glass.svg"
+                alt="manifying-glass"
+              />
+            </div>
+          </div>
+
+          <div class="my-12 justify-center">
+            <div
+              class="mx-8 h-auto w-4/5 items-center justify-center bg-white pl-5 text-center"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <svg class="w-8" viewBox="0 0 35 46">
+                  <path
+                    d="M331.5,1597s-17.5-19.22-17.5-28.75a17.5,17.5,0,0,1,35,0C349,1577.78,331.5,1597,331.5,1597Zm0-40.25a11.5,11.5,0,1,0,11.667,11.5A11.586,11.586,0,0,0,331.5,1556.75Zm1.229,16.63a1.106,1.106,0,0,0-.39-0.86,1.358,1.358,0,0,0-1.831.01,1.189,1.189,0,0,0-.383.88,1.122,1.122,0,0,0,.106.48,1.259,1.259,0,0,0,.285.39,1.462,1.462,0,0,0,.415.25,1.2,1.2,0,0,0,.5.1,1.261,1.261,0,0,0,.92-0.37A1.172,1.172,0,0,0,332.729,1573.38Zm-0.325-3.09a1.456,1.456,0,0,1,.269-0.68,4.49,4.49,0,0,1,.773-0.77c0.249-.22.474-0.42,0.675-0.62a4.051,4.051,0,0,0,.513-0.61,2.7,2.7,0,0,0,.325-0.71,3.094,3.094,0,0,0,.114-0.89,3.009,3.009,0,0,0-.276-1.33,2.742,2.742,0,0,0-.757-0.97,3.291,3.291,0,0,0-1.107-.59,4.443,4.443,0,0,0-1.327-.2,4.22,4.22,0,0,0-2,.47,3.246,3.246,0,0,0-1.351,1.37,1.616,1.616,0,0,0-.162.43,1.647,1.647,0,0,0-.033.27,0.889,0.889,0,0,0,.261.67,0.936,0.936,0,0,0,.683.26,1.018,1.018,0,0,0,.513-0.14,1.13,1.13,0,0,0,.415-0.53,1.864,1.864,0,0,1,.6-0.77,1.562,1.562,0,0,1,.944-0.29,1.506,1.506,0,0,1,1.31,2.29,3.019,3.019,0,0,1-.529.61l-0.732.69a3.931,3.931,0,0,0-.806.97,2.219,2.219,0,0,0-.252,1.07,1.149,1.149,0,0,0,.106.53,0.855,0.855,0,0,0,.252.32,0.684,0.684,0,0,0,.309.15,1.04,1.04,0,0,0,.277.04,0.957,0.957,0,0,0,.269-0.04,0.683,0.683,0,0,0,.3-0.15,1,1,0,0,0,.26-0.31A1.509,1.509,0,0,0,332.4,1570.29Z"
+                    transform="translate(-314 -1551)"
+                    fill="#d8d8d8"
+                  ></path>
+                </svg>
+              </div>
+              <div class="pt-2 text-sm text-gray-900">NO RESULTS</div>
+              <span class="pt-2 text-sm font-extralight text-gray-400"
+                >TIP: Try entering a location or using your current
+                location.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+
+    <section class="w-full max-w-screen-xl">
+      <div class="text-sm font-extralight">
+        <div
+          class="mx-64 mt-10 flex items-center justify-center md:justify-start"
+        >
+          <img
+            src="../../assets/images/nearby-store/pricespider.svg"
+            alt="pricespider logo"
+          />
+        </div>
+        <div class="flex items-center justify-center">
+          <p class="text-xs font-extralight">© PriceSpider 2005-2024</p>
+          <p class="ml-2 text-xs font-semibold text-gray-400">
+            PriceSpider Terms of Service
+          </p>
+        </div>
+
+        <p class="mx-5 mb-5 mt-10 text-xs">
+          Price, Promotion, Processing: Pricing, delivery date and other errors
+          may be withdrawn or revised and/or your order may be cancelled at any
+          time before we have both (a) shipped or provided access to your
+          product or service, and (b) received your payment for the product or
+          service. All sales on Samsung.com are subject to the full Terms of
+          Sale [live link or "in Checkout, viewable before Order Submission."].
+          Samsung is not responsible for any errors, omissions or misdirected or
+          lost orders, or orders which may be delayed. Samsung reserves the
+          right to modify pricing and modify or cancel promotions at any time,
+          without prior notice.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
-   
-</body>
-
+    <script src="./components/product.js"></script>
+    <script src="../nearby-store/components/find-online.js"></script>
+  </body>
 </html>

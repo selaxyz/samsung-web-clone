@@ -1,3 +1,4 @@
+// 
 export const mobileData = {
     headerText: "Mobile & Computing",
     items: [
@@ -39,6 +40,7 @@ export const mobileData = {
         "Galaxy Tab S9 Series",
         "Galaxy Watch6 Series"
     ]
+    
 };
 
 
